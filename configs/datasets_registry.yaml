@@ -1,0 +1,278 @@
+# HAND dataset registry
+#
+# Single source of truth for where data lives. No dataset path may be hard-coded in
+# Python; loaders resolve through this file.
+#
+# Path resolution
+#   1. ${HAND_DATA_ROOT} if set, else the registry's `defaults.data_root`
+#   2. a dataset's `path` may be absolute (points at an existing corpus elsewhere on the
+#      machine) or relative to `data/` (a symlink created by scripts/setup_dataset_links.sh)
+#   3. `${VAR}` expands from the environment. Corpora that do not live inside this
+#      repository are written as `${HAND_EXTERNAL_DATA}/<corpus>`; point that variable at
+#      wherever you keep them. Absolute machine paths are deliberately not published here:
+#      they are meaningless in someone else's checkout.
+#
+#   export HAND_DATA_ROOT=/path/to/fast/local/disk   # optional; only if staging is justified
+#   export HAND_EXTERNAL_DATA=/path/to/corpora   # required for the corpora marked with it
+#
+# Every path below was verified to exist on 2026-09-04 by tools that only read. Sizes and
+# file counts are measured, not estimated. See data/README.md.
+#
+# available: true   real, complete corpus
+# available: stub   directory exists but holds only samples or a placeholder
+# available: false  not on this machine
+
+version: 1
+
+defaults:
+  data_root: "${HAND_DATA_ROOT:-./data}"
+  # Datasets are read in place over NFS. Do not copy them. If a measured I/O
+  # bottleneck ever justifies staging, stage to /scratch (7 T local, currently empty)
+  # and record the benchmark that justified it.
+  copy_policy: never
+  link_policy: symlink_only
+
+datasets:
+
+  # ---------------------------------------------------------------- Latin, modern
+  IAM:
+    available: true
+    path: ${HAND_EXTERNAL_DATA}/iam
+    alt_path: IAM        # page-level tree used by this repo
+    type: htr
+    format: iam_xml
+    levels: [line, page]
+    script: latin
+    language: en
+    size_gb: 5.2
+    n_files: 16455
+    license: research_only_registration_required
+    redistributable: false
+    formatter: hand/Datasets/dataset_formatters/iam_formatter.py
+    already_formatted: true                          # formatted/IAM_line, formatted/IAM_page
+    splits: official_writer_disjoint
+    notes: >-
+      Official partitions are writer-disjoint. formatted/IAM_page measured clean:
+      zero transcription overlap across splits.
+
+  RIMES:
+    available: true
+    path: ${HAND_EXTERNAL_DATA}/rimes
+    type: htr
+    format: rimes_xml
+    levels: [line, page]
+    script: latin
+    language: fr
+    size_gb: 0.055
+    n_files: 1605
+    license: research_only_registration_required
+    redistributable: false
+    formatter: hand/Datasets/dataset_formatters/rimes_formatter.py
+    already_formatted: false
+    notes: >-
+      Full RIMES 2011: training_2011/ + eval_2011/ with training_2011.xml and
+      eval_2011_annotated.xml. A formatter exists but has never been run here.
+
+  CVL:
+    available: false
+    type: htr
+    script: latin
+    license: research_only_registration_required
+    notes: not present; free for research on registration
+
+  # ---------------------------------------------------------------- Latin, historical
+  READ_2016:
+    available: true
+    path: raw_READ2016
+    type: htr_layout
+    format: page_xml
+    levels: [line, paragraph, page, double_page, triple_page]
+    script: latin
+    language: de
+    size_gb: 0.567
+    n_files: 902
+    license: research_only
+    redistributable: false
+    formatter: hand/Datasets/dataset_formatters/read2016_formatter.py
+    already_formatted: true
+    has_layout_tokens: true
+    notes: >-
+      The only corpus here carrying layout tokens, so the only one on which LOER and
+      mAP_CER are defined. Primary benchmark.
+
+  Bentham:
+    available: true
+    path: ${HAND_EXTERNAL_DATA}/bentham
+    type: htr
+    format: bentham_r0
+    levels: [line]
+    script: latin
+    language: en
+    size_gb: 6.2
+    n_files: 23825
+    license: cc_by_check_per_file
+    redistributable: verify_before_release
+    formatter: null                                  # TO BUILD
+    already_formatted: false
+    notes: >-
+      Largest corpus on the machine. BenthamDatasetR0-GT + -Images, ~11.5 k line
+      images with transcriptions. Highest-value formatter to write.
+
+  SaintGall:
+    available: true
+    path: ${HAND_EXTERNAL_DATA}/saintgall
+    type: htr
+    format: iam_histdb
+    levels: [line]
+    script: latin
+    language: la
+    size_gb: 0.092
+    n_files: 1539
+    license: research_only
+    redistributable: false
+    formatter: null                                  # TO BUILD
+    already_formatted: false
+    notes: standard data/ ground_truth/ sets/ layout with official splits
+
+  Washington:
+    available: true
+    path: ${HAND_EXTERNAL_DATA}/washington
+    type: htr
+    format: iam_histdb
+    levels: [line, word]
+    script: latin
+    language: en
+    size_gb: 0.043
+    n_files: 5570
+    license: research_only
+    redistributable: false
+    formatter: null                                  # TO BUILD
+    already_formatted: false
+    notes: >-
+      Same layout convention as SaintGall, so one formatter covers both.
+      Proposed substitute for the absent IFN/ENIT in the generalisation slot.
+
+  Parzival:
+    available: false
+    type: htr
+    script: latin
+    language: de
+    license: research_only
+    notes: not present; IAM-HistDB family, same conventions as SaintGall — cheapest addition
+
+  Esposalles:
+    available: false
+    type: htr_ner
+    script: latin
+    language: ca
+    license: public
+    notes: not present; ICDAR 2017 IEHHR
+
+  # ---------------------------------------------------------------- Arabic
+  KHATT:
+    available: true
+    path: KHATT
+    type: htr
+    format: khatt
+    levels: [line, paragraph]
+    script: arabic
+    language: ar
+    size_gb: 0.53
+    n_files: 25793
+    license: research_only_request_required
+    redistributable: false
+    formatter: hand/Datasets/dataset_formatters/khatt_formatter.py
+    already_formatted: true
+    integrity:
+      KHATT_line: contaminated      # 230/744 test transcriptions occur in train (31 %)
+      KHATT_paragraph: acceptable   # 7/212 (3.3 %)
+    notes: >-
+      Carries the Arabic evidence for V2. The line-level contamination is inherent to
+      KHATT's fixed paragraphs and must be disclosed with any line-level number.
+
+  AHAWP:
+    available: true
+    path: AHAWP_extracted
+    type: htr
+    format: ahawp_per_user
+    levels: [character, word, paragraph]
+    script: arabic
+    language: ar
+    size_gb: 2.3
+    license: public
+    redistributable: false
+    formatter: hand/Datasets/dataset_formatters/ahawp_formatter.py
+    already_formatted: true
+    usable_for_recognition_claims: false
+    notes: >-
+      DO NOT USE for recognition or generalisation results. Ground truth is three
+      hardcoded strings assigned by filename; 26 of 28 test writers appear in train.
+      Verdict reproducible with tools/audit_dataset_integrity.py; see dataset_audit.json
+      and the README section "Before you quote a number".
+
+  IFN_ENIT:
+    available: false
+    type: htr
+    script: arabic
+    license: research_only_request_required
+    notes: >-
+      not present. Requested for the generalisation slot; Washington is the proposed
+      already-available substitute until it is acquired.
+
+  KITAB_Bench:
+    available: stub
+    path: ${HAND_EXTERNAL_DATA}/kitab_bench
+    type: ocr_benchmark
+    script: arabic
+    size_gb: 0.0027
+    notes: 18 sample images only (arocrbench_historicalbooks / _khatt / _muharaf)
+
+  # ---------------------------------------------------------------- Document understanding
+  FUNSD:
+    available: true
+    path: ${HAND_EXTERNAL_DATA}/funsd
+    type: document_understanding
+    format: huggingface_arrow
+    script: latin
+    language: en
+    size_gb: 0.018
+    license: research_only
+    redistributable: false
+    formatter: null
+    already_formatted: false
+    notes: >-
+      Form understanding, not HTR. Relevant only if Option B's multi-task heads are
+      adopted. Read in place, never copy.
+
+  XFUND:
+    available: stub
+    path: ${HAND_EXTERNAL_DATA}/xfund
+    type: document_understanding
+    notes: directory exists but is empty (512 B)
+
+  DocLayNet:
+    available: false
+    type: layout
+    license: cdla_permissive
+    size_gb: 30
+    notes: not present; only justified after Experiment E4
+
+  PubLayNet:
+    available: false
+    type: layout
+    license: cdla_permissive
+    size_gb: 100
+    notes: not present; not recommended — size disproportionate to expected value
+
+# Known duplication already on disk. V2 must not add to it.
+#
+# `formatted/` in this repository is canonical (5.3 G, all datasets). Two older, partial
+# formatted trees (761 M and 588 M) exist elsewhere on the author's machine, left over
+# from earlier projects; they are NOT inputs to anything here and are recorded only so
+# that a disk-usage audit does not mistake them for extra data. Their locations are
+# machine-local and are deliberately not published.
+known_duplicates:
+  READ_2016_formatted:
+    - formatted      # canonical for this project
+    - "<external, machine-local>"
+    - "<external, machine-local>"

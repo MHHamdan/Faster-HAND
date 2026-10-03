@@ -1,0 +1,49 @@
+{
+  "model_type": "hand-dan-page",
+  "input_channels": 3,
+  "dropout": 0.5,
+  "enc_dim": 256,
+  "nb_layers": 5,
+  "pe_h_max": 500,
+  "pe_w_max": 1000,
+  "l_max": 15000,
+  "dec_num_layers": 8,
+  "dec_num_heads": 4,
+  "dec_res_dropout": 0.1,
+  "dec_pred_dropout": 0.1,
+  "dec_att_dropout": 0.1,
+  "dec_dim_feedforward": 256,
+  "attention_win": 100,
+  "use_tokens_from_all_lines": true,
+  "use_first_pass_tokens": true,
+  "two_step_pos_enc_mode": "cat",
+  "use_line_indices": false,
+  "vocab_size": 99,
+  "additional_tokens": 1,
+  "max_char_prediction": 3000,
+  "max_line_pred": 100,
+  "max_pred_per_line": 150,
+  "working_dpi": 150,
+  "image_mean": [
+    202.70203512453844,
+    190.85819291654516,
+    136.08993740340918
+  ],
+  "image_std": [
+    71.95683449787683,
+    72.00679752035164,
+    57.33656372156373
+  ],
+  "expected_parameters": 7033700,
+  "parameters_encoder": 1706240,
+  "parameters_decoder": 5327460,
+  "source_checkpoint": {
+    "path": "outputs/e14_budget_1p26M_s0/checkpoints/best_3580.pt",
+    "sha256": "d94af1419554a057ae671733af2fe4cf3f63d1f8b3652f9de17277b432632f5f",
+    "bytes": 84821823,
+    "epoch": 3580,
+    "step": 1253350,
+    "recorded_best_valid_cer": 0.0409,
+    "use_line_indices_source": "checkpoint carries no 'use_line_indices' key; inferred from additional_tokens == 1, i.e. (additional_tokens == 3) -> False"
+  }
+}

@@ -1,0 +1,31 @@
+# Loose ranges, for convenience.
+#
+# THIS IS NOT THE ENVIRONMENT THE RESULTS WERE MEASURED IN. Use
+# requirements-pinned.txt if you intend to compare numbers against anything this
+# repository reports — it carries the exact versions of the reference environment
+# (Python 3.11.14, PyTorch 2.9.1+cu128, CUDA 12.8).
+#
+#   pip install -r requirements.txt && pip install -e .
+#   python tools/validate_install_cpu.py
+
+torch>=2.4
+torchvision>=0.19
+numpy>=2.0
+Pillow>=10          # >=10 required: a shim in hand/OCR/ocr_dataset_manager.py replaces
+                    # the FreeTypeFont.getsize() that Pillow 10 removed
+opencv-python>=4.9
+scipy>=1.13
+networkx>=3.2       # required by the LOER layout metric
+editdistance>=0.8   # CER/WER
+fontTools>=4.50     # synthetic-font charset validation
+tqdm>=4.66
+PyYAML>=6.0
+matplotlib>=3.8
+tensorboard>=2.15   # optional: training curves
+
+# Optional, only for the post-OCR correction experiments
+transformers>=4.40
+sentencepiece>=0.2
+
+# NOTE: do NOT install `tensorflow` in this environment. TensorBoard probes for it at
+# import time, and any TF built against NumPy 1.x will abort the import.

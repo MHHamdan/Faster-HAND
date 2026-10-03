@@ -1,0 +1,40 @@
+from setuptools import setup, find_namespace_packages
+
+setup(name='HAND',
+      version='1.0.0',
+      description=('Unified text-layout decoding for handwritten document '
+                   'recognition and layout analysis'),
+      author='Mohammed Hamdan',
+      author_email='mh2022ets@gmail.com',
+      maintainer='Mohammed Hamdan',
+      maintainer_email='mh2022ets@gmail.com',
+      url='https://github.com/DocumentRecognitionModels/HAND-Decoding',
+      license='MIT',
+      packages=find_namespace_packages(include=["hand", "hand.*"]),
+      python_requires='>=3.10',
+      classifiers=[
+            'Development Status :: 4 - Beta',
+            'Intended Audience :: Science/Research',
+            'Programming Language :: Python :: 3',
+            'Topic :: Scientific/Engineering :: Artificial Intelligence',
+            'Topic :: Scientific/Engineering :: Image Recognition',
+      ],
+      install_requires=[
+            "torch>=2.4",
+            "torchvision>=0.19",
+            "numpy>=2.0",
+            "Pillow>=10",
+            "opencv-python>=4.9",
+            "scipy>=1.13",
+            "networkx>=3.2",
+            "editdistance>=0.8",
+            "fontTools>=4.50",
+            "tqdm>=4.66",
+            "PyYAML>=6.0",
+            ],
+      extras_require={
+            "figures": ["matplotlib>=3.8", "PyMuPDF", "arabic_reshaper"],
+            "training": ["tensorboard>=2.15"],
+            "postocr": ["transformers>=4.40", "sentencepiece>=0.2"],
+            },
+      )

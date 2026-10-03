@@ -1,0 +1,384 @@
+{
+  "ahawp_paragraph": {
+    "model": "ahawp_paragraph",
+    "dataset": "AHAWP",
+    "level": "paragraph",
+    "checkpoint": "models/ahawp_paragraph/best_model.pt",
+    "checkpoint_fingerprint": {
+      "epoch": 1465,
+      "step": 61572,
+      "recorded_best_valid_cer": 0.0,
+      "charset_size": 39,
+      "encoder_parameters": 1706240,
+      "decoder_parameters": 5297194,
+      "total_parameters": 7003434,
+      "decoder_layers": 8,
+      "encoder_has_octave_gate_se_keys": false,
+      "decoder_has_memory_sparse_fusion_keys": false
+    },
+    "loaded_epoch": 1465,
+    "charset_size": 39,
+    "hand_encoding": true,
+    "additional_tokens": 3,
+    "layout_metrics": "not_applicable",
+    "layout_metrics_note": "dataset formatted without layout tokens (constraints lack 'hand_encoding'), so LOER and mAP_CER are undefined for it",
+    "decoding": "greedy",
+    "batch_size": 1,
+    "splits": {
+      "test": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 8469,
+          "cer": 0.0256,
+          "nb_words": 1716,
+          "wer": 0.0309,
+          "sample_time": 3.3772,
+          "time": 124.9576,
+          "nb_samples": 37
+        }
+      },
+      "valid": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 7898,
+          "cer": 0.0,
+          "nb_words": 1617,
+          "wer": 0.0,
+          "sample_time": 3.3994,
+          "time": 122.3785,
+          "nb_samples": 36
+        }
+      }
+    }
+  },
+  "iam_page": {
+    "model": "iam_page",
+    "dataset": "IAM",
+    "level": "page",
+    "checkpoint": "models/iam_page/best_model.pt",
+    "checkpoint_fingerprint": {
+      "epoch": 1205,
+      "step": 900882,
+      "recorded_best_valid_cer": 0.0498,
+      "charset_size": 80,
+      "encoder_parameters": 1706240,
+      "decoder_parameters": 5317713,
+      "total_parameters": 7023953,
+      "decoder_layers": 8,
+      "encoder_has_octave_gate_se_keys": false,
+      "decoder_has_memory_sparse_fusion_keys": false
+    },
+    "loaded_epoch": 1205,
+    "charset_size": 80,
+    "hand_encoding": false,
+    "additional_tokens": 1,
+    "layout_metrics": "not_applicable",
+    "layout_metrics_note": "dataset formatted without layout tokens (constraints lack 'hand_encoding'), so LOER and mAP_CER are undefined for it",
+    "decoding": "greedy",
+    "batch_size": 1,
+    "splits": {
+      "test": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 80189,
+          "cer": 0.0634,
+          "nb_words": 18542,
+          "wer": 0.1762,
+          "sample_time": 2.7666,
+          "time": 641.8551,
+          "nb_samples": 232
+        }
+      },
+      "valid": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 40784,
+          "cer": 0.0492,
+          "nb_words": 8126,
+          "wer": 0.1597,
+          "sample_time": 3.1191,
+          "time": 327.5024,
+          "nb_samples": 105
+        }
+      }
+    }
+  },
+  "khatt_paragraph": {
+    "model": "khatt_paragraph",
+    "dataset": "KHATT",
+    "level": "paragraph",
+    "checkpoint": "models/khatt_paragraph/best_model.pt",
+    "checkpoint_fingerprint": {
+      "epoch": 600,
+      "step": 148447,
+      "recorded_best_valid_cer": 0.1686,
+      "charset_size": 59,
+      "encoder_parameters": 1706240,
+      "decoder_parameters": 5306940,
+      "total_parameters": 7013180,
+      "decoder_layers": 8,
+      "encoder_has_octave_gate_se_keys": false,
+      "decoder_has_memory_sparse_fusion_keys": false
+    },
+    "loaded_epoch": 600,
+    "charset_size": 59,
+    "hand_encoding": false,
+    "additional_tokens": 1,
+    "layout_metrics": "not_applicable",
+    "layout_metrics_note": "dataset formatted without layout tokens (constraints lack 'hand_encoding'), so LOER and mAP_CER are undefined for it",
+    "decoding": "greedy",
+    "batch_size": 1,
+    "splits": {
+      "test": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 59313,
+          "cer": 0.2189,
+          "nb_words": 14099,
+          "wer": 0.3087,
+          "sample_time": 1.9724,
+          "time": 420.1302,
+          "nb_samples": 213
+        }
+      },
+      "valid": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 58863,
+          "cer": 0.1662,
+          "nb_words": 14022,
+          "wer": 0.249,
+          "sample_time": 1.9103,
+          "time": 420.2735,
+          "nb_samples": 220
+        }
+      }
+    }
+  },
+  "read_double_page": {
+    "model": "read_double_page",
+    "dataset": "READ_2016",
+    "level": "double_page",
+    "checkpoint": "models/read_double_page/best_model.pt",
+    "checkpoint_fingerprint": {
+      "epoch": 1880,
+      "step": 329175,
+      "recorded_best_valid_cer": 0.0376,
+      "charset_size": 99,
+      "encoder_parameters": 1706240,
+      "decoder_parameters": 5327974,
+      "total_parameters": 7034214,
+      "decoder_layers": 8,
+      "encoder_has_octave_gate_se_keys": false,
+      "decoder_has_memory_sparse_fusion_keys": false
+    },
+    "loaded_epoch": 1880,
+    "charset_size": 99,
+    "hand_encoding": true,
+    "additional_tokens": 3,
+    "layout_metrics": "measured",
+    "layout_metrics_note": null,
+    "decoding": "greedy",
+    "batch_size": 1,
+    "splits": {
+      "test": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 23262,
+          "cer": 0.0486,
+          "nb_words": 4248,
+          "wer": 0.1516,
+          "sample_time": 32.0969,
+          "time": 802.4223,
+          "percent_pp_op": 0.20622568093385213,
+          "loer": 0.297,
+          "map_cer": 0.9206,
+          "nb_samples": 25
+        }
+      },
+      "valid": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 21609,
+          "cer": 0.0368,
+          "nb_words": 3908,
+          "wer": 0.1512,
+          "sample_time": 29.0028,
+          "time": 725.0699,
+          "percent_pp_op": 0.2183406113537118,
+          "loer": 0.3096,
+          "map_cer": 0.8699,
+          "nb_samples": 25
+        }
+      }
+    }
+  },
+  "read_line": {
+    "model": "read_line",
+    "dataset": "READ_2016",
+    "level": "line",
+    "checkpoint": "outputs/read_line_fcn/checkpoints/best_238.pt",
+    "checkpoint_fingerprint": {
+      "epoch": 238,
+      "step": 81738,
+      "recorded_best_valid_cer": 0.0327,
+      "charset_size": 85,
+      "encoder_parameters": 1706240,
+      "decoder_parameters": 5320792,
+      "total_parameters": 7027032,
+      "decoder_layers": 8,
+      "encoder_has_octave_gate_se_keys": false,
+      "decoder_has_memory_sparse_fusion_keys": false
+    },
+    "loaded_epoch": 238,
+    "charset_size": 85,
+    "hand_encoding": false,
+    "additional_tokens": 3,
+    "layout_metrics": "not_applicable",
+    "layout_metrics_note": "dataset formatted without layout tokens (constraints lack 'hand_encoding'), so LOER and mAP_CER are undefined for it",
+    "decoding": "greedy",
+    "batch_size": 1,
+    "splits": {
+      "test": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 16683,
+          "cer": 0.0372,
+          "nb_words": 3186,
+          "wer": 0.1168,
+          "sample_time": 0.2338,
+          "time": 160.131,
+          "nb_samples": 685
+        }
+      },
+      "valid": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 16294,
+          "cer": 0.0325,
+          "nb_words": 3077,
+          "wer": 0.1063,
+          "sample_time": 0.178,
+          "time": 121.5805,
+          "nb_samples": 683
+        }
+      }
+    }
+  },
+  "read_page": {
+    "model": "read_page",
+    "dataset": "READ_2016",
+    "level": "page",
+    "checkpoint": "models/read_page/best_model.pt",
+    "checkpoint_fingerprint": {
+      "epoch": 1515,
+      "step": 265300,
+      "recorded_best_valid_cer": 0.0401,
+      "charset_size": 95,
+      "encoder_parameters": 1706240,
+      "decoder_parameters": 5325922,
+      "total_parameters": 7032162,
+      "decoder_layers": 8,
+      "encoder_has_octave_gate_se_keys": false,
+      "decoder_has_memory_sparse_fusion_keys": false
+    },
+    "loaded_epoch": 1515,
+    "charset_size": 95,
+    "hand_encoding": true,
+    "additional_tokens": 3,
+    "layout_metrics": "measured",
+    "layout_metrics_note": null,
+    "decoding": "greedy",
+    "batch_size": 1,
+    "splits": {
+      "test": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 23262,
+          "cer": 0.0455,
+          "nb_words": 4260,
+          "wer": 0.1523,
+          "sample_time": 9.4557,
+          "time": 472.7849,
+          "percent_pp_op": 0.20874751491053678,
+          "loer": 0.3515,
+          "map_cer": 0.9292,
+          "nb_samples": 50
+        }
+      },
+      "valid": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 21609,
+          "cer": 0.0387,
+          "nb_words": 3918,
+          "wer": 0.1529,
+          "sample_time": 8.5825,
+          "time": 429.1239,
+          "percent_pp_op": 0.2264957264957265,
+          "loer": 0.4071,
+          "map_cer": 0.8658,
+          "nb_samples": 50
+        }
+      }
+    }
+  },
+  "read_triple_page": {
+    "model": "read_triple_page",
+    "dataset": "READ_2016",
+    "level": "triple_page",
+    "checkpoint": "models/read_triple_page/best_model.pt",
+    "checkpoint_fingerprint": {
+      "epoch": 2545,
+      "step": 295336,
+      "recorded_best_valid_cer": 0.1499,
+      "charset_size": 99,
+      "encoder_parameters": 1706240,
+      "decoder_parameters": 5327974,
+      "total_parameters": 7034214,
+      "decoder_layers": 8,
+      "encoder_has_octave_gate_se_keys": false,
+      "decoder_has_memory_sparse_fusion_keys": false
+    },
+    "loaded_epoch": 2545,
+    "charset_size": 99,
+    "hand_encoding": true,
+    "additional_tokens": 3,
+    "layout_metrics": "measured",
+    "layout_metrics_note": null,
+    "decoding": "greedy",
+    "batch_size": 1,
+    "splits": {
+      "test": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 22512,
+          "cer": 0.0681,
+          "nb_words": 4110,
+          "wer": 0.1779,
+          "sample_time": 136.9118,
+          "time": 2190.5885,
+          "percent_pp_op": 0.2033898305084746,
+          "loer": 0.3502,
+          "map_cer": 0.91,
+          "nb_samples": 16
+        }
+      },
+      "valid": {
+        "status": "ok",
+        "metrics": {
+          "nb_chars": 20692,
+          "cer": 0.1,
+          "nb_words": 3730,
+          "wer": 0.2145,
+          "sample_time": 289.7885,
+          "time": 4636.6159,
+          "percent_pp_op": 0.2505643340857788,
+          "loer": 0.4126,
+          "map_cer": 0.8,
+          "nb_samples": 16
+        }
+      }
+    }
+  }
+}

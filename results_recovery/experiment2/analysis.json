@@ -1,0 +1,273 @@
+{
+ "runs": {
+  "fcn": {
+   "0": {
+    "status": "complete",
+    "test_cer_pct": 3.61,
+    "test_wer_pct": 11.21,
+    "epoch": 230,
+    "n_test": 685.0,
+    "valid_cer_pct": 3.5700000000000003,
+    "encoder_parameters": null
+   },
+   "1": {
+    "status": "complete",
+    "test_cer_pct": 3.1199999999999997,
+    "test_wer_pct": 8.6,
+    "epoch": 210,
+    "n_test": 685.0,
+    "valid_cer_pct": 2.98,
+    "encoder_parameters": null
+   },
+   "2": {
+    "status": "complete",
+    "test_cer_pct": 4.32,
+    "test_wer_pct": 11.459999999999999,
+    "epoch": 230,
+    "n_test": 685.0,
+    "valid_cer_pct": 3.95,
+    "encoder_parameters": null
+   }
+  },
+  "hand": {
+   "0": {
+    "status": "complete",
+    "test_cer_pct": 11.01,
+    "test_wer_pct": 17.51,
+    "epoch": 220,
+    "n_test": 685.0,
+    "valid_cer_pct": 10.13,
+    "encoder_parameters": null
+   },
+   "1": {
+    "status": "complete",
+    "test_cer_pct": 10.82,
+    "test_wer_pct": 17.01,
+    "epoch": 200,
+    "n_test": 685.0,
+    "valid_cer_pct": 9.89,
+    "encoder_parameters": null
+   },
+   "2": {
+    "status": "complete",
+    "test_cer_pct": 10.77,
+    "test_wer_pct": 16.98,
+    "epoch": 210,
+    "n_test": 685.0,
+    "valid_cer_pct": 9.86,
+    "encoder_parameters": null
+   }
+  },
+  "hand_no_octave": {
+   "0": {
+    "status": "not_started"
+   },
+   "1": {
+    "status": "complete",
+    "test_cer_pct": 2.68,
+    "test_wer_pct": 8.82,
+    "epoch": 180,
+    "n_test": 685.0,
+    "valid_cer_pct": 2.69,
+    "encoder_parameters": null
+   },
+   "2": {
+    "status": "not_started"
+   }
+  },
+  "hand_no_se": {
+   "0": {
+    "status": "not_started"
+   },
+   "1": {
+    "status": "complete",
+    "test_cer_pct": 11.28,
+    "test_wer_pct": 20.560000000000002,
+    "epoch": 170,
+    "n_test": 685.0,
+    "valid_cer_pct": 10.05,
+    "encoder_parameters": null
+   },
+   "2": {
+    "status": "not_started"
+   }
+  },
+  "hand_no_gate": {
+   "0": {
+    "status": "complete",
+    "test_cer_pct": 10.08,
+    "test_wer_pct": 17.39,
+    "epoch": 220,
+    "n_test": 685.0,
+    "valid_cer_pct": 9.33,
+    "encoder_parameters": null
+   },
+   "1": {
+    "status": "not_started"
+   },
+   "2": {
+    "status": "not_started"
+   }
+  }
+ },
+ "summary": {
+  "fcn": {
+   "n_complete": 3,
+   "seeds": {
+    "0": {
+     "status": "complete",
+     "test_cer_pct": 3.61,
+     "test_wer_pct": 11.21,
+     "epoch": 230,
+     "n_test": 685.0,
+     "valid_cer_pct": 3.5700000000000003,
+     "encoder_parameters": null
+    },
+    "1": {
+     "status": "complete",
+     "test_cer_pct": 3.1199999999999997,
+     "test_wer_pct": 8.6,
+     "epoch": 210,
+     "n_test": 685.0,
+     "valid_cer_pct": 2.98,
+     "encoder_parameters": null
+    },
+    "2": {
+     "status": "complete",
+     "test_cer_pct": 4.32,
+     "test_wer_pct": 11.459999999999999,
+     "epoch": 230,
+     "n_test": 685.0,
+     "valid_cer_pct": 3.95,
+     "encoder_parameters": null
+    }
+   },
+   "mean_test_cer_pct": 3.683333333333333,
+   "min_test_cer_pct": 3.1199999999999997,
+   "max_test_cer_pct": 4.32,
+   "std_test_cer_pct": 0.6033517492585347,
+   "ci95_test_cer_pct": [
+    2.1845244054091744,
+    5.182142261257492
+   ]
+  },
+  "hand": {
+   "n_complete": 3,
+   "seeds": {
+    "0": {
+     "status": "complete",
+     "test_cer_pct": 11.01,
+     "test_wer_pct": 17.51,
+     "epoch": 220,
+     "n_test": 685.0,
+     "valid_cer_pct": 10.13,
+     "encoder_parameters": null
+    },
+    "1": {
+     "status": "complete",
+     "test_cer_pct": 10.82,
+     "test_wer_pct": 17.01,
+     "epoch": 200,
+     "n_test": 685.0,
+     "valid_cer_pct": 9.89,
+     "encoder_parameters": null
+    },
+    "2": {
+     "status": "complete",
+     "test_cer_pct": 10.77,
+     "test_wer_pct": 16.98,
+     "epoch": 210,
+     "n_test": 685.0,
+     "valid_cer_pct": 9.86,
+     "encoder_parameters": null
+    }
+   },
+   "mean_test_cer_pct": 10.866666666666667,
+   "min_test_cer_pct": 10.77,
+   "max_test_cer_pct": 11.01,
+   "std_test_cer_pct": 0.12662279942148386,
+   "ci95_test_cer_pct": [
+    10.552118175699505,
+    11.18121515763383
+   ]
+  },
+  "hand_no_octave": {
+   "n_complete": 1,
+   "seeds": {
+    "0": {
+     "status": "not_started"
+    },
+    "1": {
+     "status": "complete",
+     "test_cer_pct": 2.68,
+     "test_wer_pct": 8.82,
+     "epoch": 180,
+     "n_test": 685.0,
+     "valid_cer_pct": 2.69,
+     "encoder_parameters": null
+    },
+    "2": {
+     "status": "not_started"
+    }
+   },
+   "mean_test_cer_pct": 2.68,
+   "min_test_cer_pct": 2.68,
+   "max_test_cer_pct": 2.68
+  },
+  "hand_no_se": {
+   "n_complete": 1,
+   "seeds": {
+    "0": {
+     "status": "not_started"
+    },
+    "1": {
+     "status": "complete",
+     "test_cer_pct": 11.28,
+     "test_wer_pct": 20.560000000000002,
+     "epoch": 170,
+     "n_test": 685.0,
+     "valid_cer_pct": 10.05,
+     "encoder_parameters": null
+    },
+    "2": {
+     "status": "not_started"
+    }
+   },
+   "mean_test_cer_pct": 11.28,
+   "min_test_cer_pct": 11.28,
+   "max_test_cer_pct": 11.28
+  },
+  "hand_no_gate": {
+   "n_complete": 1,
+   "seeds": {
+    "0": {
+     "status": "complete",
+     "test_cer_pct": 10.08,
+     "test_wer_pct": 17.39,
+     "epoch": 220,
+     "n_test": 685.0,
+     "valid_cer_pct": 9.33,
+     "encoder_parameters": null
+    },
+    "1": {
+     "status": "not_started"
+    },
+    "2": {
+     "status": "not_started"
+    }
+   },
+   "mean_test_cer_pct": 10.08,
+   "min_test_cer_pct": 10.08,
+   "max_test_cer_pct": 10.08
+  }
+ },
+ "verdict": {
+  "decision": "H0 NOT REJECTED",
+  "reason": "rule: accept `hand` only if mean test CER is lower than `fcn` by more than 0.3 pp and the direction holds on every seed; measured mean difference hand-fcn = +7.183 pp (worse) with every seed worse",
+  "updated": "2026-10-01: seed 2 of `hand` completed on 2026-09-04 (outputs/exp2_hand_s2/results/predict_READ_2016-test_210.txt) after this file was first generated; its values were added from that prediction file and the summary recomputed with the same statistics as the fcn block."
+ },
+ "secondary_findings": [
+  "removing octave convolution IMPROVES test CER by 8.235 pp -- report octave conv as harmful and drop it",
+  "hand_no_octave beats fcn while full hand does not -- report the working component subset, not the encoder as a whole"
+ ]
+}

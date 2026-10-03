@@ -1,0 +1,52 @@
+{
+  "model": "khatt_paragraph",
+  "dataset": "KHATT",
+  "level": "paragraph",
+  "checkpoint": "models/khatt_paragraph/best_model.pt",
+  "checkpoint_fingerprint": {
+    "epoch": 600,
+    "step": 148447,
+    "recorded_best_valid_cer": 0.1686,
+    "charset_size": 59,
+    "encoder_parameters": 1706240,
+    "decoder_parameters": 5306940,
+    "total_parameters": 7013180,
+    "decoder_layers": 8,
+    "encoder_has_octave_gate_se_keys": false,
+    "decoder_has_memory_sparse_fusion_keys": false
+  },
+  "loaded_epoch": 600,
+  "charset_size": 59,
+  "hand_encoding": false,
+  "additional_tokens": 1,
+  "layout_metrics": "not_applicable",
+  "layout_metrics_note": "dataset formatted without layout tokens (constraints lack 'hand_encoding'), so LOER and mAP_CER are undefined for it",
+  "decoding": "greedy",
+  "batch_size": 1,
+  "splits": {
+    "test": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 59313,
+        "cer": 0.2189,
+        "nb_words": 14099,
+        "wer": 0.3087,
+        "sample_time": 1.9724,
+        "time": 420.1302,
+        "nb_samples": 213
+      }
+    },
+    "valid": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 58863,
+        "cer": 0.1662,
+        "nb_words": 14022,
+        "wer": 0.249,
+        "sample_time": 1.9103,
+        "time": 420.2735,
+        "nb_samples": 220
+      }
+    }
+  }
+}

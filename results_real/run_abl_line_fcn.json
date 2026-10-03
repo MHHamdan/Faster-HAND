@@ -1,0 +1,29 @@
+{
+  "run": "abl_line_fcn",
+  "checkpoint": "best",
+  "checkpoint_epoch": 122,
+  "encoder": "fcn",
+  "dataset": "READ_2016",
+  "level": "line",
+  "beam_size": 1,
+  "beam_length_penalty": 1.0,
+  "eval_decoder_depth": null,
+  "elastic_depths": null,
+  "init_from": null,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "splits": {
+    "test": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 16683,
+        "cer": 0.0465,
+        "nb_words": 3186,
+        "wer": 0.1255,
+        "sample_time": 0.1432,
+        "time": 98.0663,
+        "nb_samples": 685
+      },
+      "wall_clock_s": 98.34
+    }
+  }
+}

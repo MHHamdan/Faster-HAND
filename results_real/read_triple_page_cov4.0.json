@@ -1,0 +1,30 @@
+{
+  "model": "read_triple_page",
+  "dataset": "READ_2016",
+  "level": "triple_page",
+  "checkpoint": "models/read_triple_page/best_model.pt",
+  "checkpoint_epoch": 2545,
+  "checkpoint_best_valid_cer_recorded": 0.1499,
+  "charset_size": 99,
+  "hand_encoding": true,
+  "use_line_indices": true,
+  "decoder_variant": "models_std_hand",
+  "additional_tokens": 3,
+  "eval_decoder_depth": null,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "splits": {
+    "valid": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 20692,
+        "cer": 0.0909,
+        "nb_words": 3730,
+        "wer": 0.2059,
+        "sample_time": 53.3124,
+        "time": 852.9976,
+        "nb_samples": 16
+      },
+      "wall_clock_s": 854.01
+    }
+  }
+}

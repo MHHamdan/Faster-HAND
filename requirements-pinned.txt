@@ -1,0 +1,33 @@
+# Exact versions of the environment in which the HAND code was made to run and in which
+# every number under results_real/ was measured (2026-08-24, Linux, CUDA 12.8,
+# one NVIDIA RTX PRO 6000 Blackwell 97GB).
+#
+# The looser requirements.txt does NOT produce a working environment:
+# it allows NumPy 2.x alongside a TensorFlow build compiled against NumPy 1.x, which
+# aborts `import torch.utils.tensorboard`, and it allows Pillow >= 10, which removed
+# FreeTypeFont.getsize() and breaks synthetic page generation. Both issues are fixed in
+# the code now, but these pins are what was actually tested.
+#
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements-pinned.txt
+
+torch==2.9.1
+torchvision==0.24.1
+numpy==2.4.6
+Pillow==12.2.0
+opencv-python==4.12.0.88
+scipy==1.16.3
+networkx==3.5            # required by the LOER layout metric
+editdistance==0.8.1      # CER/WER
+fontTools==4.60.1        # synthetic-font charset validation
+tqdm==4.67.1
+PyYAML==6.0.2
+matplotlib==3.10.7
+tensorboard==2.15.2      # optional: training curves
+
+# Optional, only for the post-OCR correction experiments (Section on LLM post-processing)
+transformers==5.12.1
+sentencepiece==0.2.1
+
+# NOTE: do NOT install `tensorflow` in this environment. TensorBoard probes for it at
+# import time, and any TF built against NumPy 1.x will abort the import.

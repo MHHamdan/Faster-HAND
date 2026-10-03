@@ -1,0 +1,150 @@
+# ==============================================================================
+# HAND — .gitignore
+#
+# Tracked: the library (hand/, hand_v2/), the entry points (tools/), the release
+# payload and its notices (release/), the evidence behind the published numbers
+# (experiments/, results_real/, results_recovery/, dataset_audit.json), the paper
+# and the documentation (docs/). The paper is not part of this repository.
+#
+# Not tracked, and never to be: datasets, model weights, training runs, logs, and
+# anything carrying a credential or an absolute machine path.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Datasets — obtain from the original sources; see data/README.md
+#
+# No corpus is redistributed. data/ holds only symlinks created by
+# scripts/setup_dataset_links.sh; they point at machine-local paths and are
+# meaningless in a clone. A directory rule cannot be undone by a file exception,
+# so the CONTENTS are excluded and the README is re-included.
+# ------------------------------------------------------------------------------
+/data/*
+!/data/README.md
+/formatted/
+/raw_READ2016/
+/IAM/
+/KHATT/
+/AHAWP_extracted/
+/weights/
+*.lmdb
+*.mdb
+
+# ------------------------------------------------------------------------------
+# Fonts — reproduce byte-exactly with scripts/setup_dan_fonts.sh; the binaries
+# themselves stay out of git. The two machine-checkable statements about the 41
+# audited files ARE tracked.
+# ------------------------------------------------------------------------------
+/fonts_dan_read/*
+!/fonts_dan_read/VERIFICATION.json
+!/fonts_dan_read/CHECKSUMS.sha256
+/Fonts/
+*.ttf
+*.otf
+
+# ------------------------------------------------------------------------------
+# Model weights and training runs. `git` is not a model registry.
+#
+# Leading slashes matter: an unanchored `models/` would also match `hand/models/`,
+# the model package itself. Anchor anything meant for one top-level directory.
+# ------------------------------------------------------------------------------
+/models/*
+!/models/README.md
+/outputs/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pkl
+
+# ------------------------------------------------------------------------------
+# Results: measured metrics are tracked evidence; logs and prediction dumps are not.
+#
+# Bulk per-sample prediction dumps are NEVER tracked. They contain ground-truth
+# transcriptions of IAM and KHATT, both licensed for research use under
+# registration and not redistributable. Excluded by rule, not by the accident of a
+# dump currently being empty. The few IAM/KHATT samples reproduced inside the
+# paper's qualitative figures are the only exception; the per-row JSON those
+# figure scripts write beside the figures is excluded as well.
+# ------------------------------------------------------------------------------
+predictions.json
+results_recovery/**/predictions.json
+/experiments/qualitative/iam/*.json
+/experiments/qualitative/khatt/prediction_test_*.json
+*.log
+*.out
+slurm-*.out
+
+# ------------------------------------------------------------------------------
+# Generated tables — regenerate with tools/make_tables.py
+# ------------------------------------------------------------------------------
+/paper_tables/
+
+# ------------------------------------------------------------------------------
+# The manuscript is not distributed with the code; keep any local copy out of git.
+# ------------------------------------------------------------------------------
+/paper/
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# ------------------------------------------------------------------------------
+# Experiment trackers and run scratch
+# ------------------------------------------------------------------------------
+wandb/
+mlruns/
+lightning_logs/
+/runs/
+.cache/
+*.tfevents.*
+events.out.tfevents.*
+
+# ------------------------------------------------------------------------------
+# Python
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+.pytest_cache/
+.coverage
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# Environments
+# ------------------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# ------------------------------------------------------------------------------
+# Tooling, editors, OS
+# ------------------------------------------------------------------------------
+.claude/
+CLAUDE.md
+.ipynb_checkpoints/
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------------------------
+# Credentials — never commit any of this
+# ------------------------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+*.p12
+id_rsa*
+.netrc

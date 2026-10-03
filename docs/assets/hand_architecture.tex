@@ -1,0 +1,222 @@
+% ---------------------------------------------------------------------------
+% HAND architecture figure -- reproducible TikZ source for a single IEEE
+% column (\columnwidth, ~88.9 mm). Drawn at natural size: no \resizebox, so
+% every label is set at the size it is printed (\scriptsize = 7 pt, secondary
+% labels 6 pt; nothing smaller than 6 pt).
+%
+% Reading order: (1) encoder column, (2) decoder column, (3) output stream,
+% then the two OPTIONAL mechanisms A and B in the dashed band at the bottom.
+% Markers A and B on the main diagram show where each mechanism attaches.
+%
+% Every block corresponds to code in this repository:
+%   conv / DS blocks         hand/models/baseline/fcn_encoder.py   (FCN_Encoder)
+%   2D PE + flattening       hand/models/baseline/attention.py     (FeaturesUpdater)
+%   decoder layer            hand/models/baseline/attention.py     (GlobalDecoderLayer)
+%   decoder stack, shared KV hand/models/baseline/attention.py     (GlobalAttDecoder)
+%   embedding, 1D PE, head   hand/models/baseline/dan_decoder.py   (GlobalHTADecoder)
+%   draft heads              hand/models/baseline/spec_heads.py    (SpeculativeHeads)
+%   draft/verify/rollback    release/hand_release/inference.py     (_decode_speculative)
+%
+% Shapes are the trained page configuration (release/hand-read2016-page/config.json):
+% d = 256, 8 decoder layers, 4 heads, FFN width 256, self-attention band w = 100,
+% output |V| = 100. Layout tokens are the circled letters of the charset:
+% p/P page, n/N page number, s/S section, b/B body, a/A annotation
+% (lower case opens an element, upper case closes it).
+%
+% Palette: Okabe-Ito (colour-blind safe). Colour is never the only cue: base
+% HAND uses solid borders, optional mechanisms dashed borders + letter tags.
+%
+% Requires \usepackage{tikz} with libraries arrows, positioning, fit, calc,
+% backgrounds (declared in the manuscript preamble). No further libraries.
+% ---------------------------------------------------------------------------
+\providecolor{hndBlue}{RGB}{0,114,178}      % Okabe-Ito blue        : visual encoder
+\providecolor{hndPurple}{RGB}{204,121,167}  % Okabe-Ito red-purple  : feature grid / memory
+\providecolor{hndNavy}{RGB}{28,46,98}       % dark blue             : base decoder
+\providecolor{hndGreen}{RGB}{0,158,115}     % Okabe-Ito green       : joint text+layout output
+\providecolor{hndOrange}{RGB}{230,159,0}    % Okabe-Ito orange      : A, shared visual K/V
+\providecolor{hndVerm}{RGB}{213,94,0}       % Okabe-Ito vermillion  : B, speculative decoding
+%
+% Layout-token chips, usable in captions and text as well:
+%   \ltb{p} = opening token (circled lower case), \lte{P} = closing token.
+\providecommand{\ltb}[1]{\tikz[baseline=(c.base)]\node[draw=hndGreen!80!black,%
+  fill=white, circle, inner sep=0.2pt, minimum size=2.3mm, line width=0.4pt,%
+  font=\fontsize{6}{6}\selectfont\sffamily, text=hndGreen!60!black] (c) {#1};}%
+\providecommand{\lte}[1]{\tikz[baseline=(c.base)]\node[draw=hndGreen!80!black,%
+  fill=hndGreen!22, circle, inner sep=0.2pt, minimum size=2.3mm, line width=0.4pt,%
+  font=\fontsize{6}{6}\selectfont\sffamily\bfseries, text=hndGreen!60!black] (c) {#1};}%
+%
+\begin{tikzpicture}[
+  x=1mm, y=1mm,
+  font=\scriptsize,
+  >=latex,
+  blk/.style    = {draw, rounded corners=1.2pt, align=center, inner sep=1.8pt,
+                   minimum height=5.2mm, line width=0.5pt},
+  enc/.style    = {blk, fill=white, draw=hndBlue, text width=33mm},
+  dec/.style    = {blk, fill=white, draw=hndNavy, text width=33mm},
+  io/.style     = {blk, fill=white, draw=black!75},
+  grp/.style    = {draw, rounded corners=2pt, inner sep=1.8pt, line width=0.5pt},
+  stage/.style  = {rounded corners=1pt, inner sep=1.6pt, text=white,
+                   font=\fontsize{6.5}{7}\selectfont\bfseries, anchor=west},
+  tag/.style    = {rounded corners=1pt, inner sep=1.4pt, text=white,
+                   font=\fontsize{6}{7}\selectfont\bfseries, anchor=south west},
+  attach/.style   = {circle, draw, dashed, fill=white, inner sep=0pt, minimum size=2.7mm,
+                   line width=0.5pt, font=\fontsize{6}{6}\selectfont\bfseries},
+  opt/.style    = {blk, dashed, fill=white, inner sep=1.4pt, minimum height=0mm,
+                   font=\fontsize{6}{6.8}\selectfont},
+  sec/.style    = {font=\fontsize{6}{7}\selectfont\itshape, text=black!70,
+                   inner sep=1pt, align=center},
+  lbl/.style    = {font=\fontsize{6}{7}\selectfont, text=black!65, inner sep=1pt},
+  side/.style   = {font=\fontsize{6}{7}\selectfont\bfseries, rotate=90, inner sep=0pt},
+  flow/.style   = {->, line width=0.6pt, draw=black!75},
+  mem/.style    = {->, line width=0.6pt, draw=hndPurple!80!black},
+  optflow/.style= {->, line width=0.5pt, dashed},
+  cell/.style   = {draw=hndPurple!80!black, fill=hndPurple!45, inner sep=0pt,
+                   minimum size=1.6mm, line width=0.3pt},
+  tchip/.style  = {inner sep=0.2pt, minimum size=2.3mm, font=\fontsize{6.5}{7}\selectfont},
+  lchip/.style  = {tchip, circle, draw=hndGreen!80!black, fill=white, line width=0.4pt,
+                   font=\fontsize{6}{6}\selectfont\sffamily, text=hndGreen!60!black},
+  echip/.style  = {lchip, fill=hndGreen!22, font=\fontsize{6}{6}\selectfont\sffamily\bfseries},
+]
+
+% ============ stage headers (reading order 1 -> 2 -> 3) ====================
+\node[stage, fill=hndBlue] (h1) at (0,0) {1\; visual encoder};
+\node[stage, fill=hndNavy] (h2) at (48,0) {2\; autoregressive decoder};
+
+% ======================= (1) encoder column, x in [0,36] ===================
+\node[io, minimum width=7.2mm, minimum height=8.6mm, inner sep=0pt, anchor=north west]
+      (img) at (4.6,-3.0) {};
+\foreach \dy in {-2.0,-3.5,-5.0,-6.5} {
+  \draw[black!45, line width=0.45pt] ($(img.north west)+(1.3,\dy)$) -- ($(img.north east)+(-1.3,\dy)$);}
+\draw[black!45, line width=0.45pt] ($(img.north west)+(1.3,-1.1)$) -- ($(img.north west)+(3.6,-1.1)$);
+\node[sec, right=1.6mm of img, anchor=west, align=left]
+      {document image\\[-1pt] $3\times H\times W$};
+
+% FCN encoder: one box, two rows (conv blocks, then depthwise-separable blocks)
+\node[enc, draw=none, fill=none, minimum height=0mm, inner sep=0pt, anchor=north] (cb)
+      at ($(img.south)+(12.95,-2.6)$)
+      {$6\times$ conv block, $3\!\to\!128$ ch\\[-1pt] {\fontsize{6}{7}\selectfont strided: output $H/32\times W/8$}};
+\node[enc, below=1.5mm of cb, draw=none, fill=none, minimum height=0mm, inner sep=0pt] (ds)
+      {$4\times$ depthwise-separable\\[-1pt] {\fontsize{6}{7}\selectfont block, $128\!\to\!256$ ch; residual}};
+\begin{scope}[on background layer]
+  \node[grp, draw=hndBlue, fill=hndBlue!6, fit=(cb)(ds), inner sep=2.2pt] (ebox) {};
+\end{scope}
+\coordinate (esep) at ($(cb.south)!0.5!(ds.north)$);
+\draw[hndBlue!60, line width=0.3pt] (ebox.west |- esep) -- (ebox.east |- esep);
+\node[side, text=hndBlue, anchor=south] at ($(ebox.west)+(-0.7,0)$) {FCN encoder};
+
+% feature grid f2D
+\coordinate (g0) at ($(ebox.south)+(-14.5,-3.3)$);
+\foreach \i in {0,...,6} \foreach \j in {0,...,2}
+  \node[cell] (g\i\j) at ($(g0)+(\i*1.6,-\j*1.6)$) {};
+\node[inner sep=0pt, fit=(g00)(g62)] (grid) {};
+\node[sec, right=1.3mm of grid, anchor=west, align=left]
+      {feature grid $\boldsymbol{f}^{2D}$\\[-1pt] $256\times H/32\times W/8$};
+
+% 2D PE + flatten
+\node[enc, anchor=north, text width=34.5mm] (pe) at ($(ebox.south)+(0,-11.0)$)
+      {$+$\,2D sinusoidal PE; flatten};
+
+% visual memory f1D
+\coordinate (m0) at ($(pe.south)+(-14.5,-2.6)$);
+\foreach \i in {0,...,14} \node[cell] (m\i) at ($(m0)+(\i*1.6,0)$) {};
+\node[inner sep=0pt, font=\scriptsize] (mdots) at ($(m0)+(15.6*1.6,0)$) {$\cdots$};
+\node[inner sep=0pt, fit=(m0)(m14)] (memstrip) {};
+\node[sec, below=0.5mm of memstrip, text=hndPurple!60!black]
+      (meml) {visual memory $\boldsymbol{f}^{1D}$: $T_{\mathrm{enc}}\times256$};
+
+\draw[flow] (img.south) -- (img.south |- ebox.north);
+\draw[flow] (ebox.south -| grid.north) -- (grid.north);
+\draw[flow] (grid.south -| pe.north) -- (pe.north);
+\draw[flow] (pe.south -| memstrip.north) -- (memstrip.north);
+
+% ======================= (2) decoder column, x in [48,88] =================
+\node[sec, anchor=north] (ylbl) at (68.2,-3.4) {previous symbols $y_{<t}$};
+\node[dec, below=1.0mm of ylbl.south, anchor=north] (emb)
+      {symbol embedding\\[-1pt] {\fontsize{6}{7}\selectfont $+$ 1D sinusoidal PE}};
+
+\node[dec, below=4.0mm of emb] (sa)
+      {causal self-attention\\[-1pt] {\fontsize{6}{7}\selectfont 4 heads;\; band $w{=}100$}};
+\node[dec, below=1.0mm of sa] (ca)
+      {cross-attention to $\boldsymbol{f}^{1D}$\\[-1pt] {\fontsize{6}{7}\selectfont 4 heads;\; no window}};
+\node[dec, below=1.0mm of ca] (ff)
+      {feed-forward network\\[-1pt] {\fontsize{6}{7}\selectfont $256\!\to\!256\!\to\!256$, ReLU}};
+\node[lbl, below=0.4mm of ff, text=hndNavy, text width=35mm, align=center] (resn)
+      {residual $+$ LayerNorm after each sub-layer};
+\coordinate (dtop) at ($(sa.north)+(0,1.3)$);
+\begin{scope}[on background layer]
+  \node[grp, draw=hndNavy, fill=hndNavy!6, fit=(sa)(ff)(resn)(dtop), inner sep=2.2pt] (dbox) {};
+\end{scope}
+\node[tag, fill=hndNavy, anchor=west] at ($(dbox.north west)+(1.6,0)$) {decoder layer $\times 8$};
+
+\node[dec, below=3.2mm of dbox] (head)
+      {output projection\\[-1pt] {\fontsize{6}{7}\selectfont $256\!\to\!|V|{=}100$, softmax}};
+
+\draw[flow] (ylbl.south -| emb.north) -- (emb.north);
+\draw[flow] (emb) -- (dbox.north -| sa.north) -- (sa.north);
+\draw[flow] (sa) -- (ca);
+\draw[flow] (ca) -- (ff);
+\draw[flow] (dbox.south) -- (head.north);
+\coordinate (hpt) at ($(dbox.south)!0.5!(head.north)$);
+\node[lbl, anchor=west] at ($(hpt)+(0.6,0)$) {$h_t$};
+\node[attach, draw=hndVerm, text=hndVerm!80!black, anchor=east] at ($(hpt)+(-0.8,0)$) {B};
+
+% ----- visual memory -> cross-attention, marker A on the path -------------
+\draw[mem] (mdots.east) -| (44.3, 0 |- ca.west) -- (ca.west);
+\node[attach, draw=hndOrange!85!black, text=hndOrange!70!black] (mA) at (44.3, 0 |- pe.north) {A};
+\node[lbl, text=hndPurple!60!black, anchor=south, inner sep=0.5pt] at ($(ca.west)+(-3.6,0.3)$) {$K,V$};
+
+% ======================= (3) output stream (full width) ===================
+\coordinate (sy) at ($(head.south)+(0,-4.3)$);
+\node[stage, fill=hndGreen] (h3) at (0, 0 |- sy) {3\; joint text $+$ layout stream};
+\coordinate (s0) at ($(h3.east)+(3.4,0)$);
+\foreach \t/\s [count=\i from 0] in {p/lchip, n/lchip, 2/tchip, 0/tchip, 3/tchip, N/echip,
+                                      s/lchip, b/lchip, W/tchip, o/tchip, {\dots}/tchip,
+                                      B/echip, S/echip, P/echip} {
+  \node[\s] (tok\i) at ($(s0)+(\i*2.6,0)$) {\t};
+}
+\node[lbl, anchor=north west, text=hndGreen!55!black, inner sep=0.6pt] (key) at ($(h3.south west)+(0,-1.0)$)
+      {\tikz[baseline=(c.base)]\node[lchip] (c) {p}; page\;\,
+       \tikz[baseline=(c.base)]\node[lchip] (c) {n}; page number\;\,
+       \tikz[baseline=(c.base)]\node[lchip] (c) {s}; section\;\,
+       \tikz[baseline=(c.base)]\node[lchip] (c) {b}; body\;\,
+       \tikz[baseline=(c.base)]\node[lchip] (c) {a}; annotation;\;\,
+       \tikz[baseline=(c.base)]\node[echip] (c) {P}; closes};
+\begin{scope}[on background layer]
+  \node[grp, draw=hndGreen, fill=hndGreen!7, fit=(h3)(tok13)(key), inner sep=1.6pt] (sbox) {};
+\end{scope}
+
+\draw[flow] (head.south) -- (head.south |- sbox.north);
+\node[lbl, anchor=west] at ($(head.south)!0.5!(head.south |- sbox.north)+(0.6,0)$) {$\hat y_t$};
+% feedback: emitted symbol becomes the next input
+\coordinate (fb0) at (87.6, 0 |- sbox.east);
+\draw[flow, dashed] (sbox.east) -- (fb0) |- (ylbl.east);
+\node[lbl, rotate=90, anchor=south, inner sep=0.3pt] at ($(ylbl.east -| fb0)+(-0.5,-6.3)$) {fed back};
+
+% ======================= optional mechanisms A and B ======================
+\coordinate (oy) at ($(sbox.south)+(0,-3.8)$);
+% A: shared visual K/V
+\node[opt, draw=hndOrange!85!black, fill=hndOrange!10, anchor=north west, text width=19.0mm,
+      minimum height=10.5mm] (optA) at (0, 0 |- oy)
+      {one shared\\[-1pt] $W_K,\,W_V$ pair\\[-1pt] for all 8\\[-1pt] cross-attentions};
+\node[tag, fill=hndOrange!85!black] at ($(optA.north west)+(0,-0.2)$) {A\; shared K/V};
+% B: speculative decoding
+\node[opt, draw=hndVerm, fill=hndVerm!8, anchor=north west, text width=21.5mm, minimum height=9mm]
+      (b1) at (22.3, 0 |- oy)
+      {\textbf{draft}: $m\!-\!1$ heads\\[-1pt] $\mathrm{MLP}_k(h_t)$ propose\\[-1pt] next $m\!-\!1$ symbols};
+\node[opt, draw=hndVerm, fill=hndVerm!8, right=1.9mm of b1, text width=14.6mm, minimum height=9mm] (b2)
+      {\textbf{verify} all\\[-1pt] drafts in one\\[-1pt] decoder pass};
+\node[opt, draw=hndVerm, fill=hndVerm!8, right=1.9mm of b2, text width=20.2mm, minimum height=9mm] (b3)
+      {\textbf{accept} longest\\[-1pt] agreeing prefix,\\[-1pt] roll back the rest};
+\draw[optflow, draw=hndVerm] (b1) -- (b2);
+\draw[optflow, draw=hndVerm] (b2) -- (b3);
+\draw[optflow, draw=hndVerm] (b3.south) -- ++(0,-1.7) -| (b1.south);
+\node[lbl, text=hndVerm!80!black, fill=hndVerm!4, inner sep=0.5pt] (bnote) at ($(b1.south)!0.5!(b3.south)+(0,-1.7)$)
+      {inference only; output identical to greedy};
+\begin{scope}[on background layer]
+  \node[grp, dashed, draw=hndVerm, fill=hndVerm!4, fit=(b1)(b3)(bnote), inner sep=1.4pt] (optB) {};
+\end{scope}
+\node[tag, fill=hndVerm] at ($(optB.north west)+(0,-0.2)$) {B\; speculative decoding};
+
+% (no in-figure legend: solid = base HAND, dashed = optional, stated in the caption)
+
+\end{tikzpicture}%

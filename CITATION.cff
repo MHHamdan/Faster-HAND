@@ -1,0 +1,78 @@
+# ---------------------------------------------------------------------------
+# Two distinct kinds of authorship are recorded in this file, deliberately:
+#
+#   `authors:`             SOFTWARE authorship - who wrote and maintains the code
+#                          in this repository. Sole author: Mohammed Hamdan
+#                          (@MHHamdan). No other person has contributed code.
+#
+#   `preferred-citation:`  PAPER authorship - the bibliographic record of the
+#                          publication this software implements. Its author list
+#                          is a factual citation of arXiv:2412.18981 and is NOT a
+#                          statement about who contributed to this codebase.
+#
+# A name appearing under `preferred-citation` is being cited, not credited as a
+# software contributor.
+# ---------------------------------------------------------------------------
+cff-version: 1.2.0
+title: >-
+  HAND: Unified Text–Layout Decoding for Handwritten
+  Document Recognition
+message: >-
+  If you use this software, please cite the software using
+  the metadata below. If you refer to the method, cite the
+  paper given under preferred-citation.
+type: software
+
+# --- SOFTWARE AUTHORSHIP ---------------------------------------------------
+# Single-author research software release. Code contributors only.
+authors:
+  - family-names: Hamdan
+    given-names: Mohammed
+    alias: MHHamdan
+
+repository-code: 'https://github.com/DocumentRecognitionModels/HAND-Decoding'
+url: 'https://github.com/DocumentRecognitionModels/HAND-Decoding'
+abstract: >-
+  End-to-end, segmentation-free recognition of handwritten
+  documents at line, paragraph, page, double-page and
+  triple-page scale, producing the transcription and the
+  layout tags jointly. A fully convolutional encoder feeds an
+  eight-layer autoregressive transformer decoder trained with
+  a single sequence cross-entropy over an interleaved text and
+  layout token stream, using curriculum transfer across document
+  scales and synthetic page generation.
+keywords:
+  - handwritten text recognition
+  - document layout analysis
+  - historical document processing
+  - unified text-layout decoding
+  - end-to-end document recognition
+license: MIT
+notes: >-
+  MIT covers the author's own code. Files derived from DAN /
+  VerticalAttentionOCR are CeCILL-C; see release/NOTICE.md.
+version: 1.0.0
+date-released: '2026-09-01'
+
+# --- PAPER CITATION (bibliographic record, not software credit) ------------
+# This block records the arXiv preprint as published (arXiv:2412.18981, December
+# 2024, three authors). The journal version, under review, carries the revised
+# title given above; update this block when it is published.
+preferred-citation:
+  type: article
+  title: >-
+    HAND: Hierarchical Attention Network for Multi-Scale
+    Handwritten Document Recognition and Layout Analysis
+  authors:
+    - family-names: Hamdan
+      given-names: Mohammed
+    - family-names: Rahiche
+      given-names: Abderrahmane
+    - family-names: Cheriet
+      given-names: Mohamed
+  year: 2024
+  journal: arXiv preprint
+  url: 'https://arxiv.org/abs/2412.18981'
+  identifiers:
+    - type: other
+      value: 'arXiv:2412.18981'

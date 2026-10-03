@@ -1,0 +1,10 @@
+{
+ "image": "formatted/READ_2016_page_sem_dan/test/test_11.jpeg",
+ "export_dir": "outputs/export_e14_cpu",
+ "raw": "ⓟⓝ209Ⓝⓢⓑgelts. der: beim Eisackh¬\ntor Zū Bozen gestand¬\nnen: von weilend Caspar\nNoten seligen. Herrier¬\nenden Behaūsūng. vnd\nGarten. Alda Jeztdas\nCaPūziner Tlossterer¬\nbaūt. deßwegen Zū\nmer. vnd vnndterschidlich\nmelln beschwerden ein¬\nkhomen. vnd vmb verschaff¬\nūng der gebür Angehalt¬\nvnd das darüber herrn\nEnnglhardt dietrichen\nFreÿherrn Zū Wolckh¬\nstain etc. Aūferladen word.\ndie Abstatūng ZelaisstⒷⓈⓢⓐThanhaim\ners Steūr ver¬\nwiderūng.ⒶⓑFeürs Annder. so ver¬\nwidert sich HaūbtmannⒷⓈⓅ",
+ "text": "209gelts. der: beim Eisackh¬\ntor Zū Bozen gestand¬\nnen: von weilend Caspar\nNoten seligen. Herrier¬\nenden Behaūsūng. vnd\nGarten. Alda Jeztdas\nCaPūziner Tlossterer¬\nbaūt. deßwegen Zū\nmer. vnd vnndterschidlich\nmelln beschwerden ein¬\nkhomen. vnd vmb verschaff¬\nūng der gebür Angehalt¬\nvnd das darüber herrn\nEnnglhardt dietrichen\nFreÿherrn Zū Wolckh¬\nstain etc. Aūferladen word.\ndie Abstatūng ZelaisstThanhaim\ners Steūr ver¬\nwiderūng.Feürs Annder. so ver¬\nwidert sich Haūbtmann",
+ "n_tokens": 486,
+ "latency_s": 7.26015043258667,
+ "truncated": false,
+ "decode_path": "kv_cache_greedy_with_attention_log"
+}

@@ -1,0 +1,80 @@
+{
+ "image": "formatted/READ_2016_double_page_sem_dan/test/test_23.jpeg",
+ "results": "experiments/multipage/adaptation/FT_DOUBLE_double_page.json",
+ "config": "FT_DOUBLE",
+ "export_dir": "outputs/export_ft_double",
+ "level": "double_page",
+ "decode_path": "kv_cache",
+ "amp": true,
+ "per_sample": {
+  "name": "test_23.jpeg",
+  "level": "double_page",
+  "gt_chars": 820,
+  "gt_lines": 34,
+  "img_h": 1755,
+  "img_w": 2361,
+  "H_f": 55,
+  "W_f": 296,
+  "T_enc": 16280,
+  "latency_s": 4.227825632318854,
+  "peak_mem_MiB": 1853.13232421875,
+  "error": null,
+  "tokens": 864,
+  "passes": 865,
+  "truncated": false,
+  "stop_reason": "end_token",
+  "failure": null,
+  "forced_restarts": 0,
+  "n_page_open": 2,
+  "n_page_close": 2,
+  "pred_chars": 824,
+  "len_ratio": 1.0048780487804878,
+  "mean_top1_conf": 0.9940780813081397,
+  "edit_chars": 26,
+  "nb_chars": 820,
+  "cer": 0.03170731707317073,
+  "edit_words": 20,
+  "nb_words": 156,
+  "wer": 0.1282051282051282,
+  "edit_graph": 0.0,
+  "nb_nodes_and_edges": 52.0,
+  "loer": 0.0,
+  "loer_timeout": false,
+  "map_cer": 0.9733333333333333,
+  "tokens_per_pass": 0.9988439306358381
+ },
+ "raw": "ⓟⓝ227Ⓝⓢⓑwūrde, Sollen selbige\n.9. v̈hre. des herrn Marx\nSittichen Freÿherrn Zū\nWolckhenstains etc. selig\nherrn Erben, wider\nZū Rūgg geben werd.ⒷⓈⓢⓐMartin\nMitl Pergs\nhosenkhoch\nTax\n—: 3 fl.ⒶⓑMartin Mitlperger\nSchneider. Pitet Ime\ndas Hosen khachen Zūūer¬\ngonnen. hat .2 Für¬\nschreiben. das ain. von\nIr Gn: Herrn Graf\nvon Liechtenstain. vnd\ndas Annder von herrn\nMarx Oswalden khln\nZū Wolckhenstain etc.\nIst: weiln Ain der¬\ngleichen Maisster gstarbⒷⓈⓅⓟⓝ227Ⓝⓢⓑgegen firgwisnen Sibtsal\nvnd Lernbrief, vnd .3 fl\nTax bewilligt.ⒷⓈⓢⓐPallntrag.ⒶⓑGeörg Stainman Pitet vmbs\nPallntrager ambt. ist gegen\nlaistūng Porgschafft. be¬\nwilligt.ⒷⓈⓢⓐMelchior\nMūglach.ⒶⓑMelhiar Mūglach. Pitet Ime\nSiben Stain halz aūs der\nAūe vnd Gmain Zū bewillig.\nist Abgschlagen,ⒷⓈⓢⓐCristoff\nKalser.ⒶⓑCristoff Kalser Kessler\nPitet vmb verschaffūng\nIme. des. Zū der Pfarr¬\nkhirchen hergebnen KūPfersⒷⓈⓅ",
+ "gt_raw": "ⓟⓝ227Ⓝⓢⓑwūrde, Sollen selbige\n.9. vhrn. des herrn Marx\nSittichen Freyherrn Zū\nWolckhenstains etc. selig\nherrn Erben, wider\nZū Rūgg geben werd.ⒷⓈⓢⓐMartin\nMitlPergs\nHosen khoch\nTax\n— .3 fl.ⒶⓑMartin MitlPerger\nSchneider. Pitet Ime\ndas Hosen khochen Zūver¬\ngonnen. hat .2 Für¬\nschreiben. das ain. von\nIr Gn: herrn Graf\nvon Liechtenstain. vnd\ndas Annder von herrn\nMarx Oswalden Fhln\nZū Wolckhenstain etc.\nIst: weiln Ain der¬\ngleichen Maisster gstorbⒷⓈⓅⓟⓝ227Ⓝⓢⓑgegen firgwisnen Sibtsal\nvnd Lerbrief, vnd .3 fl\nTax bewilligt.ⒷⓈⓢⓐPallntrag.ⒶⓑGeörg Stainman Pitet vmbs\nPallntragerambt. ist gegen\nlaistūng Porgschafft. be¬\nwilligt.ⒷⓈⓢⓐMelchior\nMūglach.ⒶⓑMelchior Mūglach. Pitet Ime\nSiben Stäm Holtz aūs der\nAū vnd Gmain Zū bewillig.\nist Abgschlagen,ⒷⓈⓢⓐCristoff\nKalser.ⒶⓑCristoff Kalser Kessler\nPitet vmb verschaffūng\nIme. des Zū der Pfarr¬\nkhirchen hergebnen KūPfersⒷⓈⓅ",
+ "figure_stats": {
+  "figure_size_in": [
+   7.28,
+   8.46
+  ],
+  "font_pt": 6.2,
+  "per_page": [
+   {
+    "edits": 14,
+    "chars": 433,
+    "cer": 0.03233256351039261,
+    "layout_token_edits": 0,
+    "layout_token_errors": []
+   },
+   {
+    "edits": 12,
+    "chars": 387,
+    "cer": 0.031007751937984496,
+    "layout_token_edits": 0,
+    "layout_token_errors": []
+   }
+  ],
+  "decoded_pages": [
+   0,
+   1
+  ],
+  "cer": 0.03170731707317073,
+  "edits": 26,
+  "chars": 820,
+  "layout_token_edits": 0,
+  "layout_token_errors": []
+ }
+}

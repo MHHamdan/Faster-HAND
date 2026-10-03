@@ -1,0 +1,3081 @@
+{
+ "dataset": "READ_2016_double_page_sem_dan",
+ "description": "READ 2016 double pages built like DAN (arXiv 2203.12273 §5.1.2): two scans that carry the same written page number are concatenated; unpaired scans dropped; 169/24/24",
+ "splits": {
+  "test": {
+   "n": 24,
+   "samples": [
+    {
+     "image_sha256": "3ffd31923684a319bf14943d0c0b642465a04b4e93fa77d9538bff1fe8e7234d",
+     "name": "test_0.jpeg",
+     "source_scans": [
+      "Seite0406.JPG",
+      "Seite0407.JPG"
+     ],
+     "source_sha256": [
+      "58232eb72ad0858e191d5735545b55921e28c90ea4acefdebe4781a7f0bae1ae",
+      "4d65fbc3470e0753105c7541d0e9b78f08aca424df9b491b5197db2709a84d48"
+     ],
+     "text_sha256": "ea3e063410a4614fea280beb3e2e0c24a435b7e984089ff090321c5492259df2",
+     "written_page_number": 204
+    },
+    {
+     "image_sha256": "9fd06a7a2faaf4b1e10b255e28c069244f2fe74cc497881824504204ca57f42d",
+     "name": "test_1.jpeg",
+     "source_scans": [
+      "Seite0408.JPG",
+      "Seite0409.JPG"
+     ],
+     "source_sha256": [
+      "00aa0178b17456289d9cc0fde8422def33fba0350808e5cff1b3d18ee38ecacf",
+      "27df5c97eb4cb9c79b61ca7ff4f969a8fef9acac515ed8511ed78eedc5a0e139"
+     ],
+     "text_sha256": "39f1e5514cebf0ea796ab32299f41ec20157394f05f62f7b755a29c76ed4f76e",
+     "written_page_number": 205
+    },
+    {
+     "image_sha256": "cc257cd13e785b53cb6843c44ca607cc3e1393b6554aca7c188a53f447d9ab9b",
+     "name": "test_2.jpeg",
+     "source_scans": [
+      "Seite0410.JPG",
+      "Seite0411.JPG"
+     ],
+     "source_sha256": [
+      "719f8e712094592f757677144d195354772fa903cf4c0f979061de259307e380",
+      "b0554f8ebba8c89faf6fe47f723b366f77afc15241835c2b6f1362994d47272b"
+     ],
+     "text_sha256": "1edbb5e6d322af906ef4eb6cd94210db572a8f636666e18a08c6c18c872411b4",
+     "written_page_number": 206
+    },
+    {
+     "image_sha256": "706f36d6bf39f006bd0a2892ebc3b55aafcc697b921f0e6199fbad5409c83372",
+     "name": "test_3.jpeg",
+     "source_scans": [
+      "Seite0412.JPG",
+      "Seite0413.JPG"
+     ],
+     "source_sha256": [
+      "e0f1695c80fb66217bf5f0b742a373b436eab1b0910476f2e500eefd94267c06",
+      "10d984a286556c666b948839b6aca9bc328c2be9d6e93e6a745af057bc55ad04"
+     ],
+     "text_sha256": "59cf3c7f7eac7c231e6610045ca3b9286c06b47fa709ed39da830cd2ffa502c2",
+     "written_page_number": 207
+    },
+    {
+     "image_sha256": "b67202ae410ee3232330c98592d3a148abf08d6317c762898f1949f85a63aa82",
+     "name": "test_4.jpeg",
+     "source_scans": [
+      "Seite0414.JPG",
+      "Seite0415.JPG"
+     ],
+     "source_sha256": [
+      "a2d1c6929d7f824164b9d03a9176c7c2758f430747558bbce750b87274fff822",
+      "5b0f1ab85923be1b67f669270303bd1a1408fe4bc1920bd2db3593bc4dda1e33"
+     ],
+     "text_sha256": "c717421a589673c4fc44be2d8a6b3001eebe31126b1490785cb5a62351f76854",
+     "written_page_number": 208
+    },
+    {
+     "image_sha256": "dd871a96cc053178a09b2a98f66a3870be95af9d94f2f8877e603599df776905",
+     "name": "test_5.jpeg",
+     "source_scans": [
+      "Seite0416.JPG",
+      "Seite0417.JPG"
+     ],
+     "source_sha256": [
+      "5dfcc03bb99a9d6bf8d494e411d32e26e01f1393744114118c45a1c6ddafa52f",
+      "698c4c6cd1c64e591740e16a61053601c7ba793c878087cab4c0e24c152d183f"
+     ],
+     "text_sha256": "b7eaa9631279d3dbacc0c400e5c7c65180cb3f27ed78b7292129dee98bc58f73",
+     "written_page_number": 209
+    },
+    {
+     "image_sha256": "a2d0b78c75cb02d7835873404929400bf6fd86a846d16d5a27c77bad36e64e7c",
+     "name": "test_6.jpeg",
+     "source_scans": [
+      "Seite0418.JPG",
+      "Seite0419.JPG"
+     ],
+     "source_sha256": [
+      "9e943fe270a1666520e9375ff7f5753fabd806863cb6b992e7f2d6c19ab3c07e",
+      "121b9787282aa63331a71f6768155b33e773589170478f179bfd4a9c449bb120"
+     ],
+     "text_sha256": "d1bf158e7f19d15aad9a410ee0138dd04ae530f4ef680b3a796b982b59b44d00",
+     "written_page_number": 210
+    },
+    {
+     "image_sha256": "176e41883c02d17a6ab1cbc7c0a49d16ce90a56147ba2549a9a87abea24fac33",
+     "name": "test_7.jpeg",
+     "source_scans": [
+      "Seite0420.JPG",
+      "Seite0421.JPG"
+     ],
+     "source_sha256": [
+      "7c3278816b4bfa820f1460f0b3b62c37afbf5c0632e068f0d6de7f8f16cea81a",
+      "4d1d39b5927337c41c15678f8652b9b56c7f65f518da6fb470b2ebb65cdcfde4"
+     ],
+     "text_sha256": "5ca7b3b84844b7099a02d4bebb353163a2ee1333a0d914ab92186f3cec91898a",
+     "written_page_number": 211
+    },
+    {
+     "image_sha256": "322e662b7cd20e5b6a3de3e09c16ad8014a884c519bfcd44f693bbc4a37c740a",
+     "name": "test_8.jpeg",
+     "source_scans": [
+      "Seite0422.JPG",
+      "Seite0423.JPG"
+     ],
+     "source_sha256": [
+      "f95ea74161c0e5671ac97362f45b4394476fed9c45c9bb5387ef878e23d36341",
+      "b0c1ca3e195b6cac6fd9fa86b3e1f8bac46b0900d59a2deb9bfb0873ee9ad520"
+     ],
+     "text_sha256": "9be03ac69c26ca1dfe9edb17a595ef1431d1ced870e4cddb497af8a9466cf1d8",
+     "written_page_number": 212
+    },
+    {
+     "image_sha256": "6414270775e0e1aff02fa4fb5cf2b45927af5586570ce1edd7b9f7f3cfe131ed",
+     "name": "test_9.jpeg",
+     "source_scans": [
+      "Seite0424.JPG",
+      "Seite0425.JPG"
+     ],
+     "source_sha256": [
+      "2bc3bf94f6cb6ddf2843003c8672597ae2cd27f060511ed2d4848d820b17cd34",
+      "d866ad7fc8a8189bf8726e703b0c9cae8aec6aee0883963a75d8c70956677d4e"
+     ],
+     "text_sha256": "9bf9c8e6c3c490082dde66da9563beb703d36d2c8baaa1f2aac1881417226cf8",
+     "written_page_number": 213
+    },
+    {
+     "image_sha256": "0ade420f0108752632e3b9d0e69256608ecf8d0511e358ae2c6a9bb36c1e78e5",
+     "name": "test_10.jpeg",
+     "source_scans": [
+      "Seite0426.JPG",
+      "Seite0427.JPG"
+     ],
+     "source_sha256": [
+      "8231fb9a501e100c7b2d5a6611525ab661c6f51498065e63e5945708c08f540a",
+      "5a581d9579c8d04ab08467b1ce374a8594ff3dd2605fd726c57b63acbbb1b074"
+     ],
+     "text_sha256": "2f65f7aa00fa496e925d32a7dd1ec1c40566fceb4c4bdd9e5ad2cf41b9d16910",
+     "written_page_number": 214
+    },
+    {
+     "image_sha256": "6cddbb00abf44a88bd83eedb49fe5f68543c93015e32a0e28f89129ebde19eaa",
+     "name": "test_11.jpeg",
+     "source_scans": [
+      "Seite0428.JPG",
+      "Seite0429.JPG"
+     ],
+     "source_sha256": [
+      "ed3745689d215807c55a663df719804bb16ccb3038211235609b884600597e4e",
+      "d58d060e5ac9c96e63e148d5a6c714650cbb9197062a318d3951299830eddbab"
+     ],
+     "text_sha256": "78fafd1b061656ff7ae799844e942f7c195626f91e38d2edef416a85e11d3dbd",
+     "written_page_number": 215
+    },
+    {
+     "image_sha256": "194360d1d9130c8d4cfb70d203769ea656b4dd5954ddd9084e3e699cdb39081e",
+     "name": "test_12.jpeg",
+     "source_scans": [
+      "Seite0430.JPG",
+      "Seite0431.JPG"
+     ],
+     "source_sha256": [
+      "ee7b9184edca0c7e136d009d0cc7c46ea87e08181790b134ea4d987ace5b9960",
+      "ea4a4ab73ba55cf1b6a580e47c1bb51267365da69112ac7b736107ef097f5ea0"
+     ],
+     "text_sha256": "40fe67449ac9afa4d543f1f8aea91d1d428a862b9ef92d50dca8b00b21ddb418",
+     "written_page_number": 216
+    },
+    {
+     "image_sha256": "38bb9a4423881f3c3593edab9237f072d6d35997f73d42475724b0e42552edc8",
+     "name": "test_13.jpeg",
+     "source_scans": [
+      "Seite0432.JPG",
+      "Seite0433.JPG"
+     ],
+     "source_sha256": [
+      "757a7dde4cd3a7f7beb622ee7972ae4344eb409b046169c5b626418ff4b57f2f",
+      "136c3029783d424f1c380c2f2bbb3075ce56c61c29b29f9d221cc55e3bac8897"
+     ],
+     "text_sha256": "a55f8f550d578b1b5ca8de1791ed27ddaae75fafe3005c0c17764156baf5dcd2",
+     "written_page_number": 217
+    },
+    {
+     "image_sha256": "48ea82ba8f400c2fbf9d308697bb3fb660c465c72132fe0016bbdf95dde5deb4",
+     "name": "test_14.jpeg",
+     "source_scans": [
+      "Seite0434.JPG",
+      "Seite0435.JPG"
+     ],
+     "source_sha256": [
+      "1dddf4f0e2458de70f68cf760363a1571b63e36b7aca404f668fc2fceba165b4",
+      "4dbced8c021f732cfbd47a8b302f13c29543663f9ad4638e66a7e0f11857735b"
+     ],
+     "text_sha256": "8190436c56e6c8ca18955cd00f7d4d776231e1c3a88e857192616912f58ebb4b",
+     "written_page_number": 218
+    },
+    {
+     "image_sha256": "85ac3602fffbe2d29faaa93a4d6908778c6620292ba8d86ca7eb725da0858b00",
+     "name": "test_15.jpeg",
+     "source_scans": [
+      "Seite0436.JPG",
+      "Seite0437.JPG"
+     ],
+     "source_sha256": [
+      "95ca4e596e30d0774209574163f01c8a7ebab9412c6b5c7ecd7f6f5fe67e7edd",
+      "7205af7fcb3521fa1f1290394e409fff87a06fa88b86400a4919cd032738a066"
+     ],
+     "text_sha256": "69e75bb9f236db9f40b3306ee9152953bda983886b0318e1a2b04469e6576f4a",
+     "written_page_number": 219
+    },
+    {
+     "image_sha256": "b43696557f9d7c576dd0aabb345fbba4c8bf8295a045a90d6b917affc6d12469",
+     "name": "test_16.jpeg",
+     "source_scans": [
+      "Seite0438.JPG",
+      "Seite0439.JPG"
+     ],
+     "source_sha256": [
+      "4939b124864dfeed6993c21d546e7e86a29f8587b7b233b3f3ccc5048f314673",
+      "0678abf7e70c6115ac102ea2b9cf752a610a044951b4efbe042a79965575ff6d"
+     ],
+     "text_sha256": "e41348e21fb20581bb2a776e39bfe97da80c63edd8ab54b78c5a0f68ebb93084",
+     "written_page_number": 220
+    },
+    {
+     "image_sha256": "d6a6b2e4d13d06d3bed378e7a1f544235976cdc6bbcd032539ddd1f686037e2c",
+     "name": "test_17.jpeg",
+     "source_scans": [
+      "Seite0440.JPG",
+      "Seite0441.JPG"
+     ],
+     "source_sha256": [
+      "0b40178f9035c8318a1d7e026098c9103168827747915989d7cbe30f7d484725",
+      "913aa393ecfd3b0c1f82f92ca6a96c654ca38cb6292b31de37ee0c40981aceaa"
+     ],
+     "text_sha256": "e4079198c23bf7d57ff781078ef1d237055d8c93c654cecd298e2cf3512da130",
+     "written_page_number": 221
+    },
+    {
+     "image_sha256": "23307d6876b5dd2072e80d89c716e453dee44bda0d128154f9fc51d78233376b",
+     "name": "test_18.jpeg",
+     "source_scans": [
+      "Seite0442.JPG",
+      "Seite0443.JPG"
+     ],
+     "source_sha256": [
+      "fcd711320c0f3065f73f06bc96c71ae6c7bce42c951ce95f5dfc071d720f8aa4",
+      "05b646b104a3db183d21ede78e595ba1779d5d9557c7a95def23dd1b4132e2d0"
+     ],
+     "text_sha256": "1df7b2ddbcc17689770bf100743354c94ca38247cd9cd452375df0d4ae6c793e",
+     "written_page_number": 222
+    },
+    {
+     "image_sha256": "612c3acebfcf499e83719c986515093915575fb88e48ab1356382e11150e60ee",
+     "name": "test_19.jpeg",
+     "source_scans": [
+      "Seite0444.JPG",
+      "Seite0445.JPG"
+     ],
+     "source_sha256": [
+      "a692ce94a407581a3450354ff0a92e7cb6667a499eb6aae3eea083ddaf641660",
+      "35d528e317a06a95dbd637fbbfa323a98ef839af02eeaab05107f3e72de5deaa"
+     ],
+     "text_sha256": "2be3eee1d645081caeb0461dfd1efa487bece8a2fac4e02e972b5500bed90d93",
+     "written_page_number": 223
+    },
+    {
+     "image_sha256": "7148f2b454ffa4e10338772b727ccd009d00054e6b2bcfeefba27d77948ba21b",
+     "name": "test_20.jpeg",
+     "source_scans": [
+      "Seite0446.JPG",
+      "Seite0447.JPG"
+     ],
+     "source_sha256": [
+      "d111447198110e01bee7a4b85e4d25ae31e3eb2db51288dbca500ca17b552369",
+      "11c3ee54677b209b23f3d6f4f57c56e5df0147cec09adee252a066f4727e2266"
+     ],
+     "text_sha256": "5429df550d0efa16165b869c491002adafdce6d42e23c120a6408e830fa0e841",
+     "written_page_number": 224
+    },
+    {
+     "image_sha256": "9eed3ec13b7899ab9c2e8050ab31ed6079dfe15f9a266810d2797efed4bee145",
+     "name": "test_21.jpeg",
+     "source_scans": [
+      "Seite0448.JPG",
+      "Seite0449.JPG"
+     ],
+     "source_sha256": [
+      "1dbd2d405edb741600c05ddfe8447a7696b62cb9b024aa22532462f73392deb4",
+      "9365bb78998fc41d207355aea028c403c5cc731a763c46c209ee2f334ca0b31a"
+     ],
+     "text_sha256": "5292e1d8073c13911de11a9b1aa1514b18c16d7a43680a933def685744b865c3",
+     "written_page_number": 225
+    },
+    {
+     "image_sha256": "b86a753a44a011a659010506b424e7bd2a6b91e203814e8cd4e86195e0ee1f70",
+     "name": "test_22.jpeg",
+     "source_scans": [
+      "Seite0450.JPG",
+      "Seite0451.JPG"
+     ],
+     "source_sha256": [
+      "355a2d78081816b33500e98f9f5964133cd68420b36aa4e406a2f2f5f17ed1b0",
+      "7989615a298b1c1ede13f0c77ebcb7f6e2d674e3518fbbdb53d96f0ddbc64429"
+     ],
+     "text_sha256": "e9e883e28756c74e95c9ff785b5c5df006a5dcc7c8a63c453278cf57d88ff3e8",
+     "written_page_number": 226
+    },
+    {
+     "image_sha256": "33ab30c36ed22c511ebc58e72e4146b674a75e5e55b5bb6842b7fa66f41dde09",
+     "name": "test_23.jpeg",
+     "source_scans": [
+      "Seite0452.JPG",
+      "Seite0453.JPG"
+     ],
+     "source_sha256": [
+      "bc3d4617cb024fc4f70467c72bcc6165e514ea1016636b39a213de0fbd7a4ad3",
+      "f0ac7db099c6a9b1e34077acc1e9616167dba02c7fa4b87bd934206fec6d613b"
+     ],
+     "text_sha256": "041afe01cc149945c45e3c66546dbbfa3095062fcd182c173e339aec7ad28cf7",
+     "written_page_number": 227
+    }
+   ],
+   "unpaired_scans": [
+    "Seite0405.JPG",
+    "Seite0454.JPG"
+   ]
+  },
+  "train": {
+   "n": 169,
+   "samples": [
+    {
+     "image_sha256": "225f80d0019b66c03fe185bef6b3b7c192351d441dfce2b99785163ac0bc1523",
+     "name": "train_0.jpeg",
+     "source_scans": [
+      "Seite0002.JPG",
+      "Seite0003.JPG"
+     ],
+     "source_sha256": [
+      "29bfb526d1c325eceec9cadbe6c0a30fce334f0d75bc6e4f6caa0bd83999bf22",
+      "1f7bd55f7dedc97500ae5396d931ba9c232ae7b6744f488233953e951aebc7f5"
+     ],
+     "text_sha256": "4059f777320a62267577cee6acacd0349462d6d53088b589a619b2f900107c50",
+     "written_page_number": 2
+    },
+    {
+     "image_sha256": "c4ccab308d247cdc9cf0f449164a45d48be14e9425f07b612f0db48713ffeadb",
+     "name": "train_1.jpeg",
+     "source_scans": [
+      "Seite0004.JPG",
+      "Seite0005.JPG"
+     ],
+     "source_sha256": [
+      "d39f490ce627b06cc1ac7c063c2a0db483ee061334ad2e08b9bbadc62ea5206b",
+      "599b5db26eac83afce504d1815a4d7f52ceb2a8a64707eb9d4e53048531a0636"
+     ],
+     "text_sha256": "b48608fdf78a62ac883ac7827dbddb54eff74489c842532f94c4e88874dfe413",
+     "written_page_number": 3
+    },
+    {
+     "image_sha256": "f45997ae08d7d561e3acbf380073e44f6824796a8af66e243615affa0d17c148",
+     "name": "train_2.jpeg",
+     "source_scans": [
+      "Seite0008.JPG",
+      "Seite0009.JPG"
+     ],
+     "source_sha256": [
+      "439d57ebd7b185afd759bddc6d97731813c19fc1c89ac7117f210ce03e6f1c6b",
+      "2815c97fdfb67e7da0206b572f7adfea5596b4ae11cca7e714e4249ef297f827"
+     ],
+     "text_sha256": "8e8ed68961d21930afda9d919e89985de042000be238d6d72e5d64947b73e4db",
+     "written_page_number": 5
+    },
+    {
+     "image_sha256": "c64fea8203b0265b6b2aceaf4a5307cd025ddead923a2ee823b95b42e001c16b",
+     "name": "train_3.jpeg",
+     "source_scans": [
+      "Seite0010.JPG",
+      "Seite0011.JPG"
+     ],
+     "source_sha256": [
+      "e3d4e9574c3d3e626c5a2109516ae3af97287b88364803116a6a4694157a9bde",
+      "f25c2463f18c0e9fb43b6cf5ff9cfa9d95facb689b977e63f3b59b102f8f9bf9"
+     ],
+     "text_sha256": "b4eaf4f701b6e2c224bbd9929bb2e27935ac3c0c394ea7baf0b019841087a10b",
+     "written_page_number": 6
+    },
+    {
+     "image_sha256": "f301a085b0f4ce06c189fcb45a57e78d6370bc1e3862bfca72dd2821111d9aa0",
+     "name": "train_4.jpeg",
+     "source_scans": [
+      "Seite0012.JPG",
+      "Seite0013.JPG"
+     ],
+     "source_sha256": [
+      "a2a14b011ab4ffd598487b4dca4e83a49b063a99d1a5c0de9c806135279c5676",
+      "01d8a43f7040c6de512395d723ecc41b4b473cadad49f18be994d9bcb49ef56c"
+     ],
+     "text_sha256": "abbf8ac65d7174b89967bcffe98ef443ac0ae1f0d3189f2ba626dfd1cb0adabf",
+     "written_page_number": 7
+    },
+    {
+     "image_sha256": "304bd21a81b2019e5b7dec62707f106be9ba5a8527467282251e16ad2fcc8833",
+     "name": "train_5.jpeg",
+     "source_scans": [
+      "Seite0014.JPG",
+      "Seite0015.JPG"
+     ],
+     "source_sha256": [
+      "1c57a35aefbf00aa8925ba956bb2deb52461b0cc8347a2862f7a2a3956c851b6",
+      "c9711b53c3b8e14308c8ce167b1f742ed940a52388d859275ddcccfde4e5e9ea"
+     ],
+     "text_sha256": "9e88367a260bddb1e2d01b507af9668dae6e77c82ab17471d92abbed8549a12b",
+     "written_page_number": 8
+    },
+    {
+     "image_sha256": "b6ae7748cdf651a9c2f3d3617e25c0217c7b1bedd0904becc612e9989c9a5142",
+     "name": "train_6.jpeg",
+     "source_scans": [
+      "Seite0016.JPG",
+      "Seite0017.JPG"
+     ],
+     "source_sha256": [
+      "ec48cefbae9b382fe91874f75ff56b4657bfb9ffc20ff8cdf0cded5e7824d8c3",
+      "6005a6417a891172fe7433d43b5b4c76a396943112be7060646ee493482bc83c"
+     ],
+     "text_sha256": "bc8d74ca9a2e9a6938fdc6b90de2353f06e59e4509010056a2004a9009e07ea1",
+     "written_page_number": 9
+    },
+    {
+     "image_sha256": "4bdc09405ff07bd8a14e953e5fe4a31965d9d17c14f6552828184bdb07197be0",
+     "name": "train_7.jpeg",
+     "source_scans": [
+      "Seite0022.JPG",
+      "Seite0023.JPG"
+     ],
+     "source_sha256": [
+      "2f87d2471fcaebe6be679ea70f37dbe3cc29ccb9ef6dbacbcaa76234e1787995",
+      "98c9ff56df020f72f26ed6470ff81a3203356cdd5de29befb312ec8f17ac3e58"
+     ],
+     "text_sha256": "63a4f8579a5fcbe09221d3b2a4e29ab480f6ae1feba922f928b8752a569e04e1",
+     "written_page_number": 11
+    },
+    {
+     "image_sha256": "8dad0f1429ad97435652ef9139586244da0c800e9ed9b79fb4fda53d526d4171",
+     "name": "train_8.jpeg",
+     "source_scans": [
+      "Seite0024.JPG",
+      "Seite0025.JPG"
+     ],
+     "source_sha256": [
+      "71af7ae32c9dc21dda4eb300657d52de56dc7298b95898dd231dd4784a425ba0",
+      "a75ce0075962a6aaa52a182405a9cdbc53129adde0c5e9a0c9ff208a63db6c7a"
+     ],
+     "text_sha256": "7479fd9901ceb46561db11e1fc6aec74af404044f2db47ea3562e077ecbca0e7",
+     "written_page_number": 12
+    },
+    {
+     "image_sha256": "07ddaff4a9df21a00db41b873f5f144118afa0ab9657946a1275ac657da0a2ad",
+     "name": "train_9.jpeg",
+     "source_scans": [
+      "Seite0026.JPG",
+      "Seite0027.JPG"
+     ],
+     "source_sha256": [
+      "75b736f4beaf2003c2daeac4d8cb2c5b60834452d3c7309b9508a9c87fa82c9f",
+      "551c8f312e09c69c230eef31051d00d38ffd82f02b343c9752bddb488eb52ebf"
+     ],
+     "text_sha256": "b920eb0824afabbe70bc5db40601becd99b7d9c45c0de375a6782221c55ebd23",
+     "written_page_number": 13
+    },
+    {
+     "image_sha256": "9cfe81521cdb05fb3db6721758f7fa4ed892822381d06cafb94bf11a2907ba63",
+     "name": "train_10.jpeg",
+     "source_scans": [
+      "Seite0028.JPG",
+      "Seite0029.JPG"
+     ],
+     "source_sha256": [
+      "60301185b5a6babfffee91a5c5b81656b4fe8d9307ef41557592165e674b206d",
+      "2b099f0339bef21cba23a44ed198ba3f33c733647ed50bcea47b0b7f4d74aaed"
+     ],
+     "text_sha256": "acf435ec28b2388b821d3d7fc259947b2b19e6b620265abd0f441c33e93b4414",
+     "written_page_number": 14
+    },
+    {
+     "image_sha256": "9b0be8ce6710cfaedf9c73f2b0a0433404b52b41c3d6dc259a895558ad703537",
+     "name": "train_11.jpeg",
+     "source_scans": [
+      "Seite0030.JPG",
+      "Seite0031.JPG"
+     ],
+     "source_sha256": [
+      "24dd07a254ed227029dd2bfe7442006467903759549e27386468cbf6608c6606",
+      "5ac0d54c344282e68182eca465ff14f6f77e7047172011f53ed2cb8429d54b60"
+     ],
+     "text_sha256": "6623428857bca434a5ed07989bfb208ef2d032215eccfadc8a7cfc54e66c5810",
+     "written_page_number": 15
+    },
+    {
+     "image_sha256": "aaad3004bc08a9ef3039222680eb8c2e004e56358fa546c0daeff9eb7f93adb8",
+     "name": "train_12.jpeg",
+     "source_scans": [
+      "Seite0032.JPG",
+      "Seite0033.JPG"
+     ],
+     "source_sha256": [
+      "ab09978a1b28e468f6b9c3ce545fb4d27fc397be382864dcb1f5890edfabb214",
+      "2fec213dad04bdfe051b53a44bdb6c08193922f0b83a0daeb07d1e3a5ba95ec1"
+     ],
+     "text_sha256": "28371912e0e273d04642dae6b6435bd68c756d2cedad91d96284e264ecd781e7",
+     "written_page_number": 16
+    },
+    {
+     "image_sha256": "a8b2eaf9884289465e3579e23eabcdd75094e5a71ea97efe1fb8f0a15b654b9d",
+     "name": "train_13.jpeg",
+     "source_scans": [
+      "Seite0034.JPG",
+      "Seite0035.JPG"
+     ],
+     "source_sha256": [
+      "da313a420b17aee5814bb0e051b73ce276cb896250ff1321078c452ad26c72d5",
+      "1607c75aad7cf64be1830de6d812da4050fe212c36a93c3c924368a13d7834dd"
+     ],
+     "text_sha256": "f7e97560ff9e1d2d95702849d6b00f6e823f128ae646b07b29b23781acaf7684",
+     "written_page_number": 17
+    },
+    {
+     "image_sha256": "87a6701ba3dc0ed256e2ead8fff454cf89337c0288b2f8acaf948da775e10b83",
+     "name": "train_14.jpeg",
+     "source_scans": [
+      "Seite0036.JPG",
+      "Seite0037.JPG"
+     ],
+     "source_sha256": [
+      "ec831ddc7d907dda6ef9c9b0f31bae87f890cc236d7ace7ec600e62fa589c6ad",
+      "eb355753ab2b67059d86b5598192afd50d90375ed737940c563c2f0f181c4110"
+     ],
+     "text_sha256": "0531bb474e4f3b741f9748e385fcfcb0db6a57f26d00cd687d7d512b19d09512",
+     "written_page_number": 18
+    },
+    {
+     "image_sha256": "766a6ab5869088ef75f25e4e6b98b27cc75c2398d7de2401154d21d4ef714f8c",
+     "name": "train_15.jpeg",
+     "source_scans": [
+      "Seite0038.JPG",
+      "Seite0039.JPG"
+     ],
+     "source_sha256": [
+      "24781b5cef8092a582d0c9e53be05de5e6c812b9a5d059e90a3e45f6d3ff02cb",
+      "117dcb396a78f577b81f9c604e010bb7d38c633fb6dccc87ae9ad029288b4f0f"
+     ],
+     "text_sha256": "e4424645d76be89512ab37a18a674f63c4a6c7af0d31c9b5a20332924f21d78e",
+     "written_page_number": 19
+    },
+    {
+     "image_sha256": "91a8380394a39582309fea1c2b5cb0f930f6ee4597de8f164cac8135d1839f72",
+     "name": "train_16.jpeg",
+     "source_scans": [
+      "Seite0040.JPG",
+      "Seite0041.JPG"
+     ],
+     "source_sha256": [
+      "34e94e80d4094bee053694788e03b53d027d8a28c3be51a8c255e9c761d73e11",
+      "f4e26dd0d6c92bf320dc4acadb0ba9826555628c5eb7211accc4b344f4b60d4d"
+     ],
+     "text_sha256": "a8c17f576e58b904ddc4c9a2ae10ddab8d2bde6b34c857d8fbacd22b45087a3b",
+     "written_page_number": 20
+    },
+    {
+     "image_sha256": "6c60a15c5ca024eecd763031bc98f3f5dfc8e5abc17b83b6ae6ffd2a78369f17",
+     "name": "train_17.jpeg",
+     "source_scans": [
+      "Seite0042.JPG",
+      "Seite0043.JPG"
+     ],
+     "source_sha256": [
+      "94c7d001faab846906e871e2c593f382fce7718ba8ae02b0733b9c4c86e0bc9b",
+      "9a8a909e3ba0041fca9f3fc0c88322304e6d6988a9475d4dc960d6de5664fbb9"
+     ],
+     "text_sha256": "2b16813095f676bb0e0f4067f34fac02009133b18f1144268b5681d2ab35348b",
+     "written_page_number": 21
+    },
+    {
+     "image_sha256": "0e6c28404d7b72c087f6a28d00b6f4be27d2b9f29174769243a2d760ec16245d",
+     "name": "train_18.jpeg",
+     "source_scans": [
+      "Seite0044.JPG",
+      "Seite0045.JPG"
+     ],
+     "source_sha256": [
+      "06250bdadb73d60833ff00932a1044b80fa193e88bcbb9d8499a33294a6b29a1",
+      "d4a4da4726f062287d173981ddcc9cc58dce893c15029b7e802a68958fcf6da8"
+     ],
+     "text_sha256": "c70f6136c9bfd466a7eb5fe94648e4edced1da5443d5d316108489d056961cb0",
+     "written_page_number": 22
+    },
+    {
+     "image_sha256": "f4c3d23d4c60afa9101025adb1a71d306c88ae4794ef0cbf9e0ebab69ed2cd9c",
+     "name": "train_19.jpeg",
+     "source_scans": [
+      "Seite0046.JPG",
+      "Seite0047.JPG"
+     ],
+     "source_sha256": [
+      "1d7641280a1ca389b1559d6061770d65a97ea2e44e24c9e344513f502e418c59",
+      "bac21b78fdb073fd60f01b084f8edb16a92a8d2a5694e0976ee6a5f3bdeeda66"
+     ],
+     "text_sha256": "9f83d4a83dd9bc7e06dd4e00221028e7d514b2bcbb9ecdfa14cc9da866a76c49",
+     "written_page_number": 23
+    },
+    {
+     "image_sha256": "f4d46d3023126f1a534a9d8e76a38739f3d3f04ca3feddb70cbb2f3eb2da1da0",
+     "name": "train_20.jpeg",
+     "source_scans": [
+      "Seite0048.JPG",
+      "Seite0049.JPG"
+     ],
+     "source_sha256": [
+      "5c745cea6284c6ffe8dd5983928f7c50464b520d971c2b95f5b34fb02beb5bca",
+      "bbaed88409f3828a1d3a649c8be6e12c1f32e6616e4c26e0fc72768ba35c570c"
+     ],
+     "text_sha256": "0469b41563a04e9ac875cabcb7ef443804add0e5b03d07e56f6fdd84578355a9",
+     "written_page_number": 24
+    },
+    {
+     "image_sha256": "36a38d096a4545aa068a5bcfcd62a9c8888048c4b7e130a3e64bc4889c358bd6",
+     "name": "train_21.jpeg",
+     "source_scans": [
+      "Seite0050.JPG",
+      "Seite0051.JPG"
+     ],
+     "source_sha256": [
+      "f7425cba5be3a7d308364f1c6daa1133cad00d95e6360d5b867a87237388130f",
+      "46db5f0a5a5e900ae0cb5e73eb0ee7f9d4c75617a3043958b3940c22d9686e79"
+     ],
+     "text_sha256": "a3d552b0b82f2a1b9420bec8047673fec9757dca07cecfe58bdfdd2bf6101ef8",
+     "written_page_number": 25
+    },
+    {
+     "image_sha256": "ec41d9f689afee1435d1a74f02f4cb904c6f4eecedd913a39c3bb2e131721421",
+     "name": "train_22.jpeg",
+     "source_scans": [
+      "Seite0052.JPG",
+      "Seite0053.JPG"
+     ],
+     "source_sha256": [
+      "faafeaa6c620abda128fb07b7f2fd4a1e5d95685ac50cfda4f46b54f7bf8a407",
+      "7e6e6633148cf3ef934f6779cfef7ce4044963b50dfc83b91cc942207113864d"
+     ],
+     "text_sha256": "1dc5012e859d481acc7267c6b4f96c03662e6ec7e0e08d108ca7037a0de2b577",
+     "written_page_number": 26
+    },
+    {
+     "image_sha256": "8e072d21a46697397ca6d62fa25b239bed9e9bb6a358dd7324b851f1507250fe",
+     "name": "train_23.jpeg",
+     "source_scans": [
+      "Seite0054.JPG",
+      "Seite0055.JPG"
+     ],
+     "source_sha256": [
+      "0f12be270e809b7de46071f3827e2af97c8c3ebb4bb9d47f2b398be1be3f97ae",
+      "ea6707e9f596f56bb141e6d2c2a2144a561f98dcc956c330fe08ceb42c589049"
+     ],
+     "text_sha256": "33c4015e0cb8266320a13d9b69ad1e34cb8ca6d600fc865e8f6092a213c16335",
+     "written_page_number": 27
+    },
+    {
+     "image_sha256": "f8d289d0aaf613bee55bb8d26e91f08baf3cb09ce5972a689b917bbfb30cbcf1",
+     "name": "train_24.jpeg",
+     "source_scans": [
+      "Seite0056.JPG",
+      "Seite0057.JPG"
+     ],
+     "source_sha256": [
+      "9881045832173666bca5a68f7fb18ecb090b4aa9521371cf362e5061b6092da0",
+      "48a5e5e89a163141295d3beb849ead0ba6f913f7a249ed0cc9e1cf50e896cd00"
+     ],
+     "text_sha256": "0794712520824b3fa96b0c360fad3942eeae5089ffc3a832cf59e9780f263f99",
+     "written_page_number": 28
+    },
+    {
+     "image_sha256": "8aa829420b11f52b3eb7cade42265ad22c547f88ddd1fe53f80067da886dca0f",
+     "name": "train_25.jpeg",
+     "source_scans": [
+      "Seite0058.JPG",
+      "Seite0059.JPG"
+     ],
+     "source_sha256": [
+      "c4a2ce0a6cd2aec2ce821ce6b8e2f1970da5edc16b792f1b16cc307e2b0f12a7",
+      "0a2eb247e923db56ed8898241f2225e02841d292ee298394d019e11bd0243367"
+     ],
+     "text_sha256": "f378a930472232405098a580b54c1704e01151cd4425c2802876d745287bf487",
+     "written_page_number": 29
+    },
+    {
+     "image_sha256": "5fd8a6522b45465784c5fa81679eda3013a4ed3bbea2ff62c54dd2609379e147",
+     "name": "train_26.jpeg",
+     "source_scans": [
+      "Seite0060.JPG",
+      "Seite0061.JPG"
+     ],
+     "source_sha256": [
+      "57b7daa67240d82ad418e615d883f92caf73f5adb9a321bdab7e3eeb4322c681",
+      "0253db825617700730c80dbae603365f049c6c1d2b26578c54d064a280a7fde0"
+     ],
+     "text_sha256": "c320c1cb52c375a91ddf4eecce89a0fe85fb979da971060887b41c6700361503",
+     "written_page_number": 30
+    },
+    {
+     "image_sha256": "3731e5489bd837bb766b4e97bc1ff5c32d27675a571d88964f8f7bd9bcbd0868",
+     "name": "train_27.jpeg",
+     "source_scans": [
+      "Seite0062.JPG",
+      "Seite0063.JPG"
+     ],
+     "source_sha256": [
+      "7f523520d1a1b586d035e5623c3527e9b19146e6c36c5eceb6f99a4f01524ae6",
+      "f597979d54e6d9f080319af88ff40a636a074502f3371545ab0614c7a1b952bb"
+     ],
+     "text_sha256": "4b21a9d9d3efb57f8776ef53d8be050a92c8e50bb126808b533d81f14ba8a291",
+     "written_page_number": 31
+    },
+    {
+     "image_sha256": "1fa921dd970cfad8228df5b3c0ff3d209b4d9e45ed7e38c590ce4c4c07982ac3",
+     "name": "train_28.jpeg",
+     "source_scans": [
+      "Seite0064.JPG",
+      "Seite0065.JPG"
+     ],
+     "source_sha256": [
+      "57762c2ba8f59f34f7d0e6a492afd1adfac013ca7a0db832b0a61ea73d4ae8e4",
+      "669f3de5600d8b97c7bf95dfe001420adf109802ce0f38fcebf7bc720cc8ea6c"
+     ],
+     "text_sha256": "bbe486fbd70f9b432798921a032bc21dad5bdb7dfb285f14300d1def8329ac52",
+     "written_page_number": 32
+    },
+    {
+     "image_sha256": "693ee5c35189d0b645eac0a9dd59ccc57a358668e7f24c30050ad42a7ef7ef1a",
+     "name": "train_29.jpeg",
+     "source_scans": [
+      "Seite0066.JPG",
+      "Seite0067.JPG"
+     ],
+     "source_sha256": [
+      "c97c32239504ebe053531863c8517d6a99cc11a8803091d4cfca702dfc1ec039",
+      "55799d764747c996e3a25e3d9780dbe09c3d501a00cdef30c51954d83c24ef2f"
+     ],
+     "text_sha256": "70dcdf00cf65458183e64be78f267286a1d49eb945f5c05abfd100904ff63c6d",
+     "written_page_number": 33
+    },
+    {
+     "image_sha256": "56ddeed59016c00925ffa4a3bdccc2ec690f727ae7fbf402a7d5226db7a147e2",
+     "name": "train_30.jpeg",
+     "source_scans": [
+      "Seite0068.JPG",
+      "Seite0069.JPG"
+     ],
+     "source_sha256": [
+      "687c4b17704fbd0e9fc258b01de1adf224ac93989d642322977eec7b4fede1f7",
+      "37ac96b700a3400787005cab4aa9a648f7e00b6fb5b4b025f30e8389d1694a57"
+     ],
+     "text_sha256": "dd8e3af3e4524bbc8ed8d3b7bce488a739c6a3150364bf303e19019626c21528",
+     "written_page_number": 34
+    },
+    {
+     "image_sha256": "d0ab16e8df5568c711dd02510d84b7558f55a4e7b9d4c8c7e6f16686ccbb8914",
+     "name": "train_31.jpeg",
+     "source_scans": [
+      "Seite0070.JPG",
+      "Seite0071.JPG"
+     ],
+     "source_sha256": [
+      "3ee54e7489e7901dcc535208f3c78abd00395ed3e57c5b0de81f408ef021c8f2",
+      "5d51e92cedd4a80ccff877adf6336b428bcde78aae2bcbb34222850060822469"
+     ],
+     "text_sha256": "696853bafc85de49b4006ee8df627f2259ff206726be67c8f11aa353957b384b",
+     "written_page_number": 35
+    },
+    {
+     "image_sha256": "4172119a54e24f74e22c0f89c072e3bb6340339fff2bc4e3c92a455e8d5c0d43",
+     "name": "train_32.jpeg",
+     "source_scans": [
+      "Seite0072.JPG",
+      "Seite0073.JPG"
+     ],
+     "source_sha256": [
+      "9773e278204467f0239de7137184039672ff8707f609fe4c92a7c44990d01638",
+      "49df049fea940e87ddf63c7841c117a80cefb5e8bb230d3241758a67a1d3bf64"
+     ],
+     "text_sha256": "58d5b8899954f03b65e23a1ea2c5f74627c969321192ddc370029eb545c96238",
+     "written_page_number": 36
+    },
+    {
+     "image_sha256": "aae7cdbbbcd715c0b1fc017285e8e48726d3c60b13a808f6f907f770b3b1a4ca",
+     "name": "train_33.jpeg",
+     "source_scans": [
+      "Seite0074.JPG",
+      "Seite0075.JPG"
+     ],
+     "source_sha256": [
+      "d68dedf08040bda9b226c8401baa40fd69b366eb1100d593c73ed3c2084381f6",
+      "95bc7a3029d474fa71b32d40ede4da358d44a9903a262d99bd037a8f2816e1a6"
+     ],
+     "text_sha256": "3bcd7097d5a1f2f4fdb0ce6edddeefaf2801d0b515a4c583196753b57183e3b9",
+     "written_page_number": 37
+    },
+    {
+     "image_sha256": "e9ca97aec0895aed62e09f704bf6a5a3de0a0942f9bdd3ecb06c0e3f0ba3a26e",
+     "name": "train_34.jpeg",
+     "source_scans": [
+      "Seite0076.JPG",
+      "Seite0077.JPG"
+     ],
+     "source_sha256": [
+      "66661fc11c5f972a9a67a172fb9c6f30756e4f2b278c3ff1927ff48940f4e560",
+      "109ca25a7dbb57dbb84f89d4b94f5bbf8adfc19cef7a4c104c201d34edea25e9"
+     ],
+     "text_sha256": "f24d8fc2ab19348faafd2684bcc7695215872efcca74c6d9b5a8064960e6b1ae",
+     "written_page_number": 38
+    },
+    {
+     "image_sha256": "c69db14640fba603483c49cfb8e2d14b311aa0deaca36da6fcdbf9e6b93a4002",
+     "name": "train_35.jpeg",
+     "source_scans": [
+      "Seite0078.JPG",
+      "Seite0079.JPG"
+     ],
+     "source_sha256": [
+      "29a250e5e11de86ccf040eb42b5a651d0da01972bcb7ef42070d77d080304a98",
+      "582b61caead1da34dea131cc7c1e77153b5dc32c834d77b94f6ca9bc08b36571"
+     ],
+     "text_sha256": "b3170242395c1dc21652e5908a03bd0631e2f2413a80e38b21e011a174ce6874",
+     "written_page_number": 39
+    },
+    {
+     "image_sha256": "eb23caee05c65bff35edf347d35044286cc3c71809614513308dbedf0c156b33",
+     "name": "train_36.jpeg",
+     "source_scans": [
+      "Seite0080.JPG",
+      "Seite0081.JPG"
+     ],
+     "source_sha256": [
+      "c4a102604a250146ea2b90501b847f6d83c8fe2d7183209f35312f3452f8f338",
+      "6efa720222511aa7c45cc6fd8a72281f5c2f7bd66f9b89b4f7d110111d738249"
+     ],
+     "text_sha256": "e842a285aabf5cf72ae2012e3525c9dc6c1ad3127c74d0cf972e9ec89b7b644f",
+     "written_page_number": 40
+    },
+    {
+     "image_sha256": "033e01281d7aefb31cacdf29f1a170a05399c98c817d70b3e07afcc9adafcc6c",
+     "name": "train_37.jpeg",
+     "source_scans": [
+      "Seite0082.JPG",
+      "Seite0083.JPG"
+     ],
+     "source_sha256": [
+      "f6b58d85b569426782902007c9d3047b0fd9486380444506b414663361058f9c",
+      "971e762ee458f34595ad728e6af9f371793c5d0ac5450c40400b236452b3c092"
+     ],
+     "text_sha256": "969cdea03cb5b2ce66e1f370f1a11de3f7e24c1ab776f71d12d851a36649a28c",
+     "written_page_number": 41
+    },
+    {
+     "image_sha256": "99c432d9b32ce1f3a08ba72db1bd6ecf04267f7fc1de745cf5122c28f524323f",
+     "name": "train_38.jpeg",
+     "source_scans": [
+      "Seite0084.JPG",
+      "Seite0085.JPG"
+     ],
+     "source_sha256": [
+      "29822fd47b6e27ef8357c8b57e181feb0b36965799d4932c365e98282ced4ffa",
+      "5cf1066200c9f647ea36f3a76f10d61423cccfff3de2f75f8602e9bf35778e8b"
+     ],
+     "text_sha256": "1142efb6c16cd5a5909d80263d7ab8735ab108f02122b8cd00ffcdf86525fccc",
+     "written_page_number": 42
+    },
+    {
+     "image_sha256": "38ad7e5988b32e6394b2db13bf351fbe2e1fe8d92bbb9e961821748ad85f11a1",
+     "name": "train_39.jpeg",
+     "source_scans": [
+      "Seite0086.JPG",
+      "Seite0087.JPG"
+     ],
+     "source_sha256": [
+      "b434ff2196c5974d5d8ce0b468554a8708fdcf8f4f13bbd8448872697e5bfd4c",
+      "de816176ee32951413f18255b95affcaa3d74b11288328c7405187fdd59ee99d"
+     ],
+     "text_sha256": "675d5a35f9ee3fee5c79703429cf4673f4474f1a09405b76fb6ba382d9970ed2",
+     "written_page_number": 43
+    },
+    {
+     "image_sha256": "f2bd03300f74bb04aed8ec1db5c8207f79906c62c8b57b9a331f093140894d80",
+     "name": "train_40.jpeg",
+     "source_scans": [
+      "Seite0088.JPG",
+      "Seite0089.JPG"
+     ],
+     "source_sha256": [
+      "72f06f9f5bf58b235f4a664bbe23a74f9ea5e7488d1794e9bd78357f70bf903c",
+      "7a733aba0fdf8ef0b8373bdd9e63739297ccf06043784c84b4bc789e692d4c5c"
+     ],
+     "text_sha256": "135801671738fceef5be9a3b072798d56e9dcb92017cb840b0b9476de9d15ede",
+     "written_page_number": 44
+    },
+    {
+     "image_sha256": "961881c1f486ee57a9123c5b0d1ff97a19f272a6a15a3adc05f75f8676b7fdc5",
+     "name": "train_41.jpeg",
+     "source_scans": [
+      "Seite0090.JPG",
+      "Seite0091.JPG"
+     ],
+     "source_sha256": [
+      "51b6fc131c623a72b3ad49b15ed53ee37831be5da00e2fb202c6da20cdc45229",
+      "9ccd222ddf542ad3adcddc31b656d99a04ad31a98bbecbfb8b271544c08ce7dc"
+     ],
+     "text_sha256": "e47970671d4e5bb97278b6bb66af3161cc22e07ac1bd1435597f0a46ac47b53c",
+     "written_page_number": 45
+    },
+    {
+     "image_sha256": "28f66d20261f69f7b5c545affd34e925326205339b27408e8ed1711948045482",
+     "name": "train_42.jpeg",
+     "source_scans": [
+      "Seite0092.JPG",
+      "Seite0093.JPG"
+     ],
+     "source_sha256": [
+      "3c1db5c7cd9d6e3759cb620841e62b286206f9611419ac94ed26236a4793625d",
+      "bb445f554036ef92296e3b24c6611652ada66d784920ae1299cd625bc4914c58"
+     ],
+     "text_sha256": "798697f4a5617a015a59207530d97739e8cf65eced1fccb552d7fd75092586e5",
+     "written_page_number": 46
+    },
+    {
+     "image_sha256": "aa37bca14a9345fa518fea7992ebeb28fec52cbf6ec7d7224f912a418171af1e",
+     "name": "train_43.jpeg",
+     "source_scans": [
+      "Seite0094.JPG",
+      "Seite0095.JPG"
+     ],
+     "source_sha256": [
+      "a19cb7c968684e877702e7152a4628a472dac0ee5da374cb781e0b222f17f57c",
+      "81498da4797052ca7977e0dc2349dff53133025741ffeffeb49a2dd03a269d25"
+     ],
+     "text_sha256": "1de7dde0025f72e8b37300f209e2dc6018ddc50db1df1a707888d87c387ce203",
+     "written_page_number": 47
+    },
+    {
+     "image_sha256": "588107bfe4b2107b0e304e4c6ae98dd4d67a621a6a32ffebe8c8daba9a2a8deb",
+     "name": "train_44.jpeg",
+     "source_scans": [
+      "Seite0096.JPG",
+      "Seite0097.JPG"
+     ],
+     "source_sha256": [
+      "e61cf5c4fa32fa2136526d5e7f074d308cfb1e122ddb1feac78262c001eff667",
+      "f9b03112b1bef077db5d2926ab8529da673d4432b01769627fef34f7778f9154"
+     ],
+     "text_sha256": "170ffec7b9717acccfec5969c37cd3116b42481cf2946f0a38cc4ef718574dfe",
+     "written_page_number": 48
+    },
+    {
+     "image_sha256": "4a2e7a76fbed68add90c44b822b5285fbf6473e8869065d73c02d77d25c5c20a",
+     "name": "train_45.jpeg",
+     "source_scans": [
+      "Seite0098.JPG",
+      "Seite0099.JPG"
+     ],
+     "source_sha256": [
+      "e50569375bf77054e2f25c1aff272a5290bb020337c96669cc34978a64578aa2",
+      "2fa129731703b77b212db5806028c9b1a9f387a68d2489098b633e1b5a482c7e"
+     ],
+     "text_sha256": "955cd88918b98d18def47d8e0e580801cb17fb568463b6490635b2a2d72fe4d8",
+     "written_page_number": 49
+    },
+    {
+     "image_sha256": "4bc5d2c9413f2c287aaf39e7890f720c8f6e632bed25847950f2467426abdca8",
+     "name": "train_46.jpeg",
+     "source_scans": [
+      "Seite0100.JPG",
+      "Seite0101.JPG"
+     ],
+     "source_sha256": [
+      "9315c9442c7fd751036bcc5c66364ff57cc0ee267372d7810eb7cbf3783770bf",
+      "a95d999131465430948697e3336d9272767fd623e5cc5c1af697069023a18870"
+     ],
+     "text_sha256": "2dc6996551600c2d3edc1a63303f9e90ac2d21da23fd10b99f0859d545f7f5d4",
+     "written_page_number": 50
+    },
+    {
+     "image_sha256": "f66eb9a6bbe28a382bb9ce6e3cae513dbbb756af102856108f2f3f4a254309d1",
+     "name": "train_47.jpeg",
+     "source_scans": [
+      "Seite0102.JPG",
+      "Seite0103.JPG"
+     ],
+     "source_sha256": [
+      "c812df78af3c10c6c473d4864e54fa3ddea95ee530c28f2bbf6737757de22ad2",
+      "be72354791faeed7cf855dc827e202913b4123d3a20f8674316fcf4f99f23c83"
+     ],
+     "text_sha256": "78870c237a230b6ce34b901e74438ffda0cd69aeb7890b104b835f09437eb4fe",
+     "written_page_number": 51
+    },
+    {
+     "image_sha256": "eb4ef0cc97f927da6c87a68a892665730d356b56649b0b95bb8e183ec7488c07",
+     "name": "train_48.jpeg",
+     "source_scans": [
+      "Seite0104.JPG",
+      "Seite0105.JPG"
+     ],
+     "source_sha256": [
+      "afb697d27e032c503d920ba050bb90eadf823658a35d627be62b8af875c131be",
+      "f7430010d504e6fe62026c64c7bccbb8739154d12218e897868fefe829a453b0"
+     ],
+     "text_sha256": "ae9fd9a8e17ec1a6db884e61dfd56b8ff176060a18c903c2031937c86bc698fb",
+     "written_page_number": 52
+    },
+    {
+     "image_sha256": "df0cfaa88cd72e6db15f6d9effc1e3a3612e5f290b30c77eadf6daab0c7cb4b6",
+     "name": "train_49.jpeg",
+     "source_scans": [
+      "Seite0106.JPG",
+      "Seite0107.JPG"
+     ],
+     "source_sha256": [
+      "b2251d9d8bf7b82a5df4d4200f35af96732d58c660e6139db70462b2b55ed1cb",
+      "e0690f17000caa1316c4b1fd18773383cc197031d5f4a302ffc0ed5c0d7caa34"
+     ],
+     "text_sha256": "176d4ec7832105ac26c6bae2c3a806690bc180e938e7b72d1dd22298724e3160",
+     "written_page_number": 53
+    },
+    {
+     "image_sha256": "2c7510baaed1eb2f1237febb86123bc593f1efc2beb7a29690ffd3171638b52b",
+     "name": "train_50.jpeg",
+     "source_scans": [
+      "Seite0108.JPG",
+      "Seite0109.JPG"
+     ],
+     "source_sha256": [
+      "d40b002127c7b34a59dae4f45af2c7e7d072ac2f1c9fc29f02721af5e3426b46",
+      "d6bce674ddd2b52396f4324e2a1e0e76f97ec905fa249724054a4a4692a322ce"
+     ],
+     "text_sha256": "8970b1885310b93b65217a08b581f47335b7b6b3d1b4d832ee8a230b28392c3c",
+     "written_page_number": 54
+    },
+    {
+     "image_sha256": "2733c60b49cd90a41bf38931fff5567d98706d2bbd94fdd693c93428adbb2cb4",
+     "name": "train_51.jpeg",
+     "source_scans": [
+      "Seite0110.JPG",
+      "Seite0111.JPG"
+     ],
+     "source_sha256": [
+      "d52ad8624f4445dc70c96565a6627bb6a85f0b150267054d4de2ff79df1650aa",
+      "51c8079ee19f22410d77cca42418c2e416e40883d35d6707709283b6d441fea0"
+     ],
+     "text_sha256": "5075e063e6c8737fe593ead33319e3d313e10a2a51b940133464a7623a1d6634",
+     "written_page_number": 55
+    },
+    {
+     "image_sha256": "2f568276c51065aa7c3e044e9b931953f338595cc3a28ee73673841e00403667",
+     "name": "train_52.jpeg",
+     "source_scans": [
+      "Seite0112.JPG",
+      "Seite0113.JPG"
+     ],
+     "source_sha256": [
+      "8ddf035b9f99d8599a678a8162fd596b091a8e4db71ee9befff6e0dfca8358d9",
+      "bd3cf6f6cd22a0319a29f78b61595445cca4d71ae3fa9317b875c7356b93310d"
+     ],
+     "text_sha256": "a7042788daa8f9bd9ff25c068470f94c7504a86acd8c2b94f606f2e1a72f4391",
+     "written_page_number": 56
+    },
+    {
+     "image_sha256": "4c50d83e84237dad8256f4947a8312cf8e25e4a3f86849876bb9e9f69195e3b1",
+     "name": "train_53.jpeg",
+     "source_scans": [
+      "Seite0114.JPG",
+      "Seite0115.JPG"
+     ],
+     "source_sha256": [
+      "334e6ee12da288460d0198ed2dd87bb9eb62714e55c3b5bbe3bb3a10981f0239",
+      "3b631dacb70b00d72ec8ea9ec5393a42b43b8e1839ce1cb0d1b21565e7493481"
+     ],
+     "text_sha256": "b5ffb7b61442be70292b307947b87a2af540812396ffc78bba6adf9ce8553d23",
+     "written_page_number": 57
+    },
+    {
+     "image_sha256": "c76e9d00c12ec2be37575a0fa2039f85a2dc11600820a8d53ae9d6e0e416722a",
+     "name": "train_54.jpeg",
+     "source_scans": [
+      "Seite0116.JPG",
+      "Seite0117.JPG"
+     ],
+     "source_sha256": [
+      "33bcecd4bb26291910830326c3faa2ef56ade4f710638256530043d70f573b98",
+      "eca45269b1cb19a504fd8803804fd2b3b718df9f0a24617cc5991bc07e72e494"
+     ],
+     "text_sha256": "1d7a1aeca6bbe0f10d63171c14c8434a1900090d1826c2976afe1187cdf158ec",
+     "written_page_number": 58
+    },
+    {
+     "image_sha256": "c0ba7a4cb911c57796d1607f63058fd6d4c08db69d5a910cb6c1b9fbf60bc2e6",
+     "name": "train_55.jpeg",
+     "source_scans": [
+      "Seite0118.JPG",
+      "Seite0119.JPG"
+     ],
+     "source_sha256": [
+      "dad948bd15e1fc90dcd2ec5a91dc75834aef5e4bb9c0f886cd10d29a37f05ea4",
+      "380f16ac66b8c6bbae4923375c99f77d693408f145af287f1e2244fa8ab0cf63"
+     ],
+     "text_sha256": "e991042f6e0a3d8c388d65805539d125f66e942b2f9c5e275c2c93feda1fea9b",
+     "written_page_number": 59
+    },
+    {
+     "image_sha256": "22e6a6cfdf8a4d63082339cf01927a4bf740fe941f69e5e8d8b7f310749dd5f4",
+     "name": "train_56.jpeg",
+     "source_scans": [
+      "Seite0120.JPG",
+      "Seite0121.JPG"
+     ],
+     "source_sha256": [
+      "ee1f69efeda11293e370fcda9169fb101ce51dc40587dc544f1729b9e2aa587b",
+      "162159c6ed2f5dd39e0ed4aae503b05260f4b566755239d69a3d58a112f8ee8b"
+     ],
+     "text_sha256": "c2ac10b21031780c1d2fbae12ebc451d4656006173fa6030f7d86c05d778bb59",
+     "written_page_number": 60
+    },
+    {
+     "image_sha256": "03b1c978ff949ecf8a1752c37d2281839278db5eb6f97d5b8ba27ca2698a8d7f",
+     "name": "train_57.jpeg",
+     "source_scans": [
+      "Seite0122.JPG",
+      "Seite0123.JPG"
+     ],
+     "source_sha256": [
+      "3ecc76124094ef6be8cf537474ec47f640a284a4a2a975e8c83f4f46a5603adb",
+      "ecdbb14158cd096d45c61652402d76c7a6ebedf3170dd2e6d2f567b7df5a4977"
+     ],
+     "text_sha256": "a175ce67fc9eb51b2c29bd2b4ea2c97ac23e0dd07180e6028400b86056561bb2",
+     "written_page_number": 61
+    },
+    {
+     "image_sha256": "970d6de6d481444b9733ff1dadfd250afb747e6769c807830d9be3c88d306401",
+     "name": "train_58.jpeg",
+     "source_scans": [
+      "Seite0124.JPG",
+      "Seite0125.JPG"
+     ],
+     "source_sha256": [
+      "6bf9a8261f6cdd9a7d33e46a761a2108d6b842d4ba87cefbf09642c6af465710",
+      "892ac517ff1032876c108a766c2aab51e713e913c7356cdc9141c4491bc8ae92"
+     ],
+     "text_sha256": "6aecac6616783d45235682b9a8af617dd07030df23c2c370f1fc8cb5261b1ba2",
+     "written_page_number": 62
+    },
+    {
+     "image_sha256": "c6cc4f514f3ce74386dc9ba61dfbf12d5dbfde0c60910e953296edee67981fbf",
+     "name": "train_59.jpeg",
+     "source_scans": [
+      "Seite0126.JPG",
+      "Seite0127.JPG"
+     ],
+     "source_sha256": [
+      "726f953ac754d2f3081868fde31387e532d1c812816da7930f73d7fdbae461bb",
+      "89d24dc80e2a7f978d376824aea9cf4f9badeab3d1ad24ee850eaced6e3ab871"
+     ],
+     "text_sha256": "da52d5d47e83c8521f7fb151f146f16bd5ad8cb8224369165c0baeda5c7dcfcd",
+     "written_page_number": 63
+    },
+    {
+     "image_sha256": "f33cb619d9ffafc7f70557323e3a16232e988e4b4c3a9d9d5c4fbb933b29316d",
+     "name": "train_60.jpeg",
+     "source_scans": [
+      "Seite0128.JPG",
+      "Seite0129.JPG"
+     ],
+     "source_sha256": [
+      "3f5ac3a29208c639a97813f285a6c18d33c7e228d223db725677de73c634db38",
+      "e98abce4184becf0af665f02638eaec5a895811d350996dff438e409ee63c10d"
+     ],
+     "text_sha256": "2ce4c61d269ef83370e6bb808a81fb220c4be808d8c87d1f515f381de4c52c90",
+     "written_page_number": 64
+    },
+    {
+     "image_sha256": "c52cf398b92aa97d4acb8229b7af56ac96b6576ef8189ca531ed0ec4f89265e3",
+     "name": "train_61.jpeg",
+     "source_scans": [
+      "Seite0130.JPG",
+      "Seite0131.JPG"
+     ],
+     "source_sha256": [
+      "6cd5e3dc8bcaa7ccb5b1caae9241d30ac5de89b2422fe937c7d042f0f5317f00",
+      "8475daa87cf5f3f806fc32bc9df088024e3e4e25338461bab9381054316e7e9b"
+     ],
+     "text_sha256": "430b99ca85d70d04ff731b21a57d576efa655b8566987ae3bf8fb2f539745dac",
+     "written_page_number": 65
+    },
+    {
+     "image_sha256": "669a481c0e85441471de60b3aec45a818fe59c0c9869c1b20e0d538604f05e70",
+     "name": "train_62.jpeg",
+     "source_scans": [
+      "Seite0132.JPG",
+      "Seite0133.JPG"
+     ],
+     "source_sha256": [
+      "1c1d261009ca5d1571a594d0dbf7076c9da230d7db5158deda3e472bca437464",
+      "bc7eff04e8c9511358c212a7f23cefb7b1a3cf84e05ca27be93125b23b69aafa"
+     ],
+     "text_sha256": "cafcc0b56a98fc7ac19ddb0f71a4f6e93759e4037bf0e6efe8e51da308a775ed",
+     "written_page_number": 66
+    },
+    {
+     "image_sha256": "b85783b7328721f3c14d9797aeac4d1dee900aaf9b5aaad3b2348c82fa590557",
+     "name": "train_63.jpeg",
+     "source_scans": [
+      "Seite0134.JPG",
+      "Seite0135.JPG"
+     ],
+     "source_sha256": [
+      "755389e5ffcff2b14e004ffec4f4dc71af305e44755623dcd5a68ce9cf6d2e65",
+      "66b821dae04860c2e3a3d76f1ec99918a27cbf6c606b1db95b06be056c778b0d"
+     ],
+     "text_sha256": "650b58345c9c0d8bebf733a5b26e47eaa3348a9b41852c802ffab6dad79bdb4c",
+     "written_page_number": 67
+    },
+    {
+     "image_sha256": "c16bfcd696f4076c5446c9cf4983ebec6d07b7bae70b93357e1be69590beff87",
+     "name": "train_64.jpeg",
+     "source_scans": [
+      "Seite0136.JPG",
+      "Seite0137.JPG"
+     ],
+     "source_sha256": [
+      "ced702d3f5ba3fddc8a5fcae5b66242ddda90d986814ebc4aba203c985154deb",
+      "be04fc57d2203991e104a17b3e8375b075e3dd529472140b60dfda4c19b3a060"
+     ],
+     "text_sha256": "9419950f012e1ab8b7d72113ee9c035494832cf2805e63acd738e84634bc84e2",
+     "written_page_number": 68
+    },
+    {
+     "image_sha256": "5af683412199ff862edaf843a5deefce5c36c59fb1ef6b975b22d7679192d33d",
+     "name": "train_65.jpeg",
+     "source_scans": [
+      "Seite0138.JPG",
+      "Seite0139.JPG"
+     ],
+     "source_sha256": [
+      "ca3d4f5c01ff3c07e34b6e7aa7a60a27d74741dfd28b7db312e9838ea8b314cd",
+      "92b8cf3391673ecf8376b5c5267c18b302578ef7c40b59a28c26be6ec07ba11e"
+     ],
+     "text_sha256": "b8c8650b7fea0c1adc628c975bc903d317ec9d5b9a2df3900f320d145490874c",
+     "written_page_number": 69
+    },
+    {
+     "image_sha256": "d3f827f9ab8627daecf65ccd04685c58b26ea38c29c88222a6f685583aab8eab",
+     "name": "train_66.jpeg",
+     "source_scans": [
+      "Seite0140.JPG",
+      "Seite0141.JPG"
+     ],
+     "source_sha256": [
+      "561f04a012e109310f2c4bab33509a1a0150eb021a0508a49ea1e8770067a217",
+      "d3e610ed178d3d9f502a0a9b8a609aede982cc6e45a3b3cdb59b505e0b3c9bd4"
+     ],
+     "text_sha256": "ca2615e6a0129b83af9d0b81ee85678b23862d0e2e885fd91c653b08ed2b3223",
+     "written_page_number": 70
+    },
+    {
+     "image_sha256": "a1949990e87fb80a848eeab4e83caba424d51237e201d12895b142e02375a1e3",
+     "name": "train_67.jpeg",
+     "source_scans": [
+      "Seite0142.JPG",
+      "Seite0143.JPG"
+     ],
+     "source_sha256": [
+      "153a642b1dc1d79a2800e8ad082db4f9a474256fed9ef37b3a51376d498acf98",
+      "97a477e811e83bc39ad57b3a1eaf561e9434447ebcec0c095ca655fe5cc45fa9"
+     ],
+     "text_sha256": "3c39a0cf94c5e7d7906f78cfe5f4edb2853c734a4d17644d0acb8b79989fdace",
+     "written_page_number": 71
+    },
+    {
+     "image_sha256": "60683164566a9982e3815da976fc9ac0ee3af66189c20be04f00714bd08532b4",
+     "name": "train_68.jpeg",
+     "source_scans": [
+      "Seite0144.JPG",
+      "Seite0145.JPG"
+     ],
+     "source_sha256": [
+      "0818f91754a304c4411f260ba3f48d40e3b090d9ba82ed5311f37f961bde5dad",
+      "5c7b3534dd47a93e4a54430398cdd1e6a4afc57c966e9be2b6ff46dcde57e5f5"
+     ],
+     "text_sha256": "3f08ea188b44e4bda2f238ac03a838b3beda56d990b63aefcba2eee2d96f2ec6",
+     "written_page_number": 72
+    },
+    {
+     "image_sha256": "b4cc5e1fdb6971a668652f51c79fb9f74d28b8f2d004f70cb1277d7d20fdc8a8",
+     "name": "train_69.jpeg",
+     "source_scans": [
+      "Seite0146.JPG",
+      "Seite0147.JPG"
+     ],
+     "source_sha256": [
+      "bed899812ed5df94888be069d00688917e778c3198a858aab6c33bbc9e73858f",
+      "1539f8b5658427ae11a228259e2f586d2aab76f3bc8d4c451b15f78239bd4015"
+     ],
+     "text_sha256": "0135f0187b744b33a8cce500f0a6f7966f810361d5ca0c9213cfe943994c6176",
+     "written_page_number": 73
+    },
+    {
+     "image_sha256": "475092443bf6d969b87194922f3dcbefece0138f0af77dc8c8ec51be5c2e467b",
+     "name": "train_70.jpeg",
+     "source_scans": [
+      "Seite0148.JPG",
+      "Seite0149.JPG"
+     ],
+     "source_sha256": [
+      "adac8a89f545af7c6e9615823b90853ee0a574442af9978aecd7d70de2ba5ae0",
+      "a772d6c5152ad7a6165245575e9bff990dbb5b4c0ce2b4b439cbc47ab3b7224e"
+     ],
+     "text_sha256": "853e034e41ac9c4832919d70dc1e99554e3f1a868b42c34201bb637d40e3c3a9",
+     "written_page_number": 74
+    },
+    {
+     "image_sha256": "96b18d500e4bad833de5e60f8f72aecb687eae8d7a864ef6303d0af15bbefd98",
+     "name": "train_71.jpeg",
+     "source_scans": [
+      "Seite0150.JPG",
+      "Seite0151.JPG"
+     ],
+     "source_sha256": [
+      "e6ac9638389d84ecf70979cd26d3bf3053f5da6aebe90a51bdefa59a76a8e2db",
+      "70beb7da72aa1ea24d7da1c2d0ad9af3383e4d15dbbdc8ba7647216f63828f42"
+     ],
+     "text_sha256": "151fe289d0b610b1770eab25d4688d77e4dc92d0577f0b7c733a6a4185429a56",
+     "written_page_number": 75
+    },
+    {
+     "image_sha256": "788ef1d91c1733e87a1d136b8a4d11f222e7f4055f9550a1aa777f555d7182e4",
+     "name": "train_72.jpeg",
+     "source_scans": [
+      "Seite0152.JPG",
+      "Seite0153.JPG"
+     ],
+     "source_sha256": [
+      "1ee5064460a8661a2e5933f259b8aac5fce2302007e1b1140948c2ea73c3f945",
+      "13f382f1375fd9fb8006ea0a8705eadaa7669c5f50af61f15fae724f3e716ab0"
+     ],
+     "text_sha256": "0bbe52d41aa5590fee385ff854d0336c398dfafeed0d0dbca28025f63d15463c",
+     "written_page_number": 76
+    },
+    {
+     "image_sha256": "cb85431e6fdcea2cd4f284ab4a618051728ed11c652b6bb6d23fec06bdbf2be8",
+     "name": "train_73.jpeg",
+     "source_scans": [
+      "Seite0154.JPG",
+      "Seite0155.JPG"
+     ],
+     "source_sha256": [
+      "827aa2772c841a923bac85233bc0a16cccc779c0f53eb5d1f403ea5aec99136b",
+      "128961aad394c33c2b44bfda71520bfe0fd8f22d675ed7fcb4daadb922593038"
+     ],
+     "text_sha256": "35d63931c5e0b90197f9db328462083a739f6b8b0f5b3b48a0a24efeaa4d92cd",
+     "written_page_number": 77
+    },
+    {
+     "image_sha256": "a7dbfb8e326248d1c48288bc4cfd4642cec99ff89b5da3a7812e672bc454a4fa",
+     "name": "train_74.jpeg",
+     "source_scans": [
+      "Seite0156.JPG",
+      "Seite0157.JPG"
+     ],
+     "source_sha256": [
+      "6c27ba6481aa695de82cff9068eaadb140f6524a8d52d83a3f6d58fec1b54ee3",
+      "7faf44ab04d944a5a3b6e17649bc6b5033d2a96501dd5212a439bc72d4e0f76a"
+     ],
+     "text_sha256": "1849e362676a4a0f1e8ea64d7781ac817bcfd3a622c5380a0f898bde7f086463",
+     "written_page_number": 78
+    },
+    {
+     "image_sha256": "ed009aa1ba5ef002f202ec80d84218b5c6ceda94c093ab1305f0def285fdb13d",
+     "name": "train_75.jpeg",
+     "source_scans": [
+      "Seite0158.JPG",
+      "Seite0159.JPG"
+     ],
+     "source_sha256": [
+      "be438aff375cbc1969f4c701621aea421af3de7705740e481ade88eeeb22dc0d",
+      "2e03bf7278214128b2bbf3270d31b50a1ce30510e08b6545ed1b88560f34cdf7"
+     ],
+     "text_sha256": "c2e46e6ba5bde1017f9af39651cd13b4fb406f27f2927da0710260d86ee219ee",
+     "written_page_number": 79
+    },
+    {
+     "image_sha256": "6382976c1c020ee99d5c3e9183e8607a575884366c9ff188c3f858af798d9e4f",
+     "name": "train_76.jpeg",
+     "source_scans": [
+      "Seite0160.JPG",
+      "Seite0161.JPG"
+     ],
+     "source_sha256": [
+      "b5c08b5e54674726ee8ff062f0418ae8d71d57766b597e02ae65243f2f85a774",
+      "8bfa8484d4c5cb027563f4eda06df4e80218059725120cf96fe426d69faf860f"
+     ],
+     "text_sha256": "37d7a7ab470df717dfda29d11a5c32edc0d7741060658260af59410463029876",
+     "written_page_number": 80
+    },
+    {
+     "image_sha256": "c2f98d70b007d1b98705475eef62a2056751ca7e711c576723bfd8ba37a31ca9",
+     "name": "train_77.jpeg",
+     "source_scans": [
+      "Seite0162.JPG",
+      "Seite0163.JPG"
+     ],
+     "source_sha256": [
+      "ea2e2de319ebe8f0f7eb0629eb11bed365a5236c0b8aba6626d88b4d3e29d6ed",
+      "72f96eb63b779cea489019103b9e98c976a620d52f5057eb0f9e420113e4ae8c"
+     ],
+     "text_sha256": "66724a4b12e9cf2a3c09a5f171a5e41ae26e649f37464908b380fff7ab0fab64",
+     "written_page_number": 81
+    },
+    {
+     "image_sha256": "9bd5eba7ad0d010ad8cb411349d94abd5f17dbe49f97933f4591214bc58c779f",
+     "name": "train_78.jpeg",
+     "source_scans": [
+      "Seite0164.JPG",
+      "Seite0165.JPG"
+     ],
+     "source_sha256": [
+      "4ed0e5fab19c46dd15e81d6fe95113c95175b8816fca672c90195a9a967ecf56",
+      "1400ec45f9d3e031205f365b2abed5f3af03e6d82090c0bfe9217cacfe04e36b"
+     ],
+     "text_sha256": "7329f6cb9d555d8ec1a33dbdd88cfa31b98342a15731b0f152294cc032eea35a",
+     "written_page_number": 82
+    },
+    {
+     "image_sha256": "32394e6a854a3f445e227727b756aa8d4a7f067d38a8b90be732bcd433d92ea4",
+     "name": "train_79.jpeg",
+     "source_scans": [
+      "Seite0166.JPG",
+      "Seite0167.JPG"
+     ],
+     "source_sha256": [
+      "52a7b0ec5c9fdf7bbca72aaf7bef87fb9ac8c17537a00ecfd60c6bdbd9372e92",
+      "aae363dcbe91f7ad528e88ca14e0bc6f4c44d3674c65a478bec1b455b17c2a86"
+     ],
+     "text_sha256": "c1e4a7ea5109a8bf59714d5df1917e585e8ab2b7b1181900cd4d96aebe8adde5",
+     "written_page_number": 83
+    },
+    {
+     "image_sha256": "e9e926efabbfeb071cbbd9de7df7f1156103387327f5153075695a3d3d714770",
+     "name": "train_80.jpeg",
+     "source_scans": [
+      "Seite0168.JPG",
+      "Seite0169.JPG"
+     ],
+     "source_sha256": [
+      "c9a4c5b994884f7896ab4976711724299208e68587d9201f7048e322ef2f8312",
+      "04586bd2c1596d59979cb6b1c75e96dff97c34e497a115704b0e3787d60dafd7"
+     ],
+     "text_sha256": "fa21f1526f3adf18a1044d1cb1ae1e9b8d6cf53045f2669ecf6859cfbccc66e4",
+     "written_page_number": 84
+    },
+    {
+     "image_sha256": "eb0a995823a2f1e3cfb377d01752072817d7dd47d91a2abd18eb5ad8a93e10a7",
+     "name": "train_81.jpeg",
+     "source_scans": [
+      "Seite0170.JPG",
+      "Seite0171.JPG"
+     ],
+     "source_sha256": [
+      "a4ced0fd1b663ce88cde32a891a2b3df87fb3457d45f7961ffbbe8cf2f2efb07",
+      "dc308038dff189633f62854bc008802d0fe793b08b6b5dedb9d892f466a874e7"
+     ],
+     "text_sha256": "0396235358da749277d1195dbc85abc80c2e16014ce5c224cf9be4485d835928",
+     "written_page_number": 85
+    },
+    {
+     "image_sha256": "8bea7e27554d09b11f6ab8b3fe3da99859bda3ce4b6742aa7530ebd0bdcf2ba7",
+     "name": "train_82.jpeg",
+     "source_scans": [
+      "Seite0172.JPG",
+      "Seite0173.JPG"
+     ],
+     "source_sha256": [
+      "40c53bdef019d5c18919db815059acbb788d60989441e948711e188d4f5b2f7d",
+      "2154545c90b30315b560853f56de31dcd993ff6213b83fb0923444190b00cf56"
+     ],
+     "text_sha256": "a3f35ac85895a7b190a2eed0b36bd796bd3f5b2369eba202d72e52238c6809de",
+     "written_page_number": 86
+    },
+    {
+     "image_sha256": "43f866977b924932c055ceb4a923d20dbfac16bc25825b597ad14ea34dd81036",
+     "name": "train_83.jpeg",
+     "source_scans": [
+      "Seite0174.JPG",
+      "Seite0175.JPG"
+     ],
+     "source_sha256": [
+      "fa6d4d027178aef8c35a9e28cd54ed2ffc7d18834d8e01be465fd17e220d85cb",
+      "13af92fdcc9cabec2ed3dae5c5dacaa1f46abe2ad4a6938393200ed7341c602b"
+     ],
+     "text_sha256": "54d381778ddc0a6bc25e414010c7adff833baf36d9ffa25d007c271c42559336",
+     "written_page_number": 87
+    },
+    {
+     "image_sha256": "eb26cd301af1133a3c475cdfe44389d56a37cd74874b3a033756b6b8323aee96",
+     "name": "train_84.jpeg",
+     "source_scans": [
+      "Seite0176.JPG",
+      "Seite0177.JPG"
+     ],
+     "source_sha256": [
+      "216bf3b9b5595cd7360c90c4cfad5bbe8c546949fb36c0362d01365389102c35",
+      "53c1472bea11793735f5ba78b57c77208345a2fb0c795920e6a816d0a770a33c"
+     ],
+     "text_sha256": "00dbd52e74b7293d7d63540e1303543ba47053d6a2080f6fb7f7deb4f4a77f01",
+     "written_page_number": 88
+    },
+    {
+     "image_sha256": "f646f4a19d0c04e12603f45b6fcedf025513f78dfc712324765499f0ccabe56f",
+     "name": "train_85.jpeg",
+     "source_scans": [
+      "Seite0178.JPG",
+      "Seite0179.JPG"
+     ],
+     "source_sha256": [
+      "bb5fb50b43fdcb0ef76111a60f88f6f1e8afbf1e498ef0efe68de7d28ba92a17",
+      "30ddd7778a5aea7a69120d98d14d5fd9b9ecb78253add2e49bdc7de2afd92d66"
+     ],
+     "text_sha256": "58668ce100e8193308cf907fd5e48b8fdbf9a377faeefe78bdcf000eb0b6a853",
+     "written_page_number": 89
+    },
+    {
+     "image_sha256": "e8192a7cf28fe640c64bc6a180a6f27b11824bfe8b5bf830238d212275581726",
+     "name": "train_86.jpeg",
+     "source_scans": [
+      "Seite0180.JPG",
+      "Seite0181.JPG"
+     ],
+     "source_sha256": [
+      "71046f3dd73cfc1710685e05ccf77fce8583eb545935c627cf80c9648762bea1",
+      "4172a9abf7f4a1deaf1536de1afbf188fc42785bd3de4f80809b621e01fd428a"
+     ],
+     "text_sha256": "513d5a7ec4b8f7117d4bc74b25c826f5cf4ce1106793cc4c155357cff4817069",
+     "written_page_number": 90
+    },
+    {
+     "image_sha256": "ff162895ab9d04716a686329eb2b332a71331805991f603a9c7fe5afc104c1db",
+     "name": "train_87.jpeg",
+     "source_scans": [
+      "Seite0182.JPG",
+      "Seite0183.JPG"
+     ],
+     "source_sha256": [
+      "37289c0fa492eaa30152b00db895e43e27e2545335fa88472a8228e3f6675f4c",
+      "1a4b377bc8811961fab602eddc1b62e3a447f14f02be3818191fddb6b1f46f86"
+     ],
+     "text_sha256": "39f0e1d0c250992f91d4783d9cbc1b5a973507cc9b0ace9f1e3690495d988b36",
+     "written_page_number": 91
+    },
+    {
+     "image_sha256": "28bd481a4e5cdc27576c27856405a83591cfe9e959e886f74751910acc4dbd3b",
+     "name": "train_88.jpeg",
+     "source_scans": [
+      "Seite0184.JPG",
+      "Seite0185.JPG"
+     ],
+     "source_sha256": [
+      "8691e1406e7c96d82b3e9f1fe0e9e331a226c42200deb394458907ad5c715c5c",
+      "f05bbebb99cc651ed5679e1cba47e9bf9b43120fb44963b150f659d1f3be8834"
+     ],
+     "text_sha256": "0af6dcfb6ddbb1200cc9d45b86e48098cd30f8a4c73401e0251418311202c886",
+     "written_page_number": 92
+    },
+    {
+     "image_sha256": "cb954e1f4bf313b497c9a3e42a489eb75542374d53812b0159dbe5fec61d790c",
+     "name": "train_89.jpeg",
+     "source_scans": [
+      "Seite0186.JPG",
+      "Seite0187.JPG"
+     ],
+     "source_sha256": [
+      "46011076718b36d0e471634b950c84a1e07ccf5a48efeb6a039b1161e52136b9",
+      "64f6998e4de26cda8c9af870c40463b4b933369e32c99bbf3d671c79bec9760f"
+     ],
+     "text_sha256": "7aa23a31532d753c5fca12d845b0d8353989085d7b0850500d8c03193e9321f9",
+     "written_page_number": 93
+    },
+    {
+     "image_sha256": "9839df4f6a376a9a21862ceeb744b336ad9008bb7e236e603f2108550abc7750",
+     "name": "train_90.jpeg",
+     "source_scans": [
+      "Seite0188.JPG",
+      "Seite0189.JPG"
+     ],
+     "source_sha256": [
+      "e15f61b556166416a087b100a47dbd94997f6a7dc4d9f64d82b978c19ed0a0c8",
+      "8d0f056fd424beddaaa568968bc3503af1c806e36d69b9d82b8d14e059122a43"
+     ],
+     "text_sha256": "0c423ad3549e357092313106702428f0e510d538d5133e299ed4e0958ccf010e",
+     "written_page_number": 94
+    },
+    {
+     "image_sha256": "3d5102c72f1a64b66c78a43262bb5775ef352eb69fa65831c3bb226d6e4d5ce3",
+     "name": "train_91.jpeg",
+     "source_scans": [
+      "Seite0190.JPG",
+      "Seite0191.JPG"
+     ],
+     "source_sha256": [
+      "e1a3f43114567daf9591fd4f45b495502ff9dd9a0125e8f72f9ddfb5016dbf9c",
+      "17e0d0bc1cf460be92bbdba4efdcb84595db9a155b41b4c2917c120794a7638e"
+     ],
+     "text_sha256": "8126c5e9c5e0c646ee32cbf1f08771e525a99446d52d22028d9f68a6632ca80c",
+     "written_page_number": 95
+    },
+    {
+     "image_sha256": "06047430a368031854005898ce8595f9195ca45c33578e4818c6b916aa91f105",
+     "name": "train_92.jpeg",
+     "source_scans": [
+      "Seite0192.JPG",
+      "Seite0193.JPG"
+     ],
+     "source_sha256": [
+      "f039f2b842648c4b7bd318f7a1663ad020ba5396dd3ad7a430cf3b4f6e2ed304",
+      "e50ed644212cad88214d93a60dcf218507a29ab06fb67ace2fdccc237e16ba7e"
+     ],
+     "text_sha256": "bd48c173ffaa3235af3db21122a3e0ea7c0bedf31acf0ffe2287b2d9b2528402",
+     "written_page_number": 96
+    },
+    {
+     "image_sha256": "bf01cc84089513b4c66db06a014e80d4b754a45384398f9ff42b11744b18ee1a",
+     "name": "train_93.jpeg",
+     "source_scans": [
+      "Seite0194.JPG",
+      "Seite0195.JPG"
+     ],
+     "source_sha256": [
+      "cd80dd29f2865bfc63a83fe3b6519372a52b69e9414795fcedcaa1cb9f7d7341",
+      "ace0ad368d5326546dce41b3077ae0eb9bedaa90fa9ffd00344368f19d826d9c"
+     ],
+     "text_sha256": "82b191f7bd8b8d4d693400230aa861572637389b2b83700c4bd701ff1422dca7",
+     "written_page_number": 97
+    },
+    {
+     "image_sha256": "5397f31be2fd514a967e66798fdcb56f83d987727bd969d7837d5b075a183d82",
+     "name": "train_94.jpeg",
+     "source_scans": [
+      "Seite0196.JPG",
+      "Seite0197.JPG"
+     ],
+     "source_sha256": [
+      "7b788781dbe7a21ff202597cd911c755baad51fc08aeb7115e046eb15c91090c",
+      "90df94fc63a32568afc8d8bdb4c9f0b88c6de70b716da73b3a72cb7b101d0487"
+     ],
+     "text_sha256": "3c90501b56a98f9b4350aec11d87b98ccc27e0b3a1955dfa70e79bf8a04b42eb",
+     "written_page_number": 98
+    },
+    {
+     "image_sha256": "49162733f9d227b9d724526f29bccad2e618b0526b35115fa2cac3b672e23bba",
+     "name": "train_95.jpeg",
+     "source_scans": [
+      "Seite0198.JPG",
+      "Seite0199.JPG"
+     ],
+     "source_sha256": [
+      "64ef91f66b2477fe40fa95007a1091d2576dbc08aa00576fed947e535f938993",
+      "1ceca0a57635b855363ffac2f2d1c0c90527abdde986eb7a511112e21fe30c59"
+     ],
+     "text_sha256": "5c10d3e953b5b42241520cd30ba9a162ca88321268a83de0748505ca4f94cd37",
+     "written_page_number": 99
+    },
+    {
+     "image_sha256": "c6e691eb482f0f98bb9a7aec6e9a43c3a28e4a6f148ba581a43c1e3406496851",
+     "name": "train_96.jpeg",
+     "source_scans": [
+      "Seite0200.JPG",
+      "Seite0201.JPG"
+     ],
+     "source_sha256": [
+      "ba2db240d2b7553d926a8d0a8252e9c39ef00912b1700cd9010839fdabdf12c1",
+      "7d0794784b80a0bc4b5ae66ae2fc34294163d4723bbe3215e999d7f11f99f443"
+     ],
+     "text_sha256": "47f9ff6e49bf6fdcba148d5570ca7d2b1d89eea629ea12deb897fcb020521155",
+     "written_page_number": 100
+    },
+    {
+     "image_sha256": "f397209741326803269f7ad48d61575a224ea36a2e88284ec70d6b48f24d0516",
+     "name": "train_97.jpeg",
+     "source_scans": [
+      "Seite0202.JPG",
+      "Seite0203.JPG"
+     ],
+     "source_sha256": [
+      "b8b4aec976fb639e8e5dc6932b369de313592110397e0b3b9564be72614c348a",
+      "51975a8335ef8d8bcf9a49f495137473941f9a0a4865b1691a0780f817e9caed"
+     ],
+     "text_sha256": "23a8ac246a07dc7fca4f1a55d771134ba2fac81460c566bab6ed39b49e9c7d4f",
+     "written_page_number": 101
+    },
+    {
+     "image_sha256": "18ef6070c2245953640ef580cd35266d3ba851e0094d9e8f35e19127d19e1d8d",
+     "name": "train_98.jpeg",
+     "source_scans": [
+      "Seite0204.JPG",
+      "Seite0205.JPG"
+     ],
+     "source_sha256": [
+      "0efc90c985aca60491a94d0922f8e4f20758b92007f657e81b920ccb4283ff16",
+      "90e73b9ab85cd035ad1612bcdae6454265899681f99e58bd6939b418a764928c"
+     ],
+     "text_sha256": "e2e643cf00641090715a5531a6d8e198af0bdb53d6090e7a66ed2ab213d378b8",
+     "written_page_number": 102
+    },
+    {
+     "image_sha256": "0eb15042a040a73d43e90a666b2a6c842cdd13221916a8cbe61bf7ed8966375c",
+     "name": "train_99.jpeg",
+     "source_scans": [
+      "Seite0206.JPG",
+      "Seite0207.JPG"
+     ],
+     "source_sha256": [
+      "83a30592265c6ad44e52be3dfcf1eb7367892582e5890922117630d056cce500",
+      "da74dc682bd3f2d90367c41f55a18258ff61e54c53c440f60f9894c552b961db"
+     ],
+     "text_sha256": "2b9bf7d9314f3845ec41e2bdf15aa1ffc4dbd40c999b139e58e4cfacc5219930",
+     "written_page_number": 103
+    },
+    {
+     "image_sha256": "ca87cd17fc3e96466bc1c249d72c6058a57e93eeec14f0baaebc85e721d7bdfa",
+     "name": "train_100.jpeg",
+     "source_scans": [
+      "Seite0208.JPG",
+      "Seite0209.JPG"
+     ],
+     "source_sha256": [
+      "cb28c12dc2dc6691c90c96d8be60d54b46c239fe9b7f23f6d2e5b0659e2dae90",
+      "b797b484339c25051d1878b07967399c9aead979b86736ff212be557eba7000c"
+     ],
+     "text_sha256": "99feac8fe4de66718905f8acbc4a2d99cfbfa88ce9618efa2004f8a849a55f4c",
+     "written_page_number": 104
+    },
+    {
+     "image_sha256": "f584360ca8b1f314fa55ad043f681aa0f98a96d7c0592e860030843e4c0d1ea1",
+     "name": "train_101.jpeg",
+     "source_scans": [
+      "Seite0210.JPG",
+      "Seite0211.JPG"
+     ],
+     "source_sha256": [
+      "b61f58091a7d86e3f662ce97fec53595b51d4faa5770469db7ebfa00f899d912",
+      "427c41fc49013263e1e9a0bee37b1aae0014e080b565d367d6b2d85b914bcf8f"
+     ],
+     "text_sha256": "19d18b2a646631324df18bac9aba14baa23b644eb570c7469442ed05f3cdf882",
+     "written_page_number": 105
+    },
+    {
+     "image_sha256": "6977d9984bb987b2953ecfd08e6e2db0a2f312935c97c43150a867f4d792b7db",
+     "name": "train_102.jpeg",
+     "source_scans": [
+      "Seite0212.JPG",
+      "Seite0213.JPG"
+     ],
+     "source_sha256": [
+      "9892793a08497a3270734bdbd43f7a1431b903859123208bab367bbff110d64d",
+      "f6bbf5f622a223fff1ecc370fba2de6466489039f295318b12a148441ae83709"
+     ],
+     "text_sha256": "6473ff0af38d3f06d5f0532c40006d6478354841b2a74b76d5c65aeab36e0542",
+     "written_page_number": 106
+    },
+    {
+     "image_sha256": "23464a0506938709642c1452a08bc61e5cc88cd143cef3633fe54b5025c11d39",
+     "name": "train_103.jpeg",
+     "source_scans": [
+      "Seite0214.JPG",
+      "Seite0215.JPG"
+     ],
+     "source_sha256": [
+      "18d8c7f010bcf325310a146fb7ce1ae676d9052aaca75b7909f72db7b8607df1",
+      "4bf79039a14993600db8426617a96b930f2be0c0fdac7f4b8b97f17cc4797ae9"
+     ],
+     "text_sha256": "f1fa99a11cef0c05c56c62fe7ceeab4f69d6fd0a2b4dfacbaab84e3533144768",
+     "written_page_number": 107
+    },
+    {
+     "image_sha256": "67695991f21e2f4deef8614f12fed1d3d437ac4663284eb056ddaaad211c2b8f",
+     "name": "train_104.jpeg",
+     "source_scans": [
+      "Seite0216.JPG",
+      "Seite0217.JPG"
+     ],
+     "source_sha256": [
+      "ad93298a010125077475c21e8ab31c6487f347f1c709b2f981ffe6c096aae62d",
+      "17b8c4195d2a629ed078d9d52826029c455dfdf1f453fe949838abdc97e9a626"
+     ],
+     "text_sha256": "986919902021cfc06c4b5bf49aef028a917803001d1b1cf282ad82a0685c592f",
+     "written_page_number": 108
+    },
+    {
+     "image_sha256": "8b3fe5d2eb4d10f6bdf01626bd2f5fec509feb9afd1eac66c37d8643cb62c8aa",
+     "name": "train_105.jpeg",
+     "source_scans": [
+      "Seite0218.JPG",
+      "Seite0219.JPG"
+     ],
+     "source_sha256": [
+      "03d9a1bf3e50e805c46505fe9f4a838c5f65be6ed04cdd593652577cbe78c218",
+      "2a65a97008ab5a55f33f9f8271b84453ca3af3f351312308b647f1901e64a2af"
+     ],
+     "text_sha256": "a8e2e7a6af23703692b102cb0c5fa597c06edbaccc33191be33cea869a625537",
+     "written_page_number": 109
+    },
+    {
+     "image_sha256": "65d609c01572ae1079614ad845250b2c649c1cbd149695b1c1c8fa1d5b78eca0",
+     "name": "train_106.jpeg",
+     "source_scans": [
+      "Seite0220.JPG",
+      "Seite0221.JPG"
+     ],
+     "source_sha256": [
+      "65b034484c6eb17bc08a00fb18ef7994c357e6fd097345335a2641deaef7b474",
+      "f1b6ea527dbe694917ab9323a71d580ddec6a5df0d75d8d5231eb3fb2f015574"
+     ],
+     "text_sha256": "813b817b48a54f44583d10e223da40335922a3d47bf3a90ebe1c9cb7aeb09ff1",
+     "written_page_number": 110
+    },
+    {
+     "image_sha256": "150fe4a0b3f0c968485e10fc66e65f7e3107591c2c10ee641fdd6967860ddbc6",
+     "name": "train_107.jpeg",
+     "source_scans": [
+      "Seite0222.JPG",
+      "Seite0223.JPG"
+     ],
+     "source_sha256": [
+      "3ffeb9b705f6cdf2d343ff43e84a1dcdf6f46223ab0aa69d1e18e9074a31b907",
+      "d0c55b40ee0951081d31e9229a15fc04f970ada28263d0044c755fa96ad14790"
+     ],
+     "text_sha256": "b1c85403e748e2f9384df26623dc0e265e1f39ec4ea2e7ff912aa39c038c4171",
+     "written_page_number": 111
+    },
+    {
+     "image_sha256": "1299a546c368381d7a344c60185dfdc0e35233b491d9f8c3bb92cc146b8a6ffd",
+     "name": "train_108.jpeg",
+     "source_scans": [
+      "Seite0224.JPG",
+      "Seite0225.JPG"
+     ],
+     "source_sha256": [
+      "e3e987f72f28477a14e538ccaaff49692fda46b212e80a0ecd1851de8e7f16ac",
+      "269121db566ab8590b69164196c9ee8ac0d52470524a7695e77f3d488c564eba"
+     ],
+     "text_sha256": "722acc4e3c9302022d8c31d1bf6b07652237f5f56c573b0e803516af64d709f4",
+     "written_page_number": 112
+    },
+    {
+     "image_sha256": "683dc749d2e8a38b159bdd4dc9e25e7a2d6936582ccfa15919752c65cb07e84b",
+     "name": "train_109.jpeg",
+     "source_scans": [
+      "Seite0228.JPG",
+      "Seite0229.JPG"
+     ],
+     "source_sha256": [
+      "dcc1d47705c7ea9441f2ac3f28b6a25c61556b2ffd3c3be787024f52c5f92db1",
+      "df6ec5ccb0a0289071b818bb244caab7055312d731792c92ebc5269b5f492f59"
+     ],
+     "text_sha256": "c120a60e01edb26ea5612b66162c242f3abf2fd559efd2af777f828fa721b3fc",
+     "written_page_number": 114
+    },
+    {
+     "image_sha256": "f2754e99e4d61c8a6a3361b9b081f6eee43c43bb0eae6f6b4f7502b143b8019a",
+     "name": "train_110.jpeg",
+     "source_scans": [
+      "Seite0232.JPG",
+      "Seite0233.JPG"
+     ],
+     "source_sha256": [
+      "e58ece4ce6ed65608c2c45cd605e724e2f5d68a166cbead10c1abf4f4d14bfa4",
+      "2589181290671624c2bb936fbc016dada492fac665370d6159b08a600b239248"
+     ],
+     "text_sha256": "bcd3467190ee99c752a5fb5c19b0492b164f0b450cc4eb4cda9e8c5c147b0874",
+     "written_page_number": 116
+    },
+    {
+     "image_sha256": "afd07776dcc5689ce98f7328e2318ff890f748cfff29ce98ecdee745ce916f85",
+     "name": "train_111.jpeg",
+     "source_scans": [
+      "Seite0234.JPG",
+      "Seite0235.JPG"
+     ],
+     "source_sha256": [
+      "9e608563f70a1834f8e1d716eeb4c81aa9366a7203eb7d47659b6a563ea7de96",
+      "d285dd0048d10f5ca8334d098f547abd99d45380b5d32cac68768ef706d3c5d2"
+     ],
+     "text_sha256": "67f25dd50f480b4d72adb8ea9515855e66fadb88c5a4de7dcdd3bdf6f142e889",
+     "written_page_number": 117
+    },
+    {
+     "image_sha256": "2bddd6fd468781309b085eebc915e388bf470073829abec5af4502fa011d3fee",
+     "name": "train_112.jpeg",
+     "source_scans": [
+      "Seite0236.JPG",
+      "Seite0237.JPG"
+     ],
+     "source_sha256": [
+      "51781aaf6cf92406a73104cde45129543d1b86174c9f66a9cf3ac9d8084bf26c",
+      "dc333306e304235f8627194135a2f5d73f621c49e78146163dd59e0d72c48919"
+     ],
+     "text_sha256": "3946931b221a60fc743d6b641e8adc32faae7433f23fb58847d13fda9f83d231",
+     "written_page_number": 118
+    },
+    {
+     "image_sha256": "f2c15c0d1d7523566bc92fe6918b6490b2537cc9eba52c047a03a515048b20b7",
+     "name": "train_113.jpeg",
+     "source_scans": [
+      "Seite0238.JPG",
+      "Seite0239.JPG"
+     ],
+     "source_sha256": [
+      "679da024b67633a8ad2350dedd9262648202bc27dca917ecd7f7acaca3fa2051",
+      "2a3738cb99ae90b7aea563357449e211fb7097579cb6064a7c5833ce13cdc71b"
+     ],
+     "text_sha256": "a42f4c4359e4e1dbfd5c4b1733b173c2df7052a77c096b8cf878b050ea32a430",
+     "written_page_number": 119
+    },
+    {
+     "image_sha256": "dd8c449dc411ba0ef0f4aa8b95143b38abe54419ae0afde4a001794e7ee31f3e",
+     "name": "train_114.jpeg",
+     "source_scans": [
+      "Seite0240.JPG",
+      "Seite0241.JPG"
+     ],
+     "source_sha256": [
+      "8670b789a546c75790b8348156c830ec6f7a311d8110eb3ee7c6e0a3d070deda",
+      "0569ae62a749f01892ff5e1cd6433f5e36b6809fe267e4ca9d27d5e0f3620f2b"
+     ],
+     "text_sha256": "4e4989185624429d0dd586d02928b63767bdd9380745d9f492553cf40ff17d9f",
+     "written_page_number": 120
+    },
+    {
+     "image_sha256": "113f2f0e520b946ca2bd56cd075df3ffabe9726b3c21614153189ac308eb9818",
+     "name": "train_115.jpeg",
+     "source_scans": [
+      "Seite0242.JPG",
+      "Seite0243.JPG"
+     ],
+     "source_sha256": [
+      "06d1fcd531aa2fbd77a5c8d1a43df261d0f0ec2a4a56a4b399e720a8fa955305",
+      "729d87e6cee900b9c4ac35cdf017143408f0e8d6ff7fda0a4ae9f28e0829861a"
+     ],
+     "text_sha256": "666b2fc1696f570b9fcfeff97d4f4c07ba223f95ff6f701d8a6602fd84363a8d",
+     "written_page_number": 121
+    },
+    {
+     "image_sha256": "e7e5b881c685cc75fa32c0cd0c46c2432cbaf78559e58557ac01a6d758d46ed3",
+     "name": "train_116.jpeg",
+     "source_scans": [
+      "Seite0244.JPG",
+      "Seite0245.JPG"
+     ],
+     "source_sha256": [
+      "76c17ca008fdfa6d0879b35f0847bdcb81d29ec68d6a13d21a140705394f7524",
+      "fb7708cf6cab987cd03a4e9e49fbb11207fb004f0d2c578d87133d3c54c87ecf"
+     ],
+     "text_sha256": "9cddf8d2d0153b4ca0bfa8888c1313d74e1e17b07075e4991572e5a6c86d7dbf",
+     "written_page_number": 122
+    },
+    {
+     "image_sha256": "da9f59869f736023c71f9c08710675782d2c64a1cf352cd23ef9bfb3819932ee",
+     "name": "train_117.jpeg",
+     "source_scans": [
+      "Seite0246.JPG",
+      "Seite0247.JPG"
+     ],
+     "source_sha256": [
+      "05f749d8c1f6e6e137c18e5bf3471bcfb6f4370dc17a9bd0816f4a9467f330c6",
+      "52752e21df639e8181d5736fffd8eb7789eb477fb01f9c1ddd044620a9c3b7de"
+     ],
+     "text_sha256": "f5cd13df54a056a21d254c9eac25e11f71b610ade784c89e5cc3dbe779446510",
+     "written_page_number": 123
+    },
+    {
+     "image_sha256": "e746dbae851c289e6233f87998fd064fd85b759fd2a325d105c9b09bf3c8004d",
+     "name": "train_118.jpeg",
+     "source_scans": [
+      "Seite0248.JPG",
+      "Seite0249.JPG"
+     ],
+     "source_sha256": [
+      "6733bbab5f2b4c980d4e2b47dc84ff905b95b61942cacaf1fabb2a7a3dd52ec8",
+      "cf9b9b6b864af7584d5e46a068916112ee67503d2af2b15d0c4090c3dcc88314"
+     ],
+     "text_sha256": "4cab2e84726f9e2254b83b72c907f7e427634f42310bf4f08d528f0f48a77c63",
+     "written_page_number": 124
+    },
+    {
+     "image_sha256": "1eb18c86fa33567ce0613b16e36001327fc5148dec5a2d0a738946dfeda4e339",
+     "name": "train_119.jpeg",
+     "source_scans": [
+      "Seite0250.JPG",
+      "Seite0251.JPG"
+     ],
+     "source_sha256": [
+      "cdaa9e222525e4d14eae09f672ec0f6d5721622fe639210657d75b0643681efa",
+      "2bf7136e3d694dfffec0e399336382b531557e846017740a1847a99ae77860ac"
+     ],
+     "text_sha256": "26a69f86b0cb33a2868e894444a21127df84fbd34344ac724d6ffecc4b86f183",
+     "written_page_number": 125
+    },
+    {
+     "image_sha256": "5cfc37294c4939dcabd76d98706e5e7f991ccf0b10f12235d53e859a827ae28f",
+     "name": "train_120.jpeg",
+     "source_scans": [
+      "Seite0252.JPG",
+      "Seite0253.JPG"
+     ],
+     "source_sha256": [
+      "8ff760d984f06e53d1518674c29af2c33ac17bab27b6d27c76019cd5d44fe858",
+      "9a4dac551bf7327239c65cbd2c26e21b86ef5aa0449fb56b60ed649568ddb48c"
+     ],
+     "text_sha256": "cdde042dd2d088450e4c34f45b1c4dbf2de259bdf6458a2c5fd1e91a29cad3f0",
+     "written_page_number": 126
+    },
+    {
+     "image_sha256": "61f8046b6d1933935bd9865c66212ef05005039846410383ec2d20056dc09141",
+     "name": "train_121.jpeg",
+     "source_scans": [
+      "Seite0254.JPG",
+      "Seite0255.JPG"
+     ],
+     "source_sha256": [
+      "29eeef38ffa425b4cd4bb0b4f8a850449e1d5484411f227579b3ee5de0f67210",
+      "cd4a99621d8483d2cf45272afe7713d7eacb9f119270e7e89acc9a7f983c2250"
+     ],
+     "text_sha256": "f734c9942f977a4d4f298ae7c34fbd52bd9ea89713bbfda14b9a832e8c028dec",
+     "written_page_number": 127
+    },
+    {
+     "image_sha256": "3a7104d90b88952ab09efadb6d19b24f0de5fd04dc58d8b360798c3a0803e259",
+     "name": "train_122.jpeg",
+     "source_scans": [
+      "Seite0256.JPG",
+      "Seite0257.JPG"
+     ],
+     "source_sha256": [
+      "4c67bc8d77e5566e7a6d0e11704d864d10edd7a07099144c699079b91cf447e9",
+      "179ca28894900f0faadafad04a50d7e16064582afa053df68e3c8192712ac48b"
+     ],
+     "text_sha256": "77a70fa140a54906a6a9f2d1fb301e04c586b6c645f8764c3d96f5a995028c09",
+     "written_page_number": 128
+    },
+    {
+     "image_sha256": "41e7fa2c618eeae7a286ac4fd41543440c1b3a732bf3f1d880d9481795975afe",
+     "name": "train_123.jpeg",
+     "source_scans": [
+      "Seite0258.JPG",
+      "Seite0259.JPG"
+     ],
+     "source_sha256": [
+      "d082a5a2ae2a63772d60fb836b0dcf41ebbc923551588263f97232c1bec14ebc",
+      "695c5431b5401806b3b6cc9bfc4ea9111277d0ad191510ff8665e703909958ec"
+     ],
+     "text_sha256": "9f5a6e4078717aaf3a936d412968e798e7661f2dcc7f321683e9320696b73605",
+     "written_page_number": 129
+    },
+    {
+     "image_sha256": "3b9277827f86ba98bea57c3df9112f2c0f032ac035af6c335013455cd9bcfe23",
+     "name": "train_124.jpeg",
+     "source_scans": [
+      "Seite0260.JPG",
+      "Seite0261.JPG"
+     ],
+     "source_sha256": [
+      "639d1dc59259cddd5ba7ff583d9a0bc45ba9284263192e4822c0a1ad55239f46",
+      "3eca2231989d6fa691973f6162276b8910395685f1664183aa73e9e8376b4a81"
+     ],
+     "text_sha256": "e3a9ff12b7c28f86a05b8e152626bb93247f84b24c711df01bb9e71b6fa9f068",
+     "written_page_number": 130
+    },
+    {
+     "image_sha256": "36571746472f6163964cf9239bcfcc962d6831c059d0b490b38f068f0915ac85",
+     "name": "train_125.jpeg",
+     "source_scans": [
+      "Seite0262.JPG",
+      "Seite0263.JPG"
+     ],
+     "source_sha256": [
+      "7310b476489fb7a98b7d316e63a76bf080185c585717a94bb023adfacc91a99b",
+      "2c216b0ff423538f519006e991d4dcf6500f3e812217bf8ebf995de1a226291c"
+     ],
+     "text_sha256": "4bdad43ad141fece7b58a951ad78aa4a60b073b1a480970e3fc793ad601bd345",
+     "written_page_number": 131
+    },
+    {
+     "image_sha256": "dd382f6d33082d5105b2f55f307fddc88d89022b9bf24184b8b27ca1928df848",
+     "name": "train_126.jpeg",
+     "source_scans": [
+      "Seite0264.JPG",
+      "Seite0265.JPG"
+     ],
+     "source_sha256": [
+      "b9a73c7b95f75dee42c256e0a6954819c1133c45fa366c41d33808fea360ee56",
+      "daaff1530860adf77e1be2ac6effa88557ab2ae24cb0a75a2cf56f358eb285cb"
+     ],
+     "text_sha256": "b872adf7c5e6e2166538a15579e6e344c9066265f55e5205a4e3058f49baa317",
+     "written_page_number": 132
+    },
+    {
+     "image_sha256": "7deee42651508a2b31ffa595914fbbcf194740b9857363b0f79a9fbacbf65b11",
+     "name": "train_127.jpeg",
+     "source_scans": [
+      "Seite0266.JPG",
+      "Seite0267.JPG"
+     ],
+     "source_sha256": [
+      "a7acc8f4c5d81e4db593c0dd62e39ed6a2f265125325e2d6c8bcc4299d8a0283",
+      "f74f99adab9c7d55c4b35d441d03f42636d2f0480f8162d83051a977dd0f3352"
+     ],
+     "text_sha256": "1a0dcb6155169c3698de4605282049eaef9e0906b4c9c1f2d3cc4050460bed92",
+     "written_page_number": 133
+    },
+    {
+     "image_sha256": "4ee2fe5a4cacbb66090f31fca181389c7428e231224bc804cb46badf6be703af",
+     "name": "train_128.jpeg",
+     "source_scans": [
+      "Seite0268.JPG",
+      "Seite0269.JPG"
+     ],
+     "source_sha256": [
+      "96570ce59dc3ab942546d21e0d23e453625756a375d88fd48abfe784ee2c94c3",
+      "a8cb94c42e1aa8a48052a37c2ae0669d5c5faa4b94063a740f140bcbbea5e25e"
+     ],
+     "text_sha256": "fdf01d591dab187f3447ffe4430457bc7ab0ee3b85273bf70f13af84bce88d05",
+     "written_page_number": 134
+    },
+    {
+     "image_sha256": "182780656ed3898f0b09479f8cd5d560d106f684d94282a47db58d48d6c9d447",
+     "name": "train_129.jpeg",
+     "source_scans": [
+      "Seite0270.JPG",
+      "Seite0271.JPG"
+     ],
+     "source_sha256": [
+      "ff0b1a277da5dd550a8bd53b1e7ac5083a5d096b9ecad2c9f1711739f2ab4c35",
+      "8a596e75b2e76dca3f3451a708a0e378b4a82fd8e0424edeaa535a283aa56970"
+     ],
+     "text_sha256": "a24db7f274f69cbbb540e35251675964d00a33a8bfbaa8612f68a9329d87ee20",
+     "written_page_number": 135
+    },
+    {
+     "image_sha256": "8cb2e28e8a4256535658ea89e4233fb280e465fca660abecf2523e627efe53db",
+     "name": "train_130.jpeg",
+     "source_scans": [
+      "Seite0272.JPG",
+      "Seite0273.JPG"
+     ],
+     "source_sha256": [
+      "b4003f3889b0fdec28a54f83f993e9ac40d3e82eef7e7841d3ffcc69ae74f14b",
+      "cc87f8931f77ef8c9c6be2ba00f601795749b71fcf6d42e564b414c9376be024"
+     ],
+     "text_sha256": "9ff9fd9b158fb1cbca54377d4db2694c1b13dd15e33763861996f0edcf74ff3b",
+     "written_page_number": 136
+    },
+    {
+     "image_sha256": "9585fee962725f24c32d1843637f0220bd35e3ac9e467f3a67b5af387000eb52",
+     "name": "train_131.jpeg",
+     "source_scans": [
+      "Seite0274.JPG",
+      "Seite0275.JPG"
+     ],
+     "source_sha256": [
+      "90947941350553e65d5fb92d1f8f028141b3dbb1d0550af214804b6b0fb6a464",
+      "53feda5ce2f956c22035f17f5c70b92225bb68312cc6a647d8a5de5206ced907"
+     ],
+     "text_sha256": "dc87dc5644241bb27a177604c2cbb78bd64521f3741ca94df4cdf9154b01c6ac",
+     "written_page_number": 137
+    },
+    {
+     "image_sha256": "ae69385bc9d67706b9321c6cb5d148f217808d95302581a7680fcffa4f5859f5",
+     "name": "train_132.jpeg",
+     "source_scans": [
+      "Seite0276.JPG",
+      "Seite0277.JPG"
+     ],
+     "source_sha256": [
+      "ac84d06d4a9a9b964ac75dd4e1e9056b5220438e26533f7d410911ea26f2a4a6",
+      "5b244c14bae2316fe56e471e01f2af7cc03e533cfbca8f63f95f6180c71409e1"
+     ],
+     "text_sha256": "970112dad244510b32865e7c35cf8e2490306972a76a224b72bdfe2b918ff776",
+     "written_page_number": 138
+    },
+    {
+     "image_sha256": "cda8d30d56beffb035cd3da4e8a20f276651bc9158009d346af8e3ad90946158",
+     "name": "train_133.jpeg",
+     "source_scans": [
+      "Seite0278.JPG",
+      "Seite0279.JPG"
+     ],
+     "source_sha256": [
+      "7164bf1f45d0031baf67afc8b21e1e3e487f3595b4de7ca724ea538b834e778a",
+      "0b8e23e0c7c95b94824d28189da977ec8bd6dbd51b6976330621c145c5a57268"
+     ],
+     "text_sha256": "f51a2e4a031dee152db0199155fa8b38f8eed50c28d45c22505f8203ab5e5507",
+     "written_page_number": 139
+    },
+    {
+     "image_sha256": "eb762129bc162a812328fec3fc1bed896d1b769a3071a39249c34935f526bdc6",
+     "name": "train_134.jpeg",
+     "source_scans": [
+      "Seite0280.JPG",
+      "Seite0281.JPG"
+     ],
+     "source_sha256": [
+      "996b190e3a2b1876ccba31fd2c3025de512020b51d1e97baa9f3bcfe40f52d59",
+      "507b57662df6d82b694d3967efad36bc4256e6cf0b5574f435cb27b8a7c608e8"
+     ],
+     "text_sha256": "7d5658f2500dcf021693a336e8c3254ef585aa173690c1ea686947b1d72523ba",
+     "written_page_number": 140
+    },
+    {
+     "image_sha256": "a4917d77ecb56beb9019f659e990dfc399caa4d4f17f4bf443f45b154a1fcd47",
+     "name": "train_135.jpeg",
+     "source_scans": [
+      "Seite0284.JPG",
+      "Seite0285.JPG"
+     ],
+     "source_sha256": [
+      "9d3eb7d0b8af9a01d96b1d87fd44499b8a7c498a640fc47d31e7c71464ee46ca",
+      "39642c5a4575ca1ec8eb282ae9ccda043c807f51abca6cb23428d6ebbea087d8"
+     ],
+     "text_sha256": "c9fb6046bc6d748d6e307921c0b51680ff6fbce5a4f4d3b95835c227b73c07fc",
+     "written_page_number": 142
+    },
+    {
+     "image_sha256": "7bfc8ee15aa55e6a5725ef93d09a8f75e0b6afdb890d7c7e78a0817414d6bdd5",
+     "name": "train_136.jpeg",
+     "source_scans": [
+      "Seite0286.JPG",
+      "Seite0287.JPG"
+     ],
+     "source_sha256": [
+      "b9e721a6fa7119f284a7552eed74684bc04c6465cf8f03bef5e6c8b390a17baa",
+      "cead4454b265318c8e2b5920e0a9fd7b65730efe0d348e7e32cff71e8fdb752a"
+     ],
+     "text_sha256": "90e0dd8e898fdd15dff410ef0cacb2918f6b473a10a14e15d815ea9694858fe7",
+     "written_page_number": 143
+    },
+    {
+     "image_sha256": "9a3c61edd8af345f51f0a9e98a5568b594fe90d24ba714f54503d4e7a54a98bb",
+     "name": "train_137.jpeg",
+     "source_scans": [
+      "Seite0288.JPG",
+      "Seite0289.JPG"
+     ],
+     "source_sha256": [
+      "18e4ddaace98b58d0188c99216f00395b50a266ffc9be88dc6a297c605a00932",
+      "449fdd8e3bf63d5b64d3d4ceb6505c0c350a782701e044f5387d32d7fb48358c"
+     ],
+     "text_sha256": "6bcb8ec52f2ca7467128dc30d1ccf600c10e18038c055aa3d90c85e7cbbfbcf0",
+     "written_page_number": 144
+    },
+    {
+     "image_sha256": "edb550a99463d35a1b139ecfb611355700b68aa56dc2af16b17afc282cd27db9",
+     "name": "train_138.jpeg",
+     "source_scans": [
+      "Seite0290.JPG",
+      "Seite0291.JPG"
+     ],
+     "source_sha256": [
+      "61db445b97b95d5b6951cea3c55d79d05b3f0d7f0b850ab62d801c9b927a357f",
+      "131072d009446374059bb4e1d21c57e7c834e5b7ef3587fc29a037503d7f947a"
+     ],
+     "text_sha256": "693f9617dd8f1c297980f1be4f3f66bf4d47b6d12ab772480f943ad91f20abd2",
+     "written_page_number": 145
+    },
+    {
+     "image_sha256": "be2569adc2d2d85b7f4d8ac37a758446668e0926c658e03a5c5f83d2df786d63",
+     "name": "train_139.jpeg",
+     "source_scans": [
+      "Seite0292.JPG",
+      "Seite0293.JPG"
+     ],
+     "source_sha256": [
+      "e0400b244d8ff5a9f5ebb8821cb362e9b358430a0b82e057b0ad139ab31fb10d",
+      "300dd8bdd20b1f28dec936abc3e374595549cc8fc92b6850e94e57e7524c251b"
+     ],
+     "text_sha256": "688154441af8126b1ef54a62a20ca65823f2e923693550a22c1a24c46692f8d8",
+     "written_page_number": 146
+    },
+    {
+     "image_sha256": "cd31780e3800b0ffd5cc616d8467306058190d53be4c0d5d29e666b43c146abe",
+     "name": "train_140.jpeg",
+     "source_scans": [
+      "Seite0294.JPG",
+      "Seite0295.JPG"
+     ],
+     "source_sha256": [
+      "c80901541349f87fd8b9ec334a999dafeaf6d7dcdc77d142be2abd6fba52ff34",
+      "563243232a0c888d4ec770b442a8800f4784e0cc0d5591da6ae25bd7b975753f"
+     ],
+     "text_sha256": "1903faa4b64d782193404570b3a44ff06b69d7fc2ea4138749880b93fbf98f3e",
+     "written_page_number": 147
+    },
+    {
+     "image_sha256": "acbd00f947436909f195bd8e758acce761ef275b4580b9e7c1f6fffd69f9ec9f",
+     "name": "train_141.jpeg",
+     "source_scans": [
+      "Seite0296.JPG",
+      "Seite0297.JPG"
+     ],
+     "source_sha256": [
+      "a99e38b21333eb0c31da5cb304e8a07c22fbabbbc634fa06759bcd7048429ced",
+      "8fdc7491ba24e7293dae90cf7beadcf120cecb1450d33f2118ad12e427485cda"
+     ],
+     "text_sha256": "894038d01d07c935360331d1ae3c3d6cb10a024acffcfca30ce6bb633cd5968c",
+     "written_page_number": 148
+    },
+    {
+     "image_sha256": "54ead544b21418afd62ff9cec29cdd76dedf0403d80f6338089c71aefc91c87d",
+     "name": "train_142.jpeg",
+     "source_scans": [
+      "Seite0298.JPG",
+      "Seite0299.JPG"
+     ],
+     "source_sha256": [
+      "a1e1598c695520a7dea6d92eddec5e81b477c1fb536348724e0a9829d4d02fce",
+      "d189ba2eb8cf0b41e392f2fffd28f8bd18131bcb0831b978d6444a7c70f1575e"
+     ],
+     "text_sha256": "35a9083f8749139ac94aede4a1fdcaaea30df445021b695d142646e93ea5f820",
+     "written_page_number": 149
+    },
+    {
+     "image_sha256": "ea6c1fbd1abfdcae8505e0bd2dba3eef6530e9ef7bf9cf89d9a12eb0f2f070a1",
+     "name": "train_143.jpeg",
+     "source_scans": [
+      "Seite0300.JPG",
+      "Seite0301.JPG"
+     ],
+     "source_sha256": [
+      "1da907ad42d50e4b8c104ba8800b717fe250c1818c6b9313c0127bf3928d6b18",
+      "46ba6cc97d89925bd4a0d38579853d4c35430cbf771b1eb96e37d9f313d6ff9e"
+     ],
+     "text_sha256": "d2c7567b67a56b7ef06383a144e4aa8ec7b68273f802c5c99bfc79a0585735a6",
+     "written_page_number": 150
+    },
+    {
+     "image_sha256": "d15d5c3e2c2ff3af300c419e7906f8b5e4f501ebbd4408417885b92d3db4ed7a",
+     "name": "train_144.jpeg",
+     "source_scans": [
+      "Seite0304.JPG",
+      "Seite0305.JPG"
+     ],
+     "source_sha256": [
+      "5f96d583a93ac19691bbc5c1bbd00a7e4d38e290c6e0c82f071bace2a0f2581f",
+      "cc97293ad61776ab9a899aa8e3b4b57e8cd51993c4836a3253f0db2e97267a4e"
+     ],
+     "text_sha256": "58f189ee49cae534b288cf19814b2fcca4b00fac42b92e6ebc2bb9c5a6a17232",
+     "written_page_number": 152
+    },
+    {
+     "image_sha256": "d012b96b47365ab6ee96ba9ddbe4b0523549aa100d24eaa3089f5af5bd13f971",
+     "name": "train_145.jpeg",
+     "source_scans": [
+      "Seite0306.JPG",
+      "Seite0307.JPG"
+     ],
+     "source_sha256": [
+      "e73dcac3847a3beb7c4bbceb3e2eb27375afd0e31b9db9f05c78f38a8bb5c169",
+      "42e0c9f5dd090ead7d101fab0f503f7014df7e466bd4352f84bd2cb32ab1fe48"
+     ],
+     "text_sha256": "07109293a3b4907fd0929de9c07bec4c073ad72d54c7563fa95cc360c3015dad",
+     "written_page_number": 153
+    },
+    {
+     "image_sha256": "5aef7670ea715aa5d478df982967b0bf454811f58f1db699f811540f20c49626",
+     "name": "train_146.jpeg",
+     "source_scans": [
+      "Seite0308.JPG",
+      "Seite0309.JPG"
+     ],
+     "source_sha256": [
+      "d2beddbe906f03257b333baa299adece5ab8ec7c5d9ced03fbf89caf609c6dd9",
+      "9813677ef75d654bcf8250482f1e151610f92f9c30db9a639b4b5c76f099dfbd"
+     ],
+     "text_sha256": "57ca7c001422ac05240264a3275bcb51d21eb0fbf42745cfc8a7b931c660a429",
+     "written_page_number": 154
+    },
+    {
+     "image_sha256": "587df90827ab8437c9619cd48cf7a4f3ebe6b5ba0da902b0ee5f1ff8a9d35b92",
+     "name": "train_147.jpeg",
+     "source_scans": [
+      "Seite0310.JPG",
+      "Seite0311.JPG"
+     ],
+     "source_sha256": [
+      "838b4c50d715482f282cf57f174b506f83637c3ef275d68dc560378f2c193feb",
+      "bb2dcbc5286f416985dcf90e7111bdfbce5eaa465bae87f29ee22e8b27481c21"
+     ],
+     "text_sha256": "3403abdada9fece0f83081f15fa1f0cbec4f8e130eae9e67c03c6169196e34e6",
+     "written_page_number": 155
+    },
+    {
+     "image_sha256": "6a1c290b38c9dcc82fb8adf0a48c6eff1e358512a9a11cdab1cf14ef9991ab67",
+     "name": "train_148.jpeg",
+     "source_scans": [
+      "Seite0312.JPG",
+      "Seite0313.JPG"
+     ],
+     "source_sha256": [
+      "395906f27a9b5c28f4f8fb55fc8ad50d02c17c69baee27c3a9e75bc7dc973723",
+      "b850f30fb7f6fbec84c9255d3bd4578b32dae88c82afecceff67726467ef5648"
+     ],
+     "text_sha256": "8a228a9cabb7cbd88268c26397ca14dd73a5139c735a20f413a3fdd1eec7f35e",
+     "written_page_number": 156
+    },
+    {
+     "image_sha256": "af3e22965dd2b8d2d186c3c983c3746ca0049d6365f620814cf8b2479079f044",
+     "name": "train_149.jpeg",
+     "source_scans": [
+      "Seite0314.JPG",
+      "Seite0315.JPG"
+     ],
+     "source_sha256": [
+      "194e2ff6f67e693050d7f2681de878f9c343b1c7c7f8cf853eac15ceb126d196",
+      "1cf06c00c657bb07411153e925fcfff6cd7a573982ea6541dbeab26cdbeec755"
+     ],
+     "text_sha256": "5752ae086fd5d7365fc793d4062a4cf9872165ed02a5b36feeb5715b8147a7ca",
+     "written_page_number": 157
+    },
+    {
+     "image_sha256": "7c0e029ba338c48579ba5eb7bb057228ef190442f1849bec07a8f7026f14a55b",
+     "name": "train_150.jpeg",
+     "source_scans": [
+      "Seite0316.JPG",
+      "Seite0317.JPG"
+     ],
+     "source_sha256": [
+      "cf0b8f5aac36c3a55a7c22fe45953699f17bac96d11faf8cad8d4f7e6125f9ad",
+      "317dbea6d4b01e2bbce66f9cbedebb89b13b9b49dff36d4ddcc0dd294a1506aa"
+     ],
+     "text_sha256": "c7bca24b01ed2746d26d480dde7e57c83bb9d46ef2b7b0e3d5375d48e35668ca",
+     "written_page_number": 158
+    },
+    {
+     "image_sha256": "0d077ba4a7608e465ae0300e12c7708ada60d9ca53ecebba8acbd348e740bc4a",
+     "name": "train_151.jpeg",
+     "source_scans": [
+      "Seite0318.JPG",
+      "Seite0319.JPG"
+     ],
+     "source_sha256": [
+      "c5e688cca331b3568088aaf68a54cece653dce638f39c2f71afa889ac107d1f3",
+      "40cc018255040b8d2b6bce4179b32f4abaaf4859799449520a815802c4057e65"
+     ],
+     "text_sha256": "2d944e34f0cbe40ba4668b4963084226ff74968ad2e59c489698ac85e8f4d94f",
+     "written_page_number": 159
+    },
+    {
+     "image_sha256": "cfb4bc0c02d749dc5d76c54522c9bdf687fd7f512759d8ca44d0b86d58dc7f02",
+     "name": "train_152.jpeg",
+     "source_scans": [
+      "Seite0320.JPG",
+      "Seite0321.JPG"
+     ],
+     "source_sha256": [
+      "604da857e76d43b13ac114898c7b477b9b969d53ecfaf5a3febd03ff962d5d0b",
+      "ab6446758eb12d8286961e5e84984b2134145fc74fbd46a19bcfb1641ba92a03"
+     ],
+     "text_sha256": "a4fbfda0dfdabeb1d8d7492573f0817928f57f9236b3a7f4037a29443f406115",
+     "written_page_number": 160
+    },
+    {
+     "image_sha256": "321924ebe718aca880f3b9a9c58deb68044fbf4a860bcc4a337aa81d0c712769",
+     "name": "train_153.jpeg",
+     "source_scans": [
+      "Seite0322.JPG",
+      "Seite0323.JPG"
+     ],
+     "source_sha256": [
+      "1981677733abf3bfe6ed022124d554d5030a803155656fbbb96d61b9a134fc43",
+      "711224f413c3b94fd29cb2d7e19ccef9b02692a54807f3379fb7a24ef1698eab"
+     ],
+     "text_sha256": "490d4f10e3d3f29eeb09dd85212a6b43f604f7b49731c1fa4f09846dcf3c7def",
+     "written_page_number": 161
+    },
+    {
+     "image_sha256": "1dada681e6f2e6b868db67c9cd310e651e0adc2b537d11c9f23b4142c2bbcb85",
+     "name": "train_154.jpeg",
+     "source_scans": [
+      "Seite0324.JPG",
+      "Seite0325.JPG"
+     ],
+     "source_sha256": [
+      "b4de7feb7de37feaa88761d1a216f25b9712847365387023152be39476978386",
+      "6d888d887171c5a53c7838063a9c14e64f7e5567d0f88146ff3ecf9c34dfd37f"
+     ],
+     "text_sha256": "ee1920a2a4000c062c01af2bd622f31fcf897b86546691e605c8f6b0acfafe29",
+     "written_page_number": 162
+    },
+    {
+     "image_sha256": "4b0e81baaa1808cf67c7e1b9e7d89419bde4e8895406d8c4c301cd9a9a0b1a9f",
+     "name": "train_155.jpeg",
+     "source_scans": [
+      "Seite0326.JPG",
+      "Seite0327.JPG"
+     ],
+     "source_sha256": [
+      "80893126f3789238fedd575c5afd0c621592a85daa98a88d1d5dd71f92311d08",
+      "ec43a688bfa0fc90534c02d50a42768efefd751125faa35069694c1dec7cfaac"
+     ],
+     "text_sha256": "6a9c6262fe170f6f0de3443c7166ba0fe078a77c54115cf84ac3e3a546fa46f1",
+     "written_page_number": 163
+    },
+    {
+     "image_sha256": "02b7f6be4fd8a19b05b2fb7aae1d36d71c28409c9005fe2d4b5e7112004e03df",
+     "name": "train_156.jpeg",
+     "source_scans": [
+      "Seite0328.JPG",
+      "Seite0329.JPG"
+     ],
+     "source_sha256": [
+      "4863c539ccdcd00d208329c0ab9777a130bc6f654493364ba9af76d350d6ef6a",
+      "c129fa33612181590e2899c2e2b4a6c2ffedd75f9cfbfd79266f3228b53e572c"
+     ],
+     "text_sha256": "1a7b46d42af968548c6fb4d717fb496d6def0ebd001fd7a0ce97881d873df05e",
+     "written_page_number": 164
+    },
+    {
+     "image_sha256": "0c4560348bfb789bbc9453357579cad2ba1f1bd6dc804e601d63b80f7806f55b",
+     "name": "train_157.jpeg",
+     "source_scans": [
+      "Seite0330.JPG",
+      "Seite0331.JPG"
+     ],
+     "source_sha256": [
+      "05185233f7de4c4911ce9b3fdc6b4fb76406e783406bf2bf639ca9aedfaefc6f",
+      "32b6e380a89dcdb6dec9d9d8f004a826f3367d8232041d0f9f25d1eb7b22e771"
+     ],
+     "text_sha256": "ec3f5b1ba2952f7fd6dc7ffe43d32394af97d6c4c8732d4ab658d5094b197db2",
+     "written_page_number": 165
+    },
+    {
+     "image_sha256": "9ebe5d9f80eea6e8d36f35b6cff2e7f14db458a5086b68627fd9693a28f01f50",
+     "name": "train_158.jpeg",
+     "source_scans": [
+      "Seite0332.JPG",
+      "Seite0333.JPG"
+     ],
+     "source_sha256": [
+      "ca54a990e748ca9cb2c2356ba5f4309e3cb44770d1c657fcbc679f160666c53a",
+      "80adc55830bcde11f811869eceaa06aeb31750606924e0f1caecc103ae36aa01"
+     ],
+     "text_sha256": "f67f38774c2ec5f1a0040760b22e8f5410c6d81bf0158fd4bc17d089559b8fdd",
+     "written_page_number": 166
+    },
+    {
+     "image_sha256": "11b5c6966d8a9a30bfe3f92ea6aec1552108b6817e88bc8e0e6e15682b41aca3",
+     "name": "train_159.jpeg",
+     "source_scans": [
+      "Seite0334.JPG",
+      "Seite0335.JPG"
+     ],
+     "source_sha256": [
+      "d582d2d24a3e534bcfd37f1f61abaabfa4dc88396db33117f2b6bb11323a74a5",
+      "cd302c9d01afc3b2b529bbbbc524c65ff57c37bf8dadea38fe19c24e6be5f733"
+     ],
+     "text_sha256": "8971913a0cf78669667062d8ff8ade4312a99b6e7665481c9329a50292fb4b47",
+     "written_page_number": 167
+    },
+    {
+     "image_sha256": "3b09eaa2260c22769b3287e4f35652283218a01e88803afc9e45e38c74d69c52",
+     "name": "train_160.jpeg",
+     "source_scans": [
+      "Seite0336.JPG",
+      "Seite0337.JPG"
+     ],
+     "source_sha256": [
+      "fa21824a56a2f8ad2388d5652afe45430982a31c3e7cfc4cef5efc5d0d0327e7",
+      "c53f5aa6d91cffd08c9fd38d016ab542a591a7811f7c961b88913ade73a29852"
+     ],
+     "text_sha256": "acbe5a9c49b89e055552a104570b9934799a2dcf9750351fd28d83fbbe901c69",
+     "written_page_number": 168
+    },
+    {
+     "image_sha256": "b12622e2a5f61f4e5c12a701d54a1bf295fb8d42b80d288bd12f2bb10b2115e0",
+     "name": "train_161.jpeg",
+     "source_scans": [
+      "Seite0338.JPG",
+      "Seite0339.JPG"
+     ],
+     "source_sha256": [
+      "875f296a643a245503f11741eaa8b85f325c7bd2ac730f81955ed3590754fcec",
+      "e21b3d6a043f0338d150ab2136b98ce8183fec82df4b8246b2a2afc177f808bd"
+     ],
+     "text_sha256": "8f0b98aa403a12dc2a0a3dbf4e2548a13ac95c5cabe1feb4fc72ca2cf80556da",
+     "written_page_number": 169
+    },
+    {
+     "image_sha256": "50a520867f19d3cfd278bc4eae4d5e51a0d6e4df89507e4187293c2e292e1495",
+     "name": "train_162.jpeg",
+     "source_scans": [
+      "Seite0340.JPG",
+      "Seite0341.JPG"
+     ],
+     "source_sha256": [
+      "107232b8cc0a75028ca7ca11a0e934951c5c7e605a7423424d344b7a9a6c5fe9",
+      "c38b3226aa25641bcc50d91d336a7a7cb8a416425ecd4c7edb8a2ac77c8042d8"
+     ],
+     "text_sha256": "95d8a32f7eba814562f85e200ac9b240286061f6d15cfd91c95e3206d9252ddd",
+     "written_page_number": 170
+    },
+    {
+     "image_sha256": "a362096ee6642202951764d356359b2a9d19fb8ac7141e72ebcf416d49f13e14",
+     "name": "train_163.jpeg",
+     "source_scans": [
+      "Seite0342.JPG",
+      "Seite0343.JPG"
+     ],
+     "source_sha256": [
+      "334a4bdcc3731a771de85ac970ff8c9822408f84f6de0b69e14dc4c64685402e",
+      "ddf87ff5ab5ecf105959db8961f5cef4e52792d49b225c33ee749805d5b2d65f"
+     ],
+     "text_sha256": "eb3517c10140cd41e780db75a9eebbe7368e3a3f88b9dd83455c1da5ad3c1ff2",
+     "written_page_number": 171
+    },
+    {
+     "image_sha256": "d44985675f9903a713524d644586dd6d2b8ada93d87bb97dd2f8f1acd8641cc6",
+     "name": "train_164.jpeg",
+     "source_scans": [
+      "Seite0344.JPG",
+      "Seite0345.JPG"
+     ],
+     "source_sha256": [
+      "83b37e2e4c9cda50b619bc709850833155f86a3ee20e1d6f5f0f21930afafa2e",
+      "617b14de3d64720feb52c57d2f4c1c1487dac4243afbce3dbf2f19ff2db9f198"
+     ],
+     "text_sha256": "d087251b4d12762970d3103eb08153f39d4fa1cfa00fa451c731ac4044042f69",
+     "written_page_number": 172
+    },
+    {
+     "image_sha256": "fba1a5ec1de0d3afa2e25b2c1a222e248ab304e08ef7e4d3bcfceadb037eba32",
+     "name": "train_165.jpeg",
+     "source_scans": [
+      "Seite0346.JPG",
+      "Seite0347.JPG"
+     ],
+     "source_sha256": [
+      "b7be464d301ce4aa8df456949988de57036ee514b02917df847c9f7eb9151101",
+      "8949c6683d2d97281096a8386840a76524bade2b7a1bb02baa74d5a7e9935e6c"
+     ],
+     "text_sha256": "83be2e88af9762ef9464d196d5cbc2d66c4b83a106a6350c1106e6d1d65eccc5",
+     "written_page_number": 173
+    },
+    {
+     "image_sha256": "081c26cbd891811e6a61cf5fa6565a9249aa73697855e593b8ac7e989008c683",
+     "name": "train_166.jpeg",
+     "source_scans": [
+      "Seite0348.JPG",
+      "Seite0349.JPG"
+     ],
+     "source_sha256": [
+      "29a8f49c3299f99acb3e000d9a3eacfcfa3f897fc53295a4e20040b9e0cfbcc4",
+      "d6c6939c5008051409e7fef8aa200d0d9135931cb28df5006d6ed71a77f47214"
+     ],
+     "text_sha256": "3be83e2dc149f9aa9d95e308bfa92d19dc29ab16d2faa1e49f8c3ccbb117a5c4",
+     "written_page_number": 174
+    },
+    {
+     "image_sha256": "b793036c13020658ade454d623a7a813bae75a446b3e395283f124242f94474c",
+     "name": "train_167.jpeg",
+     "source_scans": [
+      "Seite0350.JPG",
+      "Seite0351.JPG"
+     ],
+     "source_sha256": [
+      "2669f5b03f03c6b45e1a5dc33b298ec7d13b994109162e7caefc6347ede2a793",
+      "a88115285e573ee1b3f489a34170a5e04159d549e0d2c70e1088277df390abdf"
+     ],
+     "text_sha256": "7b1856fe2fc59761ce248b7e7f4d82091679dc7281e3a91258dc5fa1930796a4",
+     "written_page_number": 175
+    },
+    {
+     "image_sha256": "bd20e74edcd78cfd1c35c3228ccbc45bedc0562fc9b5eca6a87cd0e4bfe770b9",
+     "name": "train_168.jpeg",
+     "source_scans": [
+      "Seite0352.JPG",
+      "Seite0353.JPG"
+     ],
+     "source_sha256": [
+      "0af9e63a790a99e4f0149c75d32eda61712343f8456bb8a2be4b7bbdb538e4b7",
+      "c2c65eb114585a6a34d99146c1b64f4607ec248b2dba4dd03974b8ee5b2a7818"
+     ],
+     "text_sha256": "e506a9e5ab91fc1e5ad561d88601dbbd85052fdbb0316a4aafdbadc1ee398fbf",
+     "written_page_number": 176
+    }
+   ],
+   "unpaired_scans": [
+    "Seite0001.JPG",
+    "Seite0007.JPG",
+    "Seite0021.JPG",
+    "Seite0226.JPG",
+    "Seite0227.JPG",
+    "Seite0230.JPG",
+    "Seite0231.JPG",
+    "Seite0282.JPG",
+    "Seite0283.JPG",
+    "Seite0302.JPG",
+    "Seite0303.JPG",
+    "Seite0354.JPG"
+   ]
+  },
+  "valid": {
+   "n": 24,
+   "samples": [
+    {
+     "image_sha256": "34706584b08c091dde41e11dcc4190296d67ed67ea7ceceb815d8a5822292ebb",
+     "name": "valid_0.jpeg",
+     "source_scans": [
+      "Seite0356.JPG",
+      "Seite0357.JPG"
+     ],
+     "source_sha256": [
+      "9da1f23139b9655f7690f5c5bbebd7b48757bff9c3c8eed6282827155b1b25ef",
+      "56c559bf8fceaeefea306d4073b599223ca6bc31efe14be1455f6003e6a14e32"
+     ],
+     "text_sha256": "c59bf628f87fb4fd13e5f8de69fd75771496d3b5dd791ffb2ba0da91ec0ec4ee",
+     "written_page_number": 178
+    },
+    {
+     "image_sha256": "94b58675e17357f63dfd9afabbff67200c62ef0194ce421c7f7b63763c025572",
+     "name": "valid_1.jpeg",
+     "source_scans": [
+      "Seite0358.JPG",
+      "Seite0359.JPG"
+     ],
+     "source_sha256": [
+      "5bb229f51108a0f903b4c59b62cac48a00de1cc5b8bf49d2e1de37420c629865",
+      "e3f97653cb56e4ec73c47a39c1f03381cd5d2899327d60c92fc6fe9558166ecd"
+     ],
+     "text_sha256": "61738c5c59981d7745e119666ce87a8a203ca02a8fc6717d9fa7914c9e47ff39",
+     "written_page_number": 179
+    },
+    {
+     "image_sha256": "7d90f09dabf855ec98bbc0e95b77d2334230e46b4a20dabf95819cfed09e2e0d",
+     "name": "valid_2.jpeg",
+     "source_scans": [
+      "Seite0360.JPG",
+      "Seite0361.JPG"
+     ],
+     "source_sha256": [
+      "69f8e8cc2f85f87282dd6c6b0b66c640ece6eaec98ea3f16770649da367e0f02",
+      "73ff9e4979fd3f6efd3dab184b2eeee9995858884e90a259d94fa73b074dfb30"
+     ],
+     "text_sha256": "f1c05092674f6888394b13f070901043d07a1da7f7e55d6e7982fdc520f9b6f4",
+     "written_page_number": 180
+    },
+    {
+     "image_sha256": "a8025b3f1c818ac8c72e345138567731c6a4d3837d7cb5ca53259aea6e1014df",
+     "name": "valid_3.jpeg",
+     "source_scans": [
+      "Seite0362.JPG",
+      "Seite0363.JPG"
+     ],
+     "source_sha256": [
+      "6a5bedced7973f161085606f9f208a84c69a835cbe9a1a3424ddc1da6ffe853a",
+      "9159b27fda9d003ac63207c78d1dcb7be3e45a676a8fa1926248b0b4c02aa8b5"
+     ],
+     "text_sha256": "64c8b09e3d8e73a3a684ed54136e994826df444d916b516d182e571762601ad8",
+     "written_page_number": 181
+    },
+    {
+     "image_sha256": "7b5902a1fcba16549e636675176f6178426e233746ee111968854a3e8243ce8e",
+     "name": "valid_4.jpeg",
+     "source_scans": [
+      "Seite0364.JPG",
+      "Seite0365.JPG"
+     ],
+     "source_sha256": [
+      "2edf8aa961d425d5fd2d4152d6e96313eac76e8c79470ba3822917952693d891",
+      "dab80104e359a06acf588209b7e3fc7afeb95a01d3a9035eda63812abadbdca2"
+     ],
+     "text_sha256": "b42f58c93da697fb8571bf134ead02e917042fa78d5511a5229028782a9bddcc",
+     "written_page_number": 182
+    },
+    {
+     "image_sha256": "2c1a1932e7be285fc41295227d6d6277ede952a3357d06f1538acbf549780fb3",
+     "name": "valid_5.jpeg",
+     "source_scans": [
+      "Seite0366.JPG",
+      "Seite0367.JPG"
+     ],
+     "source_sha256": [
+      "a8170977bd8bc112ff1d0d9eaea65d4911cce6acc35b60bce984c5c9c4d1953a",
+      "2c3424b5117ac845099538df533221d69986b97043405e5557f972fc15f2f767"
+     ],
+     "text_sha256": "53e1da7c1f972293f785cf53f4eeb76339335173105d529befc1b2433506dfc7",
+     "written_page_number": 183
+    },
+    {
+     "image_sha256": "1a9207a1a10ddad782f0731c7fef2eb0862980d4d148eb3dabe13a6115eca172",
+     "name": "valid_6.jpeg",
+     "source_scans": [
+      "Seite0368.JPG",
+      "Seite0369.JPG"
+     ],
+     "source_sha256": [
+      "dd66feb7f984a90f048c1bd4202d3c1bb9b9204783484b94594faf74486d1f74",
+      "1d72cae8da51bde9fc0036890a6bd03df441014d712c98fee3d7b9db75963723"
+     ],
+     "text_sha256": "bea38745d6290ca561814e27955167e0cc4dbdfd63e724ecf4bee633dbfb0f3a",
+     "written_page_number": 184
+    },
+    {
+     "image_sha256": "ce9f4d43307b7538014a47b90c7328ed5886dc3f16ad52d92e32c82faf34e2fa",
+     "name": "valid_7.jpeg",
+     "source_scans": [
+      "Seite0370.JPG",
+      "Seite0371.JPG"
+     ],
+     "source_sha256": [
+      "b07318dcdc030da9c8cb530696bfe781668b7ec2df0fd1eae8dd9a7415cae79f",
+      "e3d1a84cdd6f550069f6cc07723056b7e20b3ec5162b06e5edd3bccf314f4cc4"
+     ],
+     "text_sha256": "7431544610ff18111d4e67bd61e704a405d5ab92ec5ec1c83539ba72be6c691c",
+     "written_page_number": 186
+    },
+    {
+     "image_sha256": "bef4af55d0f4e9b69e70311d33bfb8c52169cc75e43420eb73715816043592b2",
+     "name": "valid_8.jpeg",
+     "source_scans": [
+      "Seite0372.JPG",
+      "Seite0373.JPG"
+     ],
+     "source_sha256": [
+      "d700385fc25c63902c90798717899192537a4ddd5f55fa38ce47303cb6414700",
+      "3bde6610fe9bbe9e91c00e8fdcef8131e8950b1afedf74279f3d1a2105f22399"
+     ],
+     "text_sha256": "0da04478e8038be17c4b158b65404ba73739218368f7711109c07d81669d6215",
+     "written_page_number": 187
+    },
+    {
+     "image_sha256": "66a3a920b30ed45a633f59cc46acf85e73b9800b0bb29264f569a7d518814d04",
+     "name": "valid_9.jpeg",
+     "source_scans": [
+      "Seite0374.JPG",
+      "Seite0375.JPG"
+     ],
+     "source_sha256": [
+      "0aee08579905ce8f8363ed258231f16852cbca23e7e6e2aca430e38df386cf6f",
+      "a89c739ccaf4d6d602a86759cf5a68d500dcd491f82b241d23a83a608e31b678"
+     ],
+     "text_sha256": "d2aa3751258f23d4ec78eb5b88917d987e6f7dc8f0431363a392e24dde565754",
+     "written_page_number": 188
+    },
+    {
+     "image_sha256": "61e01825b30dd44170fff9c1c46203a26d6c708108cbadc9da7038062d2adf49",
+     "name": "valid_10.jpeg",
+     "source_scans": [
+      "Seite0376.JPG",
+      "Seite0377.JPG"
+     ],
+     "source_sha256": [
+      "028dbcb159aa942fab80b374e0f19af0b86e0f023dbe0a494a5d9edcf8d46f15",
+      "5992f3fc0470a6b768bd8874c16f57fb300da586dfe8597e50ddff8a5a09c84e"
+     ],
+     "text_sha256": "f13c6619488a96cfa7fc00e71a69e30fb47526c9e5b18c6c580431236bfe9106",
+     "written_page_number": 189
+    },
+    {
+     "image_sha256": "1df42dc7ad3c9b8711758dba1b9e191db69ff594cb669523e8ea6c58593a0711",
+     "name": "valid_11.jpeg",
+     "source_scans": [
+      "Seite0378.JPG",
+      "Seite0379.JPG"
+     ],
+     "source_sha256": [
+      "995a177fce9368df80c8bb0c499dceb8727b7890d962b8f4cfa6beeef847a30d",
+      "ff2984039147cb88a3c0e737cc1d0247aeb93ee5e825557bc7c380480dc519e3"
+     ],
+     "text_sha256": "1e6fe21948093e0c28265a319548ce246be024b87ee57c24022588b4c8099318",
+     "written_page_number": 190
+    },
+    {
+     "image_sha256": "ee4d37b05957155ae0078d34be9cedc53c8175c6bfbb5e684b1cb9fcb8154719",
+     "name": "valid_12.jpeg",
+     "source_scans": [
+      "Seite0380.JPG",
+      "Seite0381.JPG"
+     ],
+     "source_sha256": [
+      "1a06bfdb8887b410a9c798b3818fa0022bb00dd8eec6c5f6d3b95615546aa917",
+      "50941204111906ca4afc9e2f4b5a903fcf2fb6408be963a9dfe01183c4846fa4"
+     ],
+     "text_sha256": "d6d19875b8904f830b888a89e0397cd2c2bfc6be3b59934b65670637ae459bbb",
+     "written_page_number": 191
+    },
+    {
+     "image_sha256": "6c142c230d941a62196d2248c60047e6e9d6d627f3a4204a0352d7ebfe8083ac",
+     "name": "valid_13.jpeg",
+     "source_scans": [
+      "Seite0382.JPG",
+      "Seite0383.JPG"
+     ],
+     "source_sha256": [
+      "6ece3c60aadf39b4fde1071eb637e7025e4d752e91642507b3576a391b956874",
+      "aa39eeb7723f1ec175181f597a3efafdab7a9677303b7a320d6881ff786aa4d3"
+     ],
+     "text_sha256": "f237c4d14256e11a2ab8b5d7df3522b1ea4c2bedaf846f2e28c8b4ce1bc754c8",
+     "written_page_number": 192
+    },
+    {
+     "image_sha256": "897fa8b05c4093d732c0dbdf72065dffe5da7f83123fa39be4a5e2b3946c3248",
+     "name": "valid_14.jpeg",
+     "source_scans": [
+      "Seite0384.JPG",
+      "Seite0385.JPG"
+     ],
+     "source_sha256": [
+      "d7a761338ee557465b9df02d974dcd2920e4f7bd98100b25ddf8de580760b797",
+      "c615334e296cc1a1448e76b21f097bc7903dc515804e4c6fd1d791f634c5a468"
+     ],
+     "text_sha256": "5d2b9f9e1ce2428f14b9e2e688d19afa6066260f112153801708afe4aa7a5cc7",
+     "written_page_number": 193
+    },
+    {
+     "image_sha256": "0ff46adf18f45a66b3ab5f880643df3e8a6753c18b5da461c77b9981643dbcb7",
+     "name": "valid_15.jpeg",
+     "source_scans": [
+      "Seite0386.JPG",
+      "Seite0387.JPG"
+     ],
+     "source_sha256": [
+      "4a0cb00e4cbb8d02f49ff5f9f68d1cfaf318442aae8770e69dea934634c4a607",
+      "95114b6a09868225d093e65f239b416030c78b35bbf5ca9dd41a389e7cc3af47"
+     ],
+     "text_sha256": "f216fa8480082a8fce38a919e994f1595f27b1ebed4c009acde3b97da0d162f4",
+     "written_page_number": 194
+    },
+    {
+     "image_sha256": "417579261cee439d35999bf5669e6314e6af3af3393d68f5f55503df29ee8e4d",
+     "name": "valid_16.jpeg",
+     "source_scans": [
+      "Seite0388.JPG",
+      "Seite0389.JPG"
+     ],
+     "source_sha256": [
+      "51b029373d60517b9cc0a7d53601c4669e51694e93850b4e972ab2cc93e77db1",
+      "882e41621b49c12fa74f458d4814412a8d5835d68007af78965b2052604e861c"
+     ],
+     "text_sha256": "bf9e0f6abf45c8f49d1827e7c72db77c56a38ab78736ac40d29b78e8550ec523",
+     "written_page_number": 195
+    },
+    {
+     "image_sha256": "bb465d42d14533276307505fe0a4f19dd445908ec4275f23f4a21a4306cdf322",
+     "name": "valid_17.jpeg",
+     "source_scans": [
+      "Seite0390.JPG",
+      "Seite0391.JPG"
+     ],
+     "source_sha256": [
+      "e78635871688495e1df78b8e193b70743371cb7150b66a2990fe2a241c75c0ab",
+      "a611c2969e51696fbb7bb691c28724272bf3ccbd4d7aabc716cb5d75066ad276"
+     ],
+     "text_sha256": "b9844b2115ec0562f5306ebf47c6e3fea96cc3cfc2313dffacbe37634f6ea970",
+     "written_page_number": 196
+    },
+    {
+     "image_sha256": "bd94bb1c9b534e0a9ca86e34faa928d3f116b8f0fc74ddd05bc7b6b6f2d69ace",
+     "name": "valid_18.jpeg",
+     "source_scans": [
+      "Seite0392.JPG",
+      "Seite0393.JPG"
+     ],
+     "source_sha256": [
+      "c68cd6e0c7e049e35bcbed75240fbb29b8cc357d5d9dd1431136ad012eb88ba4",
+      "29b3111acf5a27c8a786052342d35f56312fe066bbb79ae67ee397abe35f2ee1"
+     ],
+     "text_sha256": "94294bd5077c59c2e380b3db1427c16fcb5408a3c96938bf345649f0091809d7",
+     "written_page_number": 197
+    },
+    {
+     "image_sha256": "29f1c0b9e866fa66a3ef0b094d4707f3128a005b1295029b17e7e1276c866e0b",
+     "name": "valid_19.jpeg",
+     "source_scans": [
+      "Seite0394.JPG",
+      "Seite0395.JPG"
+     ],
+     "source_sha256": [
+      "64b42a404fda7650c532fd34842a05d3703c582f2fcd97ed91319386e810d497",
+      "cc4066d542ab800118af8d4bfa7b883b86976e6565fb2ac69653b01eeafc1c4f"
+     ],
+     "text_sha256": "a8f4293c6f5c0651a447bc4a99290c08e3e582daa0ec7addd5f7732419ee6760",
+     "written_page_number": 198
+    },
+    {
+     "image_sha256": "951b45643ebdef30bde677eec95200ec0125fc4258561f450bdef3b9d9eae4a3",
+     "name": "valid_20.jpeg",
+     "source_scans": [
+      "Seite0396.JPG",
+      "Seite0397.JPG"
+     ],
+     "source_sha256": [
+      "f80f2c609fd7f5fc166486a59baa9e23ebf619930662702d0dd36523a4394723",
+      "f9465488bb257ad9e47a49eca1eb1dea190430fdb8fe3ddd9358d71d5db1ddab"
+     ],
+     "text_sha256": "83405d15965c5c5491dd81a1a2a2f66af399851aac991e348392478b533531af",
+     "written_page_number": 199
+    },
+    {
+     "image_sha256": "9bf3528f27f6a5d6604e18a9038ae99a34dc32e0731be2511bdd29392940f57a",
+     "name": "valid_21.jpeg",
+     "source_scans": [
+      "Seite0398.JPG",
+      "Seite0399.JPG"
+     ],
+     "source_sha256": [
+      "0790edc4a7e21ec8d6b69ab21c58a46b69d96cbd2a15aa4b92beb5981cbdf415",
+      "9a249938dc6067668cd6a8a456f767e303bd4cc90a7a4a090b7e0225c86d2f12"
+     ],
+     "text_sha256": "a2f1742193c6b6c0cfbe952cd877d3182bfa11f5ce0f25e1f4e4a427c8b8e369",
+     "written_page_number": 200
+    },
+    {
+     "image_sha256": "d96bf227396e793d81d50555f8e598d6756ef88df91d815405fd8e93583d9adf",
+     "name": "valid_22.jpeg",
+     "source_scans": [
+      "Seite0400.JPG",
+      "Seite0401.JPG"
+     ],
+     "source_sha256": [
+      "50fd88e266b15785639d0665279fba6aab9b086fc9cde32fd74805c0125ac184",
+      "a2a6a853e171952b1b293c0fae55f104d2192fdbd39270fb640529034fc091b5"
+     ],
+     "text_sha256": "a87a3810b7b1600cf463065b895b9800c17de5ba63aad8c765fa7af921513734",
+     "written_page_number": 201
+    },
+    {
+     "image_sha256": "901ae919bb58f1f7b660bb4937f7c9250d9eae7cc3b7655f1f1370229ce9b53f",
+     "name": "valid_23.jpeg",
+     "source_scans": [
+      "Seite0402.JPG",
+      "Seite0403.JPG"
+     ],
+     "source_sha256": [
+      "da02b2576f7bddb3e58ebb43f113eaaaa4a796792fbf5af42cc64cf99e6a163d",
+      "fc772f41e6bf3ebf6ad35cb9e933f43e67375a199997922f280ddd3436b9771f"
+     ],
+     "text_sha256": "ac117b31debe53d42d7b3de6a3a8776c259ba33689207376ce56a93e971756f8",
+     "written_page_number": 202
+    }
+   ],
+   "unpaired_scans": [
+    "Seite0355.JPG",
+    "Seite0404.JPG"
+   ]
+  }
+ }
+}

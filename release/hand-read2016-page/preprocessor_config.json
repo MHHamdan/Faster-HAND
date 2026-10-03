@@ -1,0 +1,20 @@
+{
+  "do_rgb": true,
+  "working_dpi": 150,
+  "resample": "PIL.Image.BILINEAR",
+  "image_mean": [
+    202.70203512453844,
+    190.85819291654516,
+    136.08993740340918
+  ],
+  "image_std": [
+    71.95683449787683,
+    72.00679752035164,
+    57.33656372156373
+  ],
+  "do_resize_to_fixed_size": false,
+  "do_pad": false,
+  "encoder_reduction_h": 32,
+  "encoder_reduction_w": 8,
+  "note": "Training-set channel statistics for READ_2016_page_sem_dan, read from outputs/e14_budget_1p26M_s0/results/params.txt:202-221. Scale is 0-255, NOT 0-1, and these are NOT ImageNet statistics. The page must reach the model at 150 dpi: raw READ 2016 scans are 300 dpi and must be halved (PIL BILINEAR); the pages under formatted/ already are 150 dpi and must NOT be resized again."
+}

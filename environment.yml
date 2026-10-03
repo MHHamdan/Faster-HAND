@@ -1,0 +1,42 @@
+# Conda environment for HAND.
+#
+# Mirrors requirements-pinned.txt, which is the environment every number in this
+# repository was measured in (Python 3.11.14, PyTorch 2.9.1+cu128, CUDA 12.8,
+# 1x NVIDIA RTX PRO 6000 Blackwell 97GB).
+#
+#   conda env create -f environment.yml
+#   conda activate hand
+#   pip install -e .
+#   python tools/validate_install_cpu.py
+#
+# Torch is installed via pip from the cu128 index so the CUDA build matches the
+# reference environment exactly. On a CPU-only host, drop --index-url and the
+# +cu128 suffixes; everything except training still runs.
+#
+# Do NOT add `tensorflow` to this file. TensorBoard probes for it at import time and
+# any TF built against NumPy 1.x aborts `import torch.utils.tensorboard`.
+
+name: hand
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.14
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - torch==2.9.1
+      - torchvision==0.24.1
+      - numpy==2.4.6
+      - Pillow==12.2.0
+      - opencv-python==4.12.0.88
+      - scipy==1.16.3
+      - networkx==3.5
+      - editdistance==0.8.1
+      - fontTools==4.60.1
+      - tqdm==4.67.1
+      - PyYAML==6.0.2
+      - matplotlib==3.10.7
+      - tensorboard==2.15.2
+      # optional: post-OCR correction experiments only
+      - transformers==5.12.1
+      - sentencepiece==0.2.1

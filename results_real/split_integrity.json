@@ -1,0 +1,220 @@
+[
+  {
+    "dataset": "AHAWP_character",
+    "n": {
+      "train": 37239,
+      "valid": 7979,
+      "test": 7981
+    },
+    "unique": {
+      "train": 65,
+      "valid": 65,
+      "test": 65
+    },
+    "valid_in_train": 65,
+    "test_in_train": 65,
+    "test_in_valid": 65,
+    "flags": [
+      "valid: ALL strings appear in train",
+      "test: ALL strings appear in train"
+    ]
+  },
+  {
+    "dataset": "AHAWP_paragraph",
+    "n": {
+      "train": 168,
+      "valid": 36,
+      "test": 37
+    },
+    "unique": {
+      "train": 3,
+      "valid": 3,
+      "test": 3
+    },
+    "valid_in_train": 3,
+    "test_in_train": 3,
+    "test_in_valid": 3,
+    "flags": [
+      "valid: ALL strings appear in train",
+      "test: ALL strings appear in train",
+      "only 3 distinct texts in train -- memorisation task"
+    ]
+  },
+  {
+    "dataset": "AHAWP_word",
+    "n": {
+      "train": 5700,
+      "valid": 1221,
+      "test": 1223
+    },
+    "unique": {
+      "train": 10,
+      "valid": 10,
+      "test": 10
+    },
+    "valid_in_train": 10,
+    "test_in_train": 10,
+    "test_in_valid": 10,
+    "flags": [
+      "valid: ALL strings appear in train",
+      "test: ALL strings appear in train",
+      "only 10 distinct texts in train -- memorisation task"
+    ]
+  },
+  {
+    "dataset": "IAM_line",
+    "n": {
+      "train": 6161,
+      "valid": 900,
+      "test": 1861
+    },
+    "unique": {
+      "train": 5761,
+      "valid": 898,
+      "test": 1861
+    },
+    "valid_in_train": 0,
+    "test_in_train": 0,
+    "test_in_valid": 0,
+    "flags": []
+  },
+  {
+    "dataset": "IAM_page",
+    "n": {
+      "train": 747,
+      "valid": 105,
+      "test": 232
+    },
+    "unique": {
+      "train": 741,
+      "valid": 105,
+      "test": 232
+    },
+    "valid_in_train": 0,
+    "test_in_train": 0,
+    "test_in_valid": 0,
+    "flags": []
+  },
+  {
+    "dataset": "KHATT_line",
+    "n": {
+      "train": 4672,
+      "valid": 963,
+      "test": 999
+    },
+    "unique": {
+      "train": 3117,
+      "valid": 752,
+      "test": 744
+    },
+    "valid_in_train": 215,
+    "test_in_train": 230,
+    "test_in_valid": 127,
+    "flags": [
+      "valid: 29% of strings appear in train",
+      "test: 31% of strings appear in train"
+    ]
+  },
+  {
+    "dataset": "KHATT_paragraph",
+    "n": {
+      "train": 986,
+      "valid": 220,
+      "test": 213
+    },
+    "unique": {
+      "train": 971,
+      "valid": 217,
+      "test": 212
+    },
+    "valid_in_train": 4,
+    "test_in_train": 7,
+    "test_in_valid": 3,
+    "flags": []
+  },
+  {
+    "dataset": "READ_2016_double_page_sem",
+    "n": {
+      "train": 175,
+      "valid": 25,
+      "test": 25
+    },
+    "unique": {
+      "train": 175,
+      "valid": 25,
+      "test": 25
+    },
+    "valid_in_train": 0,
+    "test_in_train": 0,
+    "test_in_valid": 0,
+    "flags": []
+  },
+  {
+    "dataset": "READ_2016_line_synthetic",
+    "n": {
+      "train": 5471,
+      "valid": 683,
+      "test": 685
+    },
+    "unique": {
+      "train": 5471,
+      "valid": 683,
+      "test": 685
+    },
+    "valid_in_train": 0,
+    "test_in_train": 0,
+    "test_in_valid": 0,
+    "flags": []
+  },
+  {
+    "dataset": "READ_2016_page_sem",
+    "n": {
+      "train": 350,
+      "valid": 50,
+      "test": 50
+    },
+    "unique": {
+      "train": 350,
+      "valid": 50,
+      "test": 50
+    },
+    "valid_in_train": 0,
+    "test_in_train": 0,
+    "test_in_valid": 0,
+    "flags": []
+  },
+  {
+    "dataset": "READ_2016_paragraph",
+    "n": {
+      "train": 837,
+      "valid": 79,
+      "test": 0
+    },
+    "unique": {
+      "train": 778,
+      "valid": 75,
+      "test": 0
+    },
+    "valid_in_train": 6,
+    "test_in_train": 0,
+    "test_in_valid": 0,
+    "flags": []
+  },
+  {
+    "dataset": "READ_2016_triple_page_sem",
+    "n": {
+      "train": 116,
+      "valid": 16,
+      "test": 16
+    },
+    "unique": {
+      "train": 116,
+      "valid": 16,
+      "test": 16
+    },
+    "valid_in_train": 0,
+    "test_in_train": 0,
+    "test_in_valid": 0,
+    "flags": []
+  }
+]

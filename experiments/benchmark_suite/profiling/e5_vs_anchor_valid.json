@@ -1,0 +1,657 @@
+{
+ "split": "valid",
+ "runs": {
+  "s1_seed0_500k": "outputs/s1_A1fixedR1_s0/checkpoints/best_1390.pt",
+  "e5_depth6": "outputs/e5_depth6_s0/checkpoints/best_1305.pt"
+ },
+ "per_page": {
+  "s1_seed0_500k": [
+   {
+    "page": 0,
+    "name": "READ_2016_page_sem_dan/valid/valid_0.jpeg",
+    "edit": 19,
+    "nb": 529
+   },
+   {
+    "page": 1,
+    "name": "READ_2016_page_sem_dan/valid/valid_1.jpeg",
+    "edit": 10,
+    "nb": 440
+   },
+   {
+    "page": 2,
+    "name": "READ_2016_page_sem_dan/valid/valid_2.jpeg",
+    "edit": 11,
+    "nb": 553
+   },
+   {
+    "page": 3,
+    "name": "READ_2016_page_sem_dan/valid/valid_3.jpeg",
+    "edit": 13,
+    "nb": 462
+   },
+   {
+    "page": 4,
+    "name": "READ_2016_page_sem_dan/valid/valid_4.jpeg",
+    "edit": 57,
+    "nb": 606
+   },
+   {
+    "page": 5,
+    "name": "READ_2016_page_sem_dan/valid/valid_5.jpeg",
+    "edit": 29,
+    "nb": 464
+   },
+   {
+    "page": 6,
+    "name": "READ_2016_page_sem_dan/valid/valid_6.jpeg",
+    "edit": 17,
+    "nb": 531
+   },
+   {
+    "page": 7,
+    "name": "READ_2016_page_sem_dan/valid/valid_7.jpeg",
+    "edit": 5,
+    "nb": 482
+   },
+   {
+    "page": 8,
+    "name": "READ_2016_page_sem_dan/valid/valid_8.jpeg",
+    "edit": 18,
+    "nb": 507
+   },
+   {
+    "page": 9,
+    "name": "READ_2016_page_sem_dan/valid/valid_9.jpeg",
+    "edit": 46,
+    "nb": 358
+   },
+   {
+    "page": 10,
+    "name": "READ_2016_page_sem_dan/valid/valid_10.jpeg",
+    "edit": 13,
+    "nb": 228
+   },
+   {
+    "page": 11,
+    "name": "READ_2016_page_sem_dan/valid/valid_11.jpeg",
+    "edit": 9,
+    "nb": 180
+   },
+   {
+    "page": 12,
+    "name": "READ_2016_page_sem_dan/valid/valid_12.jpeg",
+    "edit": 12,
+    "nb": 185
+   },
+   {
+    "page": 13,
+    "name": "READ_2016_page_sem_dan/valid/valid_13.jpeg",
+    "edit": 7,
+    "nb": 191
+   },
+   {
+    "page": 14,
+    "name": "READ_2016_page_sem_dan/valid/valid_14.jpeg",
+    "edit": 9,
+    "nb": 221
+   },
+   {
+    "page": 15,
+    "name": "READ_2016_page_sem_dan/valid/valid_15.jpeg",
+    "edit": 16,
+    "nb": 147
+   },
+   {
+    "page": 16,
+    "name": "READ_2016_page_sem_dan/valid/valid_16.jpeg",
+    "edit": 17,
+    "nb": 146
+   },
+   {
+    "page": 17,
+    "name": "READ_2016_page_sem_dan/valid/valid_17.jpeg",
+    "edit": 42,
+    "nb": 167
+   },
+   {
+    "page": 18,
+    "name": "READ_2016_page_sem_dan/valid/valid_18.jpeg",
+    "edit": 10,
+    "nb": 507
+   },
+   {
+    "page": 19,
+    "name": "READ_2016_page_sem_dan/valid/valid_19.jpeg",
+    "edit": 11,
+    "nb": 536
+   },
+   {
+    "page": 20,
+    "name": "READ_2016_page_sem_dan/valid/valid_20.jpeg",
+    "edit": 25,
+    "nb": 480
+   },
+   {
+    "page": 21,
+    "name": "READ_2016_page_sem_dan/valid/valid_21.jpeg",
+    "edit": 31,
+    "nb": 487
+   },
+   {
+    "page": 22,
+    "name": "READ_2016_page_sem_dan/valid/valid_22.jpeg",
+    "edit": 21,
+    "nb": 592
+   },
+   {
+    "page": 23,
+    "name": "READ_2016_page_sem_dan/valid/valid_23.jpeg",
+    "edit": 13,
+    "nb": 482
+   },
+   {
+    "page": 24,
+    "name": "READ_2016_page_sem_dan/valid/valid_24.jpeg",
+    "edit": 22,
+    "nb": 534
+   },
+   {
+    "page": 25,
+    "name": "READ_2016_page_sem_dan/valid/valid_25.jpeg",
+    "edit": 19,
+    "nb": 429
+   },
+   {
+    "page": 26,
+    "name": "READ_2016_page_sem_dan/valid/valid_26.jpeg",
+    "edit": 17,
+    "nb": 379
+   },
+   {
+    "page": 27,
+    "name": "READ_2016_page_sem_dan/valid/valid_27.jpeg",
+    "edit": 13,
+    "nb": 459
+   },
+   {
+    "page": 28,
+    "name": "READ_2016_page_sem_dan/valid/valid_28.jpeg",
+    "edit": 31,
+    "nb": 493
+   },
+   {
+    "page": 29,
+    "name": "READ_2016_page_sem_dan/valid/valid_29.jpeg",
+    "edit": 6,
+    "nb": 425
+   },
+   {
+    "page": 30,
+    "name": "READ_2016_page_sem_dan/valid/valid_30.jpeg",
+    "edit": 17,
+    "nb": 568
+   },
+   {
+    "page": 31,
+    "name": "READ_2016_page_sem_dan/valid/valid_31.jpeg",
+    "edit": 10,
+    "nb": 471
+   },
+   {
+    "page": 32,
+    "name": "READ_2016_page_sem_dan/valid/valid_32.jpeg",
+    "edit": 14,
+    "nb": 533
+   },
+   {
+    "page": 33,
+    "name": "READ_2016_page_sem_dan/valid/valid_33.jpeg",
+    "edit": 27,
+    "nb": 518
+   },
+   {
+    "page": 34,
+    "name": "READ_2016_page_sem_dan/valid/valid_34.jpeg",
+    "edit": 15,
+    "nb": 566
+   },
+   {
+    "page": 35,
+    "name": "READ_2016_page_sem_dan/valid/valid_35.jpeg",
+    "edit": 17,
+    "nb": 496
+   },
+   {
+    "page": 36,
+    "name": "READ_2016_page_sem_dan/valid/valid_36.jpeg",
+    "edit": 17,
+    "nb": 527
+   },
+   {
+    "page": 37,
+    "name": "READ_2016_page_sem_dan/valid/valid_37.jpeg",
+    "edit": 7,
+    "nb": 398
+   },
+   {
+    "page": 38,
+    "name": "READ_2016_page_sem_dan/valid/valid_38.jpeg",
+    "edit": 62,
+    "nb": 571
+   },
+   {
+    "page": 39,
+    "name": "READ_2016_page_sem_dan/valid/valid_39.jpeg",
+    "edit": 10,
+    "nb": 368
+   },
+   {
+    "page": 40,
+    "name": "READ_2016_page_sem_dan/valid/valid_40.jpeg",
+    "edit": 20,
+    "nb": 443
+   },
+   {
+    "page": 41,
+    "name": "READ_2016_page_sem_dan/valid/valid_41.jpeg",
+    "edit": 14,
+    "nb": 364
+   },
+   {
+    "page": 42,
+    "name": "READ_2016_page_sem_dan/valid/valid_42.jpeg",
+    "edit": 13,
+    "nb": 489
+   },
+   {
+    "page": 43,
+    "name": "READ_2016_page_sem_dan/valid/valid_43.jpeg",
+    "edit": 19,
+    "nb": 363
+   },
+   {
+    "page": 44,
+    "name": "READ_2016_page_sem_dan/valid/valid_44.jpeg",
+    "edit": 49,
+    "nb": 460
+   },
+   {
+    "page": 45,
+    "name": "READ_2016_page_sem_dan/valid/valid_45.jpeg",
+    "edit": 16,
+    "nb": 379
+   },
+   {
+    "page": 46,
+    "name": "READ_2016_page_sem_dan/valid/valid_46.jpeg",
+    "edit": 14,
+    "nb": 505
+   },
+   {
+    "page": 47,
+    "name": "READ_2016_page_sem_dan/valid/valid_47.jpeg",
+    "edit": 18,
+    "nb": 473
+   },
+   {
+    "page": 48,
+    "name": "READ_2016_page_sem_dan/valid/valid_48.jpeg",
+    "edit": 14,
+    "nb": 478
+   },
+   {
+    "page": 49,
+    "name": "READ_2016_page_sem_dan/valid/valid_49.jpeg",
+    "edit": 12,
+    "nb": 439
+   }
+  ],
+  "e5_depth6": [
+   {
+    "page": 0,
+    "name": "READ_2016_page_sem_dan/valid/valid_0.jpeg",
+    "edit": 22,
+    "nb": 529
+   },
+   {
+    "page": 1,
+    "name": "READ_2016_page_sem_dan/valid/valid_1.jpeg",
+    "edit": 11,
+    "nb": 440
+   },
+   {
+    "page": 2,
+    "name": "READ_2016_page_sem_dan/valid/valid_2.jpeg",
+    "edit": 9,
+    "nb": 553
+   },
+   {
+    "page": 3,
+    "name": "READ_2016_page_sem_dan/valid/valid_3.jpeg",
+    "edit": 20,
+    "nb": 462
+   },
+   {
+    "page": 4,
+    "name": "READ_2016_page_sem_dan/valid/valid_4.jpeg",
+    "edit": 83,
+    "nb": 606
+   },
+   {
+    "page": 5,
+    "name": "READ_2016_page_sem_dan/valid/valid_5.jpeg",
+    "edit": 35,
+    "nb": 464
+   },
+   {
+    "page": 6,
+    "name": "READ_2016_page_sem_dan/valid/valid_6.jpeg",
+    "edit": 18,
+    "nb": 531
+   },
+   {
+    "page": 7,
+    "name": "READ_2016_page_sem_dan/valid/valid_7.jpeg",
+    "edit": 9,
+    "nb": 482
+   },
+   {
+    "page": 8,
+    "name": "READ_2016_page_sem_dan/valid/valid_8.jpeg",
+    "edit": 25,
+    "nb": 507
+   },
+   {
+    "page": 9,
+    "name": "READ_2016_page_sem_dan/valid/valid_9.jpeg",
+    "edit": 49,
+    "nb": 358
+   },
+   {
+    "page": 10,
+    "name": "READ_2016_page_sem_dan/valid/valid_10.jpeg",
+    "edit": 16,
+    "nb": 228
+   },
+   {
+    "page": 11,
+    "name": "READ_2016_page_sem_dan/valid/valid_11.jpeg",
+    "edit": 9,
+    "nb": 180
+   },
+   {
+    "page": 12,
+    "name": "READ_2016_page_sem_dan/valid/valid_12.jpeg",
+    "edit": 16,
+    "nb": 185
+   },
+   {
+    "page": 13,
+    "name": "READ_2016_page_sem_dan/valid/valid_13.jpeg",
+    "edit": 11,
+    "nb": 191
+   },
+   {
+    "page": 14,
+    "name": "READ_2016_page_sem_dan/valid/valid_14.jpeg",
+    "edit": 11,
+    "nb": 221
+   },
+   {
+    "page": 15,
+    "name": "READ_2016_page_sem_dan/valid/valid_15.jpeg",
+    "edit": 15,
+    "nb": 147
+   },
+   {
+    "page": 16,
+    "name": "READ_2016_page_sem_dan/valid/valid_16.jpeg",
+    "edit": 16,
+    "nb": 146
+   },
+   {
+    "page": 17,
+    "name": "READ_2016_page_sem_dan/valid/valid_17.jpeg",
+    "edit": 14,
+    "nb": 167
+   },
+   {
+    "page": 18,
+    "name": "READ_2016_page_sem_dan/valid/valid_18.jpeg",
+    "edit": 14,
+    "nb": 507
+   },
+   {
+    "page": 19,
+    "name": "READ_2016_page_sem_dan/valid/valid_19.jpeg",
+    "edit": 7,
+    "nb": 536
+   },
+   {
+    "page": 20,
+    "name": "READ_2016_page_sem_dan/valid/valid_20.jpeg",
+    "edit": 28,
+    "nb": 480
+   },
+   {
+    "page": 21,
+    "name": "READ_2016_page_sem_dan/valid/valid_21.jpeg",
+    "edit": 30,
+    "nb": 487
+   },
+   {
+    "page": 22,
+    "name": "READ_2016_page_sem_dan/valid/valid_22.jpeg",
+    "edit": 33,
+    "nb": 592
+   },
+   {
+    "page": 23,
+    "name": "READ_2016_page_sem_dan/valid/valid_23.jpeg",
+    "edit": 12,
+    "nb": 482
+   },
+   {
+    "page": 24,
+    "name": "READ_2016_page_sem_dan/valid/valid_24.jpeg",
+    "edit": 20,
+    "nb": 534
+   },
+   {
+    "page": 25,
+    "name": "READ_2016_page_sem_dan/valid/valid_25.jpeg",
+    "edit": 17,
+    "nb": 429
+   },
+   {
+    "page": 26,
+    "name": "READ_2016_page_sem_dan/valid/valid_26.jpeg",
+    "edit": 19,
+    "nb": 379
+   },
+   {
+    "page": 27,
+    "name": "READ_2016_page_sem_dan/valid/valid_27.jpeg",
+    "edit": 13,
+    "nb": 459
+   },
+   {
+    "page": 28,
+    "name": "READ_2016_page_sem_dan/valid/valid_28.jpeg",
+    "edit": 30,
+    "nb": 493
+   },
+   {
+    "page": 29,
+    "name": "READ_2016_page_sem_dan/valid/valid_29.jpeg",
+    "edit": 5,
+    "nb": 425
+   },
+   {
+    "page": 30,
+    "name": "READ_2016_page_sem_dan/valid/valid_30.jpeg",
+    "edit": 23,
+    "nb": 568
+   },
+   {
+    "page": 31,
+    "name": "READ_2016_page_sem_dan/valid/valid_31.jpeg",
+    "edit": 9,
+    "nb": 471
+   },
+   {
+    "page": 32,
+    "name": "READ_2016_page_sem_dan/valid/valid_32.jpeg",
+    "edit": 18,
+    "nb": 533
+   },
+   {
+    "page": 33,
+    "name": "READ_2016_page_sem_dan/valid/valid_33.jpeg",
+    "edit": 29,
+    "nb": 518
+   },
+   {
+    "page": 34,
+    "name": "READ_2016_page_sem_dan/valid/valid_34.jpeg",
+    "edit": 16,
+    "nb": 566
+   },
+   {
+    "page": 35,
+    "name": "READ_2016_page_sem_dan/valid/valid_35.jpeg",
+    "edit": 18,
+    "nb": 496
+   },
+   {
+    "page": 36,
+    "name": "READ_2016_page_sem_dan/valid/valid_36.jpeg",
+    "edit": 16,
+    "nb": 527
+   },
+   {
+    "page": 37,
+    "name": "READ_2016_page_sem_dan/valid/valid_37.jpeg",
+    "edit": 5,
+    "nb": 398
+   },
+   {
+    "page": 38,
+    "name": "READ_2016_page_sem_dan/valid/valid_38.jpeg",
+    "edit": 59,
+    "nb": 571
+   },
+   {
+    "page": 39,
+    "name": "READ_2016_page_sem_dan/valid/valid_39.jpeg",
+    "edit": 10,
+    "nb": 368
+   },
+   {
+    "page": 40,
+    "name": "READ_2016_page_sem_dan/valid/valid_40.jpeg",
+    "edit": 21,
+    "nb": 443
+   },
+   {
+    "page": 41,
+    "name": "READ_2016_page_sem_dan/valid/valid_41.jpeg",
+    "edit": 17,
+    "nb": 364
+   },
+   {
+    "page": 42,
+    "name": "READ_2016_page_sem_dan/valid/valid_42.jpeg",
+    "edit": 13,
+    "nb": 489
+   },
+   {
+    "page": 43,
+    "name": "READ_2016_page_sem_dan/valid/valid_43.jpeg",
+    "edit": 17,
+    "nb": 363
+   },
+   {
+    "page": 44,
+    "name": "READ_2016_page_sem_dan/valid/valid_44.jpeg",
+    "edit": 49,
+    "nb": 460
+   },
+   {
+    "page": 45,
+    "name": "READ_2016_page_sem_dan/valid/valid_45.jpeg",
+    "edit": 15,
+    "nb": 379
+   },
+   {
+    "page": 46,
+    "name": "READ_2016_page_sem_dan/valid/valid_46.jpeg",
+    "edit": 10,
+    "nb": 505
+   },
+   {
+    "page": 47,
+    "name": "READ_2016_page_sem_dan/valid/valid_47.jpeg",
+    "edit": 27,
+    "nb": 473
+   },
+   {
+    "page": 48,
+    "name": "READ_2016_page_sem_dan/valid/valid_48.jpeg",
+    "edit": 11,
+    "nb": 478
+   },
+   {
+    "page": 49,
+    "name": "READ_2016_page_sem_dan/valid/valid_49.jpeg",
+    "edit": 13,
+    "nb": 439
+   }
+  ]
+ },
+ "analysis": {
+  "n_pages": 50,
+  "corpus_cer": {
+   "s1_seed0_500k": 0.044148271553519365,
+   "e5_depth6": 0.04687861539173493
+  },
+  "page_cer_mean": {
+   "s1_seed0_500k": 0.04918689831467336,
+   "e5_depth6": 0.04973323126590309
+  },
+  "bootstrap_page_ci": {
+   "s1_seed0_500k": {
+    "mean": 0.04416799849722839,
+    "sd": 0.004120792846253635,
+    "ci95": [
+     0.03669000568316116,
+     0.05285792567238987
+    ]
+   },
+   "e5_depth6": {
+    "mean": 0.04688012729168888,
+    "sd": 0.004436798938244953,
+    "ci95": [
+     0.03891495935683992,
+     0.05619564618817387
+    ]
+   }
+  },
+  "pairs": {},
+  "paired_contrasts": {
+   "s1_seed0_500k - e5_depth6": {
+    "diff_pp": -0.27303438382155626,
+    "paired_bootstrap_sd_pp": 0.2041729036639671,
+    "ci95_pp": [
+     -0.6659908763398041,
+     0.14839158008597225
+    ],
+    "p_two_sided_bootstrap": 0.1832,
+    "pearson_r_page_cer": 0.7624768633546285,
+    "n_pages_a_better": 26,
+    "n_pages_b_better": 19
+   }
+  }
+ }
+}

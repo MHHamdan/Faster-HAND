@@ -1,0 +1,547 @@
+{
+ "model": "<exported model directory>",
+ "split": "test",
+ "n_pages": 50,
+ "device": "cpu",
+ "amp": false,
+ "dtype": "fp32",
+ "decode_path": "reference",
+ "edits": 827,
+ "chars": 23262,
+ "cer": 0.035551543289484996,
+ "word_edits": 569,
+ "words": 4276,
+ "wer": 0.13306828811973806,
+ "wer_tokenizer": "hand.basic.metric_manager.format_string_for_wer",
+ "wall_s_total": 627.5780885219574,
+ "wall_s_per_page": 12.551561770439148,
+ "expected": {
+  "edits": 826,
+  "chars": 23262,
+  "cer": 0.0355,
+  "wer": 0.1331,
+  "loer": 0.0529,
+  "map_cer": 0.9264,
+  "n_pages": 50,
+  "source": "experiments/benchmark_suite/profiling/seed_variance_test.json (.per_page.e14_seed0_1p26M) and spec_decode_test.json (.arms.greedy)"
+ },
+ "tol_edits": 2,
+ "per_page": [
+  {
+   "page": 0,
+   "name": "test_0.jpeg",
+   "edit": 10,
+   "nb": 404,
+   "word_edit": 10,
+   "nb_words": 75,
+   "tokens": 415,
+   "wall_s": 13.054625272750854
+  },
+  {
+   "page": 1,
+   "name": "test_1.jpeg",
+   "edit": 11,
+   "nb": 400,
+   "word_edit": 8,
+   "nb_words": 76,
+   "tokens": 412,
+   "wall_s": 13.086840629577637
+  },
+  {
+   "page": 2,
+   "name": "test_2.jpeg",
+   "edit": 41,
+   "nb": 581,
+   "word_edit": 18,
+   "nb_words": 108,
+   "tokens": 574,
+   "wall_s": 16.113704681396484
+  },
+  {
+   "page": 3,
+   "name": "test_3.jpeg",
+   "edit": 7,
+   "nb": 422,
+   "word_edit": 7,
+   "nb_words": 71,
+   "tokens": 433,
+   "wall_s": 11.93660593032837
+  },
+  {
+   "page": 4,
+   "name": "test_4.jpeg",
+   "edit": 59,
+   "nb": 579,
+   "word_edit": 25,
+   "nb_words": 104,
+   "tokens": 555,
+   "wall_s": 14.277364730834961
+  },
+  {
+   "page": 5,
+   "name": "test_5.jpeg",
+   "edit": 12,
+   "nb": 422,
+   "word_edit": 11,
+   "nb_words": 75,
+   "tokens": 429,
+   "wall_s": 11.202677488327026
+  },
+  {
+   "page": 6,
+   "name": "test_6.jpeg",
+   "edit": 30,
+   "nb": 504,
+   "word_edit": 19,
+   "nb_words": 85,
+   "tokens": 519,
+   "wall_s": 14.384653091430664
+  },
+  {
+   "page": 7,
+   "name": "test_7.jpeg",
+   "edit": 23,
+   "nb": 462,
+   "word_edit": 6,
+   "nb_words": 83,
+   "tokens": 480,
+   "wall_s": 14.362217426300049
+  },
+  {
+   "page": 8,
+   "name": "test_8.jpeg",
+   "edit": 13,
+   "nb": 467,
+   "word_edit": 13,
+   "nb_words": 79,
+   "tokens": 488,
+   "wall_s": 13.407871723175049
+  },
+  {
+   "page": 9,
+   "name": "test_9.jpeg",
+   "edit": 7,
+   "nb": 390,
+   "word_edit": 6,
+   "nb_words": 71,
+   "tokens": 410,
+   "wall_s": 11.497272253036499
+  },
+  {
+   "page": 10,
+   "name": "test_10.jpeg",
+   "edit": 59,
+   "nb": 489,
+   "word_edit": 13,
+   "nb_words": 85,
+   "tokens": 502,
+   "wall_s": 13.33625864982605
+  },
+  {
+   "page": 11,
+   "name": "test_11.jpeg",
+   "edit": 16,
+   "nb": 469,
+   "word_edit": 13,
+   "nb_words": 79,
+   "tokens": 486,
+   "wall_s": 12.428693771362305
+  },
+  {
+   "page": 12,
+   "name": "test_12.jpeg",
+   "edit": 17,
+   "nb": 512,
+   "word_edit": 14,
+   "nb_words": 90,
+   "tokens": 519,
+   "wall_s": 12.22668170928955
+  },
+  {
+   "page": 13,
+   "name": "test_13.jpeg",
+   "edit": 35,
+   "nb": 450,
+   "word_edit": 16,
+   "nb_words": 83,
+   "tokens": 450,
+   "wall_s": 12.049954652786255
+  },
+  {
+   "page": 14,
+   "name": "test_14.jpeg",
+   "edit": 22,
+   "nb": 503,
+   "word_edit": 15,
+   "nb_words": 100,
+   "tokens": 513,
+   "wall_s": 12.817736625671387
+  },
+  {
+   "page": 15,
+   "name": "test_15.jpeg",
+   "edit": 29,
+   "nb": 454,
+   "word_edit": 22,
+   "nb_words": 90,
+   "tokens": 454,
+   "wall_s": 12.444810628890991
+  },
+  {
+   "page": 16,
+   "name": "test_16.jpeg",
+   "edit": 11,
+   "nb": 494,
+   "word_edit": 10,
+   "nb_words": 97,
+   "tokens": 509,
+   "wall_s": 12.849551439285278
+  },
+  {
+   "page": 17,
+   "name": "test_17.jpeg",
+   "edit": 16,
+   "nb": 463,
+   "word_edit": 14,
+   "nb_words": 89,
+   "tokens": 473,
+   "wall_s": 12.297605514526367
+  },
+  {
+   "page": 18,
+   "name": "test_18.jpeg",
+   "edit": 19,
+   "nb": 447,
+   "word_edit": 18,
+   "nb_words": 83,
+   "tokens": 457,
+   "wall_s": 12.45859169960022
+  },
+  {
+   "page": 19,
+   "name": "test_19.jpeg",
+   "edit": 10,
+   "nb": 356,
+   "word_edit": 9,
+   "nb_words": 70,
+   "tokens": 368,
+   "wall_s": 10.082898378372192
+  },
+  {
+   "page": 20,
+   "name": "test_20.jpeg",
+   "edit": 22,
+   "nb": 537,
+   "word_edit": 14,
+   "nb_words": 105,
+   "tokens": 547,
+   "wall_s": 13.567452907562256
+  },
+  {
+   "page": 21,
+   "name": "test_21.jpeg",
+   "edit": 9,
+   "nb": 461,
+   "word_edit": 8,
+   "nb_words": 84,
+   "tokens": 474,
+   "wall_s": 13.600409984588623
+  },
+  {
+   "page": 22,
+   "name": "test_22.jpeg",
+   "edit": 13,
+   "nb": 537,
+   "word_edit": 10,
+   "nb_words": 97,
+   "tokens": 545,
+   "wall_s": 14.925561904907227
+  },
+  {
+   "page": 23,
+   "name": "test_23.jpeg",
+   "edit": 17,
+   "nb": 492,
+   "word_edit": 11,
+   "nb_words": 86,
+   "tokens": 501,
+   "wall_s": 13.598784685134888
+  },
+  {
+   "page": 24,
+   "name": "test_24.jpeg",
+   "edit": 23,
+   "nb": 472,
+   "word_edit": 16,
+   "nb_words": 94,
+   "tokens": 488,
+   "wall_s": 11.716615676879883
+  },
+  {
+   "page": 25,
+   "name": "test_25.jpeg",
+   "edit": 13,
+   "nb": 438,
+   "word_edit": 12,
+   "nb_words": 80,
+   "tokens": 460,
+   "wall_s": 13.044290781021118
+  },
+  {
+   "page": 26,
+   "name": "test_26.jpeg",
+   "edit": 8,
+   "nb": 471,
+   "word_edit": 9,
+   "nb_words": 86,
+   "tokens": 488,
+   "wall_s": 13.418743133544922
+  },
+  {
+   "page": 27,
+   "name": "test_27.jpeg",
+   "edit": 15,
+   "nb": 409,
+   "word_edit": 11,
+   "nb_words": 77,
+   "tokens": 426,
+   "wall_s": 11.708718538284302
+  },
+  {
+   "page": 28,
+   "name": "test_28.jpeg",
+   "edit": 6,
+   "nb": 513,
+   "word_edit": 6,
+   "nb_words": 95,
+   "tokens": 536,
+   "wall_s": 12.397291898727417
+  },
+  {
+   "page": 29,
+   "name": "test_29.jpeg",
+   "edit": 12,
+   "nb": 455,
+   "word_edit": 11,
+   "nb_words": 88,
+   "tokens": 462,
+   "wall_s": 11.33566927909851
+  },
+  {
+   "page": 30,
+   "name": "test_30.jpeg",
+   "edit": 11,
+   "nb": 550,
+   "word_edit": 13,
+   "nb_words": 97,
+   "tokens": 559,
+   "wall_s": 12.49858546257019
+  },
+  {
+   "page": 31,
+   "name": "test_31.jpeg",
+   "edit": 15,
+   "nb": 453,
+   "word_edit": 14,
+   "nb_words": 79,
+   "tokens": 462,
+   "wall_s": 11.69880485534668
+  },
+  {
+   "page": 32,
+   "name": "test_32.jpeg",
+   "edit": 7,
+   "nb": 478,
+   "word_edit": 7,
+   "nb_words": 86,
+   "tokens": 486,
+   "wall_s": 11.226090908050537
+  },
+  {
+   "page": 33,
+   "name": "test_33.jpeg",
+   "edit": 33,
+   "nb": 455,
+   "word_edit": 14,
+   "nb_words": 85,
+   "tokens": 450,
+   "wall_s": 10.709774732589722
+  },
+  {
+   "page": 34,
+   "name": "test_34.jpeg",
+   "edit": 14,
+   "nb": 483,
+   "word_edit": 13,
+   "nb_words": 90,
+   "tokens": 491,
+   "wall_s": 13.146458387374878
+  },
+  {
+   "page": 35,
+   "name": "test_35.jpeg",
+   "edit": 3,
+   "nb": 474,
+   "word_edit": 3,
+   "nb_words": 79,
+   "tokens": 496,
+   "wall_s": 12.713697910308838
+  },
+  {
+   "page": 36,
+   "name": "test_36.jpeg",
+   "edit": 12,
+   "nb": 521,
+   "word_edit": 13,
+   "nb_words": 90,
+   "tokens": 528,
+   "wall_s": 14.663551330566406
+  },
+  {
+   "page": 37,
+   "name": "test_37.jpeg",
+   "edit": 13,
+   "nb": 469,
+   "word_edit": 11,
+   "nb_words": 87,
+   "tokens": 483,
+   "wall_s": 14.202825546264648
+  },
+  {
+   "page": 38,
+   "name": "test_38.jpeg",
+   "edit": 13,
+   "nb": 518,
+   "word_edit": 10,
+   "nb_words": 93,
+   "tokens": 527,
+   "wall_s": 14.018561840057373
+  },
+  {
+   "page": 39,
+   "name": "test_39.jpeg",
+   "edit": 25,
+   "nb": 421,
+   "word_edit": 9,
+   "nb_words": 83,
+   "tokens": 417,
+   "wall_s": 10.890692949295044
+  },
+  {
+   "page": 40,
+   "name": "test_40.jpeg",
+   "edit": 4,
+   "nb": 445,
+   "word_edit": 5,
+   "nb_words": 80,
+   "tokens": 457,
+   "wall_s": 10.5051908493042
+  },
+  {
+   "page": 41,
+   "name": "test_41.jpeg",
+   "edit": 15,
+   "nb": 462,
+   "word_edit": 12,
+   "nb_words": 79,
+   "tokens": 476,
+   "wall_s": 11.684622764587402
+  },
+  {
+   "page": 42,
+   "name": "test_42.jpeg",
+   "edit": 5,
+   "nb": 413,
+   "word_edit": 5,
+   "nb_words": 82,
+   "tokens": 424,
+   "wall_s": 11.496616125106812
+  },
+  {
+   "page": 43,
+   "name": "test_43.jpeg",
+   "edit": 5,
+   "nb": 410,
+   "word_edit": 3,
+   "nb_words": 80,
+   "tokens": 417,
+   "wall_s": 11.588352918624878
+  },
+  {
+   "page": 44,
+   "name": "test_44.jpeg",
+   "edit": 7,
+   "nb": 485,
+   "word_edit": 8,
+   "nb_words": 86,
+   "tokens": 500,
+   "wall_s": 13.302564859390259
+  },
+  {
+   "page": 45,
+   "name": "test_45.jpeg",
+   "edit": 6,
+   "nb": 464,
+   "word_edit": 6,
+   "nb_words": 91,
+   "tokens": 481,
+   "wall_s": 12.98818063735962
+  },
+  {
+   "page": 46,
+   "name": "test_46.jpeg",
+   "edit": 19,
+   "nb": 525,
+   "word_edit": 14,
+   "nb_words": 100,
+   "tokens": 537,
+   "wall_s": 12.770789861679077
+  },
+  {
+   "page": 47,
+   "name": "test_47.jpeg",
+   "edit": 13,
+   "nb": 433,
+   "word_edit": 12,
+   "nb_words": 88,
+   "tokens": 447,
+   "wall_s": 12.240479707717896
+  },
+  {
+   "page": 48,
+   "name": "test_48.jpeg",
+   "edit": 16,
+   "nb": 387,
+   "word_edit": 11,
+   "nb_words": 69,
+   "tokens": 416,
+   "wall_s": 9.870714902877808
+  },
+  {
+   "page": 49,
+   "name": "test_49.jpeg",
+   "edit": 6,
+   "nb": 363,
+   "word_edit": 11,
+   "nb_words": 67,
+   "tokens": 387,
+   "wall_s": 9.679466247558594
+  }
+ ],
+ "parity_pass": true,
+ "edit_delta": 1,
+ "_annotation": {
+  "written_by": "release/tools/evaluate_release.py",
+  "model_dir_note": "the export was produced into a scratch directory rather than into release/, because release/ deliberately carries no weights; the exported model.safetensors sha256 is b842d1e1e1d9568825253b79d01b91702635a665d19227c9a2748de0ec49515b, and it came from outputs/e14_budget_1p26M_s0/checkpoints/best_3580.pt sha256 d94af1419554a057ae671733af2fe4cf3f63d1f8b3652f9de17277b432632f5f",
+  "pages_matching_artefact_exactly": 49,
+  "pages_differing": [
+   {
+    "name": "test_24.jpeg",
+    "this_run": 23,
+    "artefact": 22
+   }
+  ],
+  "artefact": "experiments/benchmark_suite/profiling/seed_variance_test.json .per_page.e14_seed0_1p26M, measured under AMP fp16 on an RTX PRO 6000 Blackwell",
+  "no_predictions": "per_page carries counts only. A per-sample prediction dump would embed READ 2016 ground truth and must never be released."
+ }
+}

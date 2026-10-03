@@ -1,0 +1,38 @@
+{
+  "model": "ahawp_paragraph",
+  "dataset": "AHAWP",
+  "level": "paragraph",
+  "checkpoint": "models/ahawp_paragraph/best_model.pt",
+  "checkpoint_epoch": 1465,
+  "checkpoint_best_valid_cer_recorded": 0.0,
+  "charset_size": 39,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "splits": {
+    "test": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 8469,
+        "cer": 0.0256,
+        "nb_words": 1716,
+        "wer": 0.0309,
+        "sample_time": 3.5803,
+        "time": 132.4725,
+        "nb_samples": 37
+      },
+      "wall_clock_s": 133.23
+    },
+    "valid": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 7898,
+        "cer": 0.0,
+        "nb_words": 1617,
+        "wer": 0.0,
+        "sample_time": 3.4507,
+        "time": 124.2254,
+        "nb_samples": 36
+      },
+      "wall_clock_s": 124.87
+    }
+  }
+}

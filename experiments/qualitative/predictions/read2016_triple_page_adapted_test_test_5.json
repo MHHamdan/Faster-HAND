@@ -1,0 +1,88 @@
+{
+ "image": "formatted/READ_2016_triple_page_sem_dan/test/test_5.jpeg",
+ "results": "experiments/multipage/adaptation/FT_TRIPLE_triple_page.json",
+ "config": "FT_TRIPLE",
+ "export_dir": "outputs/export_ft_triple",
+ "level": "triple_page",
+ "decode_path": "kv_cache",
+ "amp": true,
+ "per_sample": {
+  "name": "test_5.jpeg",
+  "level": "triple_page",
+  "gt_chars": 1411,
+  "gt_lines": 58,
+  "img_h": 1755,
+  "img_w": 3613,
+  "H_f": 55,
+  "W_f": 452,
+  "T_enc": 24860,
+  "latency_s": 7.092037993017584,
+  "peak_mem_MiB": 2544.37158203125,
+  "error": null,
+  "tokens": 1449,
+  "passes": 1450,
+  "truncated": false,
+  "stop_reason": "end_token",
+  "failure": null,
+  "forced_restarts": 0,
+  "n_page_open": 3,
+  "n_page_close": 3,
+  "pred_chars": 1407,
+  "len_ratio": 0.997165131112686,
+  "mean_top1_conf": 0.9927154904484666,
+  "edit_chars": 49,
+  "nb_chars": 1411,
+  "cer": 0.03472714386959603,
+  "edit_words": 45,
+  "nb_words": 275,
+  "wer": 0.16363636363636364,
+  "edit_graph": 0.0,
+  "nb_nodes_and_edges": 54.0,
+  "loer": 0.0,
+  "loer_timeout": false,
+  "map_cer": 1.0,
+  "tokens_per_pass": 0.9993103448275862
+ },
+ "raw": "ⓟⓝ211ⓃⓢⓑVnd was werden erst\ndie Passbrief, vnd das.\nso etwa somsten haim¬\nlichen dūrch khombt. vnd\naim Eesamen Rat vn¬\nbewisst. AnlaūffenⒷⓈⓢⓐTraid Zū\nHall.ⒶⓑVnd weil mann sich\nan Traid etwas Manngl¬\nhafft alhie. befindt. vnd\nAūsm Vintschgeū micht\nZūūerhoffen. wie Anūor\nbschehen. Als seie Zūbit\nfir gemaine Statt Boz\nvom Traid Cassten Zū\nHall. bei: 20000 stār¬\ngegen der bezalūng\nZū gebirender Zeit Zū.\nbewilligen.ⒷⓈⓢⓐSchmalzⒶⓑDie Schmōlzler haben\nmer Schmalzerhandlt.ⒷⓈⓅⓟⓝ211Ⓝⓢⓑdas Pfūnd Per. 10 k Weiln\naber das Alt noch nit Zū\nGelt gemacht. Als solle\nmit verkhaūffūng dess¬\nso lanng bis des Rats\nSchmalz Aūsgeben word¬\nmit dem verkhaūff ein¬\ngehalten werden.ⒷⓈⓢⓐWachter\naūf baiden\nPrūggen.ⒶⓑWegen der .4. Wachter\nbsoldūng, soll ainer Loblh\nCammer. Ain Abschrifft\ndes von Loblher Regierūng\nvnndterm dato: 18. Na¬\nūenbris. gl. Abganngnen\nBeūelhs. gehorsamlich v̄ber¬\nschickht. vnd gebeten werd.\nWeiln dise Wachten dem\ngannzen Lanndt. vnd Menig¬\nelichen. hoch. vnd vil daranⒷⓈⓅⓟⓝ212Ⓝⓢⓑgelegen, Aint weders\nim Frl: Ambthaūs alhie,\noder Annderen Zolsge¬\nfelln. one gehorsame Moß¬\ngebūng, die Abstat¬\nūng geherter Wachten\n(: darüber Wachenlich\naūf: 4: Personen bis\nin: 14 fl Aūferlaūfft.).\nAbzestaten. g: Zūūer¬\nordnen. Dann in den\nLanndtrichtewannbts\ngfelln khain gewisses\nEin khomen. vnd bei ob¬\nhabenden Angeschaffnen¬\nvnd Annderen schweren\nAūsgaben. nichts vor¬\nrätigs verhanndem,\nSo wūrde es Ainem\nRath in solichen fähln.\nAūsser was Zū Inferti¬ⒷⓈⓅ",
+ "gt_raw": "ⓟⓝ211ⓃⓢⓑVnd was werden erst\ndie Passbrief: vnd das.\nso etwa sonnsten haim¬\nlichen dūrch khombt. vnd\naim Ersamen Rat vn¬\nbewisst. Anlaūffen,ⒷⓈⓢⓐTraid Zū\nHall.ⒶⓑVnd weil mann sich\nan Traid etwas Manngl¬\nhafft alhie. befindt. vnd\nAūsm Vintschgeū nicht\nZūūerhoffen. wie Anvor\nbschehen. Als seie Zūbit.\nfir gemaine Statt Boz\nvom Traid Cassten Zū\nHall. bei: 2000 stär.\ngegen der bezalūng\nZū gebirender Zeit Zū.\nbewilligen.ⒷⓈⓢⓐSchmalzⒶⓑDie Schmälzler haben\nmer Schmalz erhandlt.ⒷⓈⓅⓟⓝ211Ⓝⓢⓑdas Pfūnd Per .10 k. Weiln\naber das Alt noch nit Zū\nGelt gemacht. Als solle\nmit verkhaūffūng dess.\nso lanng bis des Rats\nSchmalz Aūsgeben word.\nmit dem verkhaūff ein¬\ngehalten werden.ⒷⓈⓢⓐWachter\naūf baiden\nPrūggenⒶⓑWegen der .4. Wachter\nbsoldūng, soll ainer Loblich\nCammer. Ain Abschrifft\ndes. von Loblicher Regierūng\nvnndtern dato: 18. No¬\nūembris gl: Abgangnen\nBeūelhs. gehorsamlich v̄ber¬\nschickht vnd gebeten werd.\nWeiln dise Wachten dem\ngannzen Lanndt. vnd Menig¬\nelichen. hoch. vnd vil daranⒷⓈⓅⓟⓝ212Ⓝⓢⓑgelegen, Aint weders\nim Frl: Ambthaūs alhie,\noder Anndern Zolsge¬\nfelln. one gehorsame Maß¬\ngebūng, die Abstat¬\nūng geherter Wachten\n(:darüber wochenlich\naūf :4: Personen bis\nin: 14 fl Aūferlaūfft.).\nAbzestaten. gl: Zūver¬\nordnen. Dann in den\nLanndtrichter ambtß.\ngfelln khain gewisses\nEinkhomen. vnd bei ob¬\nhabenden Angeschaffnen¬\nvnd Annderen schweren\nAūsgaben. nichts vor¬\nrätigs verhannden,\nSo wūrde es Ainem\nRath in solichen fähln.\nAūsser was Zū Infecti¬ⒷⓈⓅ",
+ "figure_stats": {
+  "figure_size_in": [
+   7.28,
+   8.43
+  ],
+  "font_pt": 5.8,
+  "per_page": [
+   {
+    "edits": 13,
+    "chars": 454,
+    "cer": 0.028634361233480177,
+    "layout_token_edits": 0,
+    "layout_token_errors": []
+   },
+   {
+    "edits": 18,
+    "chars": 494,
+    "cer": 0.03643724696356275,
+    "layout_token_edits": 0,
+    "layout_token_errors": []
+   },
+   {
+    "edits": 18,
+    "chars": 463,
+    "cer": 0.038876889848812095,
+    "layout_token_edits": 0,
+    "layout_token_errors": []
+   }
+  ],
+  "decoded_pages": [
+   0,
+   1,
+   2
+  ],
+  "cer": 0.03472714386959603,
+  "edits": 49,
+  "chars": 1411,
+  "layout_token_edits": 0,
+  "layout_token_errors": []
+ }
+}

@@ -1,0 +1,13 @@
+{
+  "m": 5,
+  "hidden": 256,
+  "vocab_out": 100,
+  "parameters": 365968,
+  "d_model": 256,
+  "base_checkpoint_sha256": "d94af1419554a057ae671733af2fe4cf3f63d1f8b3652f9de17277b432632f5f",
+  "source": {
+    "path": "outputs/spec_heads_m5/heads.pt",
+    "sha256": "3598151fd92a50fd722b3ac0931310ad0ca2776b62dd84339ad51ade2dd71976",
+    "bytes": 1469127
+  }
+}

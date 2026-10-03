@@ -1,0 +1,52 @@
+{
+  "model": "iam_page",
+  "dataset": "IAM",
+  "level": "page",
+  "checkpoint": "models/iam_page/best_model.pt",
+  "checkpoint_fingerprint": {
+    "epoch": 1205,
+    "step": 900882,
+    "recorded_best_valid_cer": 0.0498,
+    "charset_size": 80,
+    "encoder_parameters": 1706240,
+    "decoder_parameters": 5317713,
+    "total_parameters": 7023953,
+    "decoder_layers": 8,
+    "encoder_has_octave_gate_se_keys": false,
+    "decoder_has_memory_sparse_fusion_keys": false
+  },
+  "loaded_epoch": 1205,
+  "charset_size": 80,
+  "hand_encoding": false,
+  "additional_tokens": 1,
+  "layout_metrics": "not_applicable",
+  "layout_metrics_note": "dataset formatted without layout tokens (constraints lack 'hand_encoding'), so LOER and mAP_CER are undefined for it",
+  "decoding": "greedy",
+  "batch_size": 1,
+  "splits": {
+    "test": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 80189,
+        "cer": 0.0634,
+        "nb_words": 18542,
+        "wer": 0.1762,
+        "sample_time": 2.7666,
+        "time": 641.8551,
+        "nb_samples": 232
+      }
+    },
+    "valid": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 40784,
+        "cer": 0.0492,
+        "nb_words": 8126,
+        "wer": 0.1597,
+        "sample_time": 3.1191,
+        "time": 327.5024,
+        "nb_samples": 105
+      }
+    }
+  }
+}

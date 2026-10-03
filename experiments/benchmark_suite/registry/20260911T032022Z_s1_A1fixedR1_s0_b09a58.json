@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "run_id": "20260911T032022Z_s1_A1fixedR1_s0_b09a58",
+  "name": "s1_A1fixedR1_s0",
+  "experiment": "v2_stage1_recovery",
+  "kind": "train",
+  "status": "complete",
+  "started_utc": "2026-09-11T03:20:22Z",
+  "finished_utc": "2026-09-12T04:56:23Z",
+  "dataset": {
+    "name": "READ_2016",
+    "level": "page",
+    "variant": "_sem_dan",
+    "id": "READ_2016_page_sem_dan",
+    "path": "${HAND_ROOT}/formatted/READ_2016_page_sem_dan",
+    "splits": {
+      "train": 350,
+      "valid": 50,
+      "test": 50
+    }
+  },
+  "seed": 0,
+  "git": {
+    "commit": "39dad4368133da145d24e65d3fe7ef445f60ff07",
+    "branch": "hand_v2_research",
+    "dirty": true,
+    "dirty_files": [
+      "M experiments/benchmark_suite/record.py",
+      " M hand/models/baseline/attention.py",
+      " M hand_v2/stage1/run_patched_main.py"
+    ],
+    "describe": "39dad43-dirty"
+  },
+  "gpu": {
+    "torch": "2.9.1+cu128",
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "visible_devices": "0",
+    "devices": [
+      {
+        "index": 0,
+        "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "total_mem_MiB": 97251,
+        "capability": "12.0"
+      }
+    ],
+    "driver": "595.84"
+  },
+  "env": {
+    "host": "<redacted: single-host workstation>",
+    "user": "<redacted>",
+    "python": "3.11.14",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "cpu_count": 32,
+    "argv": [
+      "hand_v2/train.py",
+      "--dataset",
+      "READ_2016",
+      "--level",
+      "page",
+      "--variant",
+      "_sem_dan",
+      "--encoder",
+      "fcn",
+      "--output",
+      "s1_A1fixedR1_s0",
+      "--batch-size",
+      "1",
+      "--lr",
+      "1e-4",
+      "--curr-step",
+      "10000",
+      "--syn-min-lines",
+      "1",
+      "--syn-max-lines",
+      "30",
+      "--syn-init-proba",
+      "0.9",
+      "--syn-end-proba",
+      "0.2",
+      "--syn-proba-steps",
+      "200000",
+      "--no-hand-encoding",
+      "--additional-tokens",
+      "1",
+      "--init-from",
+      "weights/dan/fcn_read_2016_line_syn.pt",
+      "--fonts-dir",
+      "fonts_dan_read",
+      "--max-epochs",
+      "1429",
+      "--max-hours",
+      "240",
+      "--eval-interval",
+      "5",
+      "--seed",
+      "0",
+      "--experiment",
+      "v2_stage1_recovery",
+      "--notes",
+      "A1-fixed-R1: A1 with ONLY the unintended attention re-initialisation removed (attention.py); optimizer, clipping, augmentation, dataset, scheduler, architecture unchanged; 500k page samples (Phase A)"
+    ],
+    "cwd": "${HAND_ROOT}"
+  },
+  "config": {
+    "dataset": "READ_2016",
+    "level": "page",
+    "variant": "_sem_dan",
+    "encoder": "fcn",
+    "output": "s1_A1fixedR1_s0",
+    "init_from": "weights/dan/fcn_read_2016_line_syn.pt",
+    "batch_size": 1,
+    "lr": 0.0001,
+    "dropout": 0.5,
+    "dec_layers": 8,
+    "additional_tokens": 1,
+    "max_hours": 240.0,
+    "max_epochs": 1429,
+    "eval_interval": 5,
+    "workers": 4,
+    "curr_step": 10000,
+    "syn_init_proba": 0.9,
+    "syn_end_proba": 0.2,
+    "no_octave": false,
+    "no_gate": false,
+    "no_se": false,
+    "no_residual": false,
+    "octave_impl": "legacy",
+    "enc_blocks": 5,
+    "octave_alpha": 0.5,
+    "elastic_depths": null,
+    "scheduled_sampling": 0.0,
+    "tf_min_error": 0.2,
+    "tf_max_error": 0.2,
+    "tf_ramp_steps": 50000.0,
+    "start_valid_from_steps": null,
+    "no_hand_encoding": true,
+    "no_synthetic": false,
+    "no_augment": false,
+    "resume": false,
+    "seed": 0,
+    "smoke": false,
+    "experiment": "v2_stage1_recovery",
+    "notes": "A1-fixed-R1: A1 with ONLY the unintended attention re-initialisation removed (attention.py); optimizer, clipping, augmentation, dataset, scheduler, architecture unchanged; 500k page samples (Phase A)",
+    "cudnn_api": "v7",
+    "shape_bucket": [
+      0,
+      0
+    ],
+    "syn_min_lines": 1,
+    "syn_max_lines": 30,
+    "syn_proba_steps": 200000,
+    "fonts_dir": "fonts_dan_read"
+  },
+  "output_dir": "outputs/s1_A1fixedR1_s0",
+  "metrics": {
+    "reported_checkpoint": "best",
+    "best_epoch": 1390,
+    "last_epoch": 1428,
+    "eval_batch_size": 1,
+    "decoding": "greedy",
+    "test": {
+      "nb_chars": 23262.0,
+      "cer": 0.0438,
+      "nb_words": 4276.0,
+      "wer": 0.1635,
+      "sample_time": 2.6739,
+      "time": 133.697,
+      "nb_samples": 50.0
+    },
+    "valid": {
+      "nb_chars": 21609.0,
+      "cer": 0.0441,
+      "nb_words": 3930.0,
+      "wer": 0.1641,
+      "sample_time": 2.4869,
+      "time": 124.3456,
+      "nb_samples": 50.0
+    }
+  },
+  "artifacts": {
+    "checkpoints": [
+      "best_1390.pt",
+      "last_1428.pt"
+    ],
+    "params": "results/params.txt",
+    "run_command": "run_command.json"
+  },
+  "notes": "A1-fixed-R1: A1 with ONLY the unintended attention re-initialisation removed (attention.py); optimizer, clipping, augmentation, dataset, scheduler, architecture unchanged; 500k page samples (Phase A)",
+  "n_params": {
+    "encoder": 1706240,
+    "decoder": 5327460,
+    "total": 7033700
+  },
+  "resumed_from_epoch": -1,
+  "train_seconds": 91899.31995725632,
+  "provenance_annotation": {
+    "added_utc": "2026-09-21",
+    "by": "experiments/PROVENANCE_AUDIT.md section 2",
+    "effective_code_commit": "fde9931",
+    "why": "This run launched from a dirty tree. The recorded `commit` (39dad43) is the PARENT of the commit containing the code it actually ran: `dirty_files` lists hand/models/baseline/attention.py, whose attention re-initialisation removal was committed 20 minutes later as fde9931 ('Stage 1 reproducibility recovery: remove the attention re-init, launch A1-fixed-R1'). Reading the `commit` field alone would suggest this seed ran different model code from seeds 1 and 2. It did not.",
+    "verification": {
+      "git diff fde9931 de37d934ee -- hand/ tools/train_hand.py hand_v2/train.py": "empty",
+      "git diff fde9931 8efa20e051 -- hand/ tools/train_hand.py hand_v2/train.py": "empty",
+      "attention.py sha256 at fde9931 and 8efa20e051": "9bd9b2b1f1d3a7fd6485ae0d2b9b75a1d36985cd58936310ec2d3db1dae0b159 (identical)"
+    },
+    "conclusion": "All three seeds of the 4.57 +/- 0.39 mean ran byte-identical training code. Original `commit` and `dirty_files` fields are preserved unchanged."
+  }
+}

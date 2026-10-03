@@ -1,0 +1,51 @@
+{
+ "split": "test",
+ "n_pages": 50,
+ "models": {
+  "HAND_e14_1p26M": {
+   "optimised": {
+    "identical_pages": 50,
+    "pages": 50,
+    "token_identical": true
+   },
+   "masks_only": {
+    "identical_pages": 50,
+    "pages": 50,
+    "token_identical": true
+   },
+   "step_only": {
+    "identical_pages": 50,
+    "pages": 50,
+    "token_identical": true
+   },
+   "cache_only": {
+    "identical_pages": 50,
+    "pages": 50,
+    "token_identical": true
+   }
+  },
+  "DAN_published": {
+   "optimised": {
+    "identical_pages": 50,
+    "pages": 50,
+    "token_identical": true
+   },
+   "masks_only": {
+    "identical_pages": 50,
+    "pages": 50,
+    "token_identical": true
+   },
+   "step_only": {
+    "identical_pages": 50,
+    "pages": 50,
+    "token_identical": true
+   },
+   "cache_only": {
+    "identical_pages": 50,
+    "pages": 50,
+    "token_identical": true
+   }
+  }
+ },
+ "all_exact": true
+}

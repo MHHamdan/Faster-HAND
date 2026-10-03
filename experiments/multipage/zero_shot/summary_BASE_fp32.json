@@ -1,0 +1,93 @@
+{
+ "config": "BASE",
+ "decode_path": "kv_cache",
+ "amp": false,
+ "levels": {
+  "page": {
+   "n": 50,
+   "cer": 0.0355,
+   "wer": 0.1331,
+   "loer": 0.0529,
+   "map_cer": 0.9264,
+   "edit_chars": 826,
+   "nb_chars": 23262,
+   "edit_words": 569,
+   "nb_words": 4276,
+   "latency_s_mean": 2.083294902574271,
+   "latency_s_median": 2.106204447336495,
+   "latency_s_total": 104.16474512871355,
+   "tokens_mean": 476.28,
+   "tokens_max": 574,
+   "passes_mean": 477.28,
+   "tokens_per_pass_mean": 0.9978839153792468,
+   "T_enc_mean": 8204.9,
+   "T_enc_max": 8580,
+   "peak_mem_MiB_mean": 1456.28951171875,
+   "peak_mem_MiB_max": 1488.35986328125,
+   "truncated_n": 0,
+   "truncation_rate": 0.0,
+   "stop_reasons": {
+    "end_token": 50
+   },
+   "failed_n": 0,
+   "failure_rate": 0.0,
+   "len_ratio_mean": 0.9946222105051556,
+   "gt_chars_mean": 465.24,
+   "ratio_vs_page": {
+    "latency_s_mean": 1.0,
+    "tokens_mean": 1.0,
+    "T_enc_mean": 1.0,
+    "peak_mem_MiB_mean": 1.0,
+    "gt_chars_mean": 1.0
+   }
+  }
+ },
+ "env": {
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "torch": "2.9.1+cu128",
+  "cuda": "12.8",
+  "cudnn": 91002,
+  "date_utc": "2026-10-02T03:34:34Z",
+  "cuda_visible_devices": "0",
+  "gpu_snapshot_start": {
+   "compute_apps": [
+    "2698605, 1364 MiB, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327",
+    "1228227, 1316 MiB, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327",
+    "642151, 19916 MiB, GPU-20eb8575-c753-9898-fab6-bdf0455252ca",
+    "1210340, 19422 MiB, GPU-20eb8575-c753-9898-fab6-bdf0455252ca"
+   ],
+   "gpus": [
+    "0, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327, 6 %, 2700 MiB",
+    "1, GPU-20eb8575-c753-9898-fab6-bdf0455252ca, 48 %, 39358 MiB"
+   ],
+   "pid": 1228227
+  },
+  "argv": [
+   "tools/multipage_eval.py",
+   "--export-dir",
+   "outputs/export_e14",
+   "--config-name",
+   "BASE",
+   "--kv-cache",
+   "--level",
+   "page",
+   "--tag",
+   "_fp32",
+   "--out-dir",
+   "experiments/multipage/zero_shot"
+  ],
+  "gpu_snapshot_end": {
+   "compute_apps": [
+    "2698605, 1364 MiB, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327",
+    "1228227, 2882 MiB, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327",
+    "642151, 19916 MiB, GPU-20eb8575-c753-9898-fab6-bdf0455252ca",
+    "1210340, 19422 MiB, GPU-20eb8575-c753-9898-fab6-bdf0455252ca"
+   ],
+   "gpus": [
+    "0, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327, 26 %, 4266 MiB",
+    "1, GPU-20eb8575-c753-9898-fab6-bdf0455252ca, 89 %, 39358 MiB"
+   ],
+   "pid": 1228227
+  }
+ }
+}

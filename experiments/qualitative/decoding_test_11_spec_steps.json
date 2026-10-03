@@ -1,0 +1,966 @@
+{
+ "raw": "ⓟⓝ209Ⓝⓢⓑgelts. der: beim Eisackh¬\ntor Zū Bozen gestand¬\nnen: von weilend Caspar\nNoten seligen. Herrier¬\nenden Behaūsūng. vnd\nGarten. Alda Jeztdas\nCaPūziner Tlossterer¬\nbaūt. deßwegen Zū\nmer. vnd vnndterschidlich\nmelln beschwerden ein¬\nkhomen. vnd vmb verschaff¬\nūng der gebür Angehalt¬\nvnd das darüber herrn\nEnnglhardt dietrichen\nFreÿherrn Zū Wolckh¬\nstain etc. Aūferladen word.\ndie Abstatūng ZelaisstⒷⓈⓢⓐThanhaim\ners Steūr ver¬\nwiderūng.ⒶⓑFeürs Annder. so ver¬\nwidert sich HaūbtmannⒷⓈⓅ",
+ "n_tokens": 486,
+ "n_verification_steps": 156,
+ "tokens_per_step": 3.1153846153846154,
+ "latency_s": 3.2487337589263916,
+ "m": 5,
+ "log": [
+  {
+   "step": 0,
+   "prefix_len": 0,
+   "draft": [],
+   "verified": [
+    "ⓟ"
+   ],
+   "accepted": 0,
+   "emitted": [
+    "ⓟ"
+   ],
+   "rolled_back": 0
+  },
+  {
+   "step": 1,
+   "prefix_len": 1,
+   "draft": [
+    "ⓝ",
+    "1",
+    "6",
+    "Ⓝ"
+   ],
+   "verified": [
+    "ⓝ",
+    "2",
+    "0",
+    "9",
+    "Ⓝ"
+   ],
+   "accepted": 1,
+   "emitted": [
+    "ⓝ",
+    "2"
+   ],
+   "rolled_back": 3
+  },
+  {
+   "step": 2,
+   "prefix_len": 3,
+   "draft": [
+    "0",
+    "Ⓝ",
+    "ⓢ",
+    "ⓑ"
+   ],
+   "verified": [
+    "0",
+    "9",
+    "Ⓝ",
+    "ⓑ",
+    "g"
+   ],
+   "accepted": 1,
+   "emitted": [
+    "0",
+    "9"
+   ],
+   "rolled_back": 3
+  },
+  {
+   "step": 3,
+   "prefix_len": 5,
+   "draft": [
+    "Ⓝ",
+    "ⓢ",
+    "ⓑ",
+    "S"
+   ],
+   "verified": [
+    "Ⓝ",
+    "ⓢ",
+    "ⓑ",
+    "g",
+    "e"
+   ],
+   "accepted": 3,
+   "emitted": [
+    "Ⓝ",
+    "ⓢ",
+    "ⓑ",
+    "g"
+   ],
+   "rolled_back": 1
+  },
+  {
+   "step": 4,
+   "prefix_len": 9,
+   "draft": [
+    "e",
+    "l",
+    "i",
+    " "
+   ],
+   "verified": [
+    "e",
+    "l",
+    "t",
+    "s",
+    "."
+   ],
+   "accepted": 2,
+   "emitted": [
+    "e",
+    "l",
+    "t"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 5,
+   "prefix_len": 12,
+   "draft": [
+    "s",
+    ".",
+    " ",
+    "w"
+   ],
+   "verified": [
+    "s",
+    ".",
+    " ",
+    "d",
+    "e"
+   ],
+   "accepted": 3,
+   "emitted": [
+    "s",
+    ".",
+    " ",
+    "d"
+   ],
+   "rolled_back": 1
+  },
+  {
+   "step": 6,
+   "prefix_len": 16,
+   "draft": [
+    "e",
+    "r",
+    "e",
+    "l"
+   ],
+   "verified": [
+    "e",
+    "r",
+    ":",
+    " ",
+    "b"
+   ],
+   "accepted": 2,
+   "emitted": [
+    "e",
+    "r",
+    ":"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 7,
+   "prefix_len": 19,
+   "draft": [
+    "b",
+    "e",
+    "e",
+    "e"
+   ],
+   "verified": [
+    " ",
+    "b",
+    "i",
+    "m",
+    " "
+   ],
+   "accepted": 0,
+   "emitted": [
+    " "
+   ],
+   "rolled_back": 4
+  },
+  {
+   "step": 8,
+   "prefix_len": 20,
+   "draft": [
+    "b",
+    "e",
+    "r",
+    "n"
+   ],
+   "verified": [
+    "b",
+    "e",
+    "i",
+    "m",
+    " "
+   ],
+   "accepted": 2,
+   "emitted": [
+    "b",
+    "e",
+    "i"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 9,
+   "prefix_len": 23,
+   "draft": [
+    "m",
+    " ",
+    "T",
+    "e"
+   ],
+   "verified": [
+    "m",
+    " ",
+    "E",
+    "i",
+    "s"
+   ],
+   "accepted": 2,
+   "emitted": [
+    "m",
+    " ",
+    "E"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 10,
+   "prefix_len": 26,
+   "draft": [
+    "i",
+    "s",
+    "¬",
+    "c"
+   ],
+   "verified": [
+    "i",
+    "s",
+    "a",
+    "c",
+    "k"
+   ],
+   "accepted": 2,
+   "emitted": [
+    "i",
+    "s",
+    "a"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 11,
+   "prefix_len": 29,
+   "draft": [
+    "c",
+    "h",
+    "r",
+    "\n"
+   ],
+   "verified": [
+    "c",
+    "k",
+    "h",
+    "¬",
+    "t"
+   ],
+   "accepted": 1,
+   "emitted": [
+    "c",
+    "k"
+   ],
+   "rolled_back": 3
+  },
+  {
+   "step": 12,
+   "prefix_len": 31,
+   "draft": [
+    "h",
+    "¬",
+    "\n",
+    "w"
+   ],
+   "verified": [
+    "h",
+    "¬",
+    "\n",
+    "t",
+    "o"
+   ],
+   "accepted": 3,
+   "emitted": [
+    "h",
+    "¬",
+    "\n",
+    "t"
+   ],
+   "rolled_back": 1
+  },
+  {
+   "step": 13,
+   "prefix_len": 35,
+   "draft": [
+    "o",
+    "r",
+    " ",
+    " "
+   ],
+   "verified": [
+    "o",
+    "r",
+    " ",
+    "Z",
+    "ū"
+   ],
+   "accepted": 3,
+   "emitted": [
+    "o",
+    "r",
+    " ",
+    "Z"
+   ],
+   "rolled_back": 1
+  },
+  {
+   "step": 14,
+   "prefix_len": 39,
+   "draft": [
+    "ū",
+    " ",
+    "I",
+    "e"
+   ],
+   "verified": [
+    "ū",
+    " ",
+    "B",
+    "o",
+    "z"
+   ],
+   "accepted": 2,
+   "emitted": [
+    "ū",
+    " ",
+    "B"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 15,
+   "prefix_len": 42,
+   "draft": [
+    "o",
+    "z",
+    "e",
+    "n"
+   ],
+   "verified": [
+    "o",
+    "z",
+    "e",
+    "n",
+    " "
+   ],
+   "accepted": 4,
+   "emitted": [
+    "o",
+    "z",
+    "e",
+    "n",
+    " "
+   ],
+   "rolled_back": 0
+  },
+  {
+   "step": 16,
+   "prefix_len": 47,
+   "draft": [
+    "g",
+    "e",
+    "ū",
+    "a"
+   ],
+   "verified": [
+    "g",
+    "e",
+    "s",
+    "t",
+    "a"
+   ],
+   "accepted": 2,
+   "emitted": [
+    "g",
+    "e",
+    "s"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 17,
+   "prefix_len": 50,
+   "draft": [
+    "t",
+    "e",
+    "n",
+    " "
+   ],
+   "verified": [
+    "t",
+    "a",
+    "n",
+    "d",
+    "¬"
+   ],
+   "accepted": 1,
+   "emitted": [
+    "t",
+    "a"
+   ],
+   "rolled_back": 3
+  },
+  {
+   "step": 18,
+   "prefix_len": 52,
+   "draft": [
+    "n",
+    "d",
+    "t",
+    "t"
+   ],
+   "verified": [
+    "n",
+    "d",
+    "¬",
+    "\n",
+    "n"
+   ],
+   "accepted": 2,
+   "emitted": [
+    "n",
+    "d",
+    "¬"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 19,
+   "prefix_len": 55,
+   "draft": [
+    "\n",
+    "e",
+    "r",
+    "n"
+   ],
+   "verified": [
+    "\n",
+    "n",
+    "e",
+    "n",
+    ":"
+   ],
+   "accepted": 1,
+   "emitted": [
+    "\n",
+    "n"
+   ],
+   "rolled_back": 3
+  },
+  {
+   "step": 20,
+   "prefix_len": 57,
+   "draft": [
+    "e",
+    "n",
+    ":",
+    ":"
+   ],
+   "verified": [
+    "e",
+    "n",
+    ":",
+    " ",
+    "v"
+   ],
+   "accepted": 3,
+   "emitted": [
+    "e",
+    "n",
+    ":",
+    " "
+   ],
+   "rolled_back": 1
+  },
+  {
+   "step": 21,
+   "prefix_len": 61,
+   "draft": [
+    "v",
+    "o",
+    "d",
+    " "
+   ],
+   "verified": [
+    "v",
+    "o",
+    "n",
+    " ",
+    "w"
+   ],
+   "accepted": 2,
+   "emitted": [
+    "v",
+    "o",
+    "n"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 22,
+   "prefix_len": 64,
+   "draft": [
+    " ",
+    "M",
+    "a",
+    "e"
+   ],
+   "verified": [
+    " ",
+    "w",
+    "e",
+    "i",
+    "l"
+   ],
+   "accepted": 1,
+   "emitted": [
+    " ",
+    "w"
+   ],
+   "rolled_back": 3
+  },
+  {
+   "step": 23,
+   "prefix_len": 66,
+   "draft": [
+    "e",
+    "i",
+    "l",
+    "e"
+   ],
+   "verified": [
+    "e",
+    "i",
+    "l",
+    "e",
+    "n"
+   ],
+   "accepted": 4,
+   "emitted": [
+    "e",
+    "i",
+    "l",
+    "e",
+    "n"
+   ],
+   "rolled_back": 0
+  },
+  {
+   "step": 24,
+   "prefix_len": 71,
+   "draft": [
+    "d",
+    " ",
+    "w",
+    "e"
+   ],
+   "verified": [
+    "d",
+    " ",
+    "C",
+    "a",
+    "s"
+   ],
+   "accepted": 2,
+   "emitted": [
+    "d",
+    " ",
+    "C"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 25,
+   "prefix_len": 74,
+   "draft": [
+    "o",
+    "s",
+    "¬",
+    "\n"
+   ],
+   "verified": [
+    "a",
+    "s",
+    "p",
+    "a",
+    "r"
+   ],
+   "accepted": 0,
+   "emitted": [
+    "a"
+   ],
+   "rolled_back": 4
+  },
+  {
+   "step": 26,
+   "prefix_len": 75,
+   "draft": [
+    "s",
+    "p",
+    "t",
+    "r"
+   ],
+   "verified": [
+    "s",
+    "p",
+    "a",
+    "r",
+    "\n"
+   ],
+   "accepted": 2,
+   "emitted": [
+    "s",
+    "p",
+    "a"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 27,
+   "prefix_len": 78,
+   "draft": [
+    "r",
+    "\n",
+    "g",
+    "s"
+   ],
+   "verified": [
+    "r",
+    "\n",
+    "N",
+    "o",
+    "t"
+   ],
+   "accepted": 2,
+   "emitted": [
+    "r",
+    "\n",
+    "N"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 28,
+   "prefix_len": 81,
+   "draft": [
+    "o",
+    "t",
+    "w",
+    "e"
+   ],
+   "verified": [
+    "o",
+    "t",
+    "e",
+    "n",
+    " "
+   ],
+   "accepted": 2,
+   "emitted": [
+    "o",
+    "t",
+    "e"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 29,
+   "prefix_len": 84,
+   "draft": [
+    "n",
+    " ",
+    "d",
+    "e"
+   ],
+   "verified": [
+    "n",
+    " ",
+    "s",
+    "e",
+    "l"
+   ],
+   "accepted": 2,
+   "emitted": [
+    "n",
+    " ",
+    "s"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 30,
+   "prefix_len": 87,
+   "draft": [
+    "e",
+    "i",
+    "e",
+    "e"
+   ],
+   "verified": [
+    "e",
+    "l",
+    "i",
+    "g",
+    "e"
+   ],
+   "accepted": 1,
+   "emitted": [
+    "e",
+    "l"
+   ],
+   "rolled_back": 3
+  },
+  {
+   "step": 31,
+   "prefix_len": 89,
+   "draft": [
+    "i",
+    "g",
+    "e",
+    "n"
+   ],
+   "verified": [
+    "i",
+    "g",
+    "e",
+    "n",
+    "."
+   ],
+   "accepted": 4,
+   "emitted": [
+    "i",
+    "g",
+    "e",
+    "n",
+    "."
+   ],
+   "rolled_back": 0
+  },
+  {
+   "step": 32,
+   "prefix_len": 94,
+   "draft": [
+    " ",
+    "h",
+    "e",
+    "r"
+   ],
+   "verified": [
+    " ",
+    "H",
+    "e",
+    "r",
+    "r"
+   ],
+   "accepted": 1,
+   "emitted": [
+    " ",
+    "H"
+   ],
+   "rolled_back": 3
+  },
+  {
+   "step": 33,
+   "prefix_len": 96,
+   "draft": [
+    "e",
+    "r",
+    "r",
+    "n"
+   ],
+   "verified": [
+    "e",
+    "r",
+    "r",
+    "i",
+    "e"
+   ],
+   "accepted": 3,
+   "emitted": [
+    "e",
+    "r",
+    "r",
+    "i"
+   ],
+   "rolled_back": 1
+  },
+  {
+   "step": 34,
+   "prefix_len": 100,
+   "draft": [
+    "e",
+    "r",
+    "e",
+    "\n"
+   ],
+   "verified": [
+    "e",
+    "r",
+    "¬",
+    "\n",
+    "e"
+   ],
+   "accepted": 2,
+   "emitted": [
+    "e",
+    "r",
+    "¬"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 35,
+   "prefix_len": 103,
+   "draft": [
+    "\n",
+    "e",
+    "n",
+    "m"
+   ],
+   "verified": [
+    "\n",
+    "e",
+    "n",
+    "d",
+    "e"
+   ],
+   "accepted": 3,
+   "emitted": [
+    "\n",
+    "e",
+    "n",
+    "d"
+   ],
+   "rolled_back": 1
+  },
+  {
+   "step": 36,
+   "prefix_len": 107,
+   "draft": [
+    "e",
+    "n",
+    " ",
+    " "
+   ],
+   "verified": [
+    "e",
+    "n",
+    " ",
+    "B",
+    "e"
+   ],
+   "accepted": 3,
+   "emitted": [
+    "e",
+    "n",
+    " ",
+    "B"
+   ],
+   "rolled_back": 1
+  },
+  {
+   "step": 37,
+   "prefix_len": 111,
+   "draft": [
+    "e",
+    "h",
+    "e",
+    "d"
+   ],
+   "verified": [
+    "e",
+    "h",
+    "a",
+    "ū",
+    "s"
+   ],
+   "accepted": 2,
+   "emitted": [
+    "e",
+    "h",
+    "a"
+   ],
+   "rolled_back": 2
+  },
+  {
+   "step": 38,
+   "prefix_len": 114,
+   "draft": [
+    "ū",
+    "s",
+    "ū",
+    "n"
+   ],
+   "verified": [
+    "ū",
+    "s",
+    "ū",
+    "n",
+    "g"
+   ],
+   "accepted": 4,
+   "emitted": [
+    "ū",
+    "s",
+    "ū",
+    "n",
+    "g"
+   ],
+   "rolled_back": 0
+  },
+  {
+   "step": 39,
+   "prefix_len": 119,
+   "draft": [
+    ".",
+    " ",
+    "v",
+    "n"
+   ],
+   "verified": [
+    ".",
+    " ",
+    "v",
+    "n",
+    "d"
+   ],
+   "accepted": 4,
+   "emitted": [
+    ".",
+    " ",
+    "v",
+    "n",
+    "d"
+   ],
+   "rolled_back": 0
+  }
+ ],
+ "greedy_identical": true
+}

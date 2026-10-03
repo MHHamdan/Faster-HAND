@@ -1,0 +1,173 @@
+{
+ "config": "BASE_FORCED",
+ "decode_path": "kv_cache+forced_continuation",
+ "amp": true,
+ "levels": {
+  "page": {
+   "n": 50,
+   "cer": 0.0355,
+   "wer": 0.1328,
+   "loer": 0.0529,
+   "map_cer": 0.9264,
+   "edit_chars": 825,
+   "nb_chars": 23262,
+   "edit_words": 568,
+   "nb_words": 4276,
+   "latency_s_mean": 2.306665810374543,
+   "latency_s_median": 2.3069938556291163,
+   "latency_s_total": 115.33329051872715,
+   "tokens_mean": 476.3,
+   "tokens_max": 574,
+   "passes_mean": 477.3,
+   "tokens_per_pass_mean": 0.9978840042089159,
+   "T_enc_mean": 8204.9,
+   "T_enc_max": 8580,
+   "peak_mem_MiB_mean": 1201.001611328125,
+   "peak_mem_MiB_max": 1226.0185546875,
+   "truncated_n": 0,
+   "truncation_rate": 0.0,
+   "stop_reasons": {
+    "end_token": 50
+   },
+   "failed_n": 0,
+   "failure_rate": 0.0,
+   "len_ratio_mean": 0.994665407049432,
+   "gt_chars_mean": 465.24,
+   "ratio_vs_page": {
+    "latency_s_mean": 1.0,
+    "tokens_mean": 1.0,
+    "T_enc_mean": 1.0,
+    "peak_mem_MiB_mean": 1.0,
+    "gt_chars_mean": 1.0
+   }
+  },
+  "double_page": {
+   "n": 24,
+   "cer": 0.5025,
+   "wer": 0.5744,
+   "loer": 0.4282,
+   "map_cer": 0.4876,
+   "edit_chars": 11303,
+   "nb_chars": 22495,
+   "edit_words": 2363,
+   "nb_words": 4114,
+   "latency_s_mean": 2.5584032928260663,
+   "latency_s_median": 2.498632629401982,
+   "latency_s_total": 61.401679027825594,
+   "tokens_mean": 517.75,
+   "tokens_max": 634,
+   "passes_mean": 518.75,
+   "tokens_per_pass_mean": 0.9980470873408126,
+   "T_enc_mean": 16410.625,
+   "T_enc_max": 16555,
+   "peak_mem_MiB_mean": 1863.0160725911458,
+   "peak_mem_MiB_max": 1873.86376953125,
+   "truncated_n": 0,
+   "truncation_rate": 0.0,
+   "stop_reasons": {
+    "end_token": 24
+   },
+   "failed_n": 0,
+   "failure_rate": 0.0,
+   "len_ratio_mean": 0.5338056003851882,
+   "gt_chars_mean": 937.2916666666666,
+   "ratio_vs_page": {
+    "latency_s_mean": 1.1091347872410904,
+    "tokens_mean": 1.0870249842536217,
+    "T_enc_mean": 2.000100549671538,
+    "peak_mem_MiB_mean": 1.551218628700201,
+    "gt_chars_mean": 2.0146411887771185
+   }
+  },
+  "triple_page": {
+   "n": 16,
+   "cer": 0.65,
+   "wer": 0.7119,
+   "loer": 0.5561,
+   "map_cer": 0.3021,
+   "edit_chars": 14633,
+   "nb_chars": 22512,
+   "edit_words": 2930,
+   "nb_words": 4116,
+   "latency_s_mean": 3.0503696669766214,
+   "latency_s_median": 3.051208062330261,
+   "latency_s_total": 48.80591467162594,
+   "tokens_mean": 543.5625,
+   "tokens_max": 720,
+   "passes_mean": 544.5625,
+   "tokens_per_pass_mean": 0.9981322148477605,
+   "T_enc_mean": 24588.4375,
+   "T_enc_max": 25080,
+   "peak_mem_MiB_mean": 2524.6582946777344,
+   "peak_mem_MiB_max": 2559.1298828125,
+   "truncated_n": 0,
+   "truncation_rate": 0.0,
+   "stop_reasons": {
+    "end_token": 16
+   },
+   "failed_n": 0,
+   "failure_rate": 0.0,
+   "len_ratio_mean": 0.372051051894908,
+   "gt_chars_mean": 1407.0,
+   "ratio_vs_page": {
+    "latency_s_mean": 1.322415086423516,
+    "tokens_mean": 1.141218769682973,
+    "T_enc_mean": 2.9967991687893822,
+    "peak_mem_MiB_mean": 2.102127316786733,
+    "gt_chars_mean": 3.024245550683518
+   }
+  }
+ },
+ "env": {
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "torch": "2.9.1+cu128",
+  "cuda": "12.8",
+  "cudnn": 91002,
+  "date_utc": "2026-10-02T03:36:28Z",
+  "cuda_visible_devices": "0",
+  "gpu_snapshot_start": {
+   "compute_apps": [
+    "2698605, 1364 MiB, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327",
+    "1230491, 1316 MiB, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327",
+    "642151, 19916 MiB, GPU-20eb8575-c753-9898-fab6-bdf0455252ca",
+    "1210340, 19422 MiB, GPU-20eb8575-c753-9898-fab6-bdf0455252ca"
+   ],
+   "gpus": [
+    "0, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327, 5 %, 2700 MiB",
+    "1, GPU-20eb8575-c753-9898-fab6-bdf0455252ca, 93 %, 39358 MiB"
+   ],
+   "pid": 1230491
+  },
+  "argv": [
+   "tools/multipage_eval.py",
+   "--export-dir",
+   "outputs/export_e14",
+   "--config-name",
+   "BASE_FORCED",
+   "--kv-cache",
+   "--amp",
+   "--force-pages",
+   "--level",
+   "page",
+   "double_page",
+   "triple_page",
+   "--out-dir",
+   "experiments/multipage/zero_shot",
+   "--notes",
+   "Diagnostic: end token refused until the level's number of page blocks is closed (open-page token appended instead). Not a model decoding path."
+  ],
+  "gpu_snapshot_end": {
+   "compute_apps": [
+    "2698605, 1364 MiB, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327",
+    "1230491, 5738 MiB, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327",
+    "642151, 19916 MiB, GPU-20eb8575-c753-9898-fab6-bdf0455252ca",
+    "1210340, 19422 MiB, GPU-20eb8575-c753-9898-fab6-bdf0455252ca"
+   ],
+   "gpus": [
+    "0, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327, 12 %, 7122 MiB",
+    "1, GPU-20eb8575-c753-9898-fab6-bdf0455252ca, 0 %, 39358 MiB"
+   ],
+   "pid": 1230491
+  }
+ }
+}

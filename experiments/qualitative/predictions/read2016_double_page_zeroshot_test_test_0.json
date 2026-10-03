@@ -1,0 +1,99 @@
+{
+ "image": "formatted/READ_2016_double_page_sem_dan/test/test_0.jpeg",
+ "results": "experiments/multipage/zero_shot/BASE_double_page.json",
+ "config": "BASE",
+ "export_dir": "outputs/export_e14",
+ "level": "double_page",
+ "decode_path": "kv_cache",
+ "amp": true,
+ "per_sample": {
+  "name": "test_0.jpeg",
+  "level": "double_page",
+  "gt_chars": 981,
+  "gt_lines": 42,
+  "img_h": 1755,
+  "img_w": 2401,
+  "H_f": 55,
+  "W_f": 301,
+  "T_enc": 16555,
+  "latency_s": 1.8720333040691912,
+  "peak_mem_MiB": 1873.86376953125,
+  "error": null,
+  "tokens": 412,
+  "passes": 413,
+  "truncated": false,
+  "stop_reason": "end_token",
+  "failure": "missing_closing_page_token(1/2)",
+  "n_page_open": 1,
+  "n_page_close": 1,
+  "pred_chars": 398,
+  "len_ratio": 0.4057084607543323,
+  "mean_top1_conf": 0.9955863709588653,
+  "edit_chars": 593,
+  "nb_chars": 981,
+  "cer": 0.6044852191641182,
+  "edit_words": 117,
+  "nb_words": 184,
+  "wer": 0.6358695652173914,
+  "edit_graph": 11.0,
+  "nb_nodes_and_edges": 31.0,
+  "loer": 0.3548387096774194,
+  "map_cer": 0.5833333333333334,
+  "tokens_per_pass": 0.9975786924939467
+ },
+ "raw": "ⓟⓝ204ⓃⓢⓑSchgrafer, Hannsen Hehl¬\nAdamen Azwannger,\nMatheisen Feichtner\nvnd Matheisen Hōr¬\nwarter Rath gehalt.ⒷⓈⓢⓐGenneral¬\nsteūr RaitūngⒶⓑAūf den: vnnd der\nhoch f: dt: Tiil vnnd\nSecret. im dato. 16.\nNaūembris negsthin.\ngnedigist Aūsganngnen\nBeūelch. Soll\nCristoff Haim. Zū der¬\naūf heūt angestelten\nGenneral: wie aūch\nder Anndern Steūrein¬\nnemer. 1619. Jar Anbts¬\nRaittūngen. Zūer¬\nscheinen, verordent\nwerden,ⒷⓈⓅ",
+ "gt_raw": "ⓟⓝ204ⓃⓢⓑSchgrafer, Hannsen Hehl.\nAdamen Azwannger,\nMatheisen Feichtner\nvnd Matheisen Hōr¬\nwarter Rath gehalt.ⒷⓈⓢⓐGenneral¬\nsteūr RaitūngⒶⓑAūf den: vnnd der\nhoch fl: dt. Titl vnnd\nDecret. im dato .16.\nNoūembris negsthin.\ngnedigist Aūsganngnen\nBeūelch. Soll\nCristoff Haim. Zū der¬\naūf heūt angestelten\nGenneral: wie aūch\nder Anndern Steūrein¬\nnemer .1619.t Jar Ambts¬\nRaittūngen. Zūer¬\nscheinen, verordent\nwerden,ⒷⓈⓅⓟⓝ204ⓃⓢⓐSchmalz. Item\nMinz, vnd\ndoctor Car¬\nära bet:ⒶⓑVerer ain Beūelch von Ir dt\nhinterlassnen herrn Director\nvnd Zūegeordenten gehaimen\nRäthen. den Passbrief.\nvmbs Schmalz ins Engedein,\nItem Geltstaigerūng, vnd\ndoctor Carära betreffent.\nAbgehōrdt, Darinnen, d\nder gebetne Passbrief. od\n:nit allain:\nPatennt : gewilligt. sonnd\nIre Gnaden haben aūch vmb\nmerer befirderūng willen.\nden beūelh an herrn obrisst\nAlouiso von Baldiron. Ab Zūe¬\ngefertigt, Aber\nder begerten Geltstaig¬\nerūng halber, weiln aūs\nden Jüngsten Mandaten Zū¬\nschreiten, oder one d Fl: dt: etc\ngnedigisten vorwissen dar¬ⒷⓈⓅ",
+ "figure_stats": {
+  "figure_size_in": [
+   7.28,
+   8.27
+  ],
+  "font_pt": 6.2,
+  "per_page": [
+   {
+    "edits": 12,
+    "chars": 400,
+    "cer": 0.03,
+    "layout_token_edits": 0,
+    "layout_token_errors": []
+   },
+   {
+    "edits": 581,
+    "chars": 581,
+    "cer": 1.0,
+    "layout_token_edits": 10,
+    "layout_token_errors": [
+     "missing ⓟ",
+     "missing ⓝ",
+     "missing Ⓝ",
+     "missing ⓢ",
+     "missing ⓐ",
+     "missing Ⓐ",
+     "missing ⓑ",
+     "missing Ⓑ",
+     "missing Ⓢ",
+     "missing Ⓟ"
+    ]
+   }
+  ],
+  "decoded_pages": [
+   0
+  ],
+  "cer": 0.6044852191641182,
+  "edits": 593,
+  "chars": 981,
+  "layout_token_edits": 10,
+  "layout_token_errors": [
+   "missing Ⓑ",
+   "missing Ⓢ",
+   "missing Ⓟ",
+   "missing ⓟ",
+   "missing ⓝ",
+   "missing Ⓝ",
+   "missing ⓢ",
+   "missing ⓐ",
+   "missing Ⓐ",
+   "missing ⓑ"
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+{
+  "harness": "dan_official",
+  "checkpoint": {
+    "path": "weights/dan/dan_read_page.pt",
+    "md5": "f2779a5887c7a8d7b81255059392dd51",
+    "epoch": 3595,
+    "step": 1258600,
+    "charset_size": 99,
+    "encoder_tensors": 84,
+    "decoder_tensors": 211
+  },
+  "wall_clock_s": 130.1,
+  "stdout_tail": "##################\nAvailable GPUS: 1\nRank 0: NVIDIA RTX PRO 6000 Blackwell Server Edition _CudaDeviceProperties(name='NVIDIA RTX PRO 6000 Blackwell Server Edition', major=12, minor=0, total_memory=97251MB, multi_processor_count=188, uuid=ace4b194-1c2c-9a0f-17ca-5fd530778327, pci_bus_id=11, pci_device_id=0, pci_domain_id=0, L2_cache_size=128MB)\n##################\nLocal GPU:\nRank 0: NVIDIA RTX PRO 6000 Blackwell Server Edition _CudaDeviceProperties(name='NVIDIA RTX PRO 6000 Blackwell Server Edition', major=12, minor=0, total_memory=97251MB, multi_processor_count=188, uuid=ace4b194-1c2c-9a0f-17ca-5fd530778327, pci_bus_id=11, pci_device_id=0, pci_domain_id=0, L2_cache_size=128MB)\n##################\nLOADED EPOCH: 3595\n\nLOADED EPOCH: 3595\n\n",
+  "result_files": {
+    "predict_READ_2016-test_3595.txt": "nb_chars: 23262\ncer: 0.0341\nnb_words: 4276\nwer: 0.1305\nsample_time: 2.1668\ntime: 108.3413\nmap_cer: 0.9326\npper: 0.0014\nloer: 0.0517\nnb_samples: 50\n"
+  }
+}

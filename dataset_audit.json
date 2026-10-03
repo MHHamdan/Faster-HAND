@@ -1,0 +1,1800 @@
+{
+  "generated_utc": "2026-09-24T06:40:53+00:00",
+  "tool": "tools/audit_dataset_integrity.py",
+  "code_version": "650623a8c9ac4d7b897672e61b2f557e758f422e",
+  "n_corpora_on_disk": 26,
+  "n_corpora_audited": 26,
+  "datasets": [
+    {
+      "dataset": "AHAWP_character",
+      "n_samples": {
+        "train": 37239,
+        "valid": 7979,
+        "test": 7981
+      },
+      "n_unique_transcripts": {
+        "train": 65,
+        "valid": 65,
+        "test": 65
+      },
+      "violations": [
+        "test: every distinct transcription also occurs in train"
+      ],
+      "warnings": [
+        "valid: every distinct transcription also occurs in train",
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 65,
+          "n_samples_affected": 37239,
+          "max_repeats_of_one_transcript": 608
+        },
+        "valid": {
+          "n_transcripts_duplicated": 65,
+          "n_samples_affected": 7979,
+          "max_repeats_of_one_transcript": 143
+        },
+        "test": {
+          "n_transcripts_duplicated": 65,
+          "n_samples_affected": 7981,
+          "max_repeats_of_one_transcript": 143
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 65,
+        "test_in_train": 65,
+        "test_in_valid": 65
+      },
+      "instance_overlap": {
+        "valid_in_train": 7979,
+        "test_in_train": 7981,
+        "test_in_valid": 7981,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 37239,
+        "valid": 7979,
+        "test": 7981
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "VIOLATION"
+    },
+    {
+      "dataset": "AHAWP_paragraph",
+      "n_samples": {
+        "train": 168,
+        "valid": 36,
+        "test": 37
+      },
+      "n_unique_transcripts": {
+        "train": 3,
+        "valid": 3,
+        "test": 3
+      },
+      "violations": [
+        "test: every distinct transcription also occurs in train",
+        "26 writer(s) appear in both train and test -- the split is not writer-independent"
+      ],
+      "warnings": [
+        "valid: every distinct transcription also occurs in train",
+        "only 3 distinct transcriptions in train -- this is a memorisation task, not a recognition benchmark"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 3,
+          "n_samples_affected": 168,
+          "max_repeats_of_one_transcript": 60
+        },
+        "valid": {
+          "n_transcripts_duplicated": 3,
+          "n_samples_affected": 36,
+          "max_repeats_of_one_transcript": 13
+        },
+        "test": {
+          "n_transcripts_duplicated": 3,
+          "n_samples_affected": 37,
+          "max_repeats_of_one_transcript": 16
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 3,
+        "test_in_train": 3,
+        "test_in_valid": 3
+      },
+      "instance_overlap": {
+        "valid_in_train": 36,
+        "test_in_train": 37,
+        "test_in_valid": 37,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 168,
+        "valid": 36,
+        "test": 37
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": {
+        "n_writers": {
+          "train": 79,
+          "valid": 30,
+          "test": 28
+        },
+        "valid_in_train": 29,
+        "test_in_train": 26
+      },
+      "document_overlap": {
+        "n_documents": {
+          "train": 168,
+          "valid": 36,
+          "test": 37
+        },
+        "test_in_train": 0
+      },
+      "verdict": "VIOLATION"
+    },
+    {
+      "dataset": "AHAWP_word",
+      "n_samples": {
+        "train": 5700,
+        "valid": 1221,
+        "test": 1223
+      },
+      "n_unique_transcripts": {
+        "train": 10,
+        "valid": 10,
+        "test": 10
+      },
+      "violations": [
+        "test: every distinct transcription also occurs in train"
+      ],
+      "warnings": [
+        "valid: every distinct transcription also occurs in train",
+        "only 10 distinct transcriptions in train -- this is a memorisation task, not a recognition benchmark",
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 10,
+          "n_samples_affected": 5700,
+          "max_repeats_of_one_transcript": 587
+        },
+        "valid": {
+          "n_transcripts_duplicated": 10,
+          "n_samples_affected": 1221,
+          "max_repeats_of_one_transcript": 133
+        },
+        "test": {
+          "n_transcripts_duplicated": 10,
+          "n_samples_affected": 1223,
+          "max_repeats_of_one_transcript": 149
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 10,
+        "test_in_train": 10,
+        "test_in_valid": 10
+      },
+      "instance_overlap": {
+        "valid_in_train": 1221,
+        "test_in_train": 1223,
+        "test_in_valid": 1223,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 5700,
+        "valid": 1221,
+        "test": 1223
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "VIOLATION"
+    },
+    {
+      "dataset": "Bentham_line",
+      "n_samples": {
+        "train": 9198,
+        "valid": 1415,
+        "test": 860
+      },
+      "n_unique_transcripts": {
+        "train": 8379,
+        "valid": 1365,
+        "test": 826
+      },
+      "violations": [],
+      "warnings": [],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 232,
+          "n_samples_affected": 1051,
+          "max_repeats_of_one_transcript": 153
+        },
+        "valid": {
+          "n_transcripts_duplicated": 28,
+          "n_samples_affected": 78,
+          "max_repeats_of_one_transcript": 10
+        },
+        "test": {
+          "n_transcripts_duplicated": 17,
+          "n_samples_affected": 51,
+          "max_repeats_of_one_transcript": 12
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 81,
+        "test_in_train": 39,
+        "test_in_valid": 18
+      },
+      "instance_overlap": {
+        "valid_in_train": 126,
+        "test_in_train": 66,
+        "test_in_valid": 42,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 9198,
+        "valid": 1415,
+        "test": 860
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": {
+        "n_writers": {
+          "train": 0,
+          "valid": 0,
+          "test": 0
+        },
+        "valid_in_train": 0,
+        "test_in_train": 0
+      },
+      "document_overlap": {
+        "n_documents": {
+          "train": 350,
+          "valid": 50,
+          "test": 33
+        },
+        "test_in_train": 0
+      },
+      "verdict": "OK"
+    },
+    {
+      "dataset": "Bentham_page",
+      "n_samples": {
+        "train": 350,
+        "valid": 50,
+        "test": 33
+      },
+      "n_unique_transcripts": {
+        "train": 350,
+        "valid": 50,
+        "test": 33
+      },
+      "violations": [],
+      "warnings": [],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 350,
+        "valid": 50,
+        "test": 33
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": {
+        "n_writers": {
+          "train": 0,
+          "valid": 0,
+          "test": 0
+        },
+        "valid_in_train": 0,
+        "test_in_train": 0
+      },
+      "document_overlap": {
+        "n_documents": {
+          "train": 350,
+          "valid": 50,
+          "test": 33
+        },
+        "test_in_train": 0
+      },
+      "verdict": "OK"
+    },
+    {
+      "dataset": "IAM_line",
+      "n_samples": {
+        "train": 6161,
+        "valid": 900,
+        "test": 1861
+      },
+      "n_unique_transcripts": {
+        "train": 5761,
+        "valid": 898,
+        "test": 1861
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 273,
+          "n_samples_affected": 673,
+          "max_repeats_of_one_transcript": 8
+        },
+        "valid": {
+          "n_transcripts_duplicated": 2,
+          "n_samples_affected": 4,
+          "max_repeats_of_one_transcript": 2
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 6161,
+        "valid": 900,
+        "test": 1861
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "IAM_line_aachen",
+      "n_samples": {
+        "train": 6482,
+        "valid": 976,
+        "test": 2915
+      },
+      "n_unique_transcripts": {
+        "train": 6046,
+        "valid": 976,
+        "test": 2913
+      },
+      "violations": [],
+      "warnings": [],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 295,
+          "n_samples_affected": 731,
+          "max_repeats_of_one_transcript": 8
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 2,
+          "n_samples_affected": 4,
+          "max_repeats_of_one_transcript": 2
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 2,
+        "test_in_train": 2,
+        "test_in_valid": 2
+      },
+      "instance_overlap": {
+        "valid_in_train": 2,
+        "test_in_train": 3,
+        "test_in_valid": 2,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 6482,
+        "valid": 976,
+        "test": 2915
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": {
+        "n_writers": {
+          "train": 283,
+          "valid": 56,
+          "test": 161
+        },
+        "valid_in_train": 0,
+        "test_in_train": 0
+      },
+      "document_overlap": {
+        "n_documents": {
+          "train": 747,
+          "valid": 116,
+          "test": 336
+        },
+        "test_in_train": 0
+      },
+      "verdict": "OK"
+    },
+    {
+      "dataset": "IAM_page",
+      "n_samples": {
+        "train": 747,
+        "valid": 105,
+        "test": 232
+      },
+      "n_unique_transcripts": {
+        "train": 741,
+        "valid": 105,
+        "test": 232
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 6,
+          "n_samples_affected": 12,
+          "max_repeats_of_one_transcript": 2
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 747,
+        "valid": 105,
+        "test": 232
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "IAM_page_aachen",
+      "n_samples": {
+        "train": 747,
+        "valid": 116,
+        "test": 336
+      },
+      "n_unique_transcripts": {
+        "train": 741,
+        "valid": 116,
+        "test": 336
+      },
+      "violations": [],
+      "warnings": [],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 6,
+          "n_samples_affected": 12,
+          "max_repeats_of_one_transcript": 2
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 747,
+        "valid": 116,
+        "test": 336
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": {
+        "n_writers": {
+          "train": 283,
+          "valid": 56,
+          "test": 161
+        },
+        "valid_in_train": 0,
+        "test_in_train": 0
+      },
+      "document_overlap": {
+        "n_documents": {
+          "train": 747,
+          "valid": 116,
+          "test": 336
+        },
+        "test_in_train": 0
+      },
+      "verdict": "OK"
+    },
+    {
+      "dataset": "KHATT_line",
+      "n_samples": {
+        "train": 4672,
+        "valid": 963,
+        "test": 999
+      },
+      "n_unique_transcripts": {
+        "train": 3117,
+        "valid": 752,
+        "test": 744
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 402,
+          "n_samples_affected": 1957,
+          "max_repeats_of_one_transcript": 93
+        },
+        "valid": {
+          "n_transcripts_duplicated": 85,
+          "n_samples_affected": 296,
+          "max_repeats_of_one_transcript": 29
+        },
+        "test": {
+          "n_transcripts_duplicated": 97,
+          "n_samples_affected": 352,
+          "max_repeats_of_one_transcript": 26
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 215,
+        "test_in_train": 230,
+        "test_in_valid": 127
+      },
+      "instance_overlap": {
+        "valid_in_train": 413,
+        "test_in_train": 470,
+        "test_in_valid": 324,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 4672,
+        "valid": 963,
+        "test": 999
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 2,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "KHATT_paragraph",
+      "n_samples": {
+        "train": 986,
+        "valid": 220,
+        "test": 213
+      },
+      "n_unique_transcripts": {
+        "train": 971,
+        "valid": 217,
+        "test": 212
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 7,
+          "n_samples_affected": 22,
+          "max_repeats_of_one_transcript": 5
+        },
+        "valid": {
+          "n_transcripts_duplicated": 2,
+          "n_samples_affected": 5,
+          "max_repeats_of_one_transcript": 3
+        },
+        "test": {
+          "n_transcripts_duplicated": 1,
+          "n_samples_affected": 2,
+          "max_repeats_of_one_transcript": 2
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 4,
+        "test_in_train": 7,
+        "test_in_valid": 3
+      },
+      "instance_overlap": {
+        "valid_in_train": 7,
+        "test_in_train": 8,
+        "test_in_valid": 3,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 986,
+        "valid": 220,
+        "test": 213
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "READ_2016_double_page_sem",
+      "n_samples": {
+        "train": 175,
+        "valid": 25,
+        "test": 25
+      },
+      "n_unique_transcripts": {
+        "train": 175,
+        "valid": 25,
+        "test": 25
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 175,
+        "valid": 25,
+        "test": 25
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "READ_2016_double_page_sem_dan",
+      "n_samples": {
+        "train": 169,
+        "valid": 24,
+        "test": 24
+      },
+      "n_unique_transcripts": {
+        "train": 169,
+        "valid": 24,
+        "test": 24
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 169,
+        "valid": 24,
+        "test": 24
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "READ_2016_line_synthetic",
+      "n_samples": {
+        "train": 5471,
+        "valid": 683,
+        "test": 685
+      },
+      "n_unique_transcripts": {
+        "train": 5471,
+        "valid": 683,
+        "test": 685
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 5471,
+        "valid": 683,
+        "test": 685
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "READ_2016_page_dan_textonly",
+      "n_samples": {
+        "train": 350,
+        "valid": 50,
+        "test": 50
+      },
+      "n_unique_transcripts": {
+        "train": 350,
+        "valid": 50,
+        "test": 50
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 350,
+        "valid": 50,
+        "test": 50
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "READ_2016_page_sem",
+      "n_samples": {
+        "train": 350,
+        "valid": 50,
+        "test": 50
+      },
+      "n_unique_transcripts": {
+        "train": 350,
+        "valid": 50,
+        "test": 50
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 350,
+        "valid": 50,
+        "test": 50
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "READ_2016_page_sem_dan",
+      "n_samples": {
+        "train": 350,
+        "valid": 50,
+        "test": 50
+      },
+      "n_unique_transcripts": {
+        "train": 350,
+        "valid": 50,
+        "test": 50
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 350,
+        "valid": 50,
+        "test": 50
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "READ_2016_paragraph",
+      "n_samples": {
+        "train": 837,
+        "valid": 79,
+        "test": 95
+      },
+      "n_unique_transcripts": {
+        "train": 827,
+        "valid": 79,
+        "test": 95
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 9,
+          "n_samples_affected": 19,
+          "max_repeats_of_one_transcript": 3
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 3,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 3,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 837,
+        "valid": 79,
+        "test": 95
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "READ_2016_paragraph_BROKEN_firstline_only",
+      "n_samples": {
+        "train": 837,
+        "valid": 79,
+        "test": 0
+      },
+      "n_unique_transcripts": {
+        "train": 778,
+        "valid": 75,
+        "test": 0
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 33,
+          "n_samples_affected": 92,
+          "max_repeats_of_one_transcript": 14
+        },
+        "valid": {
+          "n_transcripts_duplicated": 3,
+          "n_samples_affected": 7,
+          "max_repeats_of_one_transcript": 3
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 6,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 7,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 837,
+        "valid": 79,
+        "test": 0
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "READ_2016_paragraph_dan",
+      "n_samples": {
+        "train": 1602,
+        "valid": 182,
+        "test": 199
+      },
+      "n_unique_transcripts": {
+        "train": 1391,
+        "valid": 157,
+        "test": 172
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 195,
+          "n_samples_affected": 406,
+          "max_repeats_of_one_transcript": 5
+        },
+        "valid": {
+          "n_transcripts_duplicated": 25,
+          "n_samples_affected": 50,
+          "max_repeats_of_one_transcript": 2
+        },
+        "test": {
+          "n_transcripts_duplicated": 27,
+          "n_samples_affected": 54,
+          "max_repeats_of_one_transcript": 2
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 6,
+        "test_in_train": 3,
+        "test_in_valid": 4
+      },
+      "instance_overlap": {
+        "valid_in_train": 7,
+        "test_in_train": 5,
+        "test_in_valid": 5,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 1602,
+        "valid": 182,
+        "test": 199
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "READ_2016_triple_page_sem",
+      "n_samples": {
+        "train": 116,
+        "valid": 16,
+        "test": 16
+      },
+      "n_unique_transcripts": {
+        "train": 116,
+        "valid": 16,
+        "test": 16
+      },
+      "violations": [],
+      "warnings": [
+        "writer identity was discarded by the formatter; writer-independence cannot be verified for this dataset"
+      ],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 116,
+        "valid": 16,
+        "test": 16
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": "provenance_unavailable",
+      "verdict": "WARN"
+    },
+    {
+      "dataset": "RIMES_line",
+      "n_samples": {
+        "train": 10530,
+        "valid": 801,
+        "test": 778
+      },
+      "n_unique_transcripts": {
+        "train": 9384,
+        "valid": 772,
+        "test": 746
+      },
+      "violations": [],
+      "warnings": [],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 311,
+          "n_samples_affected": 1457,
+          "max_repeats_of_one_transcript": 122
+        },
+        "valid": {
+          "n_transcripts_duplicated": 20,
+          "n_samples_affected": 49,
+          "max_repeats_of_one_transcript": 6
+        },
+        "test": {
+          "n_transcripts_duplicated": 12,
+          "n_samples_affected": 44,
+          "max_repeats_of_one_transcript": 7
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 77,
+        "test_in_train": 90,
+        "test_in_valid": 24
+      },
+      "instance_overlap": {
+        "valid_in_train": 102,
+        "test_in_train": 122,
+        "test_in_valid": 52,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 10530,
+        "valid": 801,
+        "test": 778
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": {
+        "n_writers": {
+          "train": 0,
+          "valid": 0,
+          "test": 0
+        },
+        "valid_in_train": 0,
+        "test_in_train": 0
+      },
+      "document_overlap": {
+        "n_documents": {
+          "train": 1400,
+          "valid": 100,
+          "test": 100
+        },
+        "test_in_train": 0
+      },
+      "verdict": "OK"
+    },
+    {
+      "dataset": "RIMES_paragraph",
+      "n_samples": {
+        "train": 1400,
+        "valid": 100,
+        "test": 100
+      },
+      "n_unique_transcripts": {
+        "train": 1400,
+        "valid": 100,
+        "test": 100
+      },
+      "violations": [],
+      "warnings": [],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 1400,
+        "valid": 100,
+        "test": 100
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": {
+        "n_writers": {
+          "train": 0,
+          "valid": 0,
+          "test": 0
+        },
+        "valid_in_train": 0,
+        "test_in_train": 0
+      },
+      "document_overlap": {
+        "n_documents": {
+          "train": 1400,
+          "valid": 100,
+          "test": 100
+        },
+        "test_in_train": 0
+      },
+      "verdict": "OK"
+    },
+    {
+      "dataset": "SaintGall_line",
+      "n_samples": {
+        "train": 468,
+        "valid": 235,
+        "test": 707
+      },
+      "n_unique_transcripts": {
+        "train": 468,
+        "valid": 235,
+        "test": 707
+      },
+      "violations": [],
+      "warnings": [],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 468,
+        "valid": 235,
+        "test": 707
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": {
+        "n_writers": {
+          "train": 0,
+          "valid": 0,
+          "test": 0
+        },
+        "valid_in_train": 0,
+        "test_in_train": 0
+      },
+      "document_overlap": {
+        "n_documents": {
+          "train": 20,
+          "valid": 10,
+          "test": 30
+        },
+        "test_in_train": 0
+      },
+      "verdict": "OK"
+    },
+    {
+      "dataset": "SaintGall_page",
+      "n_samples": {
+        "train": 20,
+        "valid": 10,
+        "test": 30
+      },
+      "n_unique_transcripts": {
+        "train": 20,
+        "valid": 10,
+        "test": 30
+      },
+      "violations": [],
+      "warnings": [],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "valid": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        },
+        "test": {
+          "n_transcripts_duplicated": 0,
+          "n_samples_affected": 0,
+          "max_repeats_of_one_transcript": 0
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "instance_overlap": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 20,
+        "valid": 10,
+        "test": 30
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": {
+        "n_writers": {
+          "train": 0,
+          "valid": 0,
+          "test": 0
+        },
+        "valid_in_train": 0,
+        "test_in_train": 0
+      },
+      "document_overlap": {
+        "n_documents": {
+          "train": 20,
+          "valid": 10,
+          "test": 30
+        },
+        "test_in_train": 0
+      },
+      "verdict": "OK"
+    },
+    {
+      "dataset": "Washington_line",
+      "n_samples": {
+        "train": 325,
+        "valid": 168,
+        "test": 163
+      },
+      "n_unique_transcripts": {
+        "train": 319,
+        "valid": 167,
+        "test": 159
+      },
+      "violations": [],
+      "warnings": [],
+      "duplicated_transcripts_within_split": {
+        "train": {
+          "n_transcripts_duplicated": 5,
+          "n_samples_affected": 11,
+          "max_repeats_of_one_transcript": 3
+        },
+        "valid": {
+          "n_transcripts_duplicated": 1,
+          "n_samples_affected": 2,
+          "max_repeats_of_one_transcript": 2
+        },
+        "test": {
+          "n_transcripts_duplicated": 4,
+          "n_samples_affected": 8,
+          "max_repeats_of_one_transcript": 2
+        }
+      },
+      "transcript_overlap": {
+        "valid_in_train": 1,
+        "test_in_train": 3,
+        "test_in_valid": 2
+      },
+      "instance_overlap": {
+        "valid_in_train": 2,
+        "test_in_train": 4,
+        "test_in_valid": 4,
+        "note": "held-out SAMPLES whose transcription occurs in train; transcript_overlap counts DISTINCT strings. Evaluation scores samples."
+      },
+      "n_images_hashed": {
+        "train": 325,
+        "valid": 168,
+        "test": 163
+      },
+      "duplicate_images_within_split": {
+        "train": 0,
+        "valid": 0,
+        "test": 0
+      },
+      "identical_documents_across_splits": {
+        "valid_in_train": 0,
+        "test_in_train": 0,
+        "test_in_valid": 0
+      },
+      "identical_document_examples": {},
+      "writer_overlap": {
+        "n_writers": {
+          "train": 0,
+          "valid": 0,
+          "test": 0
+        },
+        "valid_in_train": 0,
+        "test_in_train": 0
+      },
+      "document_overlap": {
+        "n_documents": {
+          "train": 10,
+          "valid": 5,
+          "test": 5
+        },
+        "test_in_train": 0
+      },
+      "verdict": "OK"
+    }
+  ]
+}

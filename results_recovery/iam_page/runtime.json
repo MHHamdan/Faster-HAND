@@ -1,0 +1,30 @@
+{
+  "model": "iam_page",
+  "batch_size": 1,
+  "environment": {
+    "python": "3.11.14",
+    "torch": "2.9.1+cu128",
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "gpu_count": 1,
+    "cuda_visible_devices": "0",
+    "gpu_total_memory_gb": 94.97,
+    "git_commit": null
+  },
+  "splits": {
+    "test": {
+      "n_samples": 232,
+      "wall_clock_s": 642.855,
+      "seconds_per_document": 2.7709,
+      "peak_gpu_memory_gb": 1.1923
+    },
+    "valid": {
+      "n_samples": 105,
+      "wall_clock_s": 328.176,
+      "seconds_per_document": 3.1255,
+      "peak_gpu_memory_gb": 1.1923
+    }
+  }
+}

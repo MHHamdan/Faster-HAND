@@ -1,0 +1,176 @@
+{
+ "config": "E3E4",
+ "decode_path": "speculative_m5",
+ "amp": true,
+ "levels": {
+  "page": {
+   "n": 50,
+   "cer": 0.04,
+   "wer": 0.1579,
+   "loer": 0.0349,
+   "map_cer": 0.9361,
+   "edit_chars": 931,
+   "nb_chars": 23262,
+   "edit_words": 675,
+   "nb_words": 4276,
+   "latency_s_mean": 0.9262641181610525,
+   "latency_s_median": 0.8875475826207548,
+   "latency_s_total": 46.31320590805262,
+   "tokens_mean": 478.58,
+   "tokens_max": 576,
+   "passes_mean": 148.12,
+   "tokens_per_pass_mean": 3.2446340010059465,
+   "T_enc_mean": 8204.9,
+   "T_enc_max": 8580,
+   "peak_mem_MiB_mean": 1198.884423828125,
+   "peak_mem_MiB_max": 1223.9013671875,
+   "truncated_n": 0,
+   "truncation_rate": 0.0,
+   "stop_reasons": {
+    "end_token": 50
+   },
+   "failed_n": 0,
+   "failure_rate": 0.0,
+   "len_ratio_mean": 0.9991533029200541,
+   "gt_chars_mean": 465.24,
+   "ratio_vs_page": {
+    "latency_s_mean": 1.0,
+    "tokens_mean": 1.0,
+    "T_enc_mean": 1.0,
+    "peak_mem_MiB_mean": 1.0,
+    "gt_chars_mean": 1.0
+   }
+  },
+  "double_page": {
+   "n": 24,
+   "cer": 0.5478,
+   "wer": 0.5997,
+   "loer": 0.4543,
+   "map_cer": 0.4706,
+   "edit_chars": 12323,
+   "nb_chars": 22495,
+   "edit_words": 2467,
+   "nb_words": 4114,
+   "latency_s_mean": 0.9950734854792245,
+   "latency_s_median": 0.9960976894944906,
+   "latency_s_total": 23.881763651501387,
+   "tokens_mean": 456.2083333333333,
+   "tokens_max": 501,
+   "passes_mean": 143.41666666666666,
+   "tokens_per_pass_mean": 3.191355080937845,
+   "T_enc_mean": 16410.625,
+   "T_enc_max": 16555,
+   "peak_mem_MiB_mean": 1860.8988850911458,
+   "peak_mem_MiB_max": 1871.74658203125,
+   "truncated_n": 0,
+   "truncation_rate": 0.0,
+   "stop_reasons": {
+    "end_token": 24
+   },
+   "failed_n": 24,
+   "failure_rate": 1.0,
+   "len_ratio_mean": 0.47276359816476665,
+   "gt_chars_mean": 937.2916666666666,
+   "ratio_vs_page": {
+    "latency_s_mean": 1.0742869835601339,
+    "tokens_mean": 0.9532540710713638,
+    "T_enc_mean": 2.000100549671538,
+    "peak_mem_MiB_mean": 1.5521920613074283,
+    "gt_chars_mean": 2.0146411887771185
+   }
+  },
+  "triple_page": {
+   "n": 16,
+   "cer": 0.6899,
+   "wer": 0.7301,
+   "loer": 0.6019,
+   "map_cer": 0.3102,
+   "edit_chars": 15530,
+   "nb_chars": 22512,
+   "edit_words": 3005,
+   "nb_words": 4116,
+   "latency_s_mean": 1.2908712429343723,
+   "latency_s_median": 1.2272872566245496,
+   "latency_s_total": 20.653939886949956,
+   "tokens_mean": 471.5625,
+   "tokens_max": 558,
+   "passes_mean": 150.1875,
+   "tokens_per_pass_mean": 3.1493914374815484,
+   "T_enc_mean": 24588.4375,
+   "T_enc_max": 25080,
+   "peak_mem_MiB_mean": 2522.5411071777344,
+   "peak_mem_MiB_max": 2557.0126953125,
+   "truncated_n": 0,
+   "truncation_rate": 0.0,
+   "stop_reasons": {
+    "end_token": 16
+   },
+   "failed_n": 16,
+   "failure_rate": 1.0,
+   "len_ratio_mean": 0.32487563066588204,
+   "gt_chars_mean": 1407.0,
+   "ratio_vs_page": {
+    "latency_s_mean": 1.3936319216350388,
+    "tokens_mean": 0.9853368297881232,
+    "T_enc_mean": 2.9967991687893822,
+    "peak_mem_MiB_mean": 2.1040736346570235,
+    "gt_chars_mean": 3.024245550683518
+   }
+  }
+ },
+ "env": {
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "torch": "2.9.1+cu128",
+  "cuda": "12.8",
+  "cudnn": 91002,
+  "date_utc": "2026-10-02T03:32:50Z",
+  "cuda_visible_devices": "0",
+  "gpu_snapshot_start": {
+   "compute_apps": [
+    "2698605, 1364 MiB, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327",
+    "1226229, 1314 MiB, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327",
+    "642151, 19916 MiB, GPU-20eb8575-c753-9898-fab6-bdf0455252ca",
+    "1210340, 19422 MiB, GPU-20eb8575-c753-9898-fab6-bdf0455252ca"
+   ],
+   "gpus": [
+    "0, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327, 4 %, 2698 MiB",
+    "1, GPU-20eb8575-c753-9898-fab6-bdf0455252ca, 95 %, 39358 MiB"
+   ],
+   "pid": 1226229
+  },
+  "argv": [
+   "tools/multipage_eval.py",
+   "--export-dir",
+   "outputs/export_e4",
+   "--heads",
+   "outputs/export_e4/spec_heads_m5.safetensors",
+   "--speculative",
+   "--m",
+   "5",
+   "--config-name",
+   "E3E4",
+   "--identity-ref",
+   "E4",
+   "--amp",
+   "--level",
+   "page",
+   "double_page",
+   "triple_page",
+   "--out-dir",
+   "experiments/multipage/zero_shot"
+  ],
+  "gpu_snapshot_end": {
+   "compute_apps": [
+    "2698605, 1364 MiB, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327",
+    "1226229, 5740 MiB, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327",
+    "642151, 19916 MiB, GPU-20eb8575-c753-9898-fab6-bdf0455252ca",
+    "1210340, 19422 MiB, GPU-20eb8575-c753-9898-fab6-bdf0455252ca"
+   ],
+   "gpus": [
+    "0, GPU-ace4b194-1c2c-9a0f-17ca-5fd530778327, 43 %, 7124 MiB",
+    "1, GPU-20eb8575-c753-9898-fab6-bdf0455252ca, 81 %, 39358 MiB"
+   ],
+   "pid": 1226229
+  }
+ }
+}

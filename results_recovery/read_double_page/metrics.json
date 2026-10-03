@@ -1,0 +1,58 @@
+{
+  "model": "read_double_page",
+  "dataset": "READ_2016",
+  "level": "double_page",
+  "checkpoint": "models/read_double_page/best_model.pt",
+  "checkpoint_fingerprint": {
+    "epoch": 1880,
+    "step": 329175,
+    "recorded_best_valid_cer": 0.0376,
+    "charset_size": 99,
+    "encoder_parameters": 1706240,
+    "decoder_parameters": 5327974,
+    "total_parameters": 7034214,
+    "decoder_layers": 8,
+    "encoder_has_octave_gate_se_keys": false,
+    "decoder_has_memory_sparse_fusion_keys": false
+  },
+  "loaded_epoch": 1880,
+  "charset_size": 99,
+  "hand_encoding": true,
+  "additional_tokens": 3,
+  "layout_metrics": "measured",
+  "layout_metrics_note": null,
+  "decoding": "greedy",
+  "batch_size": 1,
+  "splits": {
+    "test": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 23262,
+        "cer": 0.0486,
+        "nb_words": 4248,
+        "wer": 0.1516,
+        "sample_time": 32.0969,
+        "time": 802.4223,
+        "percent_pp_op": 0.20622568093385213,
+        "loer": 0.297,
+        "map_cer": 0.9206,
+        "nb_samples": 25
+      }
+    },
+    "valid": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 21609,
+        "cer": 0.0368,
+        "nb_words": 3908,
+        "wer": 0.1512,
+        "sample_time": 29.0028,
+        "time": 725.0699,
+        "percent_pp_op": 0.2183406113537118,
+        "loer": 0.3096,
+        "map_cer": 0.8699,
+        "nb_samples": 25
+      }
+    }
+  }
+}

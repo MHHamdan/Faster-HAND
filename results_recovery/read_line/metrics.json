@@ -1,0 +1,52 @@
+{
+  "model": "read_line",
+  "dataset": "READ_2016",
+  "level": "line",
+  "checkpoint": "outputs/read_line_fcn/checkpoints/best_238.pt",
+  "checkpoint_fingerprint": {
+    "epoch": 238,
+    "step": 81738,
+    "recorded_best_valid_cer": 0.0327,
+    "charset_size": 85,
+    "encoder_parameters": 1706240,
+    "decoder_parameters": 5320792,
+    "total_parameters": 7027032,
+    "decoder_layers": 8,
+    "encoder_has_octave_gate_se_keys": false,
+    "decoder_has_memory_sparse_fusion_keys": false
+  },
+  "loaded_epoch": 238,
+  "charset_size": 85,
+  "hand_encoding": false,
+  "additional_tokens": 3,
+  "layout_metrics": "not_applicable",
+  "layout_metrics_note": "dataset formatted without layout tokens (constraints lack 'hand_encoding'), so LOER and mAP_CER are undefined for it",
+  "decoding": "greedy",
+  "batch_size": 1,
+  "splits": {
+    "test": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 16683,
+        "cer": 0.0372,
+        "nb_words": 3186,
+        "wer": 0.1168,
+        "sample_time": 0.2338,
+        "time": 160.131,
+        "nb_samples": 685
+      }
+    },
+    "valid": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 16294,
+        "cer": 0.0325,
+        "nb_words": 3077,
+        "wer": 0.1063,
+        "sample_time": 0.178,
+        "time": 121.5805,
+        "nb_samples": 683
+      }
+    }
+  }
+}

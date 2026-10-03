@@ -1,0 +1,52 @@
+{
+  "model": "ahawp_paragraph",
+  "dataset": "AHAWP",
+  "level": "paragraph",
+  "checkpoint": "models/ahawp_paragraph/best_model.pt",
+  "checkpoint_fingerprint": {
+    "epoch": 1465,
+    "step": 61572,
+    "recorded_best_valid_cer": 0.0,
+    "charset_size": 39,
+    "encoder_parameters": 1706240,
+    "decoder_parameters": 5297194,
+    "total_parameters": 7003434,
+    "decoder_layers": 8,
+    "encoder_has_octave_gate_se_keys": false,
+    "decoder_has_memory_sparse_fusion_keys": false
+  },
+  "loaded_epoch": 1465,
+  "charset_size": 39,
+  "hand_encoding": true,
+  "additional_tokens": 3,
+  "layout_metrics": "not_applicable",
+  "layout_metrics_note": "dataset formatted without layout tokens (constraints lack 'hand_encoding'), so LOER and mAP_CER are undefined for it",
+  "decoding": "greedy",
+  "batch_size": 1,
+  "splits": {
+    "test": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 8469,
+        "cer": 0.0256,
+        "nb_words": 1716,
+        "wer": 0.0309,
+        "sample_time": 3.3772,
+        "time": 124.9576,
+        "nb_samples": 37
+      }
+    },
+    "valid": {
+      "status": "ok",
+      "metrics": {
+        "nb_chars": 7898,
+        "cer": 0.0,
+        "nb_words": 1617,
+        "wer": 0.0,
+        "sample_time": 3.3994,
+        "time": 122.3785,
+        "nb_samples": 36
+      }
+    }
+  }
+}
