@@ -24,7 +24,7 @@ sed -nE 's/^\| `([^`]+)` \| `([0-9a-f]{64})`.*/\2  \1/p' release/MANIFEST.md > /
 sha256sum -c /tmp/hand.sha256
 ```
 
-**315 files, 13,938,648 bytes.** Generated 2026-10-02. Regenerate with this script after any change to the tree.
+**315 files, 13,938,661 bytes.** Generated 2026-10-02. Regenerate with this script after any change to the tree.
 
 
 ## Root — project metadata, environment, licence
@@ -32,7 +32,7 @@ sha256sum -c /tmp/hand.sha256
 | File | SHA-256 | Bytes |
 |---|---|---:|
 | `.gitignore` | `88798a5ad20ebcf40b719505682fa3077ca889ca6f0469a592891fbd20aa1546` | 4,921 |
-| `CITATION.cff` | `04933b518eb9acd8f1928bab10046b276edb69e6553aa88bcc436870d14020f0` | 3,186 |
+| `CITATION.cff` | `afdbba871268950554629568a3b20bfddfbb80829739f86e2efa1ba6bef99a5c` | 3,186 |
 | `LICENSE` | `04a0056cb7d15f3c3824ac1901f1c678d2e98b02721ab80f2d7dd4e93de20702` | 1,072 |
 | `README.md` | `16f742206635615ac58f5fd097927de0fb51bbe2f44ab3e945bd1c92abeca153` | 16,620 |
 | `dataset_audit.json` | `2581dc1b6ce607973071edfc554ba1b359be8e27e9c49619fe2a20d877ecbf7d` | 49,093 |
@@ -54,7 +54,7 @@ sha256sum -c /tmp/hand.sha256
 | `docs/assets/hand_decoding_test_11.gif` | `f80805110149f837394fb79c6c6ed0b8272e1479e27968b81d0805918fb2c84e` | 1,147,175 |
 | `docs/assets/qualitative_double_page.png` | `23f479eafb2d53b78b61d27fb1306f1e8ee2685e7032371f38ab822d8cdf66c2` | 980,676 |
 | `docs/assets/qualitative_triple_page.png` | `13485c499763bba75cd185d61c484a7563022fe7403d8709410d763848200ecd` | 802,507 |
-| `docs/changelog.md` | `f39941c41e86bf9f397fef1ae6e1f1a7a290b247e97c3caa2da984ee2c5cda16` | 1,985 |
+| `docs/changelog.md` | `bd61e8d095943cb274c0b805905f475511fb4059ff76687d958d66fa32ca0cc6` | 1,998 |
 | `docs/gallery/README.md` | `36f150ba4599152a61380e1ec334cbaa3e6110275238613481ae9e150cfa1833` | 4,664 |
 | `docs/gallery/cross_script_comparison.pdf` | `9f005c98e1dd0e62d61c989f7d5429042ec3c8967324023454a7c24395cf8e99` | 341,608 |
 | `docs/gallery/iam_representative.pdf` | `b2e4485dec9ba998e456ffa333aef0fde9d6e5b07bc00b1ab9d214b88f1a3f87` | 55,102 |

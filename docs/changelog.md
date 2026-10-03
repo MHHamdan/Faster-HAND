@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0 — initial public release
+## 1.0.0 — initial public release (2026-10-02)
 
 First public release of the code and evidence for
 *HAND: Unified Text–Layout Decoding for Handwritten Document Recognition*. No experiment was
