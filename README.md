@@ -213,6 +213,17 @@ cd release && python -m hand_release.hub hand-read2016-page     # -> weights/han
 | `hand-read2016-double-page` | double pages | double-page test CER 3.60 %, WER 13.27 % | 27.5 MB, with draft heads | `42928757e0d561343db7a7ef7452886ef002310770ea8ffa7164361728fbe9ea` |
 | `hand-read2016-triple-page` | triple pages | triple-page test CER 3.48 %, WER 13.41 % | 26.1 MB | `1c09c18ecd3aac0a99011dee05b593832b9e4a1ec818efc2779e3c742262d58d` |
 
+The same four models are on Hugging Face, in the
+[HAND-Decoding collection](https://huggingface.co/collections/MHamdan/hand-decoding-6ac083dab73470ecf7f95551),
+and load by name:
+
+```python
+import sys; sys.path.insert(0, "release")
+from hand_release.inference import HANDRecognizer
+model = HANDRecognizer.from_pretrained("MHamdan/hand-read2016-page", kv_cache=True, speculative=True)
+print(model.read("page.jpg", source_dpi=300).text)
+```
+
 Each model reads the number of pages it was trained on; see
 [`docs/model_card.md`](docs/model_card.md). The IAM and KHATT models are not released: they
 were trained on corpora licensed for registered research use. Training from scratch initialises

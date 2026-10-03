@@ -11,7 +11,10 @@ provenance for every number here is in
 
 The four READ 2016 models are released as assets of the GitHub release
 [v1.1.0](https://github.com/DocumentRecognitionModels/HAND-Decoding/releases/tag/v1.1.0), not in
-the git history. `release/hand_release/hub.py` downloads them and refuses any file whose
+the git history, and as the Hugging Face models `MHamdan/hand-read2016-page`,
+`MHamdan/hand-read2016-page-compact`, `MHamdan/hand-read2016-double-page` and
+`MHamdan/hand-read2016-triple-page`, which `HANDRecognizer.from_pretrained` loads by name.
+`release/hand_release/hub.py` downloads the GitHub packages and refuses any file whose
 SHA-256 differs from the pinned value. Each package carries its own README with the reported
 result, its scope and the attribution.
 

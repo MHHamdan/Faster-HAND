@@ -6,6 +6,8 @@
   triple-page adapted) are attached to the GitHub release as CC BY 4.0 packages, with draft
   heads where they exist. Each was checked to reproduce its stored example prediction token for
   token. `release/hand_release/hub.py` downloads them and verifies the pinned SHA-256.
+- The same weights are published as the Hugging Face models `MHamdan/hand-read2016-*`, loadable
+  with `HANDRecognizer.from_pretrained`.
 - `demo/app.py`: Gradio demo with three READ 2016 example images (single, double, triple page).
 - `safetensors` added to the requirements; it is needed to load the released weights.
 
