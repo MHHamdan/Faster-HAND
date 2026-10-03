@@ -61,7 +61,9 @@ values, mixed precision.
 | Faster-DAN, published | 3.95 | 14.06 | 0.0382 | 0.9420 |
 | DANCER, published | 3.36 | 13.73 | 0.0337 | 0.9473 |
 | DANIEL, published | 4.03 | 15.63 | 0.0337 | 0.9266 |
+
 https://github.com/DocumentRecognitionModels/HAND-Decoding/blob/main/docs/gallery/triple_page_decoding.gif
+
 **Inference efficiency (READ 2016 test, 50 pages).** Speed-ups are ratios of latencies measured
 in the same session; error rates are comparable only within a training-duration group.
 
@@ -71,6 +73,17 @@ in the same session; error rates are comparable only within a training-duration 
 | HAND + shared K/V | 500,000 | 6,112,612 | 1.01× | 4.00 | – |
 | HAND + shared K/V + speculative, mixed precision | 500,000 | 6,478,580 | 2.886× | 4.00 | 48 of 50 |
 | HAND + shared K/V + speculative, single precision | 500,000 | 6,478,580 | 2.947× | 4.00 | 50 of 50 |
+
+### Inference Efficiency
+
+<p align="center">
+  <img src="docs/gallery/triple_page_decoding.gif"
+       alt="Triple-page HAND decoding visualization"
+       width="900">
+</p>
+
+**Inference efficiency (READ 2016 test, 50 pages).** Speed-ups are ratios of latencies measured ...
+
 
 Ablations and negative results: [`docs/ablations.md`](docs/ablations.md).
 
