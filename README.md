@@ -5,8 +5,8 @@ Document Recognition** (Hamdan, Rahiche, Cheriet). HAND is a segmentation-free e
 model that reads a handwritten document image as one autoregressive sequence of interleaved
 characters and layout tokens in reading order, so that transcription and document structure are
 predicted under a single objective. The repository contains the model, training and evaluation
-code and the run records behind every reported number. The manuscript is under review and is not
-included; no dataset and no model weights are redistributed.
+code, the run records behind every reported number, the trained READ 2016 weights and a Gradio
+demo. The manuscript is under review and is not included; no dataset is redistributed.
 
 ## Overview
 
@@ -197,11 +197,42 @@ bash scripts/setup_dan_fonts.sh              # the 41 synthetic-curriculum fonts
 python scripts/verify_dan_fonts.py
 ```
 
-**Model weights.** Checkpoints are not distributed yet; when they are, links and SHA-256 digests
-will appear here and in [`docs/model_card.md`](docs/model_card.md). Training initialises from the
-public READ 2016 line checkpoint of DAN (Zenodo
+**Model weights.** The four READ 2016 models are attached to the
+[v1.1.0 release](https://github.com/DocumentRecognitionModels/HAND-Decoding/releases/tag/v1.1.0)
+under CC BY 4.0. Before release, each was checked to reproduce the stored prediction of its
+example image token for token. Download and verify one with:
+
+```bash
+cd release && python -m hand_release.hub hand-read2016-page     # -> weights/hand-read2016-page/
+```
+
+| Model | Reads | Reported result (paper) | Package | SHA-256 |
+|---|---|---|---|---|
+| `hand-read2016-page` | single pages | READ 2016 test CER 3.55 %, WER 13.31 % | 27.5 MB, with draft heads | `877246ec2503da82636a820d99091c9a99c234d5396b8cb8e9bc9ab8fc4f645c` |
+| `hand-read2016-page-compact` | single pages | CER 4.00 %, WER 15.74 % (500,000 samples) | 27.5 MB, with draft heads | `c53984243256c9e90aee7aea887fd8706034a39cf31ddc81631251f58d6d7791` |
+| `hand-read2016-double-page` | double pages | double-page test CER 3.60 %, WER 13.27 % | 27.5 MB, with draft heads | `42928757e0d561343db7a7ef7452886ef002310770ea8ffa7164361728fbe9ea` |
+| `hand-read2016-triple-page` | triple pages | triple-page test CER 3.48 %, WER 13.41 % | 26.1 MB | `1c09c18ecd3aac0a99011dee05b593832b9e4a1ec818efc2779e3c742262d58d` |
+
+Each model reads the number of pages it was trained on; see
+[`docs/model_card.md`](docs/model_card.md). The IAM and KHATT models are not released: they
+were trained on corpora licensed for registered research use. Training from scratch initialises
+from the public READ 2016 line checkpoint of DAN (Zenodo
 [10.5281/zenodo.7244382](https://doi.org/10.5281/zenodo.7244382), CC BY 4.0); place it at
 `weights/dan/fcn_read_2016_line_syn.pt`.
+
+## Demo
+
+A Gradio app reads an uploaded image with any of the four models and shows the output stream
+with layout tokens as colored tags, the plain transcription, and the parsed regions. Weights are
+downloaded and verified on first use.
+
+```bash
+pip install -r demo/requirements.txt
+python demo/app.py            # http://127.0.0.1:7860   (--share for a temporary public link)
+```
+
+GitHub does not run Python apps, so the demo runs locally or on any Gradio host; see
+[`demo/README.md`](demo/README.md).
 
 ## Evaluation
 
@@ -247,6 +278,7 @@ via `tools/train.py`. The exact commands and run records are in
 | `tests/` | CPU test suite |
 | `release/` | inference package, release tools, licence notice and manifest |
 | `experiments/qualitative/` | stored predictions behind every qualitative figure and animation |
+| `demo/` | Gradio demo and three READ 2016 example images |
 | `hand/models/experimental/` | components documented in the supplementary but used by no reported model |
 
 ## Citation
@@ -275,7 +307,7 @@ contains:
 | Component | License |
 |---|---|
 | 27 Python files derived from DAN / VerticalAttentionOCR (Denis Coquenet) | CeCILL-C; each carries the upstream notice, listed in [`release/NOTICE.md`](release/NOTICE.md) |
-| Trained weights (when published) | CC BY 4.0, inherited from the initialisation checkpoint |
+| Trained weights (release assets) | CC BY 4.0, adapted from the initialisation checkpoint |
 | READ 2016 | CC BY 4.0 (Zenodo 1297399); not redistributed |
 | IAM, KHATT | research licenses requiring registration; not redistributed |
 

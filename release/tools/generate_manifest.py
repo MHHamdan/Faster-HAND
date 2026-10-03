@@ -34,6 +34,7 @@ GROUPS = [
   ('Documentation', lambda p: p.startswith('docs/')),
  ('Library — hand/', lambda p: p.startswith('hand/')),
  ('Tests — tests/', lambda p: p.startswith('tests/')),
+ ('Demo — demo/', lambda p: p.startswith('demo/')),
  ('Entry points — tools/', lambda p: p.startswith('tools/')),
  ('Reproducibility scripts — scripts/', lambda p: p.startswith('scripts/')),
  ('Configuration — configs/', lambda p: p.startswith('configs/')),

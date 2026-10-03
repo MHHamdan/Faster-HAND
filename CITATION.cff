@@ -51,8 +51,8 @@ license: MIT
 notes: >-
   MIT covers the author's own code. Files derived from DAN /
   VerticalAttentionOCR are CeCILL-C; see release/NOTICE.md.
-version: 1.0.0
-date-released: '2026-10-02'
+version: 1.1.0
+date-released: '2026-10-03'
 
 # --- PAPER CITATION (bibliographic record, not software credit) ------------
 # This block records the arXiv preprint as published (arXiv:2412.18981, December

@@ -31,3 +31,4 @@ sentencepiece==0.2.1
 
 # NOTE: do NOT install `tensorflow` in this environment. TensorBoard probes for it at
 # import time, and any TF built against NumPy 1.x will abort the import.
+safetensors==0.8.0

@@ -210,9 +210,8 @@ from the local copy; check yours against them before training.
 
 CC BY 4.0 is **not** share-alike, and §3(a)(4) permits a different licence on the Adapted
 Material provided attribution survives and no additional restriction bites the upstream
-material. **No weights are distributed in this repository**, so the licence the released
-weights will carry is an open author decision and this notice does not pre-empt it; the
-CC BY 4.0 §3(a) attribution above is binding on them whatever that decision is.
+material. The released weights (GitHub release v1.1.0, outside the git history) are licensed
+under **CC BY 4.0**, and each package carries the attribution above in its README.
 
 **Coquenet's own weights are not re-hosted here.** Link to the Zenodo DOI instead: the
 canonical deposit should stay canonical.

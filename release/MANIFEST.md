@@ -24,7 +24,7 @@ sed -nE 's/^\| `([^`]+)` \| `([0-9a-f]{64})`.*/\2  \1/p' release/MANIFEST.md > /
 sha256sum -c /tmp/hand.sha256
 ```
 
-**315 files, 13,938,661 bytes.** Generated 2026-10-02. Regenerate with this script after any change to the tree.
+**322 files, 15,689,758 bytes.** Generated 2026-10-03. Regenerate with this script after any change to the tree.
 
 
 ## Root — project metadata, environment, licence
@@ -32,14 +32,14 @@ sha256sum -c /tmp/hand.sha256
 | File | SHA-256 | Bytes |
 |---|---|---:|
 | `.gitignore` | `88798a5ad20ebcf40b719505682fa3077ca889ca6f0469a592891fbd20aa1546` | 4,921 |
-| `CITATION.cff` | `afdbba871268950554629568a3b20bfddfbb80829739f86e2efa1ba6bef99a5c` | 3,186 |
+| `CITATION.cff` | `dd9559de67309f8ea9ef51701d3f561fff9a2109ea88f207dd45a156104efc32` | 3,186 |
 | `LICENSE` | `04a0056cb7d15f3c3824ac1901f1c678d2e98b02721ab80f2d7dd4e93de20702` | 1,072 |
-| `README.md` | `16f742206635615ac58f5fd097927de0fb51bbe2f44ab3e945bd1c92abeca153` | 16,620 |
+| `README.md` | `43ce77c1af9d0f5276dd9f0495b3771b30c981b0ee23d562b11c5abcf32121ce` | 18,505 |
 | `dataset_audit.json` | `2581dc1b6ce607973071edfc554ba1b359be8e27e9c49619fe2a20d877ecbf7d` | 49,093 |
 | `environment.yml` | `3ad9240a921c022c70d124320a772c8475a15c1772411a72e61cb168186c3017` | 1,328 |
-| `requirements-pinned.txt` | `ca57b6cd97efd9137c1510e4e875cd75d683a63433b8ec997fc043ed15ae930f` | 1,351 |
-| `requirements.txt` | `b20bd88243ed85937e3e42f64a6a56c05dc5ad9fc78c1f1d877f5f7cae42d57a` | 1,133 |
-| `setup.py` | `3807cb10f2d48839442668b67da9a67ff9295c74ae7e09bb2ec37ef728b4aca9` | 1,492 |
+| `requirements-pinned.txt` | `d774212321e05c61fe3b049056b982424aad60bd2e050725140bd98ce2615262` | 1,370 |
+| `requirements.txt` | `960687ab6e1bcc124b35397005ba7ff734e50e6f5583c5c492c34dbf67bb51b6` | 1,172 |
+| `setup.py` | `4d618475dee5d54253a31df67fd507dae5e2565281c336f160bb5fe51de87c29` | 1,524 |
 
 ## Documentation
 
@@ -54,7 +54,7 @@ sha256sum -c /tmp/hand.sha256
 | `docs/assets/hand_decoding_test_11.gif` | `f80805110149f837394fb79c6c6ed0b8272e1479e27968b81d0805918fb2c84e` | 1,147,175 |
 | `docs/assets/qualitative_double_page.png` | `23f479eafb2d53b78b61d27fb1306f1e8ee2685e7032371f38ab822d8cdf66c2` | 980,676 |
 | `docs/assets/qualitative_triple_page.png` | `13485c499763bba75cd185d61c484a7563022fe7403d8709410d763848200ecd` | 802,507 |
-| `docs/changelog.md` | `bd61e8d095943cb274c0b805905f475511fb4059ff76687d958d66fa32ca0cc6` | 1,998 |
+| `docs/changelog.md` | `bea255713b83e834a5edf02924d4cd825b5a373dbe3db6f7f54df1b0738b6db9` | 2,504 |
 | `docs/gallery/README.md` | `36f150ba4599152a61380e1ec334cbaa3e6110275238613481ae9e150cfa1833` | 4,664 |
 | `docs/gallery/cross_script_comparison.pdf` | `9f005c98e1dd0e62d61c989f7d5429042ec3c8967324023454a7c24395cf8e99` | 341,608 |
 | `docs/gallery/iam_representative.pdf` | `b2e4485dec9ba998e456ffa333aef0fde9d6e5b07bc00b1ab9d214b88f1a3f87` | 55,102 |
@@ -66,8 +66,8 @@ sha256sum -c /tmp/hand.sha256
 | `docs/gallery/read2016_triple_page_zeroshot_test_test_0.pdf` | `751d1686e73f327299000f3357fecf4d662947312f954e38da4acbf56deb2e5a` | 568,380 |
 | `docs/gallery/speculative_decoding.gif` | `df27651c4f9fd92ba8198e2e562025ff968cbade2c4b4618d9149e0bf1cc0ec7` | 401,474 |
 | `docs/gallery/triple_page_decoding.gif` | `abb7efa4f12ee90f8fd26985335b67cb8b49ce71eafa0b6b11e97f3a88a9716c` | 338,256 |
-| `docs/model_card.md` | `78cea5f8b083ef74e1344e03f75d71d3bc429ddbdaf8df0494780d5d5dbc75a9` | 8,092 |
-| `docs/reproducibility.md` | `5ad368519eaab4f34cab5b3a76e7515695466c99322c93f6147a1da70e96dfc9` | 41,800 |
+| `docs/model_card.md` | `928b4e30f9cf7ed559b81c4081b6c5bbe8c0f6414bdc0de4dba1b46e03823c26` | 9,348 |
+| `docs/reproducibility.md` | `665d60b63f1a8d8104a1bde19c98ba5729eebfc9ed49ab6d2055851cab2e5bb5` | 41,889 |
 
 ## Library — hand/
 
@@ -146,6 +146,17 @@ sha256sum -c /tmp/hand.sha256
 | `tests/test_layout_metrics_vs_dan.py` | `9ce1d3c6259c7c3a29fd0324c9c816a3de0bda1b8b24c27b3e045bb32b42e96d` | 3,626 |
 | `tests/test_sync_free_equivalence.py` | `76e638377ca90237c2be849d7e65003dcc75ebe1fd770bd086ef7cbd4fd6b76b` | 8,424 |
 
+## Demo — demo/
+
+| File | SHA-256 | Bytes |
+|---|---|---:|
+| `demo/README.md` | `9124d9159680211b6de8a9dc11cf10818d230c51591a3e2586638550c71422b6` | 2,489 |
+| `demo/app.py` | `94e001369bc6398e1174809e584bd4b1cd50132966befb9e13ee45422446eea0` | 7,656 |
+| `demo/examples/read2016_double_page_test_23.jpg` | `33ab30c36ed22c511ebc58e72e4146b674a75e5e55b5bb6842b7fa66f41dde09` | 565,887 |
+| `demo/examples/read2016_page_test_11.jpg` | `ac0779fa446a05c3f565a2e7ab8005fc698f2b9ff601496d3e877874c8d6e80f` | 305,999 |
+| `demo/examples/read2016_triple_page_test_5.jpg` | `b5bb0bd30129aae285467d64cac64cad9af7e15c30b2ffcc66edcd28fd500eb1` | 861,161 |
+| `demo/requirements.txt` | `e9207112957f0ee2c4bfe00a46c4eb499bd9bda9c9d65a3fd3a3230cd9cf3772` | 101 |
+
 ## Entry points — tools/
 
 | File | SHA-256 | Bytes |
@@ -198,7 +209,7 @@ sha256sum -c /tmp/hand.sha256
 
 | File | SHA-256 | Bytes |
 |---|---|---:|
-| `release/NOTICE.md` | `0ab572fda9e6ef8f49e3259f14add9bf2cc47e1863364376cd317d5314176ee5` | 17,083 |
+| `release/NOTICE.md` | `382680c9f9af2ac27475e1efc8ec60db91ed6a6b65664fbef7cbb3263c1bf11e` | 17,001 |
 | `release/PARITY_CPU.json` | `db5a3f043b181efac0e0ec758822245671d09ccf4492f2219ade9bfa0c10bf54` | 10,108 |
 | `release/hand-read2016-page/.gitattributes` | `7e63903f3514a8ffc7463e309944bc0a70f1b6dc21f3741773b51915e490aad5` | 150 |
 | `release/hand-read2016-page/charset.json` | `f54b3f596418572315e72e262cf57e3088ee429e36ea532db1fdf8bbf0a21af9` | 1,240 |
@@ -206,12 +217,13 @@ sha256sum -c /tmp/hand.sha256
 | `release/hand-read2016-page/preprocessor_config.json` | `cb9153533612ae17492474171e160e26e5ef455600d8d85ac959980730150d01` | 764 |
 | `release/hand-read2016-page/spec_heads_m5.json` | `691ccac0c761740c4c74507087957fc0211178ce4778887f6c2b79de6c78ae70` | 355 |
 | `release/hand_release/__init__.py` | `7e4768d9280b68a0768adb95ca7aa52dbff488a2224d7eadfb2815b856f9b447` | 449 |
+| `release/hand_release/hub.py` | `dbfdd517ab0191f88803f2f79c2e5ebe36ed2feeaf164d20f9d2989279402a7b` | 4,151 |
 | `release/hand_release/inference.py` | `d324eb618943d525e4c6da80e50ad8a7da2b83ca310a1d05853af0f4bcc0cd17` | 28,377 |
 | `release/licenses/LICENSE-CeCILL-C.md` | `405e0890e5997f766bfe0adcfad381077749b6c615d41dc4effb0baf271ada9f` | 21,958 |
 | `release/licenses/LICENSE-MIT.txt` | `c1eff5cff0bd189a8f69dc0e262dcb7cf2b8b1bd639dfa14fe52162d995a707f` | 1,075 |
 | `release/tools/evaluate_release.py` | `d28128c19511ce8b602825d5e3a31265848ccd6cc0c110350f1f1369eb87c924` | 10,745 |
 | `release/tools/export_release_checkpoint.py` | `ced4d7a010d16ea3b283cf64939147d4ac2df8131a3fe5640a06bbb413e802c1` | 11,300 |
-| `release/tools/generate_manifest.py` | `628ba0c9b16baa6b2b15e215c48ef6aa7ebf122dc84a7ad219d2cc4f1f1ab51c` | 5,169 |
+| `release/tools/generate_manifest.py` | `bf8ec001f4a1db92b2ead061f9f3dc70aaa90ab7dcd11e05d6b73140ec3c5f56` | 5,223 |
 
 ## Reproducibility artefacts — run records, profiling, split manifests
 
@@ -395,4 +407,4 @@ sha256sum -c /tmp/hand.sha256
 | File | SHA-256 | Bytes |
 |---|---|---:|
 | `data/README.md` | `6747ec3dbd9faa9ddbb1774256619d7a7f3c4cd942486b4fdc0860d7e894d017` | 7,797 |
-| `models/README.md` | `9a880852fd29a8eb374522e649de7a0edbb6f90e8941e28d7c0a54eca29f4ef2` | 1,940 |
+| `models/README.md` | `7acc50efb12a92b73c29d26e68e529da972186787c08745b0bc10dfc4357e577` | 1,795 |

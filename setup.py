@@ -1,7 +1,7 @@
 from setuptools import setup, find_namespace_packages
 
 setup(name='HAND',
-      version='1.0.0',
+      version='1.1.0',
       description=('Unified text-layout decoding for handwritten document '
                    'recognition and layout analysis'),
       author='Mohammed Hamdan',
@@ -31,6 +31,7 @@ setup(name='HAND',
             "fontTools>=4.50",
             "tqdm>=4.66",
             "PyYAML>=6.0",
+            "safetensors>=0.4",
             ],
       extras_require={
             "figures": ["matplotlib>=3.8", "PyMuPDF", "arabic_reshaper"],

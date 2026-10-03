@@ -656,8 +656,9 @@ Stated plainly, so nobody discovers it the hard way:
 - **Nothing on READ 2016, IAM or KHATT can be reproduced without the corpus.** READ 2016 is
   CC BY 4.0 and freely downloadable; IAM and KHATT require registration and are not
   redistributed here, so their numbers cannot be checked by a reader who has not registered.
-- **Checkpoints are not distributed in this repository** and are excluded by `.gitignore`.
-  Sections 3 and 4.1 describe how to use one once you have it.
+- **Checkpoints are not kept in git.** The four READ 2016 models are GitHub release assets
+  (`release/hand_release/hub.py` downloads and verifies them); the IAM and KHATT models are not
+  released. Sections 3 and 4.1 describe how to use one.
 - **The `hand` encoder (`--encoder hand`) is under evaluation.** No released checkpoint uses
   it, and the ablation table generated in section 7 is not trained to convergence and is not
   at a common epoch across its rows — `PENDING.md` says so.

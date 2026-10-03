@@ -9,10 +9,24 @@ provenance for every number here is in
 
 ## Availability
 
-**No weights are distributed.** Checkpoints are excluded by `.gitignore`; `git` is not a
-model registry. They have not been published anywhere else either — no Hugging Face
-repository exists, nothing has been uploaded. When that changes, the URLs and their SHA-256
-digests appear in the README's *Model weights* section and in the per-model cards.
+The four READ 2016 models are released as assets of the GitHub release
+[v1.1.0](https://github.com/DocumentRecognitionModels/HAND-Decoding/releases/tag/v1.1.0), not in
+the git history. `release/hand_release/hub.py` downloads them and refuses any file whose
+SHA-256 differs from the pinned value. Each package carries its own README with the reported
+result, its scope and the attribution.
+
+| Model | Reads | Reported result (paper) | Package | SHA-256 |
+|---|---|---|---|---|
+| `hand-read2016-page` | single pages | READ 2016 test CER 3.55 %, WER 13.31 % | 27.5 MB, with draft heads | `877246ec2503da82636a820d99091c9a99c234d5396b8cb8e9bc9ab8fc4f645c` |
+| `hand-read2016-page-compact` | single pages | CER 4.00 %, WER 15.74 % (500,000 samples) | 27.5 MB, with draft heads | `c53984243256c9e90aee7aea887fd8706034a39cf31ddc81631251f58d6d7791` |
+| `hand-read2016-double-page` | double pages | double-page test CER 3.60 %, WER 13.27 % | 27.5 MB, with draft heads | `42928757e0d561343db7a7ef7452886ef002310770ea8ffa7164361728fbe9ea` |
+| `hand-read2016-triple-page` | triple pages | triple-page test CER 3.48 %, WER 13.41 % | 26.1 MB | `1c09c18ecd3aac0a99011dee05b593832b9e4a1ec818efc2779e3c742262d58d` |
+
+Before release, every model was decoded on its stored example image and reproduced the recorded
+prediction token for token; with the draft heads, speculative decoding reproduced greedy
+decoding. Each model reads the number of pages it was trained on and over-generates on shorter
+inputs. The IAM and KHATT models are not released, because they were trained on corpora licensed
+for registered research use.
 
 `release/` carries the licence notices, the inference contract, the model configuration and
 the export/evaluation tools — everything needed to *use* a checkpoint, and no checkpoint.

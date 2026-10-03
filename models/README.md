@@ -2,16 +2,12 @@
 
 **This directory is empty in a clone.** Everything in it except this file is git-ignored.
 
-## No weights are distributed in this repository
+## Released weights
 
-`git` is not a model registry. Checkpoints are excluded by `.gitignore`
-(`/models/`, `*.pt`, `*.pth`, `*.ckpt`, `*.safetensors`), and they have **not** been
-published anywhere else either: no Hugging Face repository exists and nothing has been
-uploaded.
-
-When that changes, the download URLs and their SHA-256 digests will appear in the README's
-*Model weights* section, in [`docs/model_card.md`](../docs/model_card.md), and in the
-per-model cards under `release/`, and in `docs/model_card.md`.
+Checkpoints are not kept in git (`/models/`, `*.pt`, `*.pth`, `*.ckpt`, `*.safetensors` are
+ignored). The exported READ 2016 models are assets of the GitHub release v1.1.0; download one
+with `cd release && python -m hand_release.hub <name>`. The list, digests and reported results
+are in the README's *Model weights* section and in [`docs/model_card.md`](../docs/model_card.md).
 
 ## Where a checkpoint goes
 
