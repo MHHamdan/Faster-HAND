@@ -125,20 +125,51 @@ not in the PDFs (additional single pages, the triple-page failure without adapta
 before/after adaptation comparison) are in [`docs/gallery/`](docs/gallery/). Every displayed
 prediction is read from the stored result files; none is decoded or edited for display.
 
-## Animated demonstration
+## Animated demonstrations
+
+All three animations are rendered from stored predictions; nothing is decoded for display.
+
+**Autoregressive decoding.** READ 2016 test page 11, decoded symbol by symbol and seen through
+the decoder's last-layer cross-attention: blue is the attention accumulated so far, red the
+current symbol. The decoder follows the reading order of the label scheme without any explicit
+line detection.
 
 <p align="center">
   <img src="docs/assets/hand_decoding_test_11.gif" width="560"
        alt="Animation of HAND decoding READ 2016 test page 11 symbol by symbol. The page image accumulates the decoder's last-layer cross-attention for the symbols decoded so far in blue, with the current symbol's attention outlined in red, while the interleaved text and layout token stream grows beneath. The decoder sweeps the body top to bottom and then the marginal annotation, following the reading order of the label scheme." />
   <br/>
-  <sub>Static version: <a href="docs/assets/decoding_test_11.png">decoding_test_11.png</a>.</sub>
+  <sub>Static version: <a href="docs/assets/decoding_test_11.png">decoding_test_11.png</a></sub>
 </p>
 
-Two further animations are in the gallery, both rendered from stored predictions:
-[speculative decoding](docs/gallery/speculative_decoding.gif) on the same page (draft, verify,
-accept or roll back; 486 symbols in 156 passes, identical to the greedy decode) and the
-[triple-page decode](docs/gallery/triple_page_decoding.gif) of the adapted model, revealed line
-by line. See [`docs/gallery/`](docs/gallery/README.md#animations).
+**Speculative decoding.** The same page with four draft heads (*m* = 5). Each verification pass
+shows the drafted symbols, then the check: accepted (green), the first rejected draft replaced
+by the base model's symbol (red), discarded drafts (grey), and the base model's extra symbol
+after a fully accepted draft (blue). The page takes 156 passes for 486 symbols, and the output
+is identical to greedy decoding; the stored log covers the first 40 passes.
+
+<p align="center">
+  <img src="docs/gallery/speculative_decoding.gif" width="560"
+       alt="Animation of speculative decoding with four draft heads on READ 2016 test page 11. For each of the first 40 verification passes, four drafted symbols are shown and then checked against the base model: accepted drafts turn green, the first rejected draft turns red with the base model's own symbol shown beneath it, the remaining drafts turn grey, and after a fully accepted draft a fifth symbol from the base model appears in blue. A line at the bottom shows the decoded output growing with the symbols each pass emits." />
+  <br/>
+  <sub>Static version: <a href="docs/assets/decoding_test_11_speculative.png">decoding_test_11_speculative.png</a></sub>
+</p>
+
+**Triple-page decoding.** The triple-page adapted model's output on test image `test_5`,
+revealed two lines at a time with layout tokens as tags. The image shows the reference regions;
+the page being transcribed is outlined and pages not yet reached are dimmed. Per-line attention
+was not logged for this decode, so the animation shows the order of the output, not where the
+model attended.
+
+<p align="center">
+  <img src="docs/gallery/triple_page_decoding.gif" width="640"
+       alt="Animation of the triple-page adapted HAND model's output on READ 2016 triple-page test image 5. Three concatenated page scans are shown with their reference regions and reading-order path; the page whose text is being revealed is outlined in black and later pages are dimmed. Beneath the image, the decoded text of the current page appears two lines at a time, with page, page-number, section, annotation and body tokens shown as colored tags, moving from page 1 to page 3." />
+  <br/>
+  <sub>Static version: <a href="docs/assets/qualitative_triple_page.png">qualitative_triple_page.png</a></sub>
+</p>
+
+Regenerate with [`tools/decoding_animation.py`](tools/decoding_animation.py) and
+[`tools/gallery_animations.py`](tools/gallery_animations.py); more examples are in
+[`docs/gallery/`](docs/gallery/README.md).
 
 ## Installation
 

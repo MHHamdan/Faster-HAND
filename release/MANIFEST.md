@@ -24,7 +24,7 @@ sed -nE 's/^\| `([^`]+)` \| `([0-9a-f]{64})`.*/\2  \1/p' release/MANIFEST.md > /
 sha256sum -c /tmp/hand.sha256
 ```
 
-**315 files, 13,936,180 bytes.** Generated 2026-10-02. Regenerate with this script after any change to the tree.
+**315 files, 13,938,648 bytes.** Generated 2026-10-02. Regenerate with this script after any change to the tree.
 
 
 ## Root — project metadata, environment, licence
@@ -34,7 +34,7 @@ sha256sum -c /tmp/hand.sha256
 | `.gitignore` | `88798a5ad20ebcf40b719505682fa3077ca889ca6f0469a592891fbd20aa1546` | 4,921 |
 | `CITATION.cff` | `04933b518eb9acd8f1928bab10046b276edb69e6553aa88bcc436870d14020f0` | 3,186 |
 | `LICENSE` | `04a0056cb7d15f3c3824ac1901f1c678d2e98b02721ab80f2d7dd4e93de20702` | 1,072 |
-| `README.md` | `fc45f7b7644bf4d52f12222abdae6ff9375f515388bfbbd06a123fe88052ddd5` | 14,152 |
+| `README.md` | `16f742206635615ac58f5fd097927de0fb51bbe2f44ab3e945bd1c92abeca153` | 16,620 |
 | `dataset_audit.json` | `2581dc1b6ce607973071edfc554ba1b359be8e27e9c49619fe2a20d877ecbf7d` | 49,093 |
 | `environment.yml` | `3ad9240a921c022c70d124320a772c8475a15c1772411a72e61cb168186c3017` | 1,328 |
 | `requirements-pinned.txt` | `ca57b6cd97efd9137c1510e4e875cd75d683a63433b8ec997fc043ed15ae930f` | 1,351 |
