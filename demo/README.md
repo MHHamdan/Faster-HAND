@@ -1,6 +1,11 @@
 # Demo
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DocumentRecognitionModels/HAND-Decoding/blob/main/demo/HAND_Decoding_demo.ipynb)
+
 A Gradio app that reads a handwritten document image with one of the released HAND models.
+The quickest way to try it is the Colab notebook
+[`HAND_Decoding_demo.ipynb`](HAND_Decoding_demo.ipynb): run all cells and open the printed
+`gradio.live` link.
 
 ```bash
 pip install -r requirements.txt -r demo/requirements.txt
@@ -47,7 +52,8 @@ CC BY 4.0, adapted from D. Coquenet's DAN line model, Zenodo
 
 ## Hosting
 
-GitHub runs no Python servers, so the demo cannot be served from the repository page. It can
-be hosted unchanged on any Gradio host, for example a Hugging Face Space: copy the repository,
-keep `demo/app.py` as the entry point, and install `requirements.txt` and
-`demo/requirements.txt`.
+GitHub runs no Python servers, so the demo cannot be served from the repository page. The Colab
+notebook is the free hosted option: Colab runs the app and Gradio's `share=True` gives it a
+public link for as long as the notebook runs. The app can also be hosted unchanged on any Gradio
+host, for example a Hugging Face Space: keep `demo/app.py` as the entry point and install
+`requirements.txt` and `demo/requirements.txt`.

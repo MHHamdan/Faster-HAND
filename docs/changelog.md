@@ -8,6 +8,7 @@
   token. `release/hand_release/hub.py` downloads them and verifies the pinned SHA-256.
 - The same weights are published as the Hugging Face models `MHamdan/hand-read2016-*`, loadable
   with `HANDRecognizer.from_pretrained`.
+- `demo/HAND_Decoding_demo.ipynb`: Colab notebook that runs the demo with a public link.
 - `demo/app.py`: Gradio demo with three READ 2016 example images (single, double, triple page).
 - `safetensors` added to the requirements; it is needed to load the released weights.
 

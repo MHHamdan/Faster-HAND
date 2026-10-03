@@ -1,5 +1,7 @@
 # HAND-Decoding
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DocumentRecognitionModels/HAND-Decoding/blob/main/demo/HAND_Decoding_demo.ipynb)
+
 Code and evidence for **HAND: Unified Text–Layout Decoding for Handwritten
 Document Recognition** (Hamdan, Rahiche, Cheriet). HAND is a segmentation-free encoder–decoder
 model that reads a handwritten document image as one autoregressive sequence of interleaved
@@ -255,8 +257,10 @@ pip install -r demo/requirements.txt
 python demo/app.py            # http://127.0.0.1:7860   (--share for a temporary public link)
 ```
 
-GitHub does not run Python apps, so the demo runs locally or on any Gradio host; see
-[`demo/README.md`](demo/README.md).
+To try it without installing anything, open the
+[Colab notebook](https://colab.research.google.com/github/DocumentRecognitionModels/HAND-Decoding/blob/main/demo/HAND_Decoding_demo.ipynb)
+and run all cells: it installs the demo, downloads the weights and prints a public link to the
+app. See [`demo/README.md`](demo/README.md).
 
 ## Evaluation
 

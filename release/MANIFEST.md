@@ -24,7 +24,7 @@ sed -nE 's/^\| `([^`]+)` \| `([0-9a-f]{64})`.*/\2  \1/p' release/MANIFEST.md > /
 sha256sum -c /tmp/hand.sha256
 ```
 
-**322 files, 15,692,337 bytes.** Generated 2026-10-03. Regenerate with this script after any change to the tree.
+**323 files, 15,697,569 bytes.** Generated 2026-10-03. Regenerate with this script after any change to the tree.
 
 
 ## Root — project metadata, environment, licence
@@ -34,7 +34,7 @@ sha256sum -c /tmp/hand.sha256
 | `.gitignore` | `88798a5ad20ebcf40b719505682fa3077ca889ca6f0469a592891fbd20aa1546` | 4,921 |
 | `CITATION.cff` | `dd9559de67309f8ea9ef51701d3f561fff9a2109ea88f207dd45a156104efc32` | 3,186 |
 | `LICENSE` | `04a0056cb7d15f3c3824ac1901f1c678d2e98b02721ab80f2d7dd4e93de20702` | 1,072 |
-| `README.md` | `9da0a39637c3036ace0122cf4d6ecb43b1f1bd1dfbe034d4b53810d39722f266` | 18,944 |
+| `README.md` | `5bce26083960cfcdb214b5ab194b303c68cc4c12392dd5a470138ef8cb911824` | 19,735 |
 | `dataset_audit.json` | `2581dc1b6ce607973071edfc554ba1b359be8e27e9c49619fe2a20d877ecbf7d` | 49,093 |
 | `environment.yml` | `3ad9240a921c022c70d124320a772c8475a15c1772411a72e61cb168186c3017` | 1,328 |
 | `requirements-pinned.txt` | `d774212321e05c61fe3b049056b982424aad60bd2e050725140bd98ce2615262` | 1,370 |
@@ -54,7 +54,7 @@ sha256sum -c /tmp/hand.sha256
 | `docs/assets/hand_decoding_test_11.gif` | `f80805110149f837394fb79c6c6ed0b8272e1479e27968b81d0805918fb2c84e` | 1,147,175 |
 | `docs/assets/qualitative_double_page.png` | `23f479eafb2d53b78b61d27fb1306f1e8ee2685e7032371f38ab822d8cdf66c2` | 980,676 |
 | `docs/assets/qualitative_triple_page.png` | `13485c499763bba75cd185d61c484a7563022fe7403d8709410d763848200ecd` | 802,507 |
-| `docs/changelog.md` | `935872fe32b82b29a8f7988106d956afd89b4184a6090279bb415bf885987525` | 2,641 |
+| `docs/changelog.md` | `7b7575d814622f509d8678b5b4d962607a87a01ab4bb92cde4600a147799b29c` | 2,730 |
 | `docs/gallery/README.md` | `36f150ba4599152a61380e1ec334cbaa3e6110275238613481ae9e150cfa1833` | 4,664 |
 | `docs/gallery/cross_script_comparison.pdf` | `9f005c98e1dd0e62d61c989f7d5429042ec3c8967324023454a7c24395cf8e99` | 341,608 |
 | `docs/gallery/iam_representative.pdf` | `b2e4485dec9ba998e456ffa333aef0fde9d6e5b07bc00b1ab9d214b88f1a3f87` | 55,102 |
@@ -150,7 +150,8 @@ sha256sum -c /tmp/hand.sha256
 
 | File | SHA-256 | Bytes |
 |---|---|---:|
-| `demo/README.md` | `9124d9159680211b6de8a9dc11cf10818d230c51591a3e2586638550c71422b6` | 2,489 |
+| `demo/HAND_Decoding_demo.ipynb` | `0141b1bab1923d4e64c1c71dd72fcf70331386af5201243a7d5eaae5a9071330` | 3,856 |
+| `demo/README.md` | `e81216f2d93d59a40278a5d59cbb844598a130a156cb881a6b93db551e184ff3` | 2,985 |
 | `demo/app.py` | `94e001369bc6398e1174809e584bd4b1cd50132966befb9e13ee45422446eea0` | 7,656 |
 | `demo/examples/read2016_double_page_test_23.jpg` | `33ab30c36ed22c511ebc58e72e4146b674a75e5e55b5bb6842b7fa66f41dde09` | 565,887 |
 | `demo/examples/read2016_page_test_11.jpg` | `ac0779fa446a05c3f565a2e7ab8005fc698f2b9ff601496d3e877874c8d6e80f` | 305,999 |
