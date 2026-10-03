@@ -1,11 +1,11 @@
 """
-Equivalence test: the DAN-faithful LOER port (hand_v2/metrics/layout_metrics.py) against the
+Equivalence test: the DAN-faithful LOER port (hand/basic/layout_metrics.py) against the
 official DAN implementation (third_party/DAN/basic/metric_manager.py) on real READ 2016
 ground-truth strings in DAN's five-token scheme, each perturbed at random (dropped, inserted,
 swapped and duplicated layout tokens, then repaired by the READ post-processing module as
 the evaluation protocol does).
 
-Run: python hand_v2/tests/test_layout_metrics_vs_dan.py [--n 200] [--dataset READ_2016_double_page_sem_dan]
+Run: python tests/test_layout_metrics_vs_dan.py [--n 200] [--dataset READ_2016_double_page_sem_dan]
 Requires third_party/DAN (see third_party/README.md). Ground-truth text never leaves the
 process.
 """
@@ -15,10 +15,10 @@ import pickle
 import random
 import sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-from hand_v2.metrics import layout_metrics as v2  # noqa: E402
+from hand.basic import layout_metrics as v2  # noqa: E402
 from hand.basic.post_pocessing_layout import PostProcessingModuleREAD  # noqa: E402
 
 

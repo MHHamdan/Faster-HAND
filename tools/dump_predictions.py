@@ -18,7 +18,7 @@ import time
 
 import torch
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
 from tools.evaluate_hand import MODELS, build_params, stage_checkpoint, detect_additional_tokens, set_seed  # noqa: E402

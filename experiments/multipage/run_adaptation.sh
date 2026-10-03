@@ -14,7 +14,7 @@ $PY release/tools/export_release_checkpoint.py --ckpt $CK --out outputs/export_f
 
 # --- GPU 1: triple-page adaptation from the double-page checkpoint (reduced budget: 1.0 h) ---
 mkdir -p outputs/ft_triple_page_from_double_s0
-( env CUDA_VISIBLE_DEVICES=1 flock /tmp/hand-gpu1.lock $PY hand_v2/train.py --dataset READ_2016 --level triple_page --variant _sem_dan --encoder fcn \
+( env CUDA_VISIBLE_DEVICES=1 flock /tmp/hand-gpu1.lock $PY tools/train.py --dataset READ_2016 --level triple_page --variant _sem_dan --encoder fcn \
     --init-from $CK --no-hand-encoding --additional-tokens 1 --batch-size 1 --lr 1e-4 --fonts-dir fonts_dan_read \
     --output ft_triple_page_from_double_s0 --seed 0 --eval-interval 10 --experiment multipage_adaptation \
     --no-synthetic --start-valid-from-steps 0 --workers 4 --max-hours 1.0 --max-epochs 10000 \

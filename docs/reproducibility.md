@@ -25,7 +25,7 @@ Artefact-by-artefact provenance for every published JSON is in
 [`ablations.md`](ablations.md).
 
 > Numbers in this repository come from artefacts, not from prose. Evaluations of the V1
-> released checkpoints are in `results_real/`; every run of the current `hand_v2/` path
+> released checkpoints are in `results_real/`; every run of the current `tools/train.py` path
 > writes a record into `experiments/benchmark_suite/registry/`. Where a document and an
 > artefact disagree, the artefact is right. Where a table cell has no measurement behind
 > it, the generator prints `--` and names the gap in `PENDING.md`.
@@ -38,27 +38,27 @@ and it tells you whether the rest of this document can work on your machine.
 ## 0. What is in the repository
 
 ```
-hand/              the V1 model library — encoders, decoders, dataset managers, trainer.
-                   Also the library the V2 code builds on: hand_v2 subclasses and wraps it
-                   rather than forking it. Parts are CeCILL-C-derived from DAN (see NOTICE)
-hand_v2/           the CURRENT training and evaluation path — hand_v2/train.py
-tools/             shared entry points — evaluation, tables, dataset checks, CPU validation
+hand/              the model library — encoders, decoders, dataset managers and formatters,
+                   trainer, layout metrics. Parts are CeCILL-C-derived from DAN (see NOTICE)
+tools/             entry points — training (tools/train.py), evaluation, tables, dataset
+                   checks, CPU validation
+tests/             the CPU test suite
 release/           the licence notices, the inference contract, the export/eval tools
 experiments/       run records and profiling artefacts behind the published numbers
 results_real/      evaluations of the V1 released checkpoints, one JSON per run
 docs/              this file, the model card, the ablations and the changelog
 ```
 
-### hand/ or hand_v2/ — which do I use?
+### Which entry point do I use?
 
 | I want to | Use | Why |
 |---|---|---|
-| train the current page model | `hand_v2/train.py` | it produced `outputs/e14_budget_1p26M_s0/checkpoints/best_3580.pt`, the checkpoint behind the reported READ 2016 page numbers |
+| train the current page model | `tools/train.py` | it produced `outputs/e14_budget_1p26M_s0/checkpoints/best_3580.pt`, the checkpoint behind the reported READ 2016 page numbers |
 | evaluate a released export, on CPU or GPU | `release/tools/evaluate_release.py` | it loads the exported payload strictly and checks the result against a stored measurement |
 | check that an install works, without a GPU | `tools/validate_install_cpu.py` | section 3 |
 | train or evaluate one of the **V1** checkpoints in `models/` | `tools/train_hand.py`, `tools/evaluate_hand.py` | those checkpoints were produced by that path; `results_real/` is its output |
 
-`hand_v2/train.py` does **not** replace `hand/`. It imports `tools/train_hand.py`'s argument
+`tools/train.py` does **not** replace `hand/`. It imports `tools/train_hand.py`'s argument
 parser and parameter builder, and it runs `hand.OCR.document_OCR.hand.trainer_std_hand.Manager`
 — the same trainer, the same encoder, the same decoder, the same loss and schedule. What it
 adds is the cuDNN API selection, optional shape bucketing, an opt-in `--eval-test` protocol
@@ -138,7 +138,7 @@ raw_READ2016/
 `formatted/READ_2016_page_sem_dan/` is derived, not downloaded. Build it:
 
 ```bash
-python hand_v2/data/format_read_dan_splits.py --levels page
+python hand/Datasets/format_read_dan_splits.py --levels page
 ```
 
 The script symlinks the raw scans into a temporary view and runs the unchanged formatter
@@ -303,15 +303,14 @@ shape.
 ### The CPU test suite
 
 ```bash
-python -m pytest hand_v2/tests -q
+python -m pytest tests -q
 ```
 
-85 tests, all CPU. They are equivalence tests for every function `hand_v2/` replaced or
-vectorised — layout metrics against DAN's reference implementation, the fast decoding paths
-against the frozen one, charset and token handling, the branch-free attention NaN
-replacement. They need no dataset and no weights, and they are the check that a change to
-`hand_v2/` has not silently changed what the model computes. Run them after touching
-anything under `hand_v2/`.
+All CPU. They are equivalence tests for every replaced or vectorised function — layout
+metrics against DAN's reference implementation, the fast decoding paths against the frozen
+one, charset and token handling, the branch-free attention NaN replacement. They need no
+dataset and no weights, and they are the check that a code change has not silently changed
+what the model computes.
 
 ### What the validation command does not prove
 
@@ -408,7 +407,7 @@ The reported page model is a **two-phase run**, and the phases are not independe
 ### Phase A — 1,429 epochs
 
 ```bash
-python hand_v2/train.py \
+python tools/train.py \
     --dataset READ_2016 --level page --variant _sem_dan --encoder fcn \
     --output s1_A1fixedR1_s0 \
     --batch-size 1 --lr 1e-4 --curr-step 10000 \
@@ -444,7 +443,7 @@ convention is used for every continuation run here — see the note recorded on
 ### Phase B — to 3,596 epochs
 
 ```bash
-python hand_v2/train.py \
+python tools/train.py \
     --dataset READ_2016 --level page --variant _sem_dan --encoder fcn \
     --output e14_budget_1p26M_s0 \
     --batch-size 1 --lr 1e-4 --curr-step 10000 \
@@ -461,7 +460,7 @@ That is the argv the run record stores verbatim. **Add `--eval-test` if you reru
 the test split was evaluated unconditionally when this run executed, and the opt-in gate
 described below was added afterwards, so a rerun without the flag now stops at validation.
 The flag is present in the working tree and is **not yet committed** — check
-`python hand_v2/train.py --help` for it before relying on either behaviour.
+`python tools/train.py --help` for it before relying on either behaviour.
 
 3,596 epochs × 350 training pages = 1,258,600 samples, which is DAN's published budget.
 Record: `experiments/benchmark_suite/registry/20260917T160949Z_e14_budget_1p26M_s0_bd9339.json`.
@@ -477,7 +476,7 @@ Result, read from `outputs/e14_budget_1p26M_s0/results/predict_READ_2016-{test,v
 ### Two things to know before interpreting that number
 
 - **The test split is opened once.** `--eval-test` is off by default in the working-tree
-  `hand_v2/train.py` precisely so that a probe or screening run cannot quietly write a test
+  `tools/train.py` precisely so that a probe or screening run cannot quietly write a test
   metric into the registry; two screening runs did so before the gate existed, which is
   why the gate exists. Under that gate a run reporting a test number must have asked for it at launch, on
   the record, and its metrics carry `test_evaluated`. The `e14` record predates the gate and
@@ -503,7 +502,7 @@ the budget curve is flat at that point. Record:
 
 `tools/train_hand.py` produced the checkpoints in `models/` and the evaluations in
 `results_real/`. It is still the argument parser and parameter builder that
-`hand_v2/train.py` imports, so its flags are the V2 flags.
+`tools/train.py` imports, so its flags are the V2 flags.
 
 ```bash
 python tools/train_hand.py \
@@ -723,7 +722,7 @@ must not be carried to the E4 + E3 configuration.
   — from two harnesses, rather than picking one. Quote a latency with its artefact and its
   session, never on its own.
 - **A cost change must prove it changed nothing else.** `tools/verify_exact_decoding.py` and
-  `hand_v2/tests/test_fast_decode_paths.py` are the gates. A speed claim without the identity
+  `tests/test_fast_decode_paths.py` are the gates. A speed claim without the identity
   column is not admissible here.
 
 ### Training flags added by the efficiency work
@@ -748,9 +747,9 @@ results can be interrogated, not because a reproduction needs it.
 | Path | What it is for |
 |---|---|
 | `hand/models/experimental/` | designed components that are **inactive on the trained path** — the gated/octave HAND encoder, MSAP, memory-augmented and sparse attention, adaptive fusion. No checkpoint uses them and the manuscript's architecture section does not describe them; published so the manuscript's training-strategy and supplementary sections can be checked against code |
-| `hand_v2/models/dancer_encoder.py` | the DANCER encoder, used as a control arm |
-| `hand_v2/eval/`, `hand_v2/data/` | prediction dumps, layout-metric recomputation, dataset formatting and shape bucketing |
-| `hand_v2/tests/` | the CPU test suite — `python -m pytest hand_v2/tests -q` |
+| `tools/dump_predictions.py`, `tools/recompute_layout_metrics.py` | prediction dumps and layout-metric recomputation |
+| `hand/Datasets/format_read_dan_splits.py`, `hand/Datasets/bucketing.py` | dataset formatting (single, double and triple page) and shape bucketing |
+| `tests/` | the CPU test suite — `python -m pytest tests -q` |
 | `tools/make_tables.py` | regenerates the LaTeX tables, `SOURCES.md` and `PENDING.md` from the measurements (section 7) |
 | `release/tools/generate_manifest.py` | regenerates `release/MANIFEST.md` with checksums |
 | `release/hand_release/inference.py` | the inference contract: image in, `{text, raw, regions, confidence, latency_s}` out |
@@ -765,7 +764,7 @@ dataset construction (`formatted/READ_2016_double_page_sem_dan`, DAN pairing, 16
 `formatted/READ_2016_triple_page_sem_dan`, three consecutive scans, 116/16/16, manifest
 `experiments/benchmark_suite/manifests/READ_2016_triple_page_sem_dan.json`), the exact
 commands, and the caveats. The evaluation harness is `tools/multipage_eval.py`; the triple-page
-partition is built by `hand_v2/data/format_read_dan_splits.py --levels triple_page`.
+partition is built by `hand/Datasets/format_read_dan_splits.py --levels triple_page`.
 
 ## 13. Provenance of the DAN page checkpoint used for the paired comparison
 

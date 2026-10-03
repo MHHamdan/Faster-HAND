@@ -2,7 +2,7 @@
 """Manifest for formatted/READ_2016_triple_page_sem_dan (added 2026-10, multi-page scaling study).
 
 The dataset itself is produced by
-    python3 hand_v2/data/format_read_dan_splits.py --levels triple_page
+    python3 hand/Datasets/format_read_dan_splits.py --levels triple_page
 which also writes formatted/READ_2016_triple_page_sem_dan/provenance.json (sample -> the three
 source scans). This script turns that into the same manifest schema the other READ manifests use
 (experiments/benchmark_suite/manifests/*.json: per sample name, source_scans, source_sha256,
@@ -47,7 +47,7 @@ def main():
                          "non-overlapping, remainder dropped (NOT a DAN construction; same source triples as "
                          "the V1 READ_2016_triple_page_sem manifest). Shorter scans are padded at the bottom "
                          "with their median colour before concatenation. 116/16/16. Built by "
-                         "hand_v2/data/format_read_dan_splits.py --levels triple_page "
+                         "hand/Datasets/format_read_dan_splits.py --levels triple_page "
                          "(read2016_formatter.format_read2016_triple_page)."),
          "charset_size": len(labels["charset"]), "splits": {}}
     for s in ("train", "valid", "test"):

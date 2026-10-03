@@ -39,7 +39,7 @@ Exports: `python3 release/tools/export_release_checkpoint.py --ckpt <pt> --out <
 | double | `formatted/READ_2016_double_page_sem_dan` | 169/24/24 | DAN pairing: two scans with the same written page number, concatenated horizontally; unpaired scans dropped | `.../READ_2016_double_page_sem_dan.json` |
 | triple | `formatted/READ_2016_triple_page_sem_dan` | 116/16/16 | three consecutive scans of the split in scan order, non-overlapping, remainder dropped; shorter scans padded at the bottom with their median colour (0 px on every test triple, max 136 px at 300 dpi in train); NOT a DAN construction | `.../READ_2016_triple_page_sem_dan.json` |
 
-Build: `python3 hand_v2/data/format_read_dan_splits.py --levels triple_page` then
+Build: `python3 hand/Datasets/format_read_dan_splits.py --levels triple_page` then
 `python3 tools/build_read_triple_page_dan_manifest.py` (asserts the source triples equal the V1
 manifest `READ_2016_triple_page_sem.json`). `labels.pkl` sha256
 `f086776d61b93ef5ead1c730a206cb6baeda0c7b4be282bef90432bd9a9415a1`.
@@ -65,7 +65,7 @@ of the same base.
 
 Double-page fine-tune from the page model (DAN's protocol: continue from the page model), 4 h cap:
 ```
-CUDA_VISIBLE_DEVICES=1 flock /tmp/hand-gpu1.lock python3 hand_v2/train.py --dataset READ_2016 \
+CUDA_VISIBLE_DEVICES=1 flock /tmp/hand-gpu1.lock python3 tools/train.py --dataset READ_2016 \
   --level double_page --variant _sem_dan --encoder fcn \
   --init-from outputs/e14_budget_1p26M_s0/checkpoints/best_3580.pt --no-hand-encoding --additional-tokens 1 \
   --batch-size 1 --lr 1e-4 --fonts-dir fonts_dan_read --output ft_double_page_from_e14_s0 --seed 0 \
@@ -89,7 +89,7 @@ Result: train_seconds 14,451, 311 epochs, 52,559 samples seen, best epoch 220 wi
 Triple-page adaptation, continued from the double-page checkpoint, real triples only (the synthetic
 generator produces single pages at this level), 1 h cap:
 ```
-CUDA_VISIBLE_DEVICES=1 flock /tmp/hand-gpu1.lock python3 hand_v2/train.py --dataset READ_2016 \
+CUDA_VISIBLE_DEVICES=1 flock /tmp/hand-gpu1.lock python3 tools/train.py --dataset READ_2016 \
   --level triple_page --variant _sem_dan --encoder fcn \
   --init-from outputs/ft_double_page_from_e14_s0/checkpoints/best_220.pt --no-hand-encoding --additional-tokens 1 \
   --batch-size 1 --lr 1e-4 --fonts-dir fonts_dan_read --output ft_triple_page_from_double_s0 --seed 0 \

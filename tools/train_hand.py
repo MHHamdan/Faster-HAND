@@ -48,11 +48,7 @@ from hand.OCR.ocr_dataset_manager import OCRDataset, OCRDatasetManager  # noqa: 
 from hand.OCR.document_OCR.hand.trainer_std_hand import Manager  # noqa: E402
 from hand.models.baseline.dan_decoder import GlobalHTADecoder  # noqa: E402
 
-from hand_v2.models.dancer_encoder import DANCER_Encoder  # noqa: E402
-
-# "dancer" is the Stage 2 arm E1 encoder, implemented from the DANCER supplement's Table SI 1
-# (hand_v2/models/dancer_encoder.py). It is NOT the failed V1 octave encoder ("hand").
-ENCODERS = {"fcn": FCN_Encoder, "hand": HAND_Encoder, "dancer": DANCER_Encoder}
+ENCODERS = {"fcn": FCN_Encoder, "hand": HAND_Encoder}
 
 # Per-level defaults: synthetic-curriculum line budget, decode cap, and whether the
 # two-step "hand_encoding" layout scheme applies.
@@ -280,7 +276,7 @@ def build_params(a):
 
 
 def build_arg_parser():
-    """The run's full flag set. Exposed so hand_v2/ tooling can reuse it verbatim."""
+    """The run's full flag set. Exposed so tools/train.py can reuse it verbatim."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--dataset", required=True,
                     choices=["READ_2016", "IAM", "KHATT", "AHAWP"])

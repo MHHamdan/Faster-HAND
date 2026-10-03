@@ -162,7 +162,7 @@ def main():
            "expected": exp, "tol_edits": a.tol_edits, "per_page": per_page}
 
     if a.layout_metrics:
-        from hand_v2.metrics.layout_metrics import loer, order_invariant_metrics, READ_MATCHING_TOKENS
+        from hand.basic.layout_metrics import loer, order_invariant_metrics, READ_MATCHING_TOKENS
         res["loer"] = loer(pairs, dataset="read")
         toks = "".join(READ_MATCHING_TOKENS) + "".join(READ_MATCHING_TOKENS.values())
         res["order_invariant"] = order_invariant_metrics(pairs, toks)

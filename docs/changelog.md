@@ -7,8 +7,8 @@ First public release of the code and evidence for
 rerun for the release and no measured value was changed.
 
 ### Contents
-- `hand/`, `hand_v2/`, `tools/`, `release/hand_release/` — the model, training, evaluation and
-  inference code behind every reported number.
+- `hand/`, `tools/`, `tests/`, `release/hand_release/` — the model, training, evaluation and
+  inference code behind every reported number, and the CPU test suite.
 - `experiments/` — run records, profiling measurements and the multi-page scaling study
   (single-, double- and triple-page READ 2016 evaluations, with and without adaptation).
 - `results_real/`, `results_recovery/`, `dataset_audit.json` — stored metrics and the dataset

@@ -224,7 +224,7 @@ A cost change must prove it changed nothing else. `tools/verify_exact_decoding.p
 every page under the reference path and under each optimisation (`HAND_FAST_MASKS`,
 `HAND_FAST_STEP`, `use_mem_cache`) **in one process** and requires character-for-character
 identity: **50/50 for each, separately and combined, for both HAND and DAN weights.**
-`hand_v2/tests/test_fast_decode_paths.py` holds the same claims on CPU permanently — the
+`tests/test_fast_decode_paths.py` holds the same claims on CPU permanently — the
 band mask against the sliced square over 57 (T, num_pred) combinations, teacher-forced and
 130-step incremental decodes with the paths on and off, and the E4 parameter arithmetic.
 

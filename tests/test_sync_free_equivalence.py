@@ -4,7 +4,7 @@ Equivalence tests for the Stage 0 synchronisation removals.
 Each replaced function is checked against the reference implementation it replaced,
 which is kept in the code base for exactly this purpose. Run with:
 
-    python -m pytest hand_v2/tests -q      or      python hand_v2/tests/test_sync_free_equivalence.py
+    python -m pytest tests -q      or      python tests/test_sync_free_equivalence.py
 """
 import os
 import sys
@@ -13,7 +13,7 @@ import types
 import numpy as np
 import torch
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
 from hand.OCR.document_OCR.hand.trainer_hand import Manager as DANManager  # noqa: E402

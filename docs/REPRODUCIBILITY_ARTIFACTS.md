@@ -27,7 +27,7 @@ inside it are evidence. Two honest greedy figures therefore coexist in this repo
 | Final result | Reproducible from this repository? | With what |
 |---|---|---|
 | **DAN vs HAND baseline comparison** (3.41 % vs 3.55 %, +0.138 pp, *p* = 0.42) | **Verifiable from the artefact; re-measurable only with both checkpoints** | `efficiency_hand_vs_dan.json` + `seed_variance_test.json`; re-run with `tools/efficiency_bench.py` |
-| **E4 parameter reduction** (7,033,700 → 6,112,612, −13.1 %) | **Yes, fully, on CPU, with no checkpoint** | `hand_v2/tests/test_fast_decode_paths.py` recomputes the arithmetic; `tools/validate_install_cpu.py` S2 checks the anchor count |
+| **E4 parameter reduction** (7,033,700 → 6,112,612, −13.1 %) | **Yes, fully, on CPU, with no checkpoint** | `tests/test_fast_decode_paths.py` recomputes the arithmetic; `tools/validate_install_cpu.py` S2 checks the anchor count |
 | **E4 accuracy parity** (4.41 % vs 4.41 %, *p* = 0.997) | Verifiable from the artefact; re-measurable with the E4 checkpoint | `e4_vs_anchor_valid.json`, `e4_vs_anchor_test.json` |
 | **E3 acceleration** (2.73×, 50/50 identical) | Verifiable from the artefact; re-measurable with the base checkpoint + heads | `spec_decode_test.json`, `spec_decode_test_fp32.json` |
 | **E4 + E3 acceleration** (2.886× AMP / 2.947× fp32) | Verifiable from the artefact; re-measurable with the E4 checkpoint + heads | `e4_spec_decode_test.json`, `e4_spec_decode_test_fp32.json` |
@@ -265,13 +265,24 @@ Run records also carry the git commit and branch of the development repository t
 history, so those hashes identify the code state recorded in `effective_code_state` but do not
 resolve in this repository's log.
 
+Paths inside run records are those of the development tree. Its `hand_v2/` layer was folded
+into this repository's layout as follows; no code changed in the move:
+
+| Recorded path | Path in this repository |
+|---|---|
+| `hand_v2/train.py` | `tools/train.py` |
+| `hand_v2/data/format_read_dan_splits.py`, `hand_v2/data/bucketing.py` | `hand/Datasets/` |
+| `hand_v2/metrics/layout_metrics.py` | `hand/basic/layout_metrics.py` |
+| `hand_v2/eval/*.py` | `tools/` |
+| `hand_v2/tests/` | `tests/` |
+
 Every published record still parses as JSON and still carries its complete argv, environment
 and metrics.
 
 ### Two things inside a run record that are *not* redacted, deliberately
 
 **`effective_code_state.per_file_sha256`** records the digest of every source file **as it
-executed**, over 141 files under `hand/`, `hand_v2/` and `tools/`. Those digests describe
+executed**, over 141 files under `hand/`, `hand_v2/` and `tools/` of the development tree. Those digests describe
 the private working tree at launch time and **do not match the files published here**, for
 two reasons, neither of which changes any measured value:
 

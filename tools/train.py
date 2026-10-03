@@ -100,7 +100,7 @@ def main():
         if a.syn_proba_steps is not None:
             syn["num_steps_proba"] = a.syn_proba_steps
     if a.shape_bucket[0] > 1 or a.shape_bucket[1] > 1:
-        from hand_v2.data.bucketing import install_shape_bucketing
+        from hand.Datasets.bucketing import install_shape_bucketing
         install_shape_bucketing(params, *a.shape_bucket)
 
     run_dir = os.path.join(ROOT, "outputs", a.output)
@@ -111,7 +111,7 @@ def main():
                    "torch": torch.__version__,
                    "gpu": torch.cuda.get_device_name(0) if torch.cuda.is_available() else "cpu",
                    "started_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-                   "entry": "hand_v2/train.py"}, f, indent=2)
+                   "entry": "tools/train.py"}, f, indent=2)
 
     rec = RunRecord.start(name=a.output, kind="train", experiment=a.experiment,
                           dataset=dataset_descriptor(a, data_path), seed=a.seed, config=vars(a),

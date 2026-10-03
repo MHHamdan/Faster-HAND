@@ -13,7 +13,7 @@ D2  layout tokens were identified by charset *position* (`ind >= len(char_only_s
     is read as a layout token. `layout_token_identity` selects the identity test instead; it
     is off by default so no recorded run's input encoding changes.
 
-Run with:  python -m pytest hand_v2/tests/test_charset_tokens.py -q
+Run with:  python -m pytest tests/test_charset_tokens.py -q
 """
 import os
 import pickle
@@ -22,7 +22,7 @@ import types
 
 import pytest
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
 from hand.OCR.ocr_dataset_manager import OCRDatasetManager, OCRDataset  # noqa: E402

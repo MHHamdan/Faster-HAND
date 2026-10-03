@@ -13,10 +13,10 @@ does not reproduce are shaded, and a red caret in the prediction marks a deletio
 breaks are preserved; long lines wrap with a hook.
 
 Predictions are never produced here. They are read from the per-sample dump written by
-`hand_v2/eval/dump_predictions.py`, which runs the released checkpoint through the exact
+`tools/dump_predictions.py`, which runs the released checkpoint through the exact
 evaluation path (`tools/evaluate_hand.py`), e.g.
 
-    CUDA_VISIBLE_DEVICES=0 python3 hand_v2/eval/dump_predictions.py \
+    CUDA_VISIBLE_DEVICES=0 python3 tools/dump_predictions.py \
         --model iam_page --split test --out outputs/iam_predictions
 
 The per-sample CER printed on the figure is computed with the metric module's own
@@ -194,7 +194,7 @@ def composite(examples, out_base, fs=6.0, width_in=7.28, img_w_in=2.25, gap=0.10
 # --------------------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--predictions", required=True, help="dump written by hand_v2/eval/dump_predictions.py")
+    ap.add_argument("--predictions", required=True, help="dump written by tools/dump_predictions.py")
     ap.add_argument("--data", default="formatted/IAM_page")
     ap.add_argument("--split", default="test")
     ap.add_argument("--names", nargs="*", default=[])

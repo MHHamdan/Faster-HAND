@@ -17,7 +17,7 @@ padding in the instance-normalisation statistics, of the same kind the baseline 
 introduces through batch composition.
 
 Off by default (`--shape-bucket 0 0`). Alternative with no numerical side effect:
-`--cudnn-api v7` (see hand_v2/train.py).
+`--cudnn-api v7` (see tools/train.py).
 """
 import torch
 import torch.nn.functional as F

@@ -59,7 +59,7 @@ ROW_ORDER = [
     ("ahawp_paragraph", "AHAWP", "Paragraph"),
 ]
 
-# The current page-level run, trained through hand_v2/train.py. It is NOT in results_real/
+# The current page-level run, trained through tools/train.py. It is NOT in results_real/
 # (that directory holds the V1 checkpoints' evaluations), so it is read from its run
 # record, identified by run_id so that no glob can pick a different run.
 HEADLINE = {

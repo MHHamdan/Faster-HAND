@@ -105,7 +105,7 @@ except ImportError as _e:      # pragma: no cover - a diagnosis, not a fallback
 
 # --------------------------------------------------------------------------------------
 # READ 2016 layout tokens. Lower case opens a region, upper case closes it.
-# Source: hand_v2/metrics/layout_metrics.py:46 (READ_MATCHING_TOKENS), which is in turn
+# Source: hand/basic/layout_metrics.py:46 (READ_MATCHING_TOKENS), which is in turn
 # DAN's read2016_formatter.SEM_MATCHING_TOKENS.
 # --------------------------------------------------------------------------------------
 LAYOUT_OPEN_TO_CLOSE = {

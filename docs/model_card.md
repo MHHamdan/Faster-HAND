@@ -56,7 +56,7 @@ model's output cannot change. On the full-budget base the same head budget gives
 The page model **is** DAN's architecture: parameter count equal to the digit, identical
 state-dict key sets and tensor shapes, identical FLOPs and peak memory. That identity is
 the basis of every matched comparison in the paper, and it is checked mechanically by
-`tools/validate_install_cpu.py` stage S2 and by `hand_v2/tests/test_fast_decode_paths.py`.
+`tools/validate_install_cpu.py` stage S2 and by `tests/test_fast_decode_paths.py`.
 
 A separate set of designed components — the gated/octave HAND encoder, MSAP,
 memory-augmented and sparse attention, adaptive fusion — lives in

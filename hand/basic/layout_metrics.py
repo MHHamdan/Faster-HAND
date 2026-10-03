@@ -38,7 +38,7 @@ Two families:
    These are computed after layout tokens are stripped, exactly as CER/WER are.
 
 Everything here is pure Python/NumPy/SciPy/NetworkX and is unit-tested against hand-scored
-cases in hand_v2/tests/test_layout_metrics.py.
+cases in tests/test_layout_metrics.py.
 """
 from collections import Counter
 

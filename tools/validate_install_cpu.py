@@ -71,7 +71,7 @@ ACQUIRE = {
                "                 The checkpoint is produced by docs/reproducibility.md section 5 and "
                "is not redistributed in this repository.",
     "data": "formatted/READ_2016_page_sem_dan is git-ignored and is rebuilt from the raw "
-            "corpus:\n                 python hand_v2/data/format_read_dan_splits.py "
+            "corpus:\n                 python hand/Datasets/format_read_dan_splits.py "
             "--levels page\n                 Raw READ 2016 (CC BY 4.0) comes from Zenodo "
             "10.5281/zenodo.1297399. See docs/reproducibility.md section 2.",
     "parity": "release/PARITY_CPU.json carries the reference per-page edit distances.",
@@ -154,7 +154,7 @@ def stage_environment(rep):
     except Exception as e:                                    # noqa: BLE001
         info["tensorboard_import"] = "failed: %s" % type(e).__name__
         warnings.append("`import torch.utils.tensorboard` fails (%s), so tools/train_hand.py "
-                        "and hand_v2/train.py cannot write TensorBoard logs. Inference, "
+                        "and tools/train.py cannot write TensorBoard logs. Inference, "
                         "including every stage below, is unaffected" % type(e).__name__)
     # Pillow >= 10 removed FreeTypeFont.getsize(); the synthetic-page generator needs the
     # shim in hand/OCR/ocr_dataset_manager.py. Training only.

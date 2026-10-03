@@ -40,7 +40,7 @@ def _run(cmd):
 # ran, independently of the commit recorded at launch -- see experiments/PROVENANCE_AUDIT.md
 # section 2, where a dirty-tree launch made the recorded commit point at the PARENT of the
 # commit containing the code the run used.
-CODE_ROOTS = ("hand", "hand_v2", "tools")
+CODE_ROOTS = ("hand", "tools")
 
 
 def effective_code_state(roots=CODE_ROOTS):

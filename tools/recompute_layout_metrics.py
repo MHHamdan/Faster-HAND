@@ -1,13 +1,13 @@
 """
 Three-way validation of the layout metrics on real predictions.
 
-Input: a prediction dump written by hand_v2/eval/dump_predictions.py (private/, git-ignored).
+Input: a prediction dump written by tools/dump_predictions.py (private/, git-ignored).
 For every document the prediction is post-processed with the READ PostProcessingModule
 (as both DAN and this repository do before LOER/mAP), then LOER is computed by
 
   (a) this repository's `hand/basic/metric_manager.edit_and_num_items_for_ged_from_str`
       (the code behind the 29.7-35.2 % figures in results_recovery/),
-  (b) the DAN-faithful port in `hand_v2/metrics/layout_metrics.py`,
+  (b) the DAN-faithful port in `hand/basic/layout_metrics.py`,
   (c) the official DAN implementation itself (`third_party/DAN/basic/metric_manager.py`,
       imported with TensorFlow blocked), which is the ground truth for "DAN's LOER".
 
@@ -27,12 +27,12 @@ import sys
 
 import numpy as np
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
 from hand.basic import metric_manager as repo_mm  # noqa: E402
 from hand.basic.post_pocessing_layout import PostProcessingModuleREAD  # noqa: E402
-from hand_v2.metrics import layout_metrics as v2  # noqa: E402
+from hand.basic import layout_metrics as v2  # noqa: E402
 
 
 def load_dan_metric_manager():

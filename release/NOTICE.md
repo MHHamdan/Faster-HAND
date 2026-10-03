@@ -71,8 +71,8 @@ hand/Datasets/dataset_formatters/read2016_formatter.py
 hand/Datasets/dataset_formatters/rimes_formatter.py
 hand/Datasets/dataset_formatters/utils_dataset.py
 hand/models/baseline/fcn_encoder.py
-hand_v2/data/format_read_dan_splits.py
-hand_v2/metrics/layout_metrics.py
+hand/Datasets/format_read_dan_splits.py
+hand/basic/layout_metrics.py
 ```
 
 These are **Modified Software** in the sense of CeCILL-C Art. 5.3.2 wherever they were
@@ -84,7 +84,7 @@ carry the Art. 5.2 modification statement reproduced in §1.3. The remaining thr
 (`hand/basic/__init__.py`, `hand/Datasets/__init__.py`,
 `hand/Datasets/dataset_formatters/__init__.py`) contain the notice and no code, so there is
 nothing modified to declare. Two files in §1.1 — `maurdor_formatter.py` and
-`hand_v2/data/format_read_dan_splits.py` — have **no counterpart in the pinned upstream
+`hand/Datasets/format_read_dan_splits.py` — have **no counterpart in the pinned upstream
 clone**; they carry the notice because they reuse CeCILL-C-governed logic, and their
 modification status against any earlier upstream release is therefore unverified. That is
 recorded rather than glossed.
@@ -170,11 +170,8 @@ the following are the author's own work and are offered under
 ```
 release/hand_release/inference.py           the inference contract
 release/tools/*.py                          export, evaluation, manifest, claim-language check
-hand_v2/eval/                               evaluation harness
-hand_v2/metrics/   (except layout_metrics.py, which is CeCILL-C and listed in §1.1)
-hand_v2/data/      (except format_read_dan_splits.py, listed in §1.1)
-hand_v2/models/dancer_encoder.py            the DANCER control encoder
-hand_v2/train.py, hand_v2/tests/
+hand/Datasets/bucketing.py                  shape bucketing
+tools/train.py, tests/
 hand/models/baseline/spec_heads.py          speculative draft heads
 hand/models/experimental/                   the untrained proposed architecture
 hand/OCR/document_OCR/hand/trainer_std_hand.py, main_std_hand.py, metrics.py

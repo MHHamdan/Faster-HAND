@@ -27,15 +27,16 @@ orange, body blue; red marks a character or layout-token error.
 |---|---|
 | `cross_script_comparison.pdf` | A READ 2016 page with layout tokens, an IAM form and a KHATT paragraph (right to left) side by side; each is decoded by a model trained on its own corpus. The panels duplicate Fig. 4 of the paper and row (a) of the IAM and KHATT figures of the supplementary. `iam_representative.pdf` and `khatt_representative.pdf` are its two source panels. |
 
-## Animations (planned)
+## Animations
 
-The repository ships `docs/assets/hand_decoding_test_11.gif` (greedy decoding of
-test page 11 seen through the decoder's cross-attention; static equivalent:
-`docs/assets/decoding_test_11.png`).
-Two further animations can be rendered from stored data without any new decode and are planned
-for this directory: the first 40 verification passes of speculative decoding on the same page
-(from `experiments/qualitative/decoding_test_11_spec_steps.json`; static equivalent:
-`docs/assets/decoding_test_11_speculative.png`), and a
-line-by-line reveal of the adapted triple-page decode of `test_5` in reference reading order
-(from `experiments/multipage/adaptation/FT_TRIPLE_triple_page.json`; static equivalent:
-`docs/assets/qualitative_triple_page.png`).
+All three animations are rendered from stored predictions; nothing is decoded for display.
+
+| File | What it shows | Static equivalent |
+|---|---|---|
+| [`../assets/hand_decoding_test_11.gif`](../assets/hand_decoding_test_11.gif) | Greedy decoding of READ 2016 test page 11, seen through the decoder's last-layer cross-attention (blue: attention accumulated so far; red: the current symbol). | [`../assets/decoding_test_11.png`](../assets/decoding_test_11.png) |
+| [`speculative_decoding.gif`](speculative_decoding.gif) | Speculative decoding with four draft heads (*m* = 5) on the same page: for each verification pass, the drafted symbols, then the verification — accepted (green), the first rejected draft replaced by the base model's symbol (red), discarded drafts (grey), and the base model's extra symbol after a fully accepted draft (blue). The stored log covers the first 40 of the page's 156 passes, which emit the first 124 of its 486 symbols; the output is identical to greedy decoding. | [`../assets/decoding_test_11_speculative.png`](../assets/decoding_test_11_speculative.png) |
+| [`triple_page_decoding.gif`](triple_page_decoding.gif) | The output of the triple-page adapted model on triple-page test image `test_5`, revealed two lines at a time, with layout tokens as tags. The image shows the reference regions and reading-order path; the page being transcribed is outlined and pages not yet reached are dimmed. No per-line timing or attention was logged for this decode, so the animation shows the order of the output, not where the model attended. | [`../assets/qualitative_triple_page.png`](../assets/qualitative_triple_page.png) |
+
+Regenerate with `tools/gallery_animations.py speculative` and
+`tools/gallery_animations.py triple-page --data <formatted READ_2016_triple_page_sem_dan>`; the
+decoding animation is produced by `tools/decoding_animation.py`.

@@ -17,7 +17,7 @@ import sys
 import pytest
 import torch
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
 from hand.models.baseline import dan_decoder  # noqa: E402

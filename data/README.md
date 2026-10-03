@@ -43,7 +43,7 @@ raw_READ2016/
 **Preprocessing.**
 
 ```bash
-python hand_v2/data/format_read_dan_splits.py --levels page
+python hand/Datasets/format_read_dan_splits.py --levels page
 ```
 
 This symlinks the raw scans into a temporary view and runs the unchanged formatter

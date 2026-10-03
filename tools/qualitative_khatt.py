@@ -4,7 +4,7 @@
 Each example is one row:  [ input paragraph image ] [ ground truth ] [ HAND prediction ]
 
 Every prediction shown comes from the per-sample dump written by
-``hand_v2/eval/dump_predictions.py --model khatt_paragraph --split test``, i.e. from the
+``tools/dump_predictions.py --model khatt_paragraph --split test``, i.e. from the
 released checkpoint run through the exact evaluation path. The three samples are chosen from
 the per-sample CER distribution (or given with --names) and their raw predictions are written
 next to the figures as JSON so that a figure can always be traced to the decode that produced

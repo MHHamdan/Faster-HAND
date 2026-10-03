@@ -134,10 +134,11 @@ prediction is read from the stored result files; none is decoded or edited for d
   <sub>Static version: <a href="docs/assets/decoding_test_11.png">decoding_test_11.png</a>.</sub>
 </p>
 
-The speculative passes on the same page (486 symbols in 156 passes, identical to the greedy
-decode) are shown statically in
-[`docs/assets/decoding_test_11_speculative.png`](docs/assets/decoding_test_11_speculative.png).
-Both are produced by [`tools/decoding_animation.py`](tools/decoding_animation.py).
+Two further animations are in the gallery, both rendered from stored predictions:
+[speculative decoding](docs/gallery/speculative_decoding.gif) on the same page (draft, verify,
+accept or roll back; 486 symbols in 156 passes, identical to the greedy decode) and the
+[triple-page decode](docs/gallery/triple_page_decoding.gif) of the adapted model, revealed line
+by line. See [`docs/gallery/`](docs/gallery/README.md#animations).
 
 ## Installation
 
@@ -146,7 +147,7 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements-pinned.txt     # the environment every number was measured in
 pip install -e .
 python tools/validate_install_cpu.py       # CPU only; no GPU, dataset or network needed
-python -m pytest hand_v2/tests -q          # CPU test suite
+python -m pytest tests -q          # CPU test suite
 ```
 
 `requirements-pinned.txt` is the reference environment (Python 3.11.14, PyTorch 2.9.1+cu128,
@@ -194,7 +195,7 @@ Every reported number uses evaluation batch size 1.
 ## Reproducing the paper
 
 Training needs a GPU and READ 2016; the reported page model is a two-phase run of about 89 GPU-hours
-via `hand_v2/train.py`. The exact commands and run records are in
+via `tools/train.py`. The exact commands and run records are in
 [`docs/reproducibility.md`](docs/reproducibility.md).
 
 | Document | Contents |
@@ -210,9 +211,9 @@ via `hand_v2/train.py`. The exact commands and run records are in
 
 | Path | Contents |
 |---|---|
-| `hand/` | the library: model (`models/baseline/` is the evaluated system), dataset formatters, trainers, metrics |
-| `hand_v2/` | training and evaluation layer on top of `hand/`: the `train.py` entry point used for the reported runs, evaluation helpers, CPU tests; no model code of its own |
-| `tools/` | command-line entry points for evaluation, efficiency, multi-page study, figures |
+| `hand/` | the library: model (`models/baseline/` is the evaluated system), dataset formatters (including the double- and triple-page builder), trainers, layout metrics |
+| `tools/` | command-line entry points: `train.py` (trains the reported models), evaluation, efficiency, multi-page study, figures |
+| `tests/` | CPU test suite |
 | `release/` | inference package, release tools, licence notice and manifest |
 | `experiments/qualitative/` | stored predictions behind every qualitative figure and animation |
 | `hand/models/experimental/` | components documented in the supplementary but used by no reported model |

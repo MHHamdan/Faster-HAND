@@ -1,19 +1,19 @@
 """
-Hand-scored test cases for hand_v2/metrics/layout_metrics.py.
+Hand-scored test cases for hand/basic/layout_metrics.py.
 
 Every expected value below was computed by hand from the definitions (DAN §4.2 for LOER,
 Vidal et al. 2023 for bWER/hWER) before the code was run; the derivation is written next to
 each case so a reader can check it without executing anything.
 
-Run: python hand_v2/tests/test_layout_metrics.py
+Run: python tests/test_layout_metrics.py
 """
 import os
 import sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-from hand_v2.metrics.layout_metrics import (  # noqa: E402
+from hand.basic.layout_metrics import (  # noqa: E402
     str_to_graph_read, loer_items_read, loer, order_invariant_metrics, words_of,
     bwer_counts, hwer_counts, nsfd, READ_MATCHING_TOKENS,
 )

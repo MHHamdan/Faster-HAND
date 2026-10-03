@@ -33,7 +33,7 @@ GROUPS = [
  ('Root — project metadata, environment, licence', lambda p: '/' not in p),
   ('Documentation', lambda p: p.startswith('docs/')),
  ('Library — hand/', lambda p: p.startswith('hand/')),
- ('Library — hand_v2/', lambda p: p.startswith('hand_v2/')),
+ ('Tests — tests/', lambda p: p.startswith('tests/')),
  ('Entry points — tools/', lambda p: p.startswith('tools/')),
  ('Reproducibility scripts — scripts/', lambda p: p.startswith('scripts/')),
  ('Configuration — configs/', lambda p: p.startswith('configs/')),

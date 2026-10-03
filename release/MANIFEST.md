@@ -24,7 +24,7 @@ sed -nE 's/^\| `([^`]+)` \| `([0-9a-f]{64})`.*/\2  \1/p' release/MANIFEST.md > /
 sha256sum -c /tmp/hand.sha256
 ```
 
-**323 files, 13,234,108 bytes.** Generated 2026-10-02. Regenerate with this script after any change to the tree.
+**315 files, 13,936,180 bytes.** Generated 2026-10-02. Regenerate with this script after any change to the tree.
 
 
 ## Root — project metadata, environment, licence
@@ -34,7 +34,7 @@ sha256sum -c /tmp/hand.sha256
 | `.gitignore` | `88798a5ad20ebcf40b719505682fa3077ca889ca6f0469a592891fbd20aa1546` | 4,921 |
 | `CITATION.cff` | `04933b518eb9acd8f1928bab10046b276edb69e6553aa88bcc436870d14020f0` | 3,186 |
 | `LICENSE` | `04a0056cb7d15f3c3824ac1901f1c678d2e98b02721ab80f2d7dd4e93de20702` | 1,072 |
-| `README.md` | `37943f4efad84a80ec1b236b66a6fe1be4a588ebcc9255bd287c61e962e5bc4a` | 14,091 |
+| `README.md` | `fc45f7b7644bf4d52f12222abdae6ff9375f515388bfbbd06a123fe88052ddd5` | 14,152 |
 | `dataset_audit.json` | `2581dc1b6ce607973071edfc554ba1b359be8e27e9c49619fe2a20d877ecbf7d` | 49,093 |
 | `environment.yml` | `3ad9240a921c022c70d124320a772c8475a15c1772411a72e61cb168186c3017` | 1,328 |
 | `requirements-pinned.txt` | `ca57b6cd97efd9137c1510e4e875cd75d683a63433b8ec997fc043ed15ae930f` | 1,351 |
@@ -45,8 +45,8 @@ sha256sum -c /tmp/hand.sha256
 
 | File | SHA-256 | Bytes |
 |---|---|---:|
-| `docs/REPRODUCIBILITY_ARTIFACTS.md` | `f5af51a934eff930f33bd5a9dd7ef3c1c579197772e7bf2523e2ae5114fdeae6` | 19,906 |
-| `docs/ablations.md` | `58b17e6d7358e81a6e22b3006bee87180a735ea743b4799a09d00c619e4089ba` | 13,380 |
+| `docs/REPRODUCIBILITY_ARTIFACTS.md` | `a1b84c748ec6f95ad0e676dd63428f55961fe12b38ce42174ef12846b4d29b1e` | 20,416 |
+| `docs/ablations.md` | `5c6ce1e3131ff30248955c67c8264a115b0cbfb4aedbd04624e676189b89756a` | 13,372 |
 | `docs/assets/decoding_test_11.png` | `aa37d283e10676ffa1478685a90e74582f12b7a1430f77739dac416a9879ccc3` | 429,165 |
 | `docs/assets/decoding_test_11_speculative.png` | `5059ef4c7d14de17a92c40dd25af1cbb86c1a2670846aca7a4d46dc41a391045` | 66,882 |
 | `docs/assets/hand_architecture.png` | `7aa5a2f0aa8a94d1f86e0239f72c44e8770f64c022e27d226cf6681170a907aa` | 206,151 |
@@ -54,8 +54,8 @@ sha256sum -c /tmp/hand.sha256
 | `docs/assets/hand_decoding_test_11.gif` | `f80805110149f837394fb79c6c6ed0b8272e1479e27968b81d0805918fb2c84e` | 1,147,175 |
 | `docs/assets/qualitative_double_page.png` | `23f479eafb2d53b78b61d27fb1306f1e8ee2685e7032371f38ab822d8cdf66c2` | 980,676 |
 | `docs/assets/qualitative_triple_page.png` | `13485c499763bba75cd185d61c484a7563022fe7403d8709410d763848200ecd` | 802,507 |
-| `docs/changelog.md` | `150811871ee9c53c44b8bf85d6b094204bda474f2ae2c8abf00ac81e5965dcc4` | 1,963 |
-| `docs/gallery/README.md` | `9993e72e00d04ad9d549cee7c8189242d42587e59297522820140c0bc10362d5` | 3,544 |
+| `docs/changelog.md` | `f39941c41e86bf9f397fef1ae6e1f1a7a290b247e97c3caa2da984ee2c5cda16` | 1,985 |
+| `docs/gallery/README.md` | `36f150ba4599152a61380e1ec334cbaa3e6110275238613481ae9e150cfa1833` | 4,664 |
 | `docs/gallery/cross_script_comparison.pdf` | `9f005c98e1dd0e62d61c989f7d5429042ec3c8967324023454a7c24395cf8e99` | 341,608 |
 | `docs/gallery/iam_representative.pdf` | `b2e4485dec9ba998e456ffa333aef0fde9d6e5b07bc00b1ab9d214b88f1a3f87` | 55,102 |
 | `docs/gallery/khatt_representative.pdf` | `e76e1b34eb61b3002cacbfc26d9ded85e0c7513636c1518a02a73f36d808b0ea` | 69,741 |
@@ -64,14 +64,17 @@ sha256sum -c /tmp/hand.sha256
 | `docs/gallery/read2016_page_test_test_25.pdf` | `92eb5d3a68c306cb2e54df4c4e8d4229921b28377638abc67d77ec901bc9bdba` | 200,137 |
 | `docs/gallery/read2016_page_test_test_35.pdf` | `28c7e7bc64142a23a0ebc0bbf1525acd4fe2e542a9b17b825c8b03e699e74dbe` | 230,974 |
 | `docs/gallery/read2016_triple_page_zeroshot_test_test_0.pdf` | `751d1686e73f327299000f3357fecf4d662947312f954e38da4acbf56deb2e5a` | 568,380 |
-| `docs/model_card.md` | `99e90be745df171440a4b896c2ee46ce2165000139e79158cafd2ebc598223dc` | 8,100 |
-| `docs/reproducibility.md` | `398b2859f997837d17faaa774cc31aa3e82fea90b2f6b0062e3ac93c0d0eb175` | 41,958 |
+| `docs/gallery/speculative_decoding.gif` | `df27651c4f9fd92ba8198e2e562025ff968cbade2c4b4618d9149e0bf1cc0ec7` | 401,474 |
+| `docs/gallery/triple_page_decoding.gif` | `abb7efa4f12ee90f8fd26985335b67cb8b49ce71eafa0b6b11e97f3a88a9716c` | 338,256 |
+| `docs/model_card.md` | `78cea5f8b083ef74e1344e03f75d71d3bc429ddbdaf8df0494780d5d5dbc75a9` | 8,092 |
+| `docs/reproducibility.md` | `5ad368519eaab4f34cab5b3a76e7515695466c99322c93f6147a1da70e96dfc9` | 41,800 |
 
 ## Library — hand/
 
 | File | SHA-256 | Bytes |
 |---|---|---:|
 | `hand/Datasets/__init__.py` | `0feeb664b42b08e4ec6cfcdf7af2006243a4403b66c7581c0926bff2e293457b` | 1,810 |
+| `hand/Datasets/bucketing.py` | `8a039251134d4db835a3b4fa057c58f9f5d8f0367232fa822f26db36ed5910d4` | 3,061 |
 | `hand/Datasets/dataset_formatters/__init__.py` | `0feeb664b42b08e4ec6cfcdf7af2006243a4403b66c7581c0926bff2e293457b` | 1,810 |
 | `hand/Datasets/dataset_formatters/ahawp_formatter.py` | `6c760fac75eeafa9aeae106cdfa77a684a4ecc1fcf29a03fd2135f16f2daa3e0` | 18,271 |
 | `hand/Datasets/dataset_formatters/bentham_formatter.py` | `50332968b1d7fc569b2a5e559953c1070fdd42ca8f3dbfe9fc3e2a517078eb61` | 16,034 |
@@ -84,6 +87,7 @@ sha256sum -c /tmp/hand.sha256
 | `hand/Datasets/dataset_formatters/read2016_formatter.py` | `90bb01cb30b5bcaa522943e86815d516ff4dab66fc3cfee36f767fb8cfa5573c` | 39,600 |
 | `hand/Datasets/dataset_formatters/rimes_formatter.py` | `33ba08410132df0c6c39d92a2c0082a53344939e3005b8fdef6f428a475ee514` | 18,008 |
 | `hand/Datasets/dataset_formatters/utils_dataset.py` | `92f5e582cd84960b57e8518d398d5242d5fefc935ba7399e65e78bcc8701fd9b` | 2,307 |
+| `hand/Datasets/format_read_dan_splits.py` | `208a0dfa9a5062977b485558a7959a1e6dbbd1b2e9d62507a62103e312aad724` | 6,032 |
 | `hand/OCR/__init__.py` | `1fb420fb97268c8de8d7833844b357cf68c6b72ccc24c1347793b774f71b123f` | 18 |
 | `hand/OCR/document_OCR/__init__.py` | `225e50f404dd5fcc97a95c6d3ff9d8a94844c73c4f0bfaa4fd65d0ff88747b18` | 16 |
 | `hand/OCR/document_OCR/hand/__init__.py` | `a0b2905e90214235d2b456240fff2556a90944254307c4f2c0effe103a21b097` | 17 |
@@ -105,6 +109,7 @@ sha256sum -c /tmp/hand.sha256
 | `hand/basic/__init__.py` | `0feeb664b42b08e4ec6cfcdf7af2006243a4403b66c7581c0926bff2e293457b` | 1,810 |
 | `hand/basic/generic_dataset_manager.py` | `913bb39ffbcc6552b9ded10eea7eb4851f30077c3fa98ab38b5f769348c1536e` | 19,460 |
 | `hand/basic/generic_training_manager.py` | `9fdcfbc45f33a4de688a4d842fb384211ecad2be77723c0301876f3eb522677f` | 38,898 |
+| `hand/basic/layout_metrics.py` | `8db1ae7be1563247c378f4d69e8faefd83a9f8f06903e92f458c939199a8de09` | 12,780 |
 | `hand/basic/metric_manager.py` | `d99ed6ebf2a1a7e3bba2136f4eeea289b17cc5fb2d03675b81d424e91642011f` | 22,991 |
 | `hand/basic/post_pocessing_layout.py` | `2080640e80767b29b621ea5e4c689ae46e866ab09c5d4270f117be3d91473981` | 10,820 |
 | `hand/basic/scheduler.py` | `17948748876b6d934bf9395b8ab921cc6c05ea59e004d5ae2d0f60a5678f5877` | 3,359 |
@@ -131,32 +136,15 @@ sha256sum -c /tmp/hand.sha256
 | `hand/models/experimental/train_multigpu.py` | `c6a68d7eea686d7b5f1a071e354c30bed4e54762fc62de3684eb7c39c5f3c1f2` | 23,719 |
 | `hand/models/experimental/trainer_advanced.py` | `ef57ec108eb4ded3cb7cb50f0ce57eeeca3691a724e5eefcbe363e2b325290c5` | 21,077 |
 
-## Library — hand_v2/
+## Tests — tests/
 
 | File | SHA-256 | Bytes |
 |---|---|---:|
-| `hand_v2/README.md` | `2ea3c417a380cc82d27a924b5341c664a153110dbdbae925406993088537858b` | 1,663 |
-| `hand_v2/__init__.py` | `c9c17566620c8d174b49052f1ea8de0c21924673f2c58944c69ba4b235ecdb97` | 587 |
-| `hand_v2/data/__init__.py` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | 0 |
-| `hand_v2/data/bucketing.py` | `88bd1ec6a1a66eb96e1b00a4a9fd5caf146c07c0babd267e6b6d3681eeab9672` | 3,063 |
-| `hand_v2/data/format_new_datasets.py` | `72b44acfb8f814e51605e48c066b132490ed87483c7756865a835dc16c051b59` | 4,733 |
-| `hand_v2/data/format_read_dan_splits.py` | `208a0dfa9a5062977b485558a7959a1e6dbbd1b2e9d62507a62103e312aad724` | 6,032 |
-| `hand_v2/data/format_rimes_local.py` | `20a5a2a37c4eb0502e0fb2750872bc9e9c2745760f963d44316768c27f8b1749` | 7,528 |
-| `hand_v2/data/manifests.py` | `2a0bdd17515c6363bdd778d3f2119e1b57ed7b6e6068854c2830db0ff2a7d53b` | 15,655 |
-| `hand_v2/eval/__init__.py` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | 0 |
-| `hand_v2/eval/dump_predictions.py` | `8617aa1376ab7ef90f58e5348a3b1c870beb0a9cd86ece7890ec043fc78ec683` | 4,999 |
-| `hand_v2/eval/recompute_layout_metrics.py` | `7d539b06f03d1536cbf376fb5675ace339d43eff8d9d180f074f272aadade8bb` | 9,898 |
-| `hand_v2/metrics/__init__.py` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | 0 |
-| `hand_v2/metrics/layout_metrics.py` | `617763e271075fc133c02801aa575bcd2b93f087da7db3f1fd2ac7bf98bc17b9` | 12,788 |
-| `hand_v2/models/__init__.py` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | 0 |
-| `hand_v2/models/dancer_encoder.py` | `b1431871e9abe8ed22995937f46bdfa6531402e7fd437dcdb75ff7af845cb400` | 13,936 |
-| `hand_v2/tests/test_charset_tokens.py` | `9e6f9f4183bc5f90bd1a3273024a9f9b2a6f33b327d78e6ad5e8665509738fc8` | 6,680 |
-| `hand_v2/tests/test_dancer_encoder.py` | `4fb45d9c1bde6ac6407ee9abfe0155e90cf2fdba1838e1c4c18adffb52c3e1ae` | 6,571 |
-| `hand_v2/tests/test_fast_decode_paths.py` | `66fee6be30b3d6c83922e71ff03c2ee8180a076ad413d46153426ca487c91581` | 7,991 |
-| `hand_v2/tests/test_layout_metrics.py` | `ff9620172beb9dd26d42dd331269cfafaa8aad762d3097dd6d8fafa88bd0547b` | 6,737 |
-| `hand_v2/tests/test_layout_metrics_vs_dan.py` | `8962a191b29a11781478e68a6b37beb773190d049c4ca0f61a9695cd669c1135` | 3,661 |
-| `hand_v2/tests/test_sync_free_equivalence.py` | `219a7c297e7e3a150f044dc6ef0c62bd51a0eedd3b814d7fbcd93e1878240615` | 8,457 |
-| `hand_v2/train.py` | `9e07e3a45832ae2276ead0d028a8bb9c8abdd71b6de8ab14e25ee46a2fea8595` | 10,187 |
+| `tests/test_charset_tokens.py` | `a4ea9f6bf9319a2bf4f05a968319f65d021ef335d5afc557ab192a12d9eaef60` | 6,655 |
+| `tests/test_fast_decode_paths.py` | `8299b819237a4844f835ef0f615607707e3dea2e7153ea89bb3fdc7a76c6cbc4` | 7,974 |
+| `tests/test_layout_metrics.py` | `c580f1461543c7fa0f9fea6fdc9952cc211540c44010296e5c81be16a827b20a` | 6,702 |
+| `tests/test_layout_metrics_vs_dan.py` | `9ce1d3c6259c7c3a29fd0324c9c816a3de0bda1b8b24c27b3e045bb32b42e96d` | 3,626 |
+| `tests/test_sync_free_equivalence.py` | `76e638377ca90237c2be849d7e65003dcc75ebe1fd770bd086ef7cbd4fd6b76b` | 8,424 |
 
 ## Entry points — tools/
 
@@ -166,25 +154,29 @@ sha256sum -c /tmp/hand.sha256
 | `tools/audit_corpus_text_overlap.py` | `6ccd2bfee49c62ca8eb368f97549987e3f67db09ed11c8b564221d880d2f5c2c` | 5,991 |
 | `tools/audit_dataset_integrity.py` | `44c80fbb5d546eb3866ba3c058d26b2c32a2e244f07fa058ce5c70521c8107b0` | 13,247 |
 | `tools/audit_khatt_fixed_text.py` | `c23aed9eb9b6114bca77b918a411b07fc5bde25e2a487ca21f06961e80988c93` | 11,103 |
-| `tools/build_read_triple_page_dan_manifest.py` | `dbc39133eeb906d3242171848abe1af2d7f92a38cd341da968a1604e0423198c` | 4,305 |
+| `tools/build_read_triple_page_dan_manifest.py` | `2051cd1cdc85f575c9f83ad190c6b0a2ea6fe91a38f5e4c77c10f8f9c77aad74` | 4,307 |
 | `tools/decoding_animation.py` | `62ece5837e7ce167dc14d2ead7eabf4cbc31898d679de788dea160623d578ef5` | 27,426 |
+| `tools/dump_predictions.py` | `f5fded4a70232968a058edc4d459cff77260081f66a5395e39c64db9e95b29fa` | 4,982 |
 | `tools/efficiency_bench.py` | `668be3fca4d0320cffc901568eff0e43b2df24271af5fa6f5f1a083baea12c92` | 17,190 |
 | `tools/efficiency_combined.py` | `744727655973203b6cc188458f094968155d2679f3c36be41f2203a4c6ed5033` | 14,912 |
 | `tools/evaluate_hand.py` | `7d599f859d3fe7cd5e7d0e170c0f8968c1f14617a916867ea5e1fcfa389a4e75` | 18,980 |
+| `tools/gallery_animations.py` | `a368a660587324940817d68745a258818e6fb85e4d9aedb6756d2431c7671e66` | 12,269 |
 | `tools/graph_decode.py` | `1850cfd43c5441f27a86e006d9ed730e5e26031edf15baa94ec9b1c66955f8ba` | 14,201 |
-| `tools/make_tables.py` | `f9ef45b8dcb984d21fa2a967095e96cea6c271be0661416e8285b9fe39c010ed` | 21,893 |
+| `tools/make_tables.py` | `f904338b83e132a2215c043293d353359951d77adee5f8afb2f8ca5104ee6ad3` | 21,891 |
 | `tools/multipage_eval.py` | `79907aecbf500b0e1ef0ef14799f02f557b3b862a6613b1d58fa8a06ab52e58e` | 25,075 |
 | `tools/multipage_summary.py` | `79f6cfb01a0a26d0c8d19251e25cffce3256665bc08981987b0175190a85ceda` | 11,876 |
 | `tools/qualitative_figures.py` | `ddc84e43aa5ad4e092cdd0b5fea714aa6fdf835e82ee34f2e46cb7c541d0fa4f` | 32,380 |
-| `tools/qualitative_iam_khatt.py` | `06637cf93f5227ad601b78fa511903406aaa70a81c9772f1a3b684a4a4adf6dd` | 13,836 |
-| `tools/qualitative_khatt.py` | `a868fd0156bed52bcbb395f24c4880a07e59e8bc1746a1856f10309a8b80284b` | 24,120 |
+| `tools/qualitative_iam_khatt.py` | `fb239f7c421db9c9dbba2146cede6c53d4917b9677df1ac0bc2513fe271299e5` | 13,815 |
+| `tools/qualitative_khatt.py` | `ef64a64698a0076f3e419520c5a919853dcc63b6f18b0260a88ce1a20eab355d` | 24,113 |
 | `tools/qualitative_multipage.py` | `46bc16f709a56500dfb30285853cae80ae7b47e9a86be965e78a41eee83d0d0b` | 17,315 |
+| `tools/recompute_layout_metrics.py` | `a2aa7803ebe55a030ef278fc50b340d7b75b4ec6aa2b0500b32be911f7550ecf` | 9,864 |
 | `tools/reproduce_baseline.py` | `db6af53db7915eeffbebc2c550820101a1e0c4d0c3239527855d250f9238e65e` | 10,396 |
 | `tools/seed_variance_analysis.py` | `ca2fc903eaf1e67a75e7d19b5c8056f0460f5ad212eb9152abb7e29300acba10` | 11,279 |
 | `tools/spec_decode.py` | `206e2d1e16f7c5b18d320ef49a73d3ac4f3d64403da5d7e915bde4f67c772123` | 13,136 |
-| `tools/train_hand.py` | `ee1db95f8d3d5c0ba7b35556c67f2ec285c233cb21af5e216b2105b7daaa4944` | 22,370 |
+| `tools/train.py` | `aa93bd71f5d74be85fbc9b96f2b4afe472bb3de2102ee25cdc3fb85f8ea58d96` | 10,186 |
+| `tools/train_hand.py` | `236852159ad64c41289d49f98dea2d476185e518b5e5b04b7fcd21f6075d677f` | 22,089 |
 | `tools/train_spec_heads.py` | `610080dc6dc5634d950858263bd9f937ed99783e3543d79555135bd57f3889e2` | 7,285 |
-| `tools/validate_install_cpu.py` | `0be2744cf38b10bdf1cd919425be73cc75c26787b902430bad0e26a97215c4e4` | 23,637 |
+| `tools/validate_install_cpu.py` | `db090fdb46264e1fef483bdd38fe211be7812591977fccd9c0ce2e2572eb3df4` | 23,636 |
 | `tools/verify_exact_decoding.py` | `7772b81305112d27f749c7f084e33b46c24fb815a383ad6476808e0ec64276a8` | 5,066 |
 
 ## Reproducibility scripts — scripts/
@@ -206,7 +198,7 @@ sha256sum -c /tmp/hand.sha256
 
 | File | SHA-256 | Bytes |
 |---|---|---:|
-| `release/NOTICE.md` | `ac5fa42a3466993bc1ea58bd84f75d4012c9ed3dffa05a9a2744e3840ebc4a3b` | 17,326 |
+| `release/NOTICE.md` | `0ab572fda9e6ef8f49e3259f14add9bf2cc47e1863364376cd317d5314176ee5` | 17,083 |
 | `release/PARITY_CPU.json` | `db5a3f043b181efac0e0ec758822245671d09ccf4492f2219ade9bfa0c10bf54` | 10,108 |
 | `release/hand-read2016-page/.gitattributes` | `7e63903f3514a8ffc7463e309944bc0a70f1b6dc21f3741773b51915e490aad5` | 150 |
 | `release/hand-read2016-page/charset.json` | `f54b3f596418572315e72e262cf57e3088ee429e36ea532db1fdf8bbf0a21af9` | 1,240 |
@@ -214,19 +206,19 @@ sha256sum -c /tmp/hand.sha256
 | `release/hand-read2016-page/preprocessor_config.json` | `cb9153533612ae17492474171e160e26e5ef455600d8d85ac959980730150d01` | 764 |
 | `release/hand-read2016-page/spec_heads_m5.json` | `691ccac0c761740c4c74507087957fc0211178ce4778887f6c2b79de6c78ae70` | 355 |
 | `release/hand_release/__init__.py` | `7e4768d9280b68a0768adb95ca7aa52dbff488a2224d7eadfb2815b856f9b447` | 449 |
-| `release/hand_release/inference.py` | `1eaf04a7f3d83c79a13a95029568079a73725c0877a00a02d09d2fbf8ed115eb` | 28,382 |
+| `release/hand_release/inference.py` | `d324eb618943d525e4c6da80e50ad8a7da2b83ca310a1d05853af0f4bcc0cd17` | 28,377 |
 | `release/licenses/LICENSE-CeCILL-C.md` | `405e0890e5997f766bfe0adcfad381077749b6c615d41dc4effb0baf271ada9f` | 21,958 |
 | `release/licenses/LICENSE-MIT.txt` | `c1eff5cff0bd189a8f69dc0e262dcb7cf2b8b1bd639dfa14fe52162d995a707f` | 1,075 |
-| `release/tools/evaluate_release.py` | `5227bcfec08748dc38ee84a68a131c0295a6e8fbd92c7ede99ce493862c2e3f7` | 10,750 |
+| `release/tools/evaluate_release.py` | `d28128c19511ce8b602825d5e3a31265848ccd6cc0c110350f1f1369eb87c924` | 10,745 |
 | `release/tools/export_release_checkpoint.py` | `ced4d7a010d16ea3b283cf64939147d4ac2df8131a3fe5640a06bbb413e802c1` | 11,300 |
-| `release/tools/generate_manifest.py` | `a138aed15736c2fad42fdc8a3d67438587552acd234827ab9335aba4b038a538` | 5,175 |
+| `release/tools/generate_manifest.py` | `628ba0c9b16baa6b2b15e215c48ef6aa7ebf122dc84a7ad219d2cc4f1f1ab51c` | 5,169 |
 
 ## Reproducibility artefacts — run records, profiling, split manifests
 
 | File | SHA-256 | Bytes |
 |---|---|---:|
 | `experiments/README.md` | `c1ee79adfeb4ffb9f1fb0b880ac1d02f357d25bbf714a56335ace192db2621cf` | 3,116 |
-| `experiments/TEST_ACCESS_LOG.md` | `c690d6f131db351d284647a8cebcc5082c153c4efe5ad43e7e711afa31f54c99` | 3,196 |
+| `experiments/TEST_ACCESS_LOG.md` | `bfbdd5557a288e1b9f4c9d9f454ef2251708358e308251645aa2d8330c933814` | 3,194 |
 | `experiments/__init__.py` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | 0 |
 | `experiments/benchmark_suite/__init__.py` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | 0 |
 | `experiments/benchmark_suite/manifests/IAM_page_aachen.json` | `65d4c99cd9a0d8f51c47a3d611410cf7c35555b8b35c79171f818d0148db6b2a` | 287,410 |
@@ -253,7 +245,7 @@ sha256sum -c /tmp/hand.sha256
 | `experiments/benchmark_suite/profiling/spec_decode_test_fp32.json` | `f7c514275e8040d1723f10b6426ffeef18270f7dc7e02c8f453d78a8e2e9df02` | 162,069 |
 | `experiments/benchmark_suite/profiling/spec_heads_e4_m5_history.json` | `e5aa0bf075b8b284ad3854295618a13c9846c05d72a5018a95a2fb8d80bf8df3` | 86,048 |
 | `experiments/benchmark_suite/profiling/spec_heads_m5_history.json` | `bd3d7fd6f622998e253591844afa1c81360dd2b1ba51d1acfa1f6896a370709e` | 86,238 |
-| `experiments/benchmark_suite/record.py` | `48b536eb419eb289416b6290e7da038aec9874ab7253522278188adda4db61f1` | 8,947 |
+| `experiments/benchmark_suite/record.py` | `53bea2ffd0d48f60c2154f5ddc2933bcd09db46bfb6f2b567eafa4e2dacac0c6` | 8,936 |
 | `experiments/benchmark_suite/registry/20260911T032022Z_s1_A1fixedR1_s0_b09a58.json` | `9efac58f0712fd2a88791884d7635322fbedcc0438d98194338b25771f07fa0d` | 6,223 |
 | `experiments/benchmark_suite/registry/20260917T160949Z_e14_budget_1p26M_s0_bd9339.json` | `12c7de24eb1142cf505ce3cf5063709bc4ba6ba904f3a83e1e7c7abec260ec00` | 4,897 |
 | `experiments/benchmark_suite/registry/20260917T160951Z_s1_A1fixedR1_s1_af4532.json` | `ac2c1884b33ba4b3a8bc7dff591368254d76c1284275db23445297b80027d9e7` | 4,718 |
@@ -268,7 +260,7 @@ sha256sum -c /tmp/hand.sha256
 | `experiments/benchmark_suite/registry/20261002T031036Z_ft_double_page_smoke_d6d930.json` | `9fafc76c9d0b3a35d5a09d9e08e1358f27b5b8f4a08023b7b9352b3c0b7bbc0c` | 15,670 |
 | `experiments/benchmark_suite/registry/20261002T031727Z_ft_double_page_from_e14_s0_f44211.json` | `90b1c77f4f03f4631566b1f09138d899f7c8f2de07526a399e435f177d90a23d` | 28,194 |
 | `experiments/benchmark_suite/registry/20261002T072130Z_ft_triple_page_from_double_s0_f29b66.json` | `3ef001fc2bdcb83466b972858c2319d9e43f6721c3ea3710dd69a3aecae99ce5` | 30,779 |
-| `experiments/multipage/README.md` | `48c8210420e6629028dd8310b85bf0e3f8ccf41ea9e9fbe86505373fc721dc79` | 12,360 |
+| `experiments/multipage/README.md` | `302179eb7a71f88e6336d92ad46262456e02805062b2295a4f433fe21b421566` | 12,357 |
 | `experiments/multipage/adaptation/FT_DOUBLE_E3_double_page.json` | `a35a52baa4f55dc6ddb1d451ce0cabed84429ada3022a78603842ae4df4cf891` | 50,690 |
 | `experiments/multipage/adaptation/FT_DOUBLE_E3_page.json` | `fcdc2b536454746f5ea90cfc7f04b1cb7194130ee038a68fc41c9953c4ec3792` | 158,456 |
 | `experiments/multipage/adaptation/FT_DOUBLE_E3_triple_page.json` | `20513b56ad5640d6decd4953b29d8eea0af2e56156416dfb0a1ccdf97e589d99` | 36,315 |
@@ -290,7 +282,7 @@ sha256sum -c /tmp/hand.sha256
 | `experiments/multipage/adaptation/summary_FT_DOUBLE.json` | `f6d3ba1cce3c2aea994c8531e68e5cf4346b35afe415a618f8f000f418237661` | 4,974 |
 | `experiments/multipage/adaptation/summary_FT_DOUBLE_E3.json` | `05e7293bf71a9761debd4ee5f62767ee673a50406de72fb97779d95a0c1be9ad` | 5,115 |
 | `experiments/multipage/adaptation/summary_FT_TRIPLE.json` | `e46c2835099d392b1d53c2b8762db81d2349c65fabf72c288b5b538ea7b317ee` | 4,823 |
-| `experiments/multipage/run_adaptation.sh` | `05a2a1d87ae25249a911cd547fdce3251e2b69ef57c3df0695ef3bec390e6583` | 3,387 |
+| `experiments/multipage/run_adaptation.sh` | `033912bc6a9c4c949e6e49f0ba60536e4f91a7fee531de516784d4626fde70ea` | 3,385 |
 | `experiments/multipage/run_adaptation_double.sh` | `cc2bfb142e85d4760bbfc04cc90ac4fa7637454cfc4dae15a213fc8dec4c8acf` | 1,438 |
 | `experiments/multipage/run_zero_shot.sh` | `a498026360511bd689d68db543af56966e633e3213c59bb90eaed68eb5949ed5` | 1,269 |
 | `experiments/multipage/tables.json` | `4c85b48b61ebeb22483c5b2c1e170b71969f68907da491dc6a7c49b1a0fd5760` | 33,222 |
@@ -402,5 +394,5 @@ sha256sum -c /tmp/hand.sha256
 
 | File | SHA-256 | Bytes |
 |---|---|---:|
-| `data/README.md` | `f5e4a616de0f44765881d53fd2f9dbb82fb0db062f4c2528a50574bb274d903e` | 7,796 |
+| `data/README.md` | `6747ec3dbd9faa9ddbb1774256619d7a7f3c4cd942486b4fdc0860d7e894d017` | 7,797 |
 | `models/README.md` | `9a880852fd29a8eb374522e649de7a0edbb6f90e8941e28d7c0a54eca29f4ef2` | 1,940 |
