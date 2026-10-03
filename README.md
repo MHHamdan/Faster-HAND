@@ -61,7 +61,7 @@ values, mixed precision.
 | Faster-DAN, published | 3.95 | 14.06 | 0.0382 | 0.9420 |
 | DANCER, published | 3.36 | 13.73 | 0.0337 | 0.9473 |
 | DANIEL, published | 4.03 | 15.63 | 0.0337 | 0.9266 |
-
+https://github.com/DocumentRecognitionModels/HAND-Decoding/blob/main/docs/gallery/triple_page_decoding.gif
 **Inference efficiency (READ 2016 test, 50 pages).** Speed-ups are ratios of latencies measured
 in the same session; error rates are comparable only within a training-duration group.
 
