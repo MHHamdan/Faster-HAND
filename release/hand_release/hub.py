@@ -10,17 +10,25 @@ Each package is a zip with the exported model (model.safetensors, config.json, c
 preprocessor_config.json), the speculative draft heads where they exist, and a README with the
 reported results and the CC BY 4.0 attribution. The SHA-256 of every zip is pinned below; a
 download that does not match is deleted and refused.
+
+If the repository is private, the download authenticates with GITHUB_TOKEN or GH_TOKEN, or with
+the token of a logged-in GitHub CLI (`gh auth login`).
 """
 import argparse
 import hashlib
+import json
 import os
 import shutil
+import subprocess
 import sys
 import tempfile
+import urllib.error
 import urllib.request
 import zipfile
 
-RELEASE = "https://github.com/DocumentRecognitionModels/HAND-Decoding/releases/download/v1.1.0/"
+REPO = "DocumentRecognitionModels/HAND-Decoding"
+TAG = "v1.1.0"
+RELEASE = "https://github.com/%s/releases/download/%s/" % (REPO, TAG)
 
 MODELS = {
     "hand-read2016-page": {
@@ -57,6 +65,43 @@ def _sha256(path):
     return h.hexdigest()
 
 
+def _token():
+    tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if tok:
+        return tok
+    try:
+        out = subprocess.run(["gh", "auth", "token"], capture_output=True, text=True, timeout=10)
+        return out.stdout.strip() or None
+    except (OSError, subprocess.SubprocessError):
+        return None
+
+
+def _fetch(name, out_path):
+    """Public download first; if GitHub answers 404 (private repository), use the API with a token."""
+    url = RELEASE + name + ".zip"
+    try:
+        with urllib.request.urlopen(url) as r, open(out_path, "wb") as f:
+            shutil.copyfileobj(r, f)
+        return
+    except urllib.error.HTTPError as e:
+        if e.code != 404:
+            raise
+    tok = _token()
+    if not tok:
+        raise RuntimeError("%s is not publicly downloadable. If the repository is private, set "
+                           "GITHUB_TOKEN or log in with `gh auth login` and retry." % url)
+    hdr = {"Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json"}
+    api = "https://api.github.com/repos/%s/releases/tags/%s" % (REPO, TAG)
+    with urllib.request.urlopen(urllib.request.Request(api, headers=hdr)) as r:
+        assets = {a["name"]: a["url"] for a in json.load(r)["assets"]}
+    if name + ".zip" not in assets:
+        raise RuntimeError("release %s has no asset %s.zip" % (TAG, name))
+    req = urllib.request.Request(assets[name + ".zip"],
+                                 headers=dict(hdr, Accept="application/octet-stream"))
+    with urllib.request.urlopen(req) as r, open(out_path, "wb") as f:
+        shutil.copyfileobj(r, f)
+
+
 def download(name, dest=DEFAULT_DEST, force=False):
     """Return the directory holding the extracted model, downloading it if needed."""
     if name not in MODELS:
@@ -65,13 +110,11 @@ def download(name, dest=DEFAULT_DEST, force=False):
     if os.path.isfile(os.path.join(target, "model.safetensors")) and not force:
         return target
     os.makedirs(dest, exist_ok=True)
-    url = RELEASE + name + ".zip"
     fd, tmp = tempfile.mkstemp(suffix=".zip", dir=dest)
     os.close(fd)
     try:
-        print("downloading %s" % url, file=sys.stderr)
-        with urllib.request.urlopen(url) as r, open(tmp, "wb") as f:
-            shutil.copyfileobj(r, f)
+        print("downloading %s%s.zip" % (RELEASE, name), file=sys.stderr)
+        _fetch(name, tmp)
         got = _sha256(tmp)
         if got != MODELS[name]["sha256"]:
             raise RuntimeError("checksum mismatch for %s: expected %s, got %s"

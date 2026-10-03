@@ -24,7 +24,7 @@ sed -nE 's/^\| `([^`]+)` \| `([0-9a-f]{64})`.*/\2  \1/p' release/MANIFEST.md > /
 sha256sum -c /tmp/hand.sha256
 ```
 
-**322 files, 15,689,758 bytes.** Generated 2026-10-03. Regenerate with this script after any change to the tree.
+**322 files, 15,691,516 bytes.** Generated 2026-10-03. Regenerate with this script after any change to the tree.
 
 
 ## Root — project metadata, environment, licence
@@ -217,7 +217,7 @@ sha256sum -c /tmp/hand.sha256
 | `release/hand-read2016-page/preprocessor_config.json` | `cb9153533612ae17492474171e160e26e5ef455600d8d85ac959980730150d01` | 764 |
 | `release/hand-read2016-page/spec_heads_m5.json` | `691ccac0c761740c4c74507087957fc0211178ce4778887f6c2b79de6c78ae70` | 355 |
 | `release/hand_release/__init__.py` | `7e4768d9280b68a0768adb95ca7aa52dbff488a2224d7eadfb2815b856f9b447` | 449 |
-| `release/hand_release/hub.py` | `dbfdd517ab0191f88803f2f79c2e5ebe36ed2feeaf164d20f9d2989279402a7b` | 4,151 |
+| `release/hand_release/hub.py` | `ed569a4df442501df4a92acb5bf7f2e5816577511711102328f00ea2c02066b6` | 5,909 |
 | `release/hand_release/inference.py` | `d324eb618943d525e4c6da80e50ad8a7da2b83ca310a1d05853af0f4bcc0cd17` | 28,377 |
 | `release/licenses/LICENSE-CeCILL-C.md` | `405e0890e5997f766bfe0adcfad381077749b6c615d41dc4effb0baf271ada9f` | 21,958 |
 | `release/licenses/LICENSE-MIT.txt` | `c1eff5cff0bd189a8f69dc0e262dcb7cf2b8b1bd639dfa14fe52162d995a707f` | 1,075 |
