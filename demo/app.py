@@ -139,7 +139,8 @@ def main():
     ap.add_argument("--share", action="store_true", help="create a temporary public Gradio link")
     ap.add_argument("--weights-dir", default=os.path.join(ROOT, "weights"))
     a = ap.parse_args()
-    build(a.weights_dir).launch(server_name=a.host, server_port=a.port, share=a.share)
+    build(a.weights_dir).launch(server_name=a.host, server_port=a.port, share=a.share,
+                                allowed_paths=[ROOT])
 
 
 if __name__ == "__main__":
