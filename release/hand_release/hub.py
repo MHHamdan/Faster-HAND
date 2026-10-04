@@ -26,7 +26,7 @@ import urllib.error
 import urllib.request
 import zipfile
 
-REPO = "DocumentRecognitionModels/Faster-HAND"
+REPO = "MHHamdan/Faster-HAND"
 TAG = "v1.1.0"
 RELEASE = "https://github.com/%s/releases/download/%s/" % (REPO, TAG)
 

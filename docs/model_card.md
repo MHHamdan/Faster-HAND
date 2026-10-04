@@ -10,7 +10,7 @@ provenance for every number here is in
 ## Availability
 
 The four READ 2016 models are released as assets of the GitHub release
-[v1.1.0](https://github.com/DocumentRecognitionModels/Faster-HAND/releases/tag/v1.1.0), not in
+[v1.1.0](https://github.com/MHHamdan/Faster-HAND/releases/tag/v1.1.0), not in
 the git history, and as the Hugging Face models `MHamdan/hand-read2016-page`,
 `MHamdan/hand-read2016-page-compact`, `MHamdan/hand-read2016-double-page` and
 `MHamdan/hand-read2016-triple-page`, which `HANDRecognizer.from_pretrained` loads by name.

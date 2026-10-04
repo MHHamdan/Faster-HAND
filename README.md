@@ -213,7 +213,7 @@ python scripts/verify_dan_fonts.py
 ```
 
 **Model weights.** The four READ 2016 models are attached to the
-[v1.1.0 release](https://github.com/DocumentRecognitionModels/Faster-HAND/releases/tag/v1.1.0)
+[v1.1.0 release](https://github.com/MHHamdan/Faster-HAND/releases/tag/v1.1.0)
 under CC BY 4.0. Before release, each was checked to reproduce the stored prediction of its
 example image token for token. Download and verify one with:
 
@@ -310,20 +310,6 @@ via `tools/train.py`. The exact commands and run records are in
 | `hand/models/experimental/` | components documented in the supplementary but used by no reported model |
 
 ## Citation
-
-The paper is under review. Until it is published, please cite the preprint, which appeared under
-an earlier title:
-
-```bibtex
-@article{hamdan2024hand,
-  title   = {{HAND}: Hierarchical Attention Network for Multi-Scale Handwritten
-             Document Recognition and Layout Analysis},
-  author  = {Hamdan, Mohammed and Rahiche, Abderrahmane and Cheriet, Mohamed},
-  journal = {arXiv preprint arXiv:2412.18981},
-  year    = {2024},
-  url     = {https://arxiv.org/abs/2412.18981}
-}
-```
 
 Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
 
