@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Gradio demo: read a handwritten document image with a released HAND model.
+"""Gradio demo: read a handwritten document image with a released FasterHAND model.
 
     pip install -r demo/requirements.txt
     python demo/app.py                    # http://127.0.0.1:7860
@@ -8,7 +8,7 @@
 The first use of a model downloads its weights from the GitHub release into weights/ and
 checks the pinned SHA-256 (release/hand_release/hub.py). The output is the model's single
 interleaved stream: the transcription, with layout tokens shown as colored tags, the plain
-text, and the regions parsed from the tags. HAND predicts layout tokens, not coordinates, so no
+text, and the regions parsed from the tags. FasterHAND predicts layout tokens, not coordinates, so no
 boxes are drawn on the image.
 """
 import argparse
@@ -94,14 +94,14 @@ def transcribe(image, name, dpi, speculative, weights_dir):
 
 
 def build(weights_dir):
-    with gr.Blocks(title="HAND-Decoding demo") as demo:
+    with gr.Blocks(title="FasterHAND demo") as demo:
         gr.Markdown(
-            "# HAND-Decoding demo\n"
+            "# FasterHAND demo\n"
             "Segmentation-free recognition of handwritten documents: the model reads the image and "
             "emits one sequence of characters and layout tokens (page, page number, section, "
             "annotation, body) in reading order. Models were trained on READ 2016 (Early Modern "
             "German); other scripts and layouts are outside what they have seen. "
-            "[Code and paper results](https://github.com/DocumentRecognitionModels/HAND-Decoding)")
+            "[Code and paper results](https://github.com/MHHamdan/Faster-HAND)")
         with gr.Row():
             with gr.Column(scale=1):
                 image = gr.Image(label="Document image", type="numpy")

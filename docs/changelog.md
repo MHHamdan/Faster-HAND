@@ -8,14 +8,14 @@
   token. `release/hand_release/hub.py` downloads them and verifies the pinned SHA-256.
 - The same weights are published as the Hugging Face models `MHamdan/hand-read2016-*`, loadable
   with `HANDRecognizer.from_pretrained`.
-- `demo/HAND_Decoding_demo.ipynb`: Colab notebook that runs the demo with a public link.
+- `demo/FasterHAND_demo.ipynb`: Colab notebook that runs the demo with a public link.
 - `demo/app.py`: Gradio demo with three READ 2016 example images (single, double, triple page).
 - `safetensors` added to the requirements; it is needed to load the released weights.
 
 ## 1.0.0 — initial public release (2026-10-02)
 
 First public release of the code and evidence for
-*HAND: Unified Text–Layout Decoding for Handwritten Document Recognition*. No experiment was
+*FasterHAND: Unified Text–Layout Decoding for Handwritten Document Recognition*. No experiment was
 rerun for the release and no measured value was changed.
 
 ### Contents

@@ -1,6 +1,6 @@
 from setuptools import setup, find_namespace_packages
 
-setup(name='HAND',
+setup(name='FasterHAND',
       version='1.1.0',
       description=('Unified text-layout decoding for handwritten document '
                    'recognition and layout analysis'),
@@ -8,7 +8,7 @@ setup(name='HAND',
       author_email='mh2022ets@gmail.com',
       maintainer='Mohammed Hamdan',
       maintainer_email='mh2022ets@gmail.com',
-      url='https://github.com/DocumentRecognitionModels/HAND-Decoding',
+      url='https://github.com/MHHamdan/Faster-HAND',
       license='MIT',
       packages=find_namespace_packages(include=["hand", "hand.*"]),
       python_requires='>=3.10',

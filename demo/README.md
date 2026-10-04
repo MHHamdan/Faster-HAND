@@ -1,10 +1,10 @@
 # Demo
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DocumentRecognitionModels/HAND-Decoding/blob/main/demo/HAND_Decoding_demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MHHamdan/Faster-HAND/blob/main/demo/FasterHAND_demo.ipynb)
 
-A Gradio app that reads a handwritten document image with one of the released HAND models.
+A Gradio app that reads a handwritten document image with one of the released FasterHAND models.
 The quickest way to try it is the Colab notebook
-[`HAND_Decoding_demo.ipynb`](HAND_Decoding_demo.ipynb): run all cells and open the printed
+[`FasterHAND_demo.ipynb`](FasterHAND_demo.ipynb): run all cells and open the printed
 `gradio.live` link.
 
 ```bash
@@ -24,7 +24,7 @@ single page takes several seconds, a triple page considerably longer.
 - **Transcription** — the same text with layout tokens removed.
 - **Regions** — the regions parsed from the tags, in reading order.
 
-HAND predicts layout tokens, not coordinates, so the app draws no boxes on the image.
+FasterHAND predicts layout tokens, not coordinates, so the app draws no boxes on the image.
 
 ## Choosing a model and resolution
 

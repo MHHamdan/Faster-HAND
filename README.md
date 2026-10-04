@@ -1,9 +1,9 @@
-# HAND-Decoding
+# FasterHAND
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DocumentRecognitionModels/HAND-Decoding/blob/main/demo/HAND_Decoding_demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MHHamdan/Faster-HAND/blob/main/demo/FasterHAND_demo.ipynb)
 
-Code and evidence for **HAND: Unified Text–Layout Decoding for Handwritten
-Document Recognition** (Hamdan, Rahiche, Cheriet). HAND is a segmentation-free encoder–decoder
+Code and evidence for **FasterHAND: Unified Text–Layout Decoding for Handwritten
+Document Recognition** (Hamdan, Rahiche, Cheriet). FasterHAND is a segmentation-free encoder–decoder
 model that reads a handwritten document image as one autoregressive sequence of interleaved
 characters and layout tokens in reading order, so that transcription and document structure are
 predicted under a single objective. The repository contains the model, training and evaluation
@@ -12,12 +12,12 @@ demo. The manuscript is under review and is not included; no dataset is redistri
 
 ## Overview
 
-HAND follows the interleaved text–layout formulation of DAN and keeps its architecture, parameter
+FasterHAND follows the interleaved text–layout formulation of DAN and keeps its architecture, parameter
 count and training recipe, so that it can be compared with the public DAN weights under an
 identical protocol. On top of that reference it studies two inference-cost mechanisms and how the
 formulation behaves as the input grows from one page to two and three pages.
 
-On the 50 READ 2016 single test pages HAND and DAN differ by +0.138 pp CER (95 % CI
+On the 50 READ 2016 single test pages FasterHAND and DAN differ by +0.138 pp CER (95 % CI
 [−0.188, +0.493], *p* = 0.42), smaller than the 0.70 pp between-seed spread on this split; the
 two systems are statistically indistinguishable.
 
@@ -41,7 +41,7 @@ two systems are statistically indistinguishable.
 
 <p align="center">
   <img src="docs/assets/hand_architecture.png" width="440"
-       alt="HAND architecture. (1) A fully convolutional encoder with six convolutional and four depth-wise separable blocks maps the document image to a 256-channel feature grid of size H/32 by W/8; a two-dimensional positional encoding is added and the grid is flattened into the visual memory. (2) An eight-layer transformer decoder with causal self-attention banded to 100 symbols, cross-attention to the visual memory and a feed-forward network emits (3) one interleaved stream of characters and circled layout tokens. Two dashed optional mechanisms: A, one shared key/value projection for all eight cross-attentions; B, speculative decoding that drafts symbols with m minus 1 heads, verifies them in one decoder pass and keeps the longest agreeing prefix." />
+       alt="FasterHAND architecture. (1) A fully convolutional encoder with six convolutional and four depth-wise separable blocks maps the document image to a 256-channel feature grid of size H/32 by W/8; a two-dimensional positional encoding is added and the grid is flattened into the visual memory. (2) An eight-layer transformer decoder with causal self-attention banded to 100 symbols, cross-attention to the visual memory and a feed-forward network emits (3) one interleaved stream of characters and circled layout tokens. Two dashed optional mechanisms: A, one shared key/value projection for all eight cross-attentions; B, speculative decoding that drafts symbols with m minus 1 heads, verifies them in one decoder pass and keeps the longest agreeing prefix." />
 </p>
 
 The evaluated system is `FCN_Encoder` + `GlobalHTADecoder` in
@@ -59,28 +59,28 @@ values, mixed precision.
 | Method | CER | WER | LOER ↓ | mAP-CER ↑ |
 |---|---:|---:|---:|---:|
 | DAN, public weights, our evaluation | **3.41** | 13.05 | 0.0517 | 0.9326 |
-| HAND, our evaluation | 3.55 | 13.31 | 0.0529 | 0.9264 |
+| FasterHAND, our evaluation | 3.55 | 13.31 | 0.0529 | 0.9264 |
 | Faster-DAN, published | 3.95 | 14.06 | 0.0382 | 0.9420 |
 | DANCER, published | 3.36 | 13.73 | 0.0337 | 0.9473 |
 | DANIEL, published | 4.03 | 15.63 | 0.0337 | 0.9266 |
 
-https://github.com/DocumentRecognitionModels/HAND-Decoding/blob/main/docs/gallery/triple_page_decoding.gif
+https://github.com/MHHamdan/Faster-HAND/blob/main/docs/gallery/triple_page_decoding.gif
 
 **Inference efficiency (READ 2016 test, 50 pages).** Speed-ups are ratios of latencies measured
 in the same session; error rates are comparable only within a training-duration group.
 
 | Configuration | Training samples | Parameters | Speed-up | CER | Identical to greedy |
 |---|---:|---:|---:|---:|:-:|
-| HAND + speculative (*m* = 5) | 1,258,600 | 7,399,668 | 2.73× | 3.55 | 50 of 50 |
-| HAND + shared K/V | 500,000 | 6,112,612 | 1.01× | 4.00 | – |
-| HAND + shared K/V + speculative, mixed precision | 500,000 | 6,478,580 | 2.886× | 4.00 | 48 of 50 |
-| HAND + shared K/V + speculative, single precision | 500,000 | 6,478,580 | 2.947× | 4.00 | 50 of 50 |
+| FasterHAND + speculative (*m* = 5) | 1,258,600 | 7,399,668 | 2.73× | 3.55 | 50 of 50 |
+| FasterHAND + shared K/V | 500,000 | 6,112,612 | 1.01× | 4.00 | – |
+| FasterHAND + shared K/V + speculative, mixed precision | 500,000 | 6,478,580 | 2.886× | 4.00 | 48 of 50 |
+| FasterHAND + shared K/V + speculative, single precision | 500,000 | 6,478,580 | 2.947× | 4.00 | 50 of 50 |
 
 ### Inference Efficiency
 
 <p align="center">
   <img src="docs/gallery/triple_page_decoding.gif"
-       alt="Triple-page HAND decoding visualization"
+       alt="Triple-page FasterHAND decoding visualization"
        width="900">
 </p>
 
@@ -110,12 +110,12 @@ results. Commands and per-image results: [`experiments/multipage/`](experiments/
 
 <p align="center">
   <img src="docs/assets/qualitative_double_page.png" width="640"
-       alt="Double-page READ 2016 test image 23 read by the double-page adapted HAND model. Top: both page scans with the reference line boxes colored by region class, the numbered reading-order path and the transition from the left page to the right page. Below: for each page, the reference token stream and the HAND prediction side by side, with layout tokens rendered as tags and character errors in red." />
+       alt="Double-page READ 2016 test image 23 read by the double-page adapted FasterHAND model. Top: both page scans with the reference line boxes colored by region class, the numbered reading-order path and the transition from the left page to the right page. Below: for each page, the reference token stream and the FasterHAND prediction side by side, with layout tokens rendered as tags and character errors in red." />
 </p>
 
 <p align="center">
   <img src="docs/assets/qualitative_triple_page.png" width="640"
-       alt="Triple-page READ 2016 test image 5 read by the triple-page adapted HAND model. Top: the three concatenated page scans with the reference reading-order path and the two page transitions. Below: for each of the three pages, the reference token stream and the HAND prediction, with character errors in red." />
+       alt="Triple-page READ 2016 test image 5 read by the triple-page adapted FasterHAND model. Top: the three concatenated page scans with the reference reading-order path and the two page transitions. Below: for each of the three pages, the reference token stream and the FasterHAND prediction, with character errors in red." />
 </p>
 
 ## Cross-dataset evaluation
@@ -151,7 +151,7 @@ line detection.
 
 <p align="center">
   <img src="docs/assets/hand_decoding_test_11.gif" width="560"
-       alt="Animation of HAND decoding READ 2016 test page 11 symbol by symbol. The page image accumulates the decoder's last-layer cross-attention for the symbols decoded so far in blue, with the current symbol's attention outlined in red, while the interleaved text and layout token stream grows beneath. The decoder sweeps the body top to bottom and then the marginal annotation, following the reading order of the label scheme." />
+       alt="Animation of FasterHAND decoding READ 2016 test page 11 symbol by symbol. The page image accumulates the decoder's last-layer cross-attention for the symbols decoded so far in blue, with the current symbol's attention outlined in red, while the interleaved text and layout token stream grows beneath. The decoder sweeps the body top to bottom and then the marginal annotation, following the reading order of the label scheme." />
   <br/>
   <sub>Static version: <a href="docs/assets/decoding_test_11.png">decoding_test_11.png</a></sub>
 </p>
@@ -177,7 +177,7 @@ model attended.
 
 <p align="center">
   <img src="docs/gallery/triple_page_decoding.gif" width="640"
-       alt="Animation of the triple-page adapted HAND model's output on READ 2016 triple-page test image 5. Three concatenated page scans are shown with their reference regions and reading-order path; the page whose text is being revealed is outlined in black and later pages are dimmed. Beneath the image, the decoded text of the current page appears two lines at a time, with page, page-number, section, annotation and body tokens shown as colored tags, moving from page 1 to page 3." />
+       alt="Animation of the triple-page adapted FasterHAND model's output on READ 2016 triple-page test image 5. Three concatenated page scans are shown with their reference regions and reading-order path; the page whose text is being revealed is outlined in black and later pages are dimmed. Beneath the image, the decoded text of the current page appears two lines at a time, with page, page-number, section, annotation and body tokens shown as colored tags, moving from page 1 to page 3." />
   <br/>
   <sub>Static version: <a href="docs/assets/qualitative_triple_page.png">qualitative_triple_page.png</a></sub>
 </p>
@@ -213,7 +213,7 @@ python scripts/verify_dan_fonts.py
 ```
 
 **Model weights.** The four READ 2016 models are attached to the
-[v1.1.0 release](https://github.com/DocumentRecognitionModels/HAND-Decoding/releases/tag/v1.1.0)
+[v1.1.0 release](https://github.com/DocumentRecognitionModels/Faster-HAND/releases/tag/v1.1.0)
 under CC BY 4.0. Before release, each was checked to reproduce the stored prediction of its
 example image token for token. Download and verify one with:
 
@@ -229,7 +229,7 @@ cd release && python -m hand_release.hub hand-read2016-page     # -> weights/han
 | `hand-read2016-triple-page` | triple pages | triple-page test CER 3.48 %, WER 13.41 % | 26.1 MB | `1c09c18ecd3aac0a99011dee05b593832b9e4a1ec818efc2779e3c742262d58d` |
 
 The same four models are on Hugging Face, in the
-[HAND-Decoding collection](https://huggingface.co/collections/MHamdan/hand-decoding-6ac083dab73470ecf7f95551),
+[FasterHAND collection](https://huggingface.co/collections/MHamdan/hand-decoding-6ac083dab73470ecf7f95551),
 and load by name:
 
 ```python
@@ -258,7 +258,7 @@ python demo/app.py            # http://127.0.0.1:7860   (--share for a temporary
 ```
 
 To try it without installing anything, open the
-[Colab notebook](https://colab.research.google.com/github/DocumentRecognitionModels/HAND-Decoding/blob/main/demo/HAND_Decoding_demo.ipynb)
+[Colab notebook](https://colab.research.google.com/github/MHHamdan/Faster-HAND/blob/main/demo/FasterHAND_demo.ipynb)
 and run all cells: it installs the demo, downloads the weights and prints a public link to the
 app. See [`demo/README.md`](demo/README.md).
 

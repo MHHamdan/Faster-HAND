@@ -26,7 +26,7 @@ inside it are evidence. Two honest greedy figures therefore coexist in this repo
 
 | Final result | Reproducible from this repository? | With what |
 |---|---|---|
-| **DAN vs HAND baseline comparison** (3.41 % vs 3.55 %, +0.138 pp, *p* = 0.42) | **Verifiable from the artefact; re-measurable only with both checkpoints** | `efficiency_hand_vs_dan.json` + `seed_variance_test.json`; re-run with `tools/efficiency_bench.py` |
+| **DAN vs FasterHAND baseline comparison** (3.41 % vs 3.55 %, +0.138 pp, *p* = 0.42) | **Verifiable from the artefact; re-measurable only with both checkpoints** | `efficiency_hand_vs_dan.json` + `seed_variance_test.json`; re-run with `tools/efficiency_bench.py` |
 | **E4 parameter reduction** (7,033,700 → 6,112,612, −13.1 %) | **Yes, fully, on CPU, with no checkpoint** | `tests/test_fast_decode_paths.py` recomputes the arithmetic; `tools/validate_install_cpu.py` S2 checks the anchor count |
 | **E4 accuracy parity** (4.41 % vs 4.41 %, *p* = 0.997) | Verifiable from the artefact; re-measurable with the E4 checkpoint | `e4_vs_anchor_valid.json`, `e4_vs_anchor_test.json` |
 | **E3 acceleration** (2.73×, 50/50 identical) | Verifiable from the artefact; re-measurable with the base checkpoint + heads | `spec_decode_test.json`, `spec_decode_test_fp32.json` |
@@ -50,7 +50,7 @@ accuracy numbers additionally needs READ 2016 (CC BY 4.0, freely downloadable) o
 
 | | |
 |---|---|
-| **Purpose** | the matched HAND-vs-DAN cost and accuracy row — the only accuracy comparison against DAN this project makes |
+| **Purpose** | the matched FasterHAND-vs-DAN cost and accuracy row — the only accuracy comparison against DAN this project makes |
 | **Source experiment** | the efficiency baseline, 2026-09-22 (contended) and its uncontended re-run |
 | **Produced by** | `tools/efficiency_bench.py --n-pages 50 --split test` |
 | **Configuration** | both checkpoints in **one process**, batch 1, AMP fp16, greedy, K/V cached and reference-decode rows; identical architecture, identical harness, paired over the same pages |
@@ -133,7 +133,7 @@ accuracy numbers additionally needs READ 2016 (CC BY 4.0, freely downloadable) o
 | **Purpose** | **the exactness gate.** A cost change must prove it changed nothing else |
 | **Produced by** | `tools/verify_exact_decoding.py` |
 | **Configuration** | every page decoded under the reference path and under each optimisation (`HAND_FAST_MASKS`, `HAND_FAST_STEP`, `use_mem_cache`), **in one process**, requiring character-for-character identity |
-| **Dataset / split** | READ 2016 page `_sem_dan`, **test**, 50 pages, for HAND **and** DAN weights |
+| **Dataset / split** | READ 2016 page `_sem_dan`, **test**, 50 pages, for FasterHAND **and** DAN weights |
 | **Metrics** | per-optimisation identity counts, `all_exact` |
 | **Supports** | **50/50 for each optimisation, separately and combined, for both weight sets** — `ablations.md` §3.4; it is what licenses every "identical output" phrase in this repository |
 

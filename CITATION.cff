@@ -15,7 +15,7 @@
 # ---------------------------------------------------------------------------
 cff-version: 1.2.0
 title: >-
-  HAND: Unified Text–Layout Decoding for Handwritten
+  FasterHAND: Unified Text–Layout Decoding for Handwritten
   Document Recognition
 message: >-
   If you use this software, please cite the software using
@@ -30,8 +30,8 @@ authors:
     given-names: Mohammed
     alias: MHHamdan
 
-repository-code: 'https://github.com/DocumentRecognitionModels/HAND-Decoding'
-url: 'https://github.com/DocumentRecognitionModels/HAND-Decoding'
+repository-code: 'https://github.com/MHHamdan/Faster-HAND'
+url: 'https://github.com/MHHamdan/Faster-HAND'
 abstract: >-
   End-to-end, segmentation-free recognition of handwritten
   documents at line, paragraph, page, double-page and

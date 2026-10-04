@@ -1,6 +1,6 @@
 # Model card
 
-For the HAND page-level recognition model and the five V1 scale checkpoints. Measurement
+For the FasterHAND page-level recognition model and the five V1 scale checkpoints. Measurement
 provenance for every number here is in
 [`REPRODUCIBILITY_ARTIFACTS.md`](REPRODUCIBILITY_ARTIFACTS.md); the negative results are in
 [`ablations.md`](ablations.md).
@@ -10,7 +10,7 @@ provenance for every number here is in
 ## Availability
 
 The four READ 2016 models are released as assets of the GitHub release
-[v1.1.0](https://github.com/DocumentRecognitionModels/HAND-Decoding/releases/tag/v1.1.0), not in
+[v1.1.0](https://github.com/DocumentRecognitionModels/Faster-HAND/releases/tag/v1.1.0), not in
 the git history, and as the Hugging Face models `MHamdan/hand-read2016-page`,
 `MHamdan/hand-read2016-page-compact`, `MHamdan/hand-read2016-double-page` and
 `MHamdan/hand-read2016-triple-page`, which `HANDRecognizer.from_pretrained` loads by name.
@@ -75,7 +75,7 @@ state-dict key sets and tensor shapes, identical FLOPs and peak memory. That ide
 the basis of every matched comparison in the paper, and it is checked mechanically by
 `tools/validate_install_cpu.py` stage S2 and by `tests/test_fast_decode_paths.py`.
 
-A separate set of designed components — the gated/octave HAND encoder, MSAP,
+A separate set of designed components — the gated/octave FasterHAND encoder, MSAP,
 memory-augmented and sparse attention, adaptive fusion — lives in
 `hand/models/experimental/` and is **inactive on the trained path**. No checkpoint uses it,
 its `README.md` says so, and the manuscript's architecture section describes the trained

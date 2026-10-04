@@ -8,7 +8,7 @@
 
 ## Where the training configuration actually lives
 
-**HAND is configured by argv, not by config files.** There is no `configs/train/` or
+**FasterHAND is configured by argv, not by config files.** There is no `configs/train/` or
 `configs/eval/` because no such file was ever the source of truth for a reported number —
 the argv was.
 

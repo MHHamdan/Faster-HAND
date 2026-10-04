@@ -1,7 +1,7 @@
 # Reproducibility
 
 Everything below runs from the repository root on a single machine. No cluster, no
-`/scratch` paths. This is the single reproduction document for HAND; the README links to
+`/scratch` paths. This is the single reproduction document for FasterHAND; the README links to
 it and nothing else duplicates it.
 
 ### Required to reproduce the paper, or optional?
@@ -514,7 +514,7 @@ python tools/train_hand.py \
 | Flag | Meaning |
 |---|---|
 | `--encoder {fcn,hand}` | `fcn` = DAN's `FCN_Encoder`, the encoder the manuscript's architecture section describes and every released checkpoint uses; `hand` = the gated DSC + octave + SE variant, kept only to reproduce the negative result in `ablations.md` §1.1, **not recommended** |
-| `--no-octave` / `--no-se` / `--no-gate` / `--no-residual` | ablate one component of the HAND encoder |
+| `--no-octave` / `--no-se` / `--no-gate` / `--no-residual` | ablate one component of the FasterHAND encoder |
 | `--init-from PATH` | warm-start encoder+decoder from a checkpoint |
 | `--no-synthetic` / `--no-augment` | disable synthetic pages / augmentation |
 | `--resume` | continue from the last checkpoint **in the output folder** |
@@ -747,7 +747,7 @@ results can be interrogated, not because a reproduction needs it.
 
 | Path | What it is for |
 |---|---|
-| `hand/models/experimental/` | designed components that are **inactive on the trained path** — the gated/octave HAND encoder, MSAP, memory-augmented and sparse attention, adaptive fusion. No checkpoint uses them and the manuscript's architecture section does not describe them; published so the manuscript's training-strategy and supplementary sections can be checked against code |
+| `hand/models/experimental/` | designed components that are **inactive on the trained path** — the gated/octave FasterHAND encoder, MSAP, memory-augmented and sparse attention, adaptive fusion. No checkpoint uses them and the manuscript's architecture section does not describe them; published so the manuscript's training-strategy and supplementary sections can be checked against code |
 | `tools/dump_predictions.py`, `tools/recompute_layout_metrics.py` | prediction dumps and layout-metric recomputation |
 | `hand/Datasets/format_read_dan_splits.py`, `hand/Datasets/bucketing.py` | dataset formatting (single, double and triple page) and shape bucketing |
 | `tests/` | the CPU test suite — `python -m pytest tests -q` |
