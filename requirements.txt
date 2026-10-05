@@ -8,7 +8,7 @@
 #   pip install -r requirements.txt && pip install -e .
 #   python tools/validate_install_cpu.py
 
-torch>=2.4
+torch>=2.13.0
 torchvision>=0.19
 numpy>=2.0
 Pillow>=12.3.0          # >=10 required: a shim in hand/OCR/ocr_dataset_manager.py replaces

@@ -11,7 +11,7 @@
 #   python -m venv .venv && source .venv/bin/activate
 #   pip install -r requirements-pinned.txt
 
-torch==2.9.1
+torch==2.13.0
 torchvision==0.24.1
 numpy==2.4.6
 Pillow==12.3.0
