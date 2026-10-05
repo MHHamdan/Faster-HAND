@@ -11,7 +11,7 @@
 torch>=2.4
 torchvision>=0.19
 numpy>=2.0
-Pillow>=10          # >=10 required: a shim in hand/OCR/ocr_dataset_manager.py replaces
+Pillow>=12.3.0          # >=10 required: a shim in hand/OCR/ocr_dataset_manager.py replaces
                     # the FreeTypeFont.getsize() that Pillow 10 removed
 opencv-python>=4.9
 scipy>=1.13
